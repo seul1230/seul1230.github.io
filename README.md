@@ -1,5 +1,6 @@
-# Hydejack Starter Kit
+# seul1230.github.io
 
+<!--
 A quicker, cleaner way to get started blogging with [Hydejack](https://hydejack.com/).
 
 ## Quick Start
@@ -18,3 +19,4 @@ A quicker, cleaner way to get started blogging with [Hydejack](https://hydejack.
 [^1]: Requires Bundler. Install with `gem install bundler`.
 
 [download]: https://github.com/hydecorp/hydejack-starter-kit/archive/master.zip
+-->
