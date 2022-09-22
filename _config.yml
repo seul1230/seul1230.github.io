@@ -48,10 +48,9 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             Example
-    url:               /example/
-  - title:             Documentation
-    url:               /docs/
+  - title:             2020_likelion🦁
+    url:               /2020_likelion🦁/
+
   - title:             About
     url:               /about/
 
