@@ -289,7 +289,7 @@ hydejack:
 
 collections:
   featured_categories:
-    permalink:         /:name/
+    permalink:         /2022_likelion🦁/
     output:            true
 
   featured_tags:
@@ -299,6 +299,7 @@ collections:
   projects:
     permalink:         /projects/:path/
     output:            true
+
 
 
 # File inclusion/exclusion
