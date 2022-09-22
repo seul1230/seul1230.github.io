@@ -25,7 +25,7 @@ title:                 sseul's blog
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  Hi, there! I'm growing everyday 🌱
+  
 
 # A shorter description for the sidebar.
 tagline:               AI
@@ -41,8 +41,8 @@ logo:                  /assets/img/재롱이.jpeg
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
   # Used by `jekyll-feed`:
-  name:                <firstname> <lastname>
-  email:               pink0569@naver.com
+  name:                <yeseul> <cho>
+  email:               <pink0569@naver.com>
   # # Used by `jekyll-seo-tag`:
   # twitter:             <username>
 
