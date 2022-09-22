@@ -1,9 +1,9 @@
 ---
 layout: list
 title: <아무거나 가능 But foler name with Capa>
-slug: tips
+slug: Tips
 menu: true
-permalink: /tips/
+permalink: /Tips/
 order: 1
 sitemap: false
 description: >
