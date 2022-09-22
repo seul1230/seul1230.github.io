@@ -17,6 +17,8 @@ categories: 2022_likelion🦁
 
 ## **[ 0920 TUE ]**
 
+채워넣기
+
 ***
 <br/>
 
@@ -31,6 +33,6 @@ categories: 2022_likelion🦁
 
 ##  **[ 0922 THU ] Insight Day**
 ### 🤹 [오전] 복습 + [오후] 발표 + 재잘재잘 회고 + 자기주도학습
-
+채워넣기
 
 <br/>
