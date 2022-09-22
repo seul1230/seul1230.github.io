@@ -1,9 +1,9 @@
 ---
 layout: list
-title: 2022_likelion🦁
-slug: 2022_likelion🦁
+title: 2022_likelion
+slug: 2022_likelion
 menu: true
-permalink: /2022_likelion🦁/
+permalink: /2022_likelion/
 order: 1
 sitemap: false
 description: >
