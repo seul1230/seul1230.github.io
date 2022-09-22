@@ -41,7 +41,7 @@ logo:                  /assets/img/profile_img.png
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
   # Used by `jekyll-feed`:
-  name:                <yeseul> <cho>
+  name:                yeseul cho
   email:               <pink0569@naver.com>
   # # Used by `jekyll-seo-tag`:
   # twitter:             <username>
