@@ -2,7 +2,7 @@
 layout: post
 title:  "2022 멋사 AI | 2주차 TIL"
 date:   2022-09-22 16:10:09 +0900
-categories: 2022_likelion🦁
+categories: 2022_likelion
 ---
 # 2022 멋사 AI | 2주차 TIL
 
