@@ -47,8 +47,8 @@ else:
 
 ### Format
 #### : `"%형식문자"`로 지정하면 % 뒤의 출력 대상들이 `1:1`로 대응되어 출력
-&nbsp;&nbsp; - `%s` : 문자열, `%d` : 정수, `%f` : 실수
-&nbsp;&nbsp; -  `%03d` : 정수를 `3`칸에 맞추어 출력하는데 앞의 빈칸은 `0`으로 채워라.
+&nbsp;&nbsp; - `%s` : 문자열, `%d` : 정수, `%f` : 실수<br/>
+&nbsp;&nbsp; -  `%03d` : 정수를 `3`칸에 맞추어 출력하는데 앞의 빈칸은 `0`으로 채워라.<br/>
 &nbsp;&nbsp; -  `%6.2f` : 실수를 전체 `6`칸, 소수 이하 `2`칸에 맞추어 출력해라.
 
 <br/>
@@ -68,18 +68,23 @@ Docstring에 대한 소스 코드를 확인할 수 있음
 <br/>
 
 ### 문자열 전처리
-#### - `replace` : 문자열 변경
-#### - `split` : 문자열 분리
-#### - `strip` : 양옆 공백 제거
-&nbsp;&nbsp; `rstrip` : 오른쪽 공백 제거
+#### - `replace` 
+: 문자열 변경
+#### - `split` 
+: 문자열 분리
+#### - `strip` 
+: 양옆 공백 제거
+&nbsp;&nbsp; `rstrip` : 오른쪽 공백 제거 <br/>
 &nbsp;&nbsp; `lstrip` : 왼쪽 공백 
 
 <br/>
 
 ### Pandas
 #### : 파이썬의 대표적인 데이터 분석 도구
-#### - DataFrame : 2차원 index & column
-#### - tolist : list 형태로 변경
+#### - DataFrame 
+: 2차원 index & column
+#### - tolist 
+: list 형태로 변경
 #### - drop
 `axis = 1` : 열 제거,  `axis = 0` : 행 제거
 #### - inplace 
