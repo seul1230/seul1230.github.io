@@ -18,7 +18,23 @@ categories: 2022_likelion🦁
 
 <br/>
 
-### If 문 <br/>
+### If 문 
+#### if-elif-else문 기본 구조
+```python
+if 조건문:
+    수행할 문장A
+    수행할 문장B
+    ...
+elif 조건문:
+    수행할 문장C
+    수행할 문장D
+else:
+    수행할 문장E
+    수행할 문장F
+    ...
+```
+<br/>
+
 ### 반복문
 #### - For문
 #### - Range 함수 `range(start, end, step)`
@@ -50,6 +66,30 @@ def order():
 ##### Docstring에 대한 소스 코드를 확인할 수 있음
 
 <br/>
+
+### 문자열 전처리
+#### - `replace` : 문자열 변경
+#### - `split` : 문자열 분리
+#### - `strip` : 양옆 공백 제거
+##### &nbsp;&nbsp; `rstrip` : 오른쪽 공백 제거
+##### &nbsp;&nbsp; `lstrip` : 왼쪽 공백 
+
+<br/>
+
+### Pandas
+#### : 파이썬의 대표적인 데이터 분석 도구
+#### - DataFrame : 2차원 index & column
+#### - tolist : list 형태로 변경
+#### - drop
+##### `axis = 1` : 열 제거,  `axis = 0` : 행 제거
+#### - inplace 
+##### : 기존 데이터프레임에 변경된 설정으로 덮어쓰겠다는 의미
+#### - shape
+##### : 데이터프레임의 크기를 출력
+#### - dtypes
+##### : 데이터의 타입만
+#### - describe
+##### : 수치형 데이터의 기술통계값 / `include = "object"` 추가하면 범주형 데이터의 기술통계값
 
 
 <br/>
