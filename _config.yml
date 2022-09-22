@@ -292,7 +292,7 @@ hydejack:
 
 collections:
   featured_categories:
-    permalink:         /2022_likelion🦁/
+    permalink:         /:name/
     output:            true
 
 
