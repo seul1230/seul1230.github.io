@@ -115,10 +115,10 @@ defaults:
   - scope:
       path:            hyde/
     values:
-      accent_color:    rgb(38,139,210)
-      theme_color:     rgb(32,32,32)
+      accent_color:    rgb(237, 159, 159)
+      theme_color:     rgb(237, 159, 159)
       accent_image:
-        background:    rgb(32,32,32)
+        background:    rgb(237, 159, 159)
         overlay:       false
 
   # Don't include documents in assets in the sitemap
