@@ -42,7 +42,7 @@ else:
 #### - Enumerate
 ##### : `index`와 `value`에 동시에 접근하면서 `loop` 돌릴 수 있음
 #### - While 문
-##### : 조건식이 `true`인 경우에 계속해서 반복하는 문법. <br/> &nbsp;&nbsp; 조건식이 `false`가 되면 반복을 멈추고 while문 종료
+##### : 조건식이 `true`인 경우에 계속해서 반복하는 문법. <br/> &nbsp; 조건식이 `false`가 되면 반복을 멈추고 while문 종료
 <br/>
 
 ### Format
@@ -71,8 +71,8 @@ def order():
 #### - `replace` : 문자열 변경
 #### - `split` : 문자열 분리
 #### - `strip` : 양옆 공백 제거
-##### &nbsp;&nbsp; `rstrip` : 오른쪽 공백 제거
-##### &nbsp;&nbsp; `lstrip` : 왼쪽 공백 
+#### &nbsp;&nbsp; `rstrip` : 오른쪽 공백 제거
+#### &nbsp;&nbsp; `lstrip` : 왼쪽 공백 
 
 <br/>
 
@@ -98,5 +98,16 @@ def order():
 <br/>
 
 ##  **[ 0921 WED ] 판다스 기초와 Seaborn**
+
+<br/>
+
+***
+<br/>
+
+##  **[ 0922 THU ] Insight Day**
+### 🤹 [오전] 복습 + [오후] 발표 + 재잘재잘 회고 + 자기주도학습
+
+### Github pages 생성 및 Post Upload하기
+`github.io`라는 주소가 멋있어서 깃허브 블로그를 시작해보자고 마음을 먹었다. 사실 macOS로 넘어온지 얼마 안되기도 하고 다른 블로그보다 복잡해서 블로그를 생성하기만 했는데도 꽤 많은 시간이 걸렸다ㅜㅜ 다음 포스트에서 자세한 과정을 첨부해야지.
 
 <br/>
