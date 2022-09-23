@@ -50,6 +50,9 @@ author:
 menu:
   - title:             2022_likelion
     url:               /2022_likelion/
+  
+  - title:             Projects
+    url:               /Projects/
 
   - title:             Tips
     url:               /Tips/
