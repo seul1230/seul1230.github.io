@@ -6,3 +6,4 @@ categories: Tips
 ---
 # 깃허브 블로그 만들기
 
+## jekyll로 github page 제작
