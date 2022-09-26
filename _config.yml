@@ -54,8 +54,11 @@ menu:
   - title:             Projects
     url:               /Projects/
 
-  - title:             Tips
-    url:               /Tips/
+  - title:             Blog
+    url:               /blog/
+
+  # - title:             Tips
+  #   url:               /Tips/
 
   - title:             About
     url:               /about/
@@ -84,7 +87,7 @@ paginate_path:         /:num/
 # Theme
 # ---------------------------------------------------------------------------------------
 
-# theme: jekyll-theme-hydejack
+theme: jekyll-theme-hydejack
 remote_theme: hydecorp/hydejack@v9
 
 

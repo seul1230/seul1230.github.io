@@ -1,13 +1,13 @@
 ---
 layout: list
-title: Tips
-slug: Tips
-menu: true
-permalink: /blog/Tips/
-order: 1
+title: DataAnalysis
+slug: DataAnalysis
+
 sitemap: false
 description: >
-    알아놓으면 좋은 Tips 💡
+    내가 스스로 하는 데이터 분석 공부 📚
+
+permalink: /blog/DataAnalysis
 # accent_color: rgb(38,139,210)
 # accent_image:
 #   background: rgb(32,32,32)

@@ -7,7 +7,7 @@ categories: 2022_likelion
 # 0926 데이터 분석 TIL (2) 
 
 ** 이미지 삽입 방법 공부해서 이미지 삽입까지 하고 마무리하기 ** <br/>
-**0926 데이터 분석 TIL (1)**과 같은 날에 작성한 TIL이다.
+**0926 데이터 분석 TIL (1)**과 같은 날에 작성한 TIL이다. 
 
 ## 📚 오늘의 TIL - EDA 수치형 변수
 
@@ -186,6 +186,8 @@ sns.residplot(data = df, x = "mpg", y = "horsepower")
 sns.lmplot(data = df, x = "mpg", y = "horsepower", hue = "origin", col = "origin")
 ```
 ![lmplot_subplot] <br/>
+
+
 💡 그렇다면 lmplot은 regplot 보다 더 많은 기능을 쓸 수 있는데 굳이 regplot을 쓸 이유가 있나?
 
 - jointplot
@@ -195,14 +197,14 @@ sns.jointplot(data = df, x = "mpg", y = "horsepower")
 sns.jointplot(data = df, x = "mpg", y = "horsepower", kind = "kde")
 sns.jointplot(data = df, x = "mpg", y = "horsepower", kind = "hexa")
 ```
-위의 jointplot 코드를 실행시키면 각각 다음과 같다.
+위의 jointplot 코드를 실행시키면 각각 다음과 같다. <br/>
 ![jointplot] ![jointplot_kde] ![jointplot_hexa]
 
 
 ### pairplot
 >`pairplot`은 시간이 오래 걸리기 때문에 <br/>
 일부 샘플을 추출해서 그려보고 샘플의 수를 늘려가며 그리는 것을 추천한다.
-한번에 그래프를 그려볼 수 있다.
+한번에 그래프를 그려볼 수 있다. <br/> - 조은님
 
 ```python
 sns.pairplot(data = df.sample(100))
