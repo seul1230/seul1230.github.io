@@ -6,7 +6,6 @@ categories: 2022_likelion
 ---
 # 0926 데이터 분석 TIL (1) _ 파이썬 데이터 분석 기초
 
-** 이미지 삽입 방법 공부해서 이미지 삽입까지 하고 마무리하기 ** <br/>
 ** 오늘 TIL은 너무 길어서 두 개로 나눠야겠다. **
 
 ## 👩🏻‍💻 오늘코드 실시간 강의 _ 박조은님
@@ -19,8 +18,8 @@ categories: 2022_likelion
 ### Census Dataset
 Census Dataset(인구 조사 데이터)는 총계수, 표본조사, 관리기록과 같은 방법론을 사용하여 정기적으로 수집된다. 인구조사 데이터가 수집 또는 생성된 후, 인구조사 데이터는 서로 다른 지리적 영역에 대한 인구 집단의 수 또는 추정치를 나타내기 위해 요약된다.<br/>
 **[ 출처 ]** [What is Census Data?](https://www.socialsciencespace.com/2020/01/what-is-census-data/#:~:text=Census%20data%20is%20collected%20at,people%20for%20different%20geographic%20areas.)<br/>
-**[ Dataset ]** [Census Dataset 보러가기](https://pandas-profiling.ydata.ai/examples/master/census/census_report.html) <br/>
-![census_example](/assets/img/img_220926/census_example.png)
+**[ Dataset ]** [Census Dataset 보러가기](https://pandas-profiling.ydata.ai/examples/master/census/census_report.html) <br/><br/>
+![census_example](/assets/img/img_220926/census_example.png) <br/>
 
 ### 데이터셋 불러오기
 Seaborn에 내장된 데이터 불러오기
@@ -59,7 +58,8 @@ profile = ProfileReport(df, title="Pandas Profiling Report")
 ```python
 profile.to_file(“pandas_profile_report.html”)
 ```
-![profilereport](/assets/img/img_220926/profilereport.png) <br/><br/>
+![profilereport](/assets/img/img_220926/profilereport.png){: width="70%" height="70%"} <br/><br/>
+위의 과정이 끝나면 아래와 같은 **profiling report**를 볼 수 있다. <br/><br/>
 ![open_profiling_report](/assets/img/img_220926//open_profiling_report.png)<br/><br/>
 **[ 추가 Profiling Report 보러가기 ]** 
 [타이타닉 profiling report](https://pandas-profiling.ydata.ai/examples/master/titanic/titanic_report.html)
@@ -71,10 +71,10 @@ profile.to_file(“pandas_profile_report.html”)
 - 표준편차
 - 평균
 - 메모리 크기
-![toggle_num](/assets/img/img_220926/toggle_num.png)
+![toggle_num](/assets/img/img_220926/toggle_num.png)<br/><br/>
 
 #### [ 범주형 데이터 ]
-![toggle_cat](/assets/img/img_220926/toggle_cat.png) <br/>
+![toggle_cat](/assets/img/img_220926/toggle_cat.png) <br/><br/>
 
 
 ### 💡 통계 용어들에 대해 공부해보자.
@@ -90,7 +90,7 @@ profile.to_file(“pandas_profile_report.html”)
     - 두 변수 사이의 통계적 관계를 표현하기 위해 특정한 상관 관계의 정도를 수치적으로 나타낸 계수
 - **Skewness (왜도)**
     - symmetrical bell curve 혹은 normal distribution에서 왜곡 정도를 말한다. 데이터 분포의 대칭성이 얼마나 결핍되었는지를 측정한다. 완전히 대칭인 분포는 skewness가 0이다. 데이터에 따라 왜도 값이 정의되지 않을 수도 있다.<br/>
-    ![skew_pic](assets/img/img_220926/skew_pic.png) <br/>
+    ![skew_pic](/assets/img/img_220926/skew_pic.png) <br/><br/>
     - skewness가 -0.5~0.5일 경우 : 대칭적
     - skewness가 -1~0.5일 경우 : 적당히 치우침
     - skewness가 1보다 크거나 -1보다 작은 경우 : 상당히 치우침
@@ -101,7 +101,7 @@ profile.to_file(“pandas_profile_report.html”)
 # skew를 통해 전체 수치변수에 대한 왜도 구하기
 df.skew()
 ```
-![skew값코드로확인](assets/img/img_220926/skew값코드로확인.png) <br/>
+![skew값코드로확인](/assets/img/img_220926/skew값코드로확인.png){: width="30%" height="30%"} <br/><br/>
 - **Kurtosis (첨도)**
     - 확률 분포의 뾰족한 정도를 나타내는 척도
     - 관측치들이 어느 정도 집중적으로 중심에 몰려 있는가를 측정할 때 사용한다.
@@ -111,7 +111,7 @@ df.skew()
 df.kurt().sort_values(ascending = False)
 ```
 
-![kurt값코드로확인](assets/img/img_220926/kurt값코드로확인.png) <br/>
+![kurt값코드로확인](/assets/img/img_220926/kurt값코드로확인.png){: width="30%" height="30%"} <br/><br/>
 Skewness와 Kurtosis는 오늘 수업에서 처음 들어봤다. <br/>
 더 구체적인 예시를 알고 싶다면 [Skewness와 Kurtosis 설명](https://dining-developer.tistory.com/17)를 참고하면 좋을 것 같다.
 <br/>
@@ -132,11 +132,11 @@ my_report.show_html()
 ```
 
 `sv.analyze(df)`에서 타겟 변수는 범주형이 아닌 수치와 bool 값만 가능하다. <br/>
-![sweetviz_report](assets/img/img_220926/sweetviz_report.png)
+![sweetviz_report](/assets/img/img_220926/sweetviz_report.png)<br/><br/>
 
 ### autoviz
 - `autoviz`에 대한 [깃허브 링크](https://github.com/fbdesignpro/sweetviz)
-![autoviz_report](assets/img/img_220926/autoviz_report) <br/>
+![autoviz_report](/assets/img/img_220926/autoviz_report) <br/><br/>
 
 - interactive 시각화
 ```python
@@ -164,9 +164,10 @@ dft = AV.AutoViz(
     # save_plot_dir=None
 )
 ```
-![autoviz_filelst](assets/img/img_220926/autoviz_filelst.png) <br/>
-위의 그림에서 파일을 다운받아 실행하면 아래 그림과 같은 동적인 시각화 파일을 얻을 수 있다. <br/>
-![autoviz_example](assets/img/img_220926/autoviz_example.png) <br/>
+코드를 실행시키면 다음과 같이 코랩 드라이브에 AutoViz_Plots 폴더가 생성된다. <br/><br/>
+![autoviz_filelst](/assets/img/img_220926/autoviz_filelst.png){: width="40%" height="40%"} <br/><br/>
+위의 그림에서 파일을 다운받아 실행하면 아래 그림과 같은 동적인 시각화 파일을 얻을 수 있다. <br/><br/>
+![autoviz_example](/assets/img/img_220926/autoviz_example.png){: width="70%" height="70%"} <br/><br/>
 
 
 ###  위와 같은 추상화된 도구를 사용하게 되면 😐
