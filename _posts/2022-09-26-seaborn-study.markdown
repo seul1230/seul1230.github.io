@@ -84,7 +84,7 @@ ax[1].set_title('Pclass:Survived vs Dead')
 plt.show()
 ```
 코드는 `Sex`의 코드와 거의 동일하다. 해당 코드는 승객의 좌석 수준에 따라 생존자 수를 분류하여 시각화한 코드이다. 
-![Pclass_coutplot]
+![Pclass_countplot]
 > People say Money Can't Buy Everything. But we can clearly see that Passenegers Of Pclass 1 were given a very high priority while rescue. Even though the the number of Passengers in Pclass 3 were a lot higher, still the number of survival from them is very low, somewhere around 25%. <br/> For Pclass 1 %survived is around 63% while for Pclass2 is around 48%. So money and status matters. Such a materialistic world.
 
 이 코드를 정리하신 분이 덧붙인 markdown이 꽤 흥미로워서 가지고 와보았다.

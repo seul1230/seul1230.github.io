@@ -4,7 +4,7 @@ title:  "0926 데이터 분석 TIL (1)"
 date:   2022-09-26 09:10:09 +0900
 categories: 2022_likelion
 ---
-# 0926 데이터 분석 TIL (1) 
+# 0926 데이터 분석 TIL (1) _ 파이썬 데이터 분석 기초
 
 ** 이미지 삽입 방법 공부해서 이미지 삽입까지 하고 마무리하기 ** <br/>
 ** 오늘 TIL은 너무 길어서 두 개로 나눠야겠다. **
@@ -164,7 +164,7 @@ dft = AV.AutoViz(
     # save_plot_dir=None
 )
 ```
-![autoviz_filelst](assets/img/img_220926/autoviz_filelst) <br/>
+![autoviz_filelst](assets/img/img_220926/autoviz_filelst.png) <br/>
 위의 그림에서 파일을 다운받아 실행하면 아래 그림과 같은 동적인 시각화 파일을 얻을 수 있다. <br/>
 ![autoviz_example](assets/img/img_220926/autoviz_example.png) <br/>
 
