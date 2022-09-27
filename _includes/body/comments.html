@@ -1,0 +1,8 @@
+{% if page.comments %}
+<aside class="comments related" role="complementary">
+    <h2 class="hr-bottom">{{ site.data.strings.comments | default:"Comments" }}</h2>
+    <script src="https://utteranc.es/client.js" repo="seul1230/blog-comments" issue-term="pathname" theme="github-light"
+        crossorigin="anonymous" async>
+        </script>
+</aside>
+{% endif %}
