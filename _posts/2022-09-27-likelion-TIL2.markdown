@@ -8,7 +8,7 @@ categories: 2022_likelion
 
 ## 👩🏻‍💻 오늘코드 실시간 강의 _ 박조은님
 
-
+[**0927 데이터 분석 TIL (1)**](https://seul1230.github.io/2022_likelion/2022-09-27-likelion-TIL1/)와 이어지는 TIL 내용이다. 
 
 
 ## 📚 오늘의 TIL - 웹 스크래핑과 크롤링
@@ -21,6 +21,7 @@ categories: 2022_likelion
 
 - POST
     - 전송할 데이터를 HTTP 메시지의 Body의 Form Data에 담아 전송
+    - post 는 회원 가입할 때 적은 정보 폼, 물건이나 음식 주문할 때 메시지 입력하고 버튼 누를 때 주로 사용된다.
 
 
 ### FinanceDataReader
@@ -100,7 +101,7 @@ encoding 애기하자.
 
 ## 📚 오늘의 TIL - 웹 스크래핑과 크롤링
 
-### 데이터 수집시 유의사항
+### ☁️ 데이터 수집시 유의사항
 - 로봇 배제 표준
     - Robots exclusion standard
     - 일반적으로 접근 제한에 대한 설명을 robots.txt에 기술
@@ -116,14 +117,14 @@ encoding 애기하자.
     - 영업 침해가 되지 않도록
 
 
-### HTML 구조 이해
+### ☁️ HTML 구조 이해
 간단하게 말하자면 `<tag>`로 구성되어있다.
 
-### CSS 구조 이해
+### ☁️ CSS 구조 이해
 스타일 지정할 때 `id` 값은 앞에 `#`을, `class` 값은 앞에 `.`을 붙인다.
 
 
-### pandas만으로 데이터 수집하기
+### ☁️ pandas만으로 데이터 수집하기
 
 - charset : 인코딩 방식
 - QueryString 

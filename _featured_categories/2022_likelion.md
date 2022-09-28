@@ -7,7 +7,7 @@ permalink: /2022_likelion/
 order: 1
 sitemap: false
 description: >
-    멋쟁이사자처럼 AI 스쿨 TIL
+    멋쟁이사자처럼 AI 스쿨 TIL (Today I Learned)
 # accent_color: rgb(38,139,210)
 # accent_image:
 #   background: rgb(32,32,32)

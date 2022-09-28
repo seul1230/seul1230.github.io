@@ -18,7 +18,7 @@ categories: 2022_likelion
 
 ## 📚 오늘의 TIL - EDA 범주형 변수
 
-###  범주형 변수에 대한 기술통계 보기
+### ☁️  범주형 변수에 대한 기술통계 보기
 ```python
 df.describe(include = "object")
 ```
@@ -50,7 +50,7 @@ sns.countplot(data = df, y = "origin")
 
 ![countp_origin](/assets/img/img_220927/countp_origin.png) <br/>
 
-### N개 변수의 빈도수 구하기
+### ☁️ N개 변수의 빈도수 구하기
 **1개** 변수의 빈도수 구하기
 ```python
 # origin의 빈도수 구하기
@@ -85,7 +85,7 @@ pd.crosstab(df.origin, df.cylinders, margins=True).style.background_gradient(cma
 ```
 ![crosstab_origin] <br/>
 
-### 범주형 vs 수치형 변수
+### ☁️ 범주형 vs 수치형 변수
 ```python
 # barplot 으로 origin 별 mpg 값 구하기
 sns.barplot(data = df, x = "origin", y = "mpg")
@@ -93,7 +93,7 @@ sns.barplot(data = df, x = "origin", y = "mpg")
 `ci`가 데이터가 많아지면 시간이 오래 걸리기 때문에 꼭 필요하지 않다면 `ci = None`을 써주는 편이다.
 ![bar_origin_mpg](/assets/img/img_220927/bar_origin_mpg.png) <br/><br/>
 
-### Groupby를 통한 연산
+### ☁️ Groupby를 통한 연산
 ```python
 df.groupby("origin").mean()
 ```
@@ -104,7 +104,7 @@ df.groupby("origin")[["mpg"]].mean()
 ```
 ![group_mpg](/assets/img/img_220927/group_mpg.png) <br/><br/>
 
-### Pivot table을 통한 연산
+### ☁️ Pivot table을 통한 연산
 > groupby로 구할 수 있는 것을 왜 pivot_table로 구할까? <br/> : 직관적인 사용법 <br/>- 조은님
 
 ![pivot_pandas](/assets/img/img_220927/pivot_pandas) <br/><br/>
@@ -143,7 +143,7 @@ pd.pivot_table(data = df, index = "origin", columns = "cylinders", values = "mpg
 ```
 ![pivot_unstack](/assets/img/img_220927/pivot_unstack.png) <br/><br/>
 
-### Boxplot과 사분위수
+### ☁️ Boxplot과 사분위수
 > 막대그래프는 대표값만 표시해서 데이터의 분포를 관찰하기가 어렵다. <br/>- 조은님
 
 ```python
@@ -167,7 +167,7 @@ df.groupby("origin")["mpg"].describe()
 # Name: europe, dtype: float64
 ```
 
-### Boxplot 이해하기
+### ☁️ Boxplot 이해하기
 참고 : [위키백과 > 상자 수염 그림](https://ko.wikipedia.org/wiki/%EC%83%81%EC%9E%90_%EC%88%98%EC%97%BC_%EA%B7%B8%EB%A6%BC) <br/>
 ![box_wiki](/assets/img/img_220927/box_wiki.png) <br/><br/>
 1. 백분위 수 : 데이터를 백등분 한 것
@@ -221,7 +221,7 @@ sns.violinplot(data = df[df["origin"] == "europe"], x = "mpg")
 ```
 ![violin_europe](/assets/img/img_220927/violin_europe.png) <br/><br/>
 
-### 산점도를 통한 범주형 데이터 표현
+### ☁️ 산점도를 통한 범주형 데이터 표현
 > scatterplot으로 범주형 데이터를 표현하게 되면 점이 겹칠 수 있다는 점이 단점이다. <br/> - 조은님
 
 #### scatterplot
@@ -254,7 +254,7 @@ sns.swarmplot(data = df, x = "origin", y = "mpg")
 ```
 ![swarm_origin](/assets/img/img_220927/swarm_origin.png) <br/><br/>
 
-### catplot
+### ☁️ catplot
 catplot은 기본값이 stripplot이기 때문에 별다른 파라미터를 지정해주지 않으면 위의 stripplot과 비슷한 형태로 나온다.
 ```python
 sns.catplot(data = df, x = "origin", y = "mpg")
@@ -283,5 +283,8 @@ sns.catplot(data = df, x = "origin", kind = "count", col = "cylinders")
 ```
 ![cat_count](/assets/img/img_220927/cat_count.png) <br/><br/>
 
-### FacetGrid
+### ☁️ FacetGrid
 : subplot 그리게 해준다. 
+
+### 다음 포스트에서 만나요 🙌
+뒷 내용은 [**0927 데이터 분석 TIL (2)**](https://seul1230.github.io/2022_likelion/2022-09-27-likelion-TIL2/)에서 이어서 작성한다.
