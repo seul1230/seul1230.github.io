@@ -7,7 +7,7 @@ categories: BackEnd
 # 0928 Spring 입문 및 초기 설정
 
 ## Spring 공부를 시작하면서
-최근 AI 분야는 백엔드를 알고 있으면 많은 도움이 된다는 말을 여기 저기서 듣다 보니 지금 백엔드 공부 시작해도 늦지 않지 않을까하면서 이 블로그 공간을 만들어 놓았다. 이렇게 한 번 공간을 만들어 놓으니 채우고 싶다는 마음이 생겨버렸다.  오늘부터 Spring 공부를 합니다!
+최근 AI 분야는 백엔드를 알고 있으면 많은 도움이 된다는 말을 여기 저기서 듣다 보니 지금 백엔드 공부 시작해도 늦지 않지 않을까하면서 이 블로그 공간을 만들어 놓았다. 이렇게 한 번 공간을 만들어 놓으니 채우고 싶다는 마음이 생겨버렸다.  그래서 전 오늘부터 Spring 공부를 합니다!
 
 <br/>
 
@@ -41,7 +41,7 @@ categories: BackEnd
 최근엔 Maven보다 Gradle Project가 많이 쓰이는 편이라고 해서 처음 시작하는 김에 바로 Gradle로 실습할 예정! Language는 Java, Spring Boot 버전은 SNAPSHOT과 M이 붙지 않은 것 중에 가장 최신 것으로 만들어준다. SNAPSHOT과 M이 붙은 버전은 아직 정식으로 출시된 것이 아니라 추천하지 않는다. <br/>
 ![Spring_boot_v]() <br/><br/>
 난 2.7.4로 설정해 주었다. 이제 마지막으로 Dependencies에서 ADD 버튼을 눌러 **Spring Web**과 **Thymeleaf**를 추가한 상태로 프로젝트를 생성해주면 끝! <br/>
-![dependency_hello]() <br/><br/>
+![dependency_hello]() <br/><br/><br/>
 
 
 ### 🐾　IntelliJ 설치 및 환경 설정　🐾
