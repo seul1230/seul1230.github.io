@@ -13,7 +13,7 @@ categories: 2022_likelion
 
 ## 📚 오늘의 TIL - 웹 스크래핑과 크롤링
 
-### Requests : HTTP for Humans
+### 🐾　Requests : HTTP for Humans　🐾
 : 작은 브라우저로 웹사이트를 읽어오는 것이 목적
 
 - GET
