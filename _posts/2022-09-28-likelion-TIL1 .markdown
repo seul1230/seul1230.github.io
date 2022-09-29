@@ -88,8 +88,6 @@ def get_one_page_news(item_code, page_no):
 get_one_page_news(item_code, page_no).head()
 ```
 
-![get_one_page]() <br/><br/><br/>
-
 
 ### 🐾　 반복문을 사용해 10페이지까지 수집　🐾
 #### tqdm의 trange
@@ -104,7 +102,7 @@ for i in trange(100):
     i == 1
 
 ```
-![trange]() <br/>
+![trange](/assets/img/img_220928/trange.png){: width="70%" height="70%"} <br/>
 위처럼 진행바가 보이면서 반복문을 돌게 된다.
 
 #### 그럼 이제 10페이지까지 수집하는 코드를 보자.
@@ -129,14 +127,14 @@ for page_no in trange(1,11):
 <br/><br/><br/>
 
 ### 🐾　네이버 금융 개별종목 수집　🐾
-![samsung_finance]() <br/>
+![samsung_finance](/assets/img/img_220928/samsung_finance.png){: width="100%" height="100%"} <br/>
 #### 1. url 얻어오기
 **검사 > 네트워크 > Docs > Request**에 있는 url을 get <br/>
-![url_get]() <br/><br/>
+![url_get](/assets/img/img_220928/url_get.png){: width="70%" height="70%"} <br/><br/>
 여기서 얻은 url로 들어가게 되면 다음과 같이 '일별시세'에만 해당하는 페이지가 열린다.<br/>
-![daily_sise]() <br/>
-`<table>` tag 안에 있어도 `pd.read_html(url)`로 데이터를 못 가져오는 경우도 있다. 이때 `ValueError: No tables found`라는 오류가 발생한다. <br/>
-![valueerror_notables]() <br/>
+![daily_sise](/assets/img/img_220928/daily_sise.png) <br/><br/>
+`<table>` tag 안에 있어도 `pd.read_html(url)`로 데이터를 못 가져오는 경우도 있다. 이때 아래 그림과 같이 `ValueError: No tables found`라는 오류가 발생한다. <br/>
+![valueerror_notables](/assets/img/img_220928/valueerror_notables.png) <br/><br/>
 이는 정상적으로 정보를 요청하지 않았기 때문이다. 이때 Selenium 이용하면 데이터를 수집할 수 있지만 시간이 오래 걸린다. -> **Requests**를 사용하자.
 
 #### 2. Requests 모듈 사용해 URL에 접근
@@ -167,7 +165,7 @@ response
 response.text
 ```
 위의 코드를 재실행해주면 다음과 같은 '일별시세'에 해당하는 `text`값이 출력된다.<br/>
-![response_text_front]() <br/>
+![response_text_front](/assets/img/img_220928/response_text_front.png) <br/><br/>
 
 #### 5. html text를 BeautifulSoup을 통해 html 해석
 
@@ -176,7 +174,7 @@ requests만을 가지고 데이터를 잘 가져왔지만 구조를 한 눈에 �
 from bs4 import BeautifulSoup as bs
 html = bs(response.text)
 ```
-![bs_text]() <br/><br/>
+![bs_text](/assets/img/img_220928/bs_text.png){: width="70%" height="70%"} <br/><br/>
 이처럼 구조적으로 text를 출력이 된다. 눈이 편안해지는 느낌. <br/>
 이제 [BeautifulSoup 공식 문서](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)를 확인해서 몇 가지 데이터를 더 확인해보자.
 ```python
@@ -216,7 +214,7 @@ html.table
 
 : find_all는 다양한 파라미터가 있고 attribute를 이용해 **콕 집어서** 특정 링크에만 있는 데이터를 가져오게 할 수 있다. select는 inspect에 들어가서 selector를 복사해올 수 있어 편하게 활용할 수 있으며, hierachical하게 출력해준다. <br/>
 
-![findall_example]() <br/>
+![findall_example](/assets/img/img_220928/findall_example.png){: width="70%" height="70%"} <br/>
 ```python
 ### 규호님의 친절한 설명 ###
 #find
@@ -225,7 +223,7 @@ soup.find('div').find('p')
 soup.select_one('div > p')
 ``` 
 
-<br/><br/>
+<br/>
 
 #### 6. soup.select를 통해 원하는 태그에 접근
 > **select** 기능은 알고 있으면 좋다. - 조은님
@@ -293,7 +291,7 @@ page_no = 1
 get_day_list(item_code, page_no)
 ```
 다음과 같이 데이터를 잘 받아오는 것을 볼 수 있다. `item_code`와 `page_no`를 바꿔줘도 잘 작동한다. <br/>
-![get_day_list_ex]() <br/>
+![get_day_list_ex](/assets/img/img_220928/get_day_list_ex.png){: width="70%" height="70%"} <br/>
 <br/><br/>
 
 
@@ -341,7 +339,7 @@ while True:
 ```python
 df_day = pd.concat(item_list).reset_index(drop = True)
 ```
-![soca_concat]() <br/>
+![soca_concat](/assets/img/img_220928/soca_concat.png){: width="70%" height="70%"} <br/>
 
 #### 데이터프레임에 종목코드와 종목명을 추가하기
 ```python
@@ -349,7 +347,7 @@ df_day["종목코드"] = item_code
 df_day["종목명"] = item_name
 df_day.head(5)
 ```
-![df_day]() <br/><br/>
+![df_day](/assets/img/img_220928/df_day.png){: width="70%" height="70%"} <br/><br/>
 
 컬럼 순서를 변경해주자. 다음 col 리스트 순서대로 변경하는 코드는 다음과 같다.
 ```python
@@ -357,7 +355,7 @@ cols = ['종목코드', '종목명', '날짜', '종가', '전일비', '시가', 
 df_day = df_day[cols]
 df_day.head(5)
 ```
-![df_day_recol]() <br/><br/>
+![df_day_recol](/assets/img/img_220928/df_day_recol.png){: width="70%" height="70%"} <br/><br/>
 
 그럼 이제 중복데이터를 제거해보자.
 ```python
@@ -420,14 +418,14 @@ item_name = "쏘카"
 get_item_list(item_code, item_name)
 ```
 
-![get_item_list_soca]() <br/><br/>
+![get_item_list_soca](/assets/img/img_220928/get_item_list_soca.png) <br/><br/>
 ```python
 item_code = "323410"
 item_name = "카카오뱅크"
 
 get_item_list(item_code, item_name)
 ```
-![get_item_list_kakao]() <br/><br/>
+![get_item_list_kakao](/assets/img/img_220928/get_item_list_kakao.png) <br/><br/>
 
 ### 다음 포스트에서 만나요 🙌
 뒷 내용은 [**0928 데이터 분석 TIL (2)**](https://seul1230.github.io/2022_likelion/2022-09-28-likelion-TIL2/)에서 이어서 작성한다.
