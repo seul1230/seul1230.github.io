@@ -16,22 +16,11 @@ categories: BackEnd
 ## 개발 환경 초기 설정
 사실 처음 환경을 설정하는 데에도 많이 시간을 뺏긴 것 같다. 내가 다음에도 참고할 수 있도록, 다른 사람도 혹시나 내 블로그를 보고 시간을 단축할 수 있을 것 같아 글로 정리한다.
 
-### 🐾　Java version 맞추기　🐾
+### 🐾　Java version 11　🐾
 내가 알기로 현재 Java는 version이 19까지 나왔지만, 나는 내가 공부하는 과정에 맞추어 Java 11로 맞추는 과정이 필요했다. 먼저, 자신이 어떤 버전들의 자바를 가지고 있는지 살펴보자. <br/>
 ![versions_java](/assets/img/hello-spring-img/versions_java.png){: width="80%" height="80%"} <br/><br/>
 이 중에 어떤 버전의 자바를 기본으로 사용하고 있는지 알 수 있는 코드는 다음과 같다. <br/>
 ![version_java](/assets/img/hello-spring-img/version_java.png){: width="50%" height="50%"} <br/><br/>
-
-이처럼 자바가 11로 설정되어 있지 않은 경우엔 밑의 과정을 순서대로 해주면 된다. <br/>
-여기서부턴 [개발이 취미인 사람](https://any-ting.tistory.com/2)를 참고했다. <br/>
-
-1. Oracle 공식 홈페이지에서 Java 11을 다운받는다.
-2. `vim ~/.zshrc`를 이용하거나 vscode 등을 이용하여 **.zshrc** 파일을 다음과 같이 수정해준다. <br/>
-![zshrc_javahome](/assets/img/hello-spring-img/zshrc_javahome.png){: width="80%" height="80%"} <br/>
-3. `source ~/.zshrc`를 이용해 해당 파일을 적용시킨다.
-4. `echo $JAVA_HOME`을 이용하게 맞게 설정됐는지 확인한다. <br/>
-![echo_javahome](/assets/img/hello-spring-img/echo_javahome.png){: width="80%" height="80%"} <br/><br/>
-<br/>
 
 
 자바 설정 완료!
@@ -46,9 +35,56 @@ categories: BackEnd
 ![dependency_hello](/assets/img/hello-spring-img/dependency_hello.png){: width="50%" height="50%"} <br/><br/><br/>
 
 
-### 🐾　IntelliJ 설치 및 환경 설정　🐾
+### 🐾　IntelliJ 설치　🐾
 
-작성 예정
+가장 유명하고 대표적인 자바 IDE로는 IntelliJ와 Eclipse가 있다. 이전에 자바 프로그래밍 수업을 들었을 땐 Eclipse를 사용했는데 요즘 대세는 IntelliJ라고 한다. IntelliJ는 설치할 때부터 필요한 모든 플러그인들이 거의 깔려 있는 반면, Eclipse는 하나하나 필요한 것을 깔아야하지만 가볍다는 장점이 있다. <br/><br/>
+난 IntelliJ로 결정 - !<br/><br/>
+이제 IntelliJ를 다운받으러 가자. [IntelliJ IDEA 공식 홈페이지](https://www.jetbrains.com/idea/promo/?source=google&medium=cpc&campaign=9730674179&term=intellij&gclid=CjwKCAjwhNWZBhB_EiwAPzlhNrOLJTVLy9OeECLQG-dVS35ZgpHSh4JgUQgWh2AlfD6FPA2nd2UT6BoC9GkQAvD_BwE)에서 **Download** 버튼을 눌러 설치 페이지로 이동하자. Mac 유저는 바로 이 [링크](https://www.jetbrains.com/idea/download/#section=mac)를 누르면 된다. <br/>
+![install_intellij](/assets/img/hello-spring-img/install_intellij.png){: width="80%" height="80%"} <br/>
+가볍게 공부할 목적이므로 무료버전 Community를 다운받아주면 끝! <br/>
+<br/><br/>
+
+
+
+### 🐾　IntelliJ 환경 설정　🐾
+#### IntelliJ Gradle 대신에 자바 직접 실행하도록
+다운받은 IntelliJ를 열어보면 `Gradle`를 통해서 실행하도록 설정되어 있다. `Gradle`로 돌리게 되면 실행 속도가 느리기 때문에 `IntelliJ IDEA`로 변경해주겠다.  <br/><br/>
+**Preference(cmd + ,) > Build, Execution, Deployment > Build Tools > Gradle**에서 **Build and run using**과 **Run tests using**를 모두 `IntelliJ IDEA`로 변경할 수 있다. Windows 유저는 File > Settings에 들어가면 된다고 하니 참고하면 되겠다. <br/>
+![gradle_intel](/assets/img/hello-spring-img/gradle_intel.png){: width="80%" height="80%"} <br/><br/>
+
+#### Project JDK 설정 변경해주기
+**File > Project Structure (cmd + ;)**에서 Project JDK을 Java 11로 설정해주자. Windows의 단축키는 **Ctrl + Alt + Shift + S**이다.<br/>
+![project_jdk](/assets/img/hello-spring-img/project_jdk.png){: width="80%" height="80%"} <br/><br/>
+
+위의 과정들이 잘 되지 않는다면 이 post 맨 아래 　　**🐾　JAVA 기본 version을 11로 설정해주기　🐾**　를 시도해보자.
+
+
+
+### 🐾　hello-spring Run　🐾
+지금까지 문제 없이 잘 왔는지 확인해보기 위해 간단한 테스트를 진행하겠다. <br/><br/>
+먼저, **IntelliJ**를 열고 우리가 전에 설치해준 **hello-spring** 폴더에서 **build.gradle**을 **Project**로 열어준다. <br/>
+![hello_app_run](/assets/img/hello-spring-img/hello_app_run.png){: width="80%" height="80%"} <br/><br/>
+**HelloSpringApplication.java** 파일을 열어서 `public static void main` 옆의 녹색 시작버튼을 눌러 실행해주자. 실행하면 다음과 같은 화면이 나타난다. <br/>
+![run_hello_main](/assets/img/hello-spring-img/run_hello_main.png){: width="80%" height="80%"} <br/><br/>
+이렇게 나타난다면 `port(s): 8080`이라는 포트 넘버를 볼 수 있다. 이 포트 번호를 이용하여 구글에 <http://localhost:8080/hello>를 입력하게 되면 아래와 같은 Whitelabel Error Page가 나온다.  <br/>
+![local_8080_hello](/assets/img/hello-spring-img/local_8080_hello.png){: width="80%" height="80%"} <br/><br/>
+여기까지 제대로 작동한다면 맞게 설정된 것이다. 이제 열어두었던 포트를 닫도록 하자. 
+![stop_server](/assets/img/hello-spring-img/stop_server.png){: width="80%" height="80%"} <br/><br/>
+
+
+### 🐾　JAVA 기본 version을 11로 설정해주기　🐾
+이 과정은 위에서 IntelliJ JDK 설정이 Java 11로 잘 안 된다면 시도해 볼 방법이다. <br/><br/>
+자바가 11로 설정되어 있지 않은 경우엔 밑의 과정을 순서대로 해주면 된다. <br/>
+여기서부턴 [개발이 취미인 사람](https://any-ting.tistory.com/2)을 참고했다. <br/>
+
+1. Oracle 공식 홈페이지에서 Java 11을 다운받는다.
+2. `vim ~/.zshrc`를 이용하거나 vscode 등을 이용하여 **.zshrc** 파일을 다음과 같이 수정해준다. <br/>
+![zshrc_javahome](/assets/img/hello-spring-img/zshrc_javahome.png){: width="80%" height="80%"} <br/>
+3. `source ~/.zshrc`를 이용해 해당 파일을 적용시킨다.
+4. `echo $JAVA_HOME`을 이용하게 맞게 설정됐는지 확인한다. <br/>
+![echo_javahome](/assets/img/hello-spring-img/echo_javahome.png){: width="80%" height="80%"} <br/><br/>
+
+
 
 <!-- ### 🐾　　🐾
 ### 🐾　　🐾
