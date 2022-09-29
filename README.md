@@ -1,5 +1,7 @@
 # seul1230.github.io
 
+Visit my Github Blog! > [sseul's blog](https://seul1230.github.io/) <br/><br/>
+![blog_main](/assets/img/blog_main.png)
 
 
 <!--
