@@ -32,6 +32,8 @@ categories: BackEnd
 4. `echo $JAVA_HOME`을 이용하게 맞게 설정됐는지 확인한다. <br/>
 ![echo_javahome]() <br/><br/>
 <br/>
+
+
 자바 설정 완료!
 <br/><br/><br/>
 

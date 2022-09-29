@@ -64,6 +64,8 @@ df.shape
 ```
 #### Dataset Overview
 
+<br/><br/>
+
 ### 🏦 Finance Data Reader 라이브러리에서 정보 불러오기
 
 #### 데이터 수집
@@ -75,7 +77,7 @@ pandas의 datareader에 가면 Naver Finance도 불러올 수 있지만 한국 �
 ```python
 df.isnull().sum()
 ```
-![null_fin] <br/>
+![null_fin](/assets/img/img_220927/null_fin.png){: width="30%" height="30%"} <br/>
 
 한편, 데이터를 보면 결측치가 매우 많다. <br/>
 이는 채권이나 다른 상품이 포함된 것으로 보인다. 도메인 지식을 좀 더 쌓도록 하자.
@@ -85,14 +87,14 @@ df.isnull().sum()
 # 상장한 날짜 ListingDate
 df.sort_values(by = "ListingDate", ascending = False).head()
 ```
-![ListingDate_sort] <br/>
+![ListingDate_sort](/assets/img/img_220927/ListingDate_sort.png) <br/>
 
 #### 이번엔 특정 url에 있는 데이터를 불러오는 법에 대해 알아보자.
 ```python
 url = 'http://kind.krx.co.kr/corpgeneral/corpList.do?method=download&searchType=13'
 pd.read_html(url)[0]
 ```
-![url_fin] <br/>
+![url_fin](/assets/img/img_220927/url_fin.png) <br/>
 
 
 encoding 애기하자.
