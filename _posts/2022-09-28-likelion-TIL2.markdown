@@ -53,7 +53,7 @@ response
 ```python
 response.text
 ```
-![etf_json](/assets/img/img_220927/.png){: width="30%" height="30%"} <br/>
+![etf_json](/assets/img/img_220928/etf_json.png){: width="100%" height="100%"} <br/>
 
 ##### 💡 CRUD?
 ##### 💡 웹 스크래핑과 API 비교
@@ -71,14 +71,14 @@ etfItemList[-1]
 ```
 <br/>
 
-![json_etfItemList](/assets/img/img_220927/.png){: width="30%" height="30%"} <br/><br/>
+![json_etfItemList](/assets/img/img_220928/json_etfItemList.png){: width="50%" height="50%"} <br/><br/>
 
 #### JSON 데이터를 DataFrame 형태로 만들기
 ```python
 df = pd.DataFrame(etfItemList)
 df.head()
 ```
-![json_dataframe](/assets/img/img_220927/.png){: width="30%" height="30%"} <br/><br/>
+![json_dataframe](/assets/img/img_220928/json_dataframe.png){: width="100%" height="100%"} <br/><br/>
 
 ### 🐾　데이터 확인　🐾
 데이터의 `column`은 `itemcode`, `etfTabCode`, `itemname`, `nowVal`, `risefall`, `changeVal`, `changeRate`, `nav`, `threeMonthEarnRate`, `quant`, `amount`, `marketSum` 으로 이루어져 있다.
@@ -91,7 +91,7 @@ df.head()
 df["브랜드"] = df["itemname"].str.split(expand = True)[0]
 df.head(2)
 ```
-![df_brand](/assets/img/img_220927/.png){: width="30%" height="30%"} <br/><br/>
+![df_brand](/assets/img/img_220928/df_brand.png){: width="100%" height="100%"} <br/><br/>
 음! 잘 추가되었군.
 
 ### 🐾　오늘 날짜로 파일 저장하기　🐾
@@ -114,7 +114,7 @@ df.to_csv(file_name, index = False)
 # itemcode 숫자 앞의 0 이 지워진다면 dtype={"itemcode": np.object} 로 타입을 지정해 주면 문자형태로 읽어옵니다.
 pd.read_csv(file_name, dtype={"itemcode": np.object})
 ```
-![etf_raw_0928](/assets/img/img_220927/.png){: width="30%" height="30%"} <br/>
+![etf_raw_0928](/assets/img/img_220928/etf_raw_0928.png){: width="100%" height="100%"} <br/>
 
 
 
