@@ -62,7 +62,6 @@ df = fdr.StockListing("KRX")
 df.shape
 # (7890, 19) -> 오늘의 데이터 7890
 ```
-#### Dataset Overview
 
 <br/><br/>
 
@@ -95,10 +94,9 @@ url = 'http://kind.krx.co.kr/corpgeneral/corpList.do?method=download&searchType=
 pd.read_html(url)[0]
 ```
 ![url_fin](/assets/img/img_220927/url_fin.png) <br/>
+<br/>
 
-
-encoding 애기하자.
-
+한글이 깨져보이는 경우엔 `encoding = 'cp949'`를 코드에 추가하여 저장을 하고, 불러올 때 마찬가지로 `encoding = 'cp949'`로 진행해준다. 맥북은 기본적으로 encoding이 `utf-8`로 되어 있어 mac의 page와 같은 앱으로 열게 되면 깨지지 않고 잘 보인다고 한다. <br/>
 
 
 ## 📚 오늘의 TIL - 웹 스크래핑과 크롤링
@@ -107,8 +105,9 @@ encoding 애기하자.
 - 로봇 배제 표준
     - Robots exclusion standard
     - 일반적으로 접근 제한에 대한 설명을 robots.txt에 기술
-    - [Naver robots.txt](www.naver.com/robots.txt) 구경하러 가기<br/>
-    ![robots_txt] <br/>
+    - [Naver robots.txt > https://www.naver.com/robots.txt](www.naver.com/robots.txt) 구경하러 가기<br/>
+    - 위 링크가 작동하지 않는다면 직접 주소창에 써서 robots.txt 파일을 다운받도록 하자. <br/><br/>
+    ![robots_txt](/assets/img/img_220927/robots_txt.png){: width="70%" height="70%"} <br/>
     - 첫 페이지에 대한 접근만 허용한다는 뜻
 - 저작권
     - 저작권 정책 살펴보기
