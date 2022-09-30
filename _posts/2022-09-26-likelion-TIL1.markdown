@@ -150,7 +150,7 @@ my_report.show_html()
 
 ### 🐾　autoviz　🐾
 - `autoviz`에 대한 [깃허브 링크](https://github.com/fbdesignpro/sweetviz)
-![autoviz_report](/assets/img/img_220926/autoviz_report) <br/><br/>
+![autoviz_report](/assets/img/img_220926/autoviz_report.png) <br/><br/>
 
 - interactive 시각화
 ```python
