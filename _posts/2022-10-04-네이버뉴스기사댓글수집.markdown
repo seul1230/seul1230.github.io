@@ -14,6 +14,13 @@ categories: Tips
 
 다음 [링크](https://hoonzi-text.tistory.com/4)를 참고하였다.
 
+- [네이버 뉴스 기사 댓글 가져오기](#-----------------)
+  * [1. URL 가져오기](#1-url-----)
+  * [2. 댓글만 가져오기](#2---------)
+  * [3. 데이터 전처리](#3--------)
+  * [4. 마무리하면서](#4-------)
+
+
 ## 네이버 뉴스 기사 댓글 가져오기
 ![naver_news](/assets/img/naver_news_comment/naver_news.png){:width="100%" height="100%"}
 
