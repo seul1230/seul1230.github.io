@@ -23,6 +23,8 @@ categories: Tips
 
 
 ## 네이버 뉴스 기사 댓글 가져오기
+멋사 AI에서 미니프로젝트1을 진행하면서 기억하면 좋을 점을 기록해놓으려고 한다. 
+
 ![naver_news](/assets/img/naver_news_comment/naver_news.png){:width="100%" height="100%"}
 
 ### 1. URL 가져오기
