@@ -1,0 +1,427 @@
+---
+layout: post
+title:  "2022_likelion TIL"
+date:   2022-10-07 09:00:09 +0900
+categories: 2022_likelion
+---
+# 1007 통계 분석 TIL 
+
+## 👩🏻‍💻 통계 강의 _ 유재명 강사님
+- (주) 퀀트랩 대표
+- 국민대학교 겸임교수
+
+<br/>
+
+***
+
+## 📚 오늘의 TIL - 데이터 분석을 위한 통계 기초<br/>
+
+### 🐾　통계 분석을 통해서 할 수 있는 일들　🐾
+- 대상의 특성을 수치로 표현하기
+- 부분을 통해 전체를 추측하기
+- 비교하기
+- 예측하기
+- 영향력을 미치는 변수 찾기
+- 지수 (Index) 만들기
+- 비슷한 것끼리 모으기
+
+
+### 🐾　이상한 통계학 용어　🐾
+* 번역이 이상한 경우 : 모수
+* 역사적인 과정을 거쳐 의미가 변한 경우 : 회귀분석
+* 철학적 관점의 가설 검정 : 통계적 가설 검정
+
+=> 그렇기 때문에 용어를 보고 뜻을 대충 짐작하면 안된다. <br/>
+
+### 🐾　통계 분석 도구　🐾
+
+1. 엑셀
+- 데이터 분석에서 가장 널리 사용되는 도구
+- 최대 1백만 행, 1만6천 열 크기의 데이터를 열 수 있음
+- 복잡한 계산 한계, 누락, 자동변환의 위험이 있음
+
+2. R
+- 통계 전용의 프로그래밍 언어
+- 상업적 목적으로도 자유롭게 사용 가능
+- 다양한 최신 통계 기법들이 구현되어 있음
+
+3. Jamovi
+- R에 기초한 GUI 방식의 무료 공개 통계 프로그램
+
+4. Python
+- 범용 프로그래밍 언어
+- 데이터 분석에서도 활발히 사용
+- 머신러닝, 인공지능 등에서는 학계와 산업계에서 사실상 표준<br/>
+
+#### R vs. Python
+
+|R|Python|
+|---|---|
+|통계 분석이 간단|머신러닝, 인공지능 등에 유리|
+|프로그래밍에 대한 배경 지식이 덜 필요|데이터 분석 이외의 목적으로도 활용 가능|<br/>
+
+
+
+### 🐾　Python으로 기술통계 알아보기　🐾
+
+중고차 가격에 대한 정보가 들어있는 **`car`** dataset을 이용해 알아보도록 하겠다.
+#### 평균, 중간값, 최빈값
+```python
+df = pd.read_excel('./dataset/car.xlsx')
+df.price.mean()         # 평균
+df.price.median()       # 중간값
+df.model.mode()         # 최반값
+df.model.value_counts() # 값의 개수
+```
+
+#### 분위수 &nbsp;<font color='lightgray'>quantile</font>
+- 데이터를 4등분하는 위치
+- 분위수 qua<mark style='background-color: pink'>n</mark>tile
+- 사분위수 qua<mark style='background-color: pink'>r</mark>tile
+- 사분위간 범위 IQR
+    - Inter Quartile Range
+    - 제3사분위수 - 제1사분위수
+    - 최솟값 또는 최댓값 근처에 있는 극단값의 영향이 적음
+
+```python
+df.price.quantile(.25)  # 제 1 사분위수
+df.price.quantile(.50)  # 제 2 사분위수, 중간값
+df.price.quantile(.75)  # 제 3 사분위수
+df.price.quantile(.90)  # 상위 10%
+```
+
+#### 상자 수염 그림 &nbsp;<font color='lightgray'>box-whisker plot</font>
+![box-whisker]() <br/><br/>
+
+- 수염(whisker)
+    - 최솟값과 최댓값 표시
+    - 수염의 최대 길이는 IQR의 1.5배까지
+    - 넘어가는 경우는 점으로 표시
+
+
+```python
+import seaborn as sns
+sns.boxplot(data = df, x = "price", whis = 1.5)
+sns.boxplot(data = df, x = "price", y = "model")
+```
+![img_box_whisker]() <br/><br/>
+
+
+#### 분산 &nbsp;<font color='lightgray'>variance</font>
+- 편차 제곱의 평균
+- 편차를 제곱하여 크기가 커지므로 표준편차를 많이 사용한다.
+
+```python
+df.price.var()  # 분산
+df.price.std()  # 표준편차
+df.groupby('model').agg({'price':'std'}) # model명을 기준으로 price의 표준편차
+```
+
+![img_groupby_std]() <br/><br/>
+
+#### 히스토그램 &nbsp;<font color='lightgray'>histogram</font>
+- 데이터를 구간별로 나누어 각 구간의 사례 수를 막대그래프로 그린 것
+
+```python
+import seaborn as sns
+sns.histplot(x = 'price', data = df, bins = 30)
+```
+![img_hist]() <br/><br/>
+
+
+
+### 🐾　모집단과 표본　🐾
+
+#### 모짐단과 무작위 표본
+* 모집단 &nbsp;<font color='lightgray'>population</font>
+    * 연구의 관심이 되는 집단 전체
+* 표본 &nbsp;<font color='lightgray'>sample</font>
+    * 특정 연구에서 선택된 모집단의 부분 집합
+
+-> 집단 전체를 전수조사하기 어려운 경우, 무작위로 표본을 추출하여 모집단에 대해 추론 진행
+
+#### 모수 &nbsp;<font color='lightgray'>population parameter</font>
+* 파라미터 &nbsp;<font color='lightgray'>parameter</font>
+    * 어떤 시스템의 특성을 나타내는 값
+* 모수
+    * 모집단&nbsp;<font color='lightgray'>population</font> 의 파라미터
+    * 모집단의 특성을 나타내는 값
+* '**표본의 크기**'를 '**모수**'라고 하는 경우도 있으나 이는 <font color = 'red'>잘못된 표현</font>이다.
+
+
+#### 통계량 &nbsp;<font color='lightgray'>sample statistic</font>
+* 표본에서 얻어진 수로 계산한 값 (= 통계치)
+* **'모집단의 통계랑'**이라는 표현은 없음 -> 통계량은 **표본**에서 구한 값
+* **'표본의 모수'**라는 표현도 없음 -> 모수는 모집단에서 구한 값
+
+#### 표집 &nbsp;<font color='lightgray'>sampling</font>
+* 모집단에서 표본을 추출하는 절차
+* **표본 추출**이라고도 함
+* 표집 단위 &nbsp;<font color='lightgray'>sample unit</font>
+    * 측정의 단위
+* 표집틀 &nbsp;<font color='lightgray'>sampling frame</font>
+    * 표집 대상의 목록
+
+#### 표집방법 
+* 무작위 표집 &nbsp;<font color='lightgray'>random sampling</font>
+    * 일정한 확률에 따라 표본을 선택
+* 단순 무작위 표집 &nbsp;<font color='lightgray'>simple random sampling</font>
+    * 모든 사례를 동일 확률로 추출
+    * 계통 표집
+    * 층화 표집
+    * 집락 표집
+
+### 🐾　추정　🐾
+#### 추정 &nbsp;<font color='lightgray'>estimation</font>
+* 통계량으로부터 모수를 추측하는 절차
+* 점 추정 &nbsp;<font color='lightgray'>point estimate</font>
+    * 하나의 수치로 추정
+* 구간 추정 &nbsp;<font color='lightgray'>interval estimate</font>
+    * 구간으로 추정
+
+#### 신뢰구간 &nbsp;<font color='lightgray'>confidence interval</font>
+* 대표적인 구간 추정 방법
+* 모수가 있을 법한 범위로 추정
+* 신뢰구간 = 통계량 +- 오차범위
+* 95% 신뢰구간 = 95%의 경우에 모수가 추정된 신뢰구간에 포함됨
+* 확률 높을수록 신뢰구간 커짐
+
+#### 신뢰 수준 &nbsp;<font color='lightgray'>confidence level</font>
+* 신뢰구간에 모수가 존재하는 표본의 비율
+    * 신뢰수준이 높음 -> 많은 표본을 포함 -> 더 넓은 오차범위 -> 정보가 적음
+    * 신뢰수준이 낮음 -> 적은 표본을 포함 -> 더 좁은 오차범위 -> 정보가 많음
+
+* 신뢰구간이 좁으면 신뢰수준이 낮으므로 타협이 필요
+* 신뢰구간이 좁을 수록 예측된 모수의 범위가 좁다 -> **유용**
+* 표본의 변산성 낮추기
+    * 실험과 측정을 정확히 해서 변산성을 낮춤
+    * 데이터에 내재한 변산성은 없앨 수 있음
+* 표본의 크기를 키우기
+    * 가장 쉬운 방법이나 시간과 비용이 증가
+
+
+#### Python 평균의 신뢰구간
+* 설치
+    ```shell
+    pip install pingouin
+    ```
+* 평균의 95% 신뢰구간
+    ```python
+    # 95% 신뢰구간 구하기
+    # 0을 기준으로했을 때 p-val이 유의 수준
+    import pingouin as pg
+    pg.ttest(df.price, 0, confidence = 0.95)
+    ```
+
+#### 부트스트래핑 &nbsp;<font color='lightgray'>bootstrapping</font>
+* 평균과 달리 중간값, 최빈값 등의 통계량은 표집분포의 형태를 간단히 알기 어려움
+* 표본이 충분히 크면 **부트스트래핑**이라는 시뮬레이션 기법을 사용해서 신뢰구간을 추정
+
+```python
+import scipy
+scipy.stats.bootstrap([df.price], np.mean)
+scipy.stats.bootstrap([df.price], np.median, confidence_level=0.99)
+```
+
+```python
+ms = []
+for _ in range(10000):
+    m = np.random.choice(df.price, size = 274).mean()
+    ms.append(m)
+np.quantile(ms, [.025, .975])
+```
+
+### 🐾　통계적 가설 검정　🐾
+#### 통계적 가설 검정 &nbsp;<font color='lightgray'>statistical hypothesis testing</font>
+
+* 귀무가설 &nbsp;<font color='lightgray'>null hypothesis</font>
+    * **기각**하고자 하는 가설
+    * 특별한 증거가 없으면 참으로 간주
+
+* 대립가설 &nbsp;<font color='lightgray'>alternative hypothesis</font>
+    * 대립하고자 하는 가설
+    * 충분한 증거가 필요
+
+* 귀무가설을 기각하는 논리
+    * A -> B 라는 명제는 not B -> not A 라는 대우명제와 동치
+    * 귀무가설이 참이면 (A), 현재 결과가 나올 확률이 높다 (B)
+
+* 귀무가설을 채택하지 않는 논리
+    * 통계적 가설 검정을 만든 로널드 피셔의 반증주의적 과학철학을 반영
+    * A -> B 라는 명제가 성립해도, B -> A 가 반드시 성립하는 것은 아님
+    * 귀무가설이 참이면 (A), 현재 결과가 나올 확률이 높다 (B)
+    * 현재 결과가 나올 확률이 높아도 (B), 귀무가설이 참 (A)이라고 할 수는 없음
+
+![statistical_hypothesis]() <br/><br/>
+
+
+#### 유의수준과 p 값
+* p 값 
+    * 귀무가설을 바탕으로 데이터에서 관찰된 결과와 그 이상의 극단적 결과가 나올 확률을 계산한 것
+
+* 유의수준 &nbsp;<font color='lightgray'>significance level</font>
+    * p 값을 바탕으로 높고 낮음을 판정하는 기준
+    * 알파로 표기
+    * 보통 `5% = 0.05`를 사용
+    * 100% - 신뢰수준
+
+* p-val이 유의수준(5%) 보다 작으면 귀무가설을 기각한다.
+* 참고 자료 : [귀무가설과 대립가설 / 유의수준 설명](http://www.incodom.kr/%EA%B7%80%EB%AC%B4%EA%B0%80%EC%84%A4#:~:text=%EC%98%88%EB%A5%BC%20%EB%93%A4%EC%96%B4%20'%EC%A7%80%EA%B5%AC%EB%8A%94,%EB%8A%94%20%EB%8C%80%EB%A6%BD%EA%B0%80%EC%84%A4%EC%9D%B4%20%EB%90%9C%EB%8B%A4.)
+
+#### p와 유의수준의 비교 108p
+* p > 유의수준
+    * 결론을 유보
+    * 결론을 내릴 필요가 있을 경우, 데이터를 더 모은다.
+    * 단, 반복해서 가설검정을 할 경우 유의수준을 조정한다.
+
+* p < 유의수준
+    * 귀무가설을 기각한다.
+    * 대립가설을 채택한다.
+    * 흔히 통계적으로 유의하다
+
+cohen-d : (N - df.price.mean()) / df.price.std()
+
+
+#### 가설 검정의 결과
+
+||귀무가설<br/>기각|귀무가설<br/>기각 못 함|
+|---|:---:|:---:|
+|귀무가설 참|1종 오류 <br/>&nbsp;<font color='lightgray'>False Alarm</font>||
+|귀무가설 거짓||2종 오류 <br/>&nbsp;<font color='lightgray'>Miss</font>|
+
+
+### 🐾　상관 분석　🐾
+#### 상관계수 <font color='lightgray'>correlation coefficient</font>
+* 두 변수의 연관성을 `-1` ~ `+1` 범위의 수치로 나타낸 것
+* 두 변수의 연관성을 파악하기 위해 사용
+    * 어휘력과 독해력의 관계
+    * 주가와 금 가격의 관계
+    * 엔진 성능과 고객만족도의 관계
+![corr_coef]() <br/><br/>
+
+
+#### 상관계수의 해석
+* 부호
+    * `+` : 두 변수가 같은 방향으로 변화
+    * `-` : 두 변수가 반대 방향으로 변화
+* 크기
+    * `0` : 두 변수가 독립, 한 변수의 변화로 다른 변수의 변화를 예측하지 못함
+    * `1` : 한 변수의 변화와 다른 변수의 변화가 정확히 일치
+
+```python
+pg.corr(df.price, df.mileage)
+```
+
+표본상관계수 r <br/>
+모상관계수 Cl 범위에 있을 것이다. <br/>
+귀무가설 : 모상관계수 = 0.0 <br/>
+p-value : 5.809388e-38 <br/>
+p-value < 0.05 -> 귀무가설 기각 (모상관계수 != 0) <br/>
+
+```python
+pg.corr(df.mileage, df.other_car_damage)
+```
+표본상관계수 0.00795 (-0.11 ~ +0.13)<br/>
+귀무가설 : 모상관계수 = 0 (p=0.89)<br/>
+귀무가설을 채택하는 법은 없음<br/>
+결론 유보 (딱 0이라고 결론은 못 내림) -> 채택하지 않음<br/>
+-0.1이 아니라는 법은 어딨냐<br/>
+
+
+```python
+# SPX : 미국 주가지수, GLD: 금 가격 지수
+sp = pd.read_excel('./dataset/sp500_gold.xlsx')
+pg.corr(sp.SPX, sp.GLD)
+```
+표본상관계수 0.466896 (모상관계수 0.35 ~ 0.57) <br/>
+귀무가설 : 모상관계수 = 0 (p=6.778106e-12)<br/>
+p < 0.05 -> 귀무가설 기각 (모상관계수 != 0)<br/>
+
+
+#### 공분산
+* X의 편차와 Y의 편차를 곱한 것의 평균 (`X = Y`이면 분산과 같음)
+* 우상향하는 추세 -> +로 커짐
+* 우하향하는 추세 -> -로 커짐
+
+
+### 🐾　회귀 분석　🐾
+#### 지도학습 <font color='lightgray'>supervised learning</font>
+* 독립변수 x를 이용하여 종속변수 y를 예측하는 것
+    * 통계학에서 예측은 어떤 값에 대한 추론을 의미
+    * 지도학습에서 예측은 **변수들 사이의 패턴을 파악하여 한 변수로 다른 변수를 추론하는 것**
+    * 시계열 분석 등에서 하는 미래에 대한 예측은 forecasting이라고 구분
+
+#### 종속변수에 대한 지도학습의 구분
+* 회귀분석 <font color='lightgray'>regression</font>
+    * 종속변수가 연속
+    * 예측값 - 실제값으로 정확성을 계산
+* 분류분석 <font color='lightgray'>classification</font>
+    * 종속변수가 범주형
+    * 예측의 정확성을 다른 방식으로 계산
+
+
+#### 회귀분석
+* 관계식
+    * 회귀분석 모형 설정을 위한 문법
+    * **종속변수(y) ~ 독립변수(x)** 형식으로 관계식을 표현
+    
+* 분석
+```python
+from statsmodels.formula.api import ols
+m = ols("price ~ mileage", data = df).fit()
+m.summar()
+```
+
+#### 회귀계수의 가설 검정
+* 귀무가설 : 모집단에서 회귀계수 = 0
+
+|가설검정|신뢰구간|
+|---|---|
+|유의하지 않음| - ~ + |
+|유의함 (p< $$\alpha$$)|- ~ - 또는 + ~ +|
+
+
+### 🐾　더미 코딩　🐾
+#### 더미 코딩 <font color='lightgray'>dummy coding</font>
+* 범주형 변수에 범주가 k개 있을 경우 k-1개의 더미 변수를 대신 투입
+    * 범주 중에 하나를 기준 <font color='lightgray'>reference</font>로 지정
+    * 기본적으로 ABC 순으로 먼저 나오는 것이 기준(변경할 수도 있음)
+    * 기준를 제외한 범주들은 범주별로 더미 변수를 하나씩 가짐
+    * 더미변수는 해당 범주일 경우에만 고려
+    * 더미변수의 기울기는 기준과의 차이를 의미
+
+
+### 🐾　다중 회귀 분석　🐾
+#### 다중 회귀 분석
+* 독립변수가 2개 이상인 회귀분석
+* R과 Python에서는 관계식에서 <font color = 'red'>+</font>로 변수 구분
+
+
+
+#### 표준화 <font color='lightgray'>standardization</font>
+* 다중회귀분석에서 독립변수는 단위가 다르므로 종속변수에 대한 영향력을 비교하기 어려움
+* 표준화를 하면 평균 = 0, 표준편차 = 1이 됨
+* 표준화를 통해 변수의 단위를 제거하여 상대적인 영향력을 비교할 수 있음
+
+
+#### 관계식에서 표준화하기
+* scale 함수를 이용하여 표준화를 할 수 있음
+```pythonß
+ols('price ~ scale(mileage) + scale(year)', df).fit().summar()
+```
+
+
+<!-- ### 🐾　　🐾
+### 🐾　　🐾
+### 🐾　　🐾
+### 🐾　　🐾
+### 🐾　　🐾
+### 🐾　　🐾 
+<font color='dodgerblue'> 예쁜 파랑 </font>
+<font color='lightgray'>Miss</font>
+<mark style='background-color: #f1f8ff'> 연한 파랑 </mark>
+<mark style='background-color: #fff5b1'> 연한 노랑 </mark>
+<mark style='background-color: #ffdce0'> 연한 빨강 </mark>
+<mark style='background-color: #dcffe4'> 연한 초록 </mark>
+<mark style='background-color: #f5f0ff'> 연한 보라 </mark>
+-->
