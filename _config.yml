@@ -168,14 +168,14 @@ kramdown:
   footnote_backlink: "&#x21a9;&#xfe0e;"
 
 # Analytics
-anlytics:
-  provider:
-    "google-gtag"
-    # false (default), "google", "google-universal", "google-gtag", "custom"
+# anlytics:
+#   provider:
+#     "google-gtag"
+#     # false (default), "google", "google-universal", "google-gtag", "custom"
 
-  google:
-    tracking_id: "G-Q6RR9JVN3Z"
-    anonymize_ip: # true, false(default)
+#   google:
+#     tracking_id: "G-Q6RR9JVN3Z"
+#     anonymize_ip: # true, false(default)
 
 # 3rd Party Integrations
 # ----------------------------------------------------------------------------------------
