@@ -2,9 +2,9 @@
 layout: post
 title:  "0927 데이터 분석 TIL 2"
 date:   2022-09-27 13:05:09 +0900
-categories: 2022_likelion
+categories: Python_DataAnalysis
 ---
-# 0927 데이터 분석 TIL (2) _ 웹 스크래핑과 크롤링
+# [ 0927 TIL - II ] 웹 스크래핑과 크롤링
 
 ## 👩🏻‍💻 오늘코드 실시간 강의 _ 박조은님
 

@@ -2,9 +2,9 @@
 layout: post
 title:  "0927 데이터 분석 TIL"
 date:   2022-09-27 09:05:09 +0900
-categories: 2022_likelion
+categories: Python_DataAnalysis
 ---
-# 0927 데이터 분석 TIL (1) _ EDA 범주형 변수
+# [ 0927 TIL - I ] EDA 범주형 변수
 
 ## 👩🏻‍💻 오늘코드 실시간 강의 _ 박조은님
 

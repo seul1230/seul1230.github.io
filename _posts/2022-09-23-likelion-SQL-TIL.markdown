@@ -2,9 +2,9 @@
 layout: post
 title:  "0923 SQL TIL"
 date:   2022-09-23 18:10:09 +0900
-categories: 2022_likelion
+categories: SpecialLecture
 ---
-# 0923 SQL TIL
+# [ 0923 Special Lecture TIL ] SQL
 
 ## 👩🏻‍💻 데이터리안 SQL 강의 _ 윤선미님, 이보민님
 금요일은 SPECIAL LECTURE 듣는 날~ <br/>
@@ -13,3 +13,4 @@ categories: 2022_likelion
 아, 호칭은 '강사님'이라 하지 않고 'OO님'으로 부른다. 미래에 일을 같이 하는 동료로 만날 수 있기 때문이라 하는데 뭔가 더 친근하고 무엇보다 귀엽다ㅎ
 
 ## 오늘의 TIL
+해당 SQL 강의에 대한 TIL은 저작권 문제로 비공개 글로 작성만 해놓을 예정이다.

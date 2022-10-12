@@ -2,9 +2,9 @@
 layout: post
 title:  "2022_likelion TIL"
 date:   2022-10-04 09:00:09 +0900
-categories: 2022_likelion
+categories: Python_DataAnalysis
 ---
-# 1004 데이터 분석 TIL (1) _ 웹 데이터 수집
+# [ 1004 TIL - I ] 웹 데이터 수집
 ## 👩🏻‍💻 오늘코드 실시간 강의 _ 박조은님
 오늘도 화이팅 :)
 

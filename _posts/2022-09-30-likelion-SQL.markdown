@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "0930 데이터 분석 TIL"
+title:  "0930 SQL TIL"
 date:   2022-09-30 09:05:09 +0900
-categories: 2022_likelion
+categories: SpecialLecture
 published: false
 ---
 # 0930 SQL TIL 

@@ -2,23 +2,14 @@
 layout: post
 title:  "2022 멋사 AI | 2주차 TIL"
 date:   2022-09-22 16:10:09 +0900
-categories: 2022_likelion
+categories: Python_DataAnalysis
 ---
-# 2022 멋사 AI | 2주차 TIL
+# [ 0920 - 0923 멋사 TIL ]
 
- **[ 0919 MON ] 파이썬 기초**
-
-채워넣기
-
-<br/>
-
-***
-<br/>
 
  **[ 0920 TUE ] 파이썬과 판다스 기초**
 > python 들여쓰기 4칸 권장  (Python 공식문서) 
 
-<br/>
 
 ### If 문 
 -  if-elif-else문 기본 구조

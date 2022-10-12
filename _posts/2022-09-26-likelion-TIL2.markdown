@@ -2,37 +2,14 @@
 layout: post
 title:  "0926 데이터 분석 TIL (2)"
 date:   2022-09-26 13:10:09 +0900
-categories: 2022_likelion
+categories: Python_DataAnalysis
 ---
-# 0926 데이터 분석 TIL (2) _ EDA 수치형 변수 
+# [ 0926 TIL - II ] EDA 수치형 변수 
 
 ## 👩🏻‍💻 오늘코드 실시간 강의 _ 박조은님
 [**0926 데이터 분석 TIL (1)**](https://seul1230.github.io/2022_likelion/2022-09-26-likelion-TIL1/)와 이어지는 TIL 내용이다. 
 
 ## 📚 오늘의 TIL - EDA 수치형 변수
-
-- [🐾　데이터에서 결측치 보기　🐾](#------------------)
-  * [결측치는 전체 데이터에서 얼마나 차지할까](#----------------------)
-  * [결측치에 대해 heatmap을 그려보자.](#--------heatmap------)
-- [🐾　데이터의 기술 통계 보기　🐾](#-------------------)
-- [🐾　수치형 변수　🐾](#------------)
-  * [1개의 수치변수 가지고 kdeplot 그리기](#1------------kdeplot----)
-  * [kde plot으로 밀도함수 표현하기](#kde-plot------------)
-  * [kde plot과 rug plot으로 밀도함수 표현하기](#kde-plot--rug-plot------------)
-  * [agg로 기술 통계 값 구하기 _ skew, kurt](#agg----------------skew--kurt)
-  * [boxplot으로 사분위 수 표현하기](#boxplot-------------)
-  * [violinplot으로 데이터 값 살펴보기](#violinplot-------------)
-- [🐾　tandard Scaling　🐾](#---tandard-scaling---)
-- [🐾　2개 이상의 수치변수 이용해 시각화하기　🐾](#---2-----------------------)
-  * [회귀 시각화](#------)
-  * [잔차 시각화](#------)
-- [🐾　여러 가지 그래프를 그려보자　🐾](#---------------------)
-  * [pairplot](#pairplot)
-  * [lineplot](#lineplot)
-  * [relplot](#relplot)
-- [🐾　relplot과 kind 옵션을 이용해 선그래프 그리기　🐾](#---relplot--kind--------------------)
-- [💡 pandas 에서 corr 값을 구할 때 어떤 기본 값을 사용할까?](#---pandas----corr-----------------------)
-- [🐾　위의 heatmap을 보면 heatmap의 특징을 찾을 수 있다.　🐾](#------heatmap-----heatmap----------------)
 
 
 

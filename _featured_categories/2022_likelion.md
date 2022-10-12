@@ -13,3 +13,22 @@ description: >
 #   background: rgb(32,32,32)
 #   overlay:    false
 ---
+
+# 2022_likelion
+
+## Python
+
+- [Python - DataAnalysis]{:.heading.flip-title} --- 📈 파이썬으로 하는 데이터분석 TIL 기록하는 공간 
+  
+<br/>
+
+## Special Lecture
+
+- [Special Lecture]{:.heading.flip-title} --- 📊 Statistics, SQL 등 추가 강의 TIL 기록하는 공간 
+
+
+[Python - DataAnalysis]: /2022_likelion/Python_DataAnalysis
+[Special Lecture]: /2022_likelion/SpecialLecture
+
+
+<br/><br/><br/><br/>
