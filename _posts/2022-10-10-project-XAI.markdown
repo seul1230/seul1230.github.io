@@ -1,19 +1,51 @@
 ---
 layout: post
-title:  "Hana Project"
+title:  "Project"
 date:   2022-10-10 09:00:09 +0900
 categories: Projects
 ---
-# 논문 구현 - 설명 가능한 AI를 활용한 신용평가 모델
+# [ 논문 구현 ] 설명 가능한 AI를 활용한 신용평가 모델
 
 최근, **금융(Finance)**과 **IT 기술(technology)**을 결합한 서비스, **핀테크(FinTech)**가 주목을 받고 있다. 이런 뉴스를 접하면서 나도 자연스럽게 금융 쪽에 관심이 생기면서 관련 정보를 많이 찾아보게 되었다. 이번 포스트는 인공지능을 이용해 신용평가 모형에 대한 연구한 논문을 바탕으로 구현한 내용을 정리할 예정이다. 가장 높은 성능을 냈던 모델들을 가져와서 구현한다. 활용한 데이터셋은 조금 차이가 있어 보인다.
 
-## Reference
+## 🗂 Reference
 천예은, 김세빈, 이자윤, 우지환, _설명 가능한 AI 기술을 활용한 신용평가 모형에 대한 연구_, 한국데이터정보과학회지(2021). 
 
 ## 📚 데이터셋
 **HELOC (Home Equity Line of Credit)** dataset <br/>
 출처 : [kaggle Home Equity Line of Credit(HELOC)](https://www.kaggle.com/datasets/averkiyoliabev/home-equity-line-of-creditheloc) 
+
+
+* `ExternalRiskEstimate`- 위험 지표의 통합 지표(폴란드 BIK의 비율에 해당)
+* `MSinceOldestTradeOpen`- 최초 거래 이후 경과된 개월 수
+* `MSinceMostRecentTradeOpen`- 마지막으로 열린 거래 이후 경과된 개월 수
+* `AverageMInFile`- 파일에 있는 평균 개월
+* `NumSatisfactoryTrades`- 만족스러운 거래 횟수
+* `NumTrades60Ever2DerogPubRec`- 60회 이상 연체된 거래 건수
+* `NumTrades90Ever2DerogPubRec`- 90회 이상 연체된 거래 건수
+* `PercentTradesNeverDelq`- 연체되지 않은 거래 비율
+* `MSinceMostRecentDelq`- 마지막 연체 거래 이후 경과된 개월 수
+* `MaxDelq2PublicRecLast12M`- 최근 12개월 중 가장 긴 연체기간
+* `MaxDelqEver`- 가장 긴 연체 기간
+* `NumTotalTrades`- 총 거래 횟수
+* `NumTradesOpeninLast12M`- 지난 12개월 동안 열린 거래 수
+* `PercentInstallTrades`- 할부 거래 비율
+* `MSinceMostRecentInqexcl7days`- 마지막 문의 이후 개월(최근 7일 제외)
+* `NumInqLast6M`- 최근 6개월간 문의 건수
+* `NumInqLast6Mexcl7days`- 최근 6개월간 문의 건수(최근 7일 제외)
+* `NetFractionRevolvingBurden`- 회전잔액을 신용한도로 나눈 것
+* `NetFractionInstallBurden`- 할부 잔액을 원래 대출 금액으로 나눈 값
+* `NumRevolvingTradesWBalance`- 잔액이 있는 회전 거래 수
+* `NumInstallTradesWBalance`- 잔액이 있는 할부 거래 횟수
+* `NumBank2NatlTradesWHighUtilization`- 이용률이 높은 거래 건수(신용 이용률 - 신용 한도 대비 신용카드 잔액)
+* PercentTradesWBalance- 잔액이 있는 거래의 비율
+
+
+Dataset은 10459개의 데이터로 이루어져있으며, y 라벨 중 5000개는 ‘Good’, 5459개는 ‘Bad’에 속한다. 이때 ‘Good’과 ‘Bad’는 각각 대출 가능과 대출 불가능을 나타낸다.
+
+출처 : <https://pbiecek.github.io/xai_stories/story-heloc-credits.html>
+
+
 <br/><br/><br/>
 
 ---
@@ -27,7 +59,6 @@ categories: Projects
 df = pd.read_csv("heloc_dataset.csv")
 df.info()
 ```
-![heloc_dataset_info]() <br/><br/>
 
 
 #### 결측치 확인
@@ -155,7 +186,28 @@ Test score:  0.11249008610001081
 
 ### 5. 대출 가능 확률의 변화량에 영향을 준 변수 분석
 
+#### 각 신용 변수에 대한 상관계수 시각화
 
+```python
+plt.figure(figsize=(20,20))
+sns.heatmap(data = df_diff.corr(), annot=True, 
+            fmt = '.2f', cmap='Blues')
+```
+![heatmap_corr](/assets/img/논문구현_XAI/heatmap_corr.png) <br/><br/>
+
+
+#### 신용평가 등급 변화에 대한 Feature별 기여도 시각화
+
+**SHAP** <font color = "lightgray">SHapley Additive exPlanation</font> 은 "특정 변수가 제거" 되면 얼마나 예측에 변화를 주는지 살펴보고 그에 대한 답을 SHAP value로 표현한다. 즉, SHAP는 예측에 대한 각 특성의 기여도를 계산하여 instance x의 예측을 설명한다. 
+
+
+그럼 이제 **SHAP**를 이용하여 모델 2의 예측에 각 Feature들이 얼마나 기여했는지 분석해보겠다. 
+
+```python
+shap.summary_plot(shap_values, X_train_n)
+```
+
+![shap_summary](/assets/img/논문구현_XAI/shap_summary.png) <br/><br/>
 
 <br/><br/>
 
