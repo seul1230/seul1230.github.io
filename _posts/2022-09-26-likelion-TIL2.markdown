@@ -114,7 +114,7 @@ sns.kdeplot(data = df, x = "mpg")
 sns.kdeplot(data = df, x = "mpg")
 sns.rugplot(data = df, x = "mpg")
 ```
-![kde_rug_밀도함수] <br/>
+![kde_rug_밀도함수]() <br/>
 
 #### agg로 기술 통계 값 구하기 _ skew, kurt
 ```python
