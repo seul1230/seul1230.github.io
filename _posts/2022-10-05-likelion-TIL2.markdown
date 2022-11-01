@@ -84,7 +84,7 @@ categories: Python_DataAnalysis
   - **<font color='red'>r</font>** : red
   - **<font color='dodgerblue'>b</font>** : blue
 
-![2022_top10](/assets/img/img_221005/2022_top10.png) <br/><br/>
+![2022_top10](/assets/img/img_221005/2022_top10.png){: .center} <br/><br/>
 
 🤔 **pandas plot VS matplotlib**
 
@@ -113,13 +113,13 @@ pandas plot이 matplotlib보다 <br/>
   df_norm.resample(“Q”).median()
   ```
 
-  ![df_norm_Q](/assets/img/img_221005/df_norm_Q.png) <br/><br/>
+  ![df_norm_Q](/assets/img/img_221005/df_norm_Q.png){: .center} <br/><br/>
   
   ```python
   df_norm['삼성전자'].resample("Q").agg(["mean", "median"])
   ```
 
-  ![df_norm_Q_agg](/assets/img/img_221005/df_norm_Q_agg.png){: width="30%"} <br/><br/>
+  ![df_norm_Q_agg](/assets/img/img_221005/df_norm_Q_agg.png){: .center width="30%"} <br/><br/>
 
 ***
 
@@ -130,15 +130,15 @@ pandas plot이 matplotlib보다 <br/>
 # 2개의 종목 비교하기 : "삼성전자", "LG화학" 을 plot으로 시각화 합니다.
 df[["삼성전자", "LG화학"]].plot()
 ```
-![sam_lg](/assets/img/img_221005/sam_lg.png){: width="70%"} <br/><br/>
+![sam_lg](/assets/img/img_221005/sam_lg.png){: .center width="70%"} <br/><br/>
 
-삼성과 lg화학의 종가 scale이 다르기 때문에 위처럼 시각화하면 lg화학의 변화를 알기 어렵다. scale을 맞춰주기 위해 추가로 보조축을 지정해주자.
+삼성과 LG화학의 종가 scale이 다르기 때문에 위처럼 시각화하면 LG화학의 변화를 알기 어렵다. scale을 맞춰주기 위해 추가로 보조축을 지정해주자.
 
 ```python
 # secondary_y를 사용해 2축 그래프 그리기
 df[["삼성전자", "LG화학"]].plot(secondary_y = "LG화학")
 ```
-![sam_lg_secondary](/assets/img/img_221005/sam_lg_secondary.png){: width="70%"} <br/><br/>
+![sam_lg_secondary](/assets/img/img_221005/sam_lg_secondary.png){: .center width="70%"} <br/><br/>
 
 #### 전체 종목 수익률 시각화
 **1. 상장종목 목록 가져오기**
@@ -155,12 +155,12 @@ df_top10
 df_krx = fdr.StockListing("KRX")
 df_krx
 ```
-![df_krx](/assets/img/img_221005/df_krx.png) <br/><br/>
+![df_krx](/assets/img/img_221005/df_krx.png){: .center} <br/><br/>
 ```python
 df_krx = df_krx[["Name", "Code"]]
 df_krx
 ```
-![df_krx_name_code](/assets/img/img_221005/df_krx_name_code.png){: width="30%"} <br/><br/>
+![df_krx_name_code](/assets/img/img_221005/df_krx_name_code.png){: .center width="30%"} <br/><br/>
 
 **3. 국내 TOP 10 종목만 가져오자.**
    
@@ -175,7 +175,7 @@ df = pd.concat(item_list, axis = 1)
 df.columns = df_10["Name"]
 df
 ```
-![df_merge_item_lst](/assets/img/img_221005/df_merge_item_lst.png){: width="90%"} <br/><br/>
+![df_merge_item_lst](/assets/img/img_221005/df_merge_item_lst.png){: .center width="90%"} <br/><br/>
 
 **4. 전체 DataFrame 값에 대한 수익률 계산하기**
 
@@ -186,7 +186,7 @@ df_norm = df / df.iloc[0] - 1
 df_norm["LG에너지솔루션"] = df["LG에너지솔루션"].dropna() / df["LG에너지솔루션"].dropna()[0] - 1
 df_norm
 ```
-![df_norm](/assets/img/img_221005/df_norm.png) <br/><br/>
+![df_norm](/assets/img/img_221005/df_norm.png){: .center} <br/><br/>
 
 ```python
 # df_norm 변수에 담긴 전체 종목에 대한 수익률을 시각화 합니다.
@@ -194,12 +194,12 @@ df_norm.plot(figsize = (10,5), title = "2022년 TOP 10 종목 수익률")
 plt.axhline(0, c = 'k') # black -> k
 plt.legend(bbox_to_anchor = (1,1))
 ```
-![2022_top10](/assets/img/img_221005/2022_top10.png) <br/><br/>
+![2022_top10](/assets/img/img_221005/2022_top10.png){: .center} <br/><br/>
 
 
 ### 다음 포스트에서 만나요 🙌
 뒷 내용은 [**1005 데이터 분석 TIL (3)**](https://seul1230.github.io/2022_likelion/2022-10-05-likelion-TIL3/)에서 이어서 작성한다.
-FinanceDataReader를 통한 여러 종목 수익률 비교를 해볼 예정이다.
+FinanceData를 이용해 여러 종목 수익률을 plotly로 시각화를 해볼 예정이다.
 
 
 
