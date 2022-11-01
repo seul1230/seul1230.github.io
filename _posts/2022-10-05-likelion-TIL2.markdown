@@ -84,7 +84,7 @@ categories: Python_DataAnalysis
   - **<font color='red'>r</font>** : red
   - **<font color='dodgerblue'>b</font>** : blue
 
-![2022_top10](/assets/img/img_221005/2022_top10.png){: width="70%"} <br/><br/>
+![2022_top10](/assets/img/img_221005/2022_top10.png) <br/><br/>
 
 🤔 **pandas plot VS matplotlib**
 
@@ -113,7 +113,7 @@ pandas plot이 matplotlib보다 <br/>
   df_norm.resample(“Q”).median()
   ```
 
-  ![df_norm_Q](/assets/img/img_221005/df_norm_Q.png){: width="90%"} <br/><br/>
+  ![df_norm_Q](/assets/img/img_221005/df_norm_Q.png) <br/><br/>
   
   ```python
   df_norm['삼성전자'].resample("Q").agg(["mean", "median"])
@@ -155,7 +155,7 @@ df_top10
 df_krx = fdr.StockListing("KRX")
 df_krx
 ```
-![df_krx](/assets/img/img_221005/df_krx.png){: width="90%"} <br/><br/>
+![df_krx](/assets/img/img_221005/df_krx.png) <br/><br/>
 ```python
 df_krx = df_krx[["Name", "Code"]]
 df_krx
@@ -186,7 +186,7 @@ df_norm = df / df.iloc[0] - 1
 df_norm["LG에너지솔루션"] = df["LG에너지솔루션"].dropna() / df["LG에너지솔루션"].dropna()[0] - 1
 df_norm
 ```
-![df_norm](/assets/img/img_221005/df_norm.png){: width="90%"} <br/><br/>
+![df_norm](/assets/img/img_221005/df_norm.png) <br/><br/>
 
 ```python
 # df_norm 변수에 담긴 전체 종목에 대한 수익률을 시각화 합니다.
@@ -194,7 +194,7 @@ df_norm.plot(figsize = (10,5), title = "2022년 TOP 10 종목 수익률")
 plt.axhline(0, c = 'k') # black -> k
 plt.legend(bbox_to_anchor = (1,1))
 ```
-![2022_top10](/assets/img/img_221005/2022_top10.png){: width="70%"} <br/><br/>
+![2022_top10](/assets/img/img_221005/2022_top10.png) <br/><br/>
 
 
 ### 다음 포스트에서 만나요 🙌
