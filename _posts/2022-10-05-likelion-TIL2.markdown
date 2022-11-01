@@ -87,6 +87,7 @@ categories: Python_DataAnalysis
 ![2022_top10](/assets/img/img_221005/2022_top10.png){: width="70%"} <br/><br/>
 
 🤔 **pandas plot VS matplotlib**
+
 pandas plot이 matplotlib보다 <br/>
 더 한 눈에 알아보기 쉽고 좀 더 간단하게 그래프를 그릴 수 있다.
 
@@ -112,14 +113,15 @@ pandas plot이 matplotlib보다 <br/>
   df_norm.resample(“Q”).median()
   ```
 
-  ![df_norm_Q](/assets/img/img_221005/df_norm_Q.png){: width="70%"} <br/><br/>
+  ![df_norm_Q](/assets/img/img_221005/df_norm_Q.png){: width="90%"} <br/><br/>
   
   ```python
   df_norm['삼성전자'].resample("Q").agg(["mean", "median"])
   ```
 
-  ![df_norm_Q_agg](/assets/img/img_221005/df_norm_Q_agg.png){: width="70%"} <br/><br/>
+  ![df_norm_Q_agg](/assets/img/img_221005/df_norm_Q_agg.png){: width="30%"} <br/><br/>
 
+***
 
 ### 🚗 <mark style='background-color: #f6f8fa'> 실습 예제 코드 </mark> 🚙
 
@@ -153,12 +155,12 @@ df_top10
 df_krx = fdr.StockListing("KRX")
 df_krx
 ```
-![df_krx](/assets/img/img_221005/df_krx.png){: width="70%"} <br/><br/>
+![df_krx](/assets/img/img_221005/df_krx.png){: width="90%"} <br/><br/>
 ```python
 df_krx = df_krx[["Name", "Code"]]
 df_krx
 ```
-![df_krx_name_code](/assets/img/img_221005/df_krx_name_code.png){: width="70%"} <br/><br/>
+![df_krx_name_code](/assets/img/img_221005/df_krx_name_code.png){: width="30%"} <br/><br/>
 
 **3. 국내 TOP 10 종목만 가져오자.**
    
@@ -173,7 +175,7 @@ df = pd.concat(item_list, axis = 1)
 df.columns = df_10["Name"]
 df
 ```
-![df_merge_item_lst](/assets/img/img_221005/df_merge_item_lst.png){: width="70%"} <br/><br/>
+![df_merge_item_lst](/assets/img/img_221005/df_merge_item_lst.png){: width="90%"} <br/><br/>
 
 **4. 전체 DataFrame 값에 대한 수익률 계산하기**
 
@@ -184,7 +186,7 @@ df_norm = df / df.iloc[0] - 1
 df_norm["LG에너지솔루션"] = df["LG에너지솔루션"].dropna() / df["LG에너지솔루션"].dropna()[0] - 1
 df_norm
 ```
-![df_norm](/assets/img/img_221005/df_norm.png){: width="70%"} <br/><br/>
+![df_norm](/assets/img/img_221005/df_norm.png){: width="90%"} <br/><br/>
 
 ```python
 # df_norm 변수에 담긴 전체 종목에 대한 수익률을 시각화 합니다.
