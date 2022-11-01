@@ -147,7 +147,7 @@ url = "https://finance.naver.com/sise/entryJongmok.naver?&page=1"
 df_top10 = pd.read_html(url)[0].dropna()
 df_top10
 ```
-![df_top10](/assets/img/img_221005/df_top10.png){: width="70%"} <br/><br/>
+![df_top10](/assets/img/img_221005/df_top10.png){: .center width="70%"} <br/><br/>
 
 **2. 전체 상장종목에서 종목코드와 종목명만 가져오기**
 
@@ -160,7 +160,7 @@ df_krx
 df_krx = df_krx[["Name", "Code"]]
 df_krx
 ```
-![df_krx_name_code](/assets/img/img_221005/df_krx_name_code.png){: .center width="30%"} <br/><br/>
+![df_krx_name_code](/assets/img/img_221005/df_krx_name_code.png){: .center width="20%"} <br/><br/>
 
 **3. 국내 TOP 10 종목만 가져오자.**
    
