@@ -12,6 +12,8 @@ categories: Python_DataAnalysis
 
 이번 시간에는 Kaggle에서 현재 진행 중인 **Titanic - Machine Learning from Disaster** 데이터를 바탕으로 코드를 짜고 kaggle에 제출까지 해보았다.
 
+***
+
 ## 📙 이론 및 개념
 
 #### 🤔 저번 시간까지 활용했던 pima 당뇨병 데이터보다 titanic 데이터가 좀 더 어려운 이유?
@@ -122,12 +124,16 @@ X_train = train.drop(['Survived'], axis = 1)
 y_train = train['Survived']
 display(X_train.head())
 ```
+![x_train_drop](/assets/img/img_221101/x_train_drop.png){: .center} <br/><br/>
+
 
 ### 3. label 빈도수 시각화
 이렇게 분리해준 label값의 빈도수를 시각화해보자.
 ```python
 sns.countplot(x = y_train)
 ```
+![label_count](/assets/img/img_221101/label_count.png){: .center width="50%"} <br/><br/>
+
 
 ### 4. 결측치 확인
 이 데이터에는 결측치가 많이 포함되어 있다. 결측치가 얼마나 있는지 시각화해보자.
@@ -138,14 +144,13 @@ sns.heatmap(X_test.isnull(), ax = axes[0, 1])
 sns.barplot(data = train.isnull(), ax = axes[1, 0], ci = None)
 sns.barplot(data = X_test.isnull(), ax = axes[1, 1], ci = None)
 ```
+![nan_eda](/assets/img/img_221101/nan_eda.png){: .center width="70%"} <br/><br/>
+
 
 결측치의 비율을 확인하려면 간단하게 다음과 같이 실행시키면 된다.
 ```python
 X_test.isnull().mean() * 100
 ```
-
-
-
 
 
 ### 5. 파생변수 만들기
@@ -195,16 +200,94 @@ X_test["Cabin_initial"] = X_test["Cabin_initial"].str[0]
 X_train['Cabin_initial'] = X_train['Cabin_initial'].replace('T', 'A')
 ```
 
+#### Age에 결측치 채워주기
+```python
+X_train['Age_fill'] = X_train['Age'].interpolate(method = 'values')
+X_test['Age_fill'] = X_test['Age'].interpolate(method = 'values')
+```
 
+#### Fare에 결측치 채워주기
+```python
+X_train["Fare_fill"] = X_train["Fare"]
+X_test["Fare_fill"] = X_test["Fare"].fillna(X_test["Fare"].median())
+```
 
 
 ### 6. 학습, 예측에 사용할 Columns
 ```python
-feature_names = X_train.select_dtypes(include = "number").columns.tolist()
-feature_names.append('Gender')
-feature_names
+feature_names = ['Pclass', 'Fare_fill',
+                 'Embarked', 'family', 
+                 'Gender', 'TitleEtc',
+                 'Age_where'
+                ]
+
+X_train = pd.get_dummies(X_train[feature_names])
+X_test = pd.get_dummies(X_test[feature_names])
 ```
 
+#### 7. 머신러닝 알고리즘 가져오기
+```python
+from sklearn.tree import DecisionTreeClassifier
+
+model = DecisionTreeClassifier(random_state = 42)
+model.fit(X_train_1, y_train)
+```
+
+#### 8. Cross Validation
+```python
+from sklearn.model_selection import cross_val_predict, cross_validate
+y_predict = cross_val_predict(model, X_train_1, y_train,cv=5, n_jobs=-1, verbose=1)
+
+# 채점
+from sklearn.metrics import accuracy_score
+valid_accuracy = accuracy_score(y_train, y_predict)
+valid_accuracy
+```
+
+
+#### 9. 정확도 측정하기
+```python
+max_depth = list(range(3, 15, 2))
+max_depth
+
+# max_features 비율
+max_features = [0.3, 0.5, 0.7, 0.8, 0.9]
+
+parameters = {"max_depth" : max_depth, "max_features" : max_features}
+parameters
+
+
+from sklearn.model_selection import GridSearchCV
+clf = GridSearchCV(model, parameters, n_jobs = -1, cv = 5, scoring = 'accuracy', verbose = 2)
+
+# 데이터를 머신러닝 모델로 학습(fit)합니다.
+clf.fit(X_train_1, y_train)
+```
+
+#### 10. Best Estimator
+```python
+# 최적의 파라미터 가진 모형
+best_clf = clf.best_estimator_
+best_clf.fit(X_train_1, y_train)
+
+# 최고 성능
+pd.DataFrame(cross_validate(best_clf, X_train_1, y_train,cv=5))['test_score'].mean()
+```
+
+#### 11. Feature의 중요도 시각화하기
+```python
+sns.barplot(x = best_clf_rf.feature_importances_, y = best_clf_rf.feature_names_in_)
+```
+![feature_importances](/assets/img/img_221101/feature_importances.png){: .center width="70%"} <br/><br/>
+
+
+#### 12. 예측하기
+```python
+prediction = best_clf.predict(X_test_1)
+```
+
+#### 13. Kaggle에 제출
+![kaggle_submit](/assets/img/img_221101/kaggle_submit.png){: .center} <br/><br/>
 
 ***
 𖤐 [youtube 영상](https://www.youtube.com/watch?v=ZTRKojTLE8M) 보고 Thread에 ‘봤어요!’ 남기기
