@@ -10,6 +10,7 @@ categories: Tips
 [YouTube] [혼란한 Matplotlib에서 질서 찾기](https://youtu.be/ZTRKojTLE8M) 
 
 
+
 ### TO DO
 **1. 안 예쁜 Matplotlib 그림을 예쁘게** - 딱 seaborn만큼만
 
