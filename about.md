@@ -10,7 +10,13 @@ redirect_from:
 
 # About
 
+<img src="/assets/img/profile_img.png" alt="<yeseul> <cho>" class="avatar"/>
 
+      
+
+<p>Hi, there! 
+I’m growing everyday 🌱
+_sseul</p>
 
 <!--author-->
 
