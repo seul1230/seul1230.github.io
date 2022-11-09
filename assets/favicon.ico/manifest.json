@@ -36,6 +36,43 @@
    "sizes": "192x192",
    "type": "image\/png",
    "density": "4.0"
+  },
+  {
+   "src": "\/apple-icon-57x57.png",
+   "sizes": "57x57",
+   "type": "image\/png",
+   "density": "1.0"
+  },
+  {
+   "src": "\/apple-icon-60x60.png",
+   "sizes": "60x60",
+   "type": "image\/png",
+   "density": "1.2"
+  },
+  {
+   "src": "\/apple-icon-60x60.png",
+   "sizes": "72x72",
+   "type": "image\/png",
+   "density": "1.5"
+  },
+  {
+   "src": "\/apple-icon-76x76.png",
+   "sizes": "76x76",
+   "type": "image\/png",
+   "density": "2.0"
+  },
+  {
+   "src": "\/apple-icon-144x144.png",
+   "sizes": "144x144",
+   "type": "image\/png",
+   "density": "3.0"
+  },
+  {
+   "src": "\/apple-icon-180x180.png",
+   "sizes": "180x180",
+   "type": "image\/png",
+   "density": "4.0"
   }
+ 
  ]
 }
