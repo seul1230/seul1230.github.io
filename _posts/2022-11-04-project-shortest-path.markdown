@@ -10,7 +10,7 @@ categories: Projects
 교내 SW * AI 중심대학추진단 주관 2021 제10회 SW인공지능 해커톤
 
 ## 🌿 Background
-![](/assets/)
+![maps](/assets/img/2021_hackathon_img/real_map.png){: .center width="30%"} <br/>
 Naver나 Daum과 같은 기존의 지도앱은 최단 거리 및 다양한 경로를 잘 추천해주지만 학교 내의 길 같은 경우, 실제로 최단경로를 검색했을 때 교내 경로 정보가 부족해 실제의 최단 경로와 차이가 나는 것을 발견했다. 이는 계단이나 작은 길 등을 고려하지 않고 주로 큰 길을 다루기 때문으로 보였다. 
 
 ## 🔎 About Project
@@ -23,7 +23,7 @@ Naver나 Daum과 같은 기존의 지도앱은 최단 거리 및 다양한 경�
 <!-- ![univ](https://github.com/seul1230/2021_hackerton/blob/master/sejongUniv.png?raw=true){: width="31%"} ▶️
 ![](https://github.com/seul1230/2021_hackerton/blob/master/%EA%B1%B4%EB%AC%BC+%EC%9E%A5%EC%95%A0%EB%AC%BC+%EA%B8%B8%EB%85%B8%EB%93%9C.png?raw=true){:  width="31%"} ▶️
 ![](https://github.com/seul1230/2021_hackerton/blob/master/%EA%B1%B4%EB%AC%BC+%EA%B8%B8%EB%85%B8%EB%93%9C%20%EC%A7%81%EC%84%A0%20%EC%9D%B4%EC%9D%80%20%EA%B7%B8%EB%A6%BC.png?raw=true){: width="31%"} -->
-![maps](/assets/img/2021_hackathon_img/real_map.png){: .center width="30%"} <br/>
+![maps](/assets/img/2021_hackathon_img/final_color_map.png){: .center width="70%"} <br/>
 
 
 🔴 **빨간색 노드** : 건물 입구 <br/>
