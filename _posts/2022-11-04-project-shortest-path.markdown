@@ -342,7 +342,7 @@ out.release()
 ```
 ### 최종 결과물
 
-![](/assets/img/2021_hackathon_img/final_video.avi){: .center width="70%"}<br/><br/>
+![](/assets/img/2021_hackathon_img/final_video.gif){: .center width="70%"}<br/><br/>
 
 ---
 
