@@ -7,18 +7,15 @@ author1:
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
-  about: |
-    Hi, there! 
-    I'm growing everyday 🌱
-    _sseul
+  about:
 
   # This photo will be used in the about section
-  picture:
-    path: /assets/img/profile_img.png
-    # srcset is optional, but can be used to provide higher res versions for retina displays
-    srcset:
-    #  1x:            /assets/img/profile_img.png
-    #  2x:            /assets/img/profile_img.png
+  #   picture:
+  #    path: # /assets/img/profile_img.png
+  #    srcset is optional, but can be used to provide higher res versions for retina displays
+  #     srcset:
+  #      1x:            /assets/img/profile_img.png
+  #      2x:            /assets/img/profile_img.png
 
   # Social media icons in sidebar
   # Comment/uncommet to show/hide

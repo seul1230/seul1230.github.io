@@ -9,14 +9,11 @@ redirect_from:
 ---
 
 # About
-
-
-<img src="/assets/img/profile_img.png" alt="<yeseul> <cho>" class="avatar"/>
+<img src="/assets/img/profile_img.png" alt="<yeseul> <cho>" class="avatar"/> 
       
+### Hi, there! <br/>I'm Ye Seul Cho 👋
 
-### Hi, there! I'm Ye Seul Cho 👋
-
-<h3 align = "center"> 🛠 Tech Stacks 🛠 </h3>
+<h3 align = "center"> 🛠 Tech Stacks 🛠 </h3> 
 <h4 align="center">👾 Programming Language 👾</h4>
 
 <p align = "center">
