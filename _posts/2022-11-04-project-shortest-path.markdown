@@ -10,6 +10,7 @@ categories: Projects
 교내 SW * AI 중심대학추진단 주관 2021 제10회 SW인공지능 해커톤
 
 ## 🌿 Background
+![](/assets/)
 Naver나 Daum과 같은 기존의 지도앱은 최단 거리 및 다양한 경로를 잘 추천해주지만 학교 내의 길 같은 경우, 실제로 최단경로를 검색했을 때 교내 경로 정보가 부족해 실제의 최단 경로와 차이가 나는 것을 발견했다. 이는 계단이나 작은 길 등을 고려하지 않고 주로 큰 길을 다루기 때문으로 보였다. 
 
 ## 🔎 About Project
@@ -26,7 +27,7 @@ Naver나 Daum과 같은 기존의 지도앱은 최단 거리 및 다양한 경�
 
 
 🔴 **빨간색 노드** : 건물 입구 <br/>
-🟡 **노란색 노드** : 코너
+🟢 **초록색 노드** : 코너
 
 <br/>
 
@@ -39,15 +40,14 @@ Naver나 Daum과 같은 기존의 지도앱은 최단 거리 및 다양한 경�
 ### 맡은 역할
 * 팀장
 * 인공지능 코드
+* 모든 약도 디자인
 * 파이썬 소켓 통신
 * 안드로이드 스튜디오 기초 코드
 
 
 ## 🗂 Reference
 
-
-## 📚 데이터셋
- 
+Q-learning을 구현할 때는 [Open Source](https://github.com/shiluyuan/Reinforcement-Learning-in-Path-Finding)를 이용하였다.
 
 <br/><br/><br/>
 
@@ -89,7 +89,258 @@ Q-Learning은 Model이 없이(Model-Free) 학습하는 강화학습의 한 방�
 
 ## 💻 구현 &nbsp;&nbsp;<font color='lightgray'>Implementation</font>
 
-### 
+### 1. 교내 건물 및 모든 입구, 코너 약도 그리기
+우리는 직접 학교를 돌아다니며, 사람들이 통행할 수 있는 통로와 입구를 파악하였다. 이때 코로나 19로 인해 폐쇄된 입구는 해당 서비스를 이용하는 신입생들에게 혼란을 줄 수 있을 것이라 판단해 배제하고 그렸다. 
+
+🔴 **빨간색 노드** : 건물 입구 <br/>
+🟢 **초록색 노드** : 코너 <br/>
+🟪 **보라색** : 통행할 수 없는 길이나 건물
+
+
+### 2. OpenCV를 이용해 노드 인식하기
+길을 찾아주기 위해서는 건물의 입구와 코너 노드를 다르게 인식해야했기에 **<font color = "green">코너 노드</font>**와 **<font color = "red">건물 입구 노드</font>**의 원의 크기는 다르게 설정을 해주었다. 
+
+그 후, OpenCV에서 크기별로 원을 추출하는 함수를 통해 노드를 인식하고, 외곽선을 추출하는 함수를 통해 건물 및 통행할 수 없는 길을 인식해 각각의 좌표 정보를 얻었다.
+
+```python
+import cv2
+from google.colab.patches import cv_imshow
+2021_hackathon_img
+src = cv2.imread("/content/gdrive/MyDrive/AI-SW-HACK/only_purple_map.png") #원본 이미지
+#cv_imshow(src)
+dst = src.copy()
+gray = cv2.cvtColor(src, cv2.COLOR_BGR2GRAY)
+
+ret, binary = cv2.threshold(gray, 127, 255, cv2.THRESH_BINARY)
+binary = cv2.bitwise_not(binary)
+
+contours, hierarchy = cv2.findContours(binary, cv2.RETR_CCOMP, cv2.CHAIN_APPROX_NONE)
+
+for i in range(len(contours)):
+    cv2.drawContours(dst, [contours[i]], 0, (0, 0, 0), 2)
+    #cv2.putText(dst, str(i), tuple(contours[i][0][0]), cv2.FONT_HERSHEY_COMPLEX, 0.8, (0, 0, 0), 2)
+    print(i, hierarchy[0][i])
+    
+    #cv2.waitKey(0)
+
+cv_imshow(dst)
+
+
+import cv2
+from google.colab.patches import cv_imshow
+
+src2 = cv2.imread("/content/gdrive/MyDrive/AI-SW-HACK/purple_map3.png") #원본 이미지
+#cv_imshow(src2)
+dst2 = src2.copy()
+gray2 = cv2.cvtColor(src2, cv2.COLOR_BGR2GRAY)
+
+circles = cv2.HoughCircles(gray2, cv2.HOUGH_GRADIENT, 1, 10, param1 = 50, param2 = 21, minRadius = 13, maxRadius = 17)
+circles2 = cv2.HoughCircles(gray2, cv2.HOUGH_GRADIENT, 1, 5, param1 = 25, param2 = 10, minRadius = 7, maxRadius = 10)
+print(circles[0])
+print(circles2[0])
+for i in circles[0]:
+    cv2.circle(dst2, (i[0], i[1]), i[2], (0, 255, 0), 2)
+
+for i in circles2[0]:
+    cv2.circle(dst2, (i[0], i[1]), i[2], (255, 0, 0), 2)
+    
+
+cv_imshow(dst2)
+
+```
+위의 코드를 실행하면 아래와 같이 잘 검출되는 것을 볼 수 있다. <br/>
+
+![outline](/assets/img/2021_hackathon_img/outline.png){: width="47%"} 
+![red_green_node](/assets/img/2021_hackathon_img/red_green_node.png){: width="47%"}  <br/><br/>
+
+### 3. 출발 - 도착 - 두 노드 사이의 거리 정보 저장
+해커톤 대회 시간, 24시간이라는 짧은 시간 안에 Q-learning 코드를 직접 구현하는 것은 어렵다고 판단! <br/>
+Q-learning은 [오픈 소스](https://github.com/shiluyuan/Reinforcement-Learning-in-Path-Finding)를 참고하기로 하고, 해당 소스 코드에서 우리가 얻어내야할 정보가 무엇인지 찾아내었다.
+
+> 출발 - 도착 - 두 노드 사이의 거리 정보
+
+**🤔 여기서 문제!**
+
+사람은 **길**로만 다닐 수 있고, 건물을 통과할 수 없다. <br/>
+노드끼리 선을 이을 때 어떻게 하면 건물을 통과하는 선들은 지울 수 있을까?
+
+이 부분에서 팀원들과 정말 많은 아이디어를 내고 고민했던 것 같다. 
+
+
+통행가능한 길을 하얀색 선으로 이미지에 나타내면, 다음과 같이 건물을 통과하는 선이 없는 것을 확인할 수 있다.
+
+![](/assets/img/2021_hackathon_img/red_green_w_line.png){: .center width="70%"}<br/><br/>
+
+다음 코드는 여기서 얻은 노드 및 거리 정보를 csv에 담아 저장하는 코드이다.
+
+```python
+all_circle = []
+
+for i in range(len(circles[0])):
+  tmp = [int(circles[0][i][0]),int(circles[0][i][1])]
+  all_circle.append(tmp)
+for i in range(len(circles2[0])):
+  tmp = [int(circles2[0][i][0]),int(circles2[0][i][1])]
+  all_circle.append(tmp)  
+
+print(all_circle)
+
+############## 지금까지 구한 리스트 정보 정리 ##############
+
+#circles --> 건물 노드 좌표
+#circles2 --> 도로 노드 좌표
+
+#circles[0][i][0] : i번째 건물 노드의 중심의 x좌표
+#circles[0][i][1] : i번째 건물 노드의 중심의 y좌표
+
+#all_circle --> 모든 노드(건물+도로) 좌표
+#all_circle[i][0] : i번째 노드의 중심의 x좌표
+#all_circle[i][1] : i번째 노드의 중심의 y좌표
+
+#len(contours) : 외곽선의 갯수
+#contours[i] : i번째 도형의 외곽선
+#contours[i][j][0][0] : i번째 도형의 외곽선의 점들 중 j번째 점의 x좌표
+#contours[i][j][0][1] : i번째 도형의 외곽선의 점들 중 j번째 점의 y좌표
+
+ for k in range(len(contours)):
+   #print('______________________')
+   for m in range(len(contours[k])):
+     x = contours[k][m][0][0]
+     y = contours[k][m][0][1]
+
+import math
+
+# 두 점 사이의 거리 구하는 함수
+def distance(x1, y1, x2, y2):
+    result = math.sqrt( math.pow(x1 - x2, 2) + math.pow(y1 - y2, 2))
+    return result
+
+#original 출발점, connected 도착점 weight 사이 거리값
+
+original = []
+connected = []
+weight = []
+
+for i in range(len(all_circle)):
+  for j in range(i+1,len(all_circle)):
+    dst3 = src.copy()
+    dst3 = cv2.line(dst3, (all_circle[i][0],all_circle[i][1]), (all_circle[j][0],all_circle[j][1]), (255,255,255), 8, 8, 0)
+    gray3 = cv2.cvtColor(dst3, cv2.COLOR_BGR2GRAY)
+    ret3, binary3 = cv2.threshold(gray3, 127, 255, cv2.THRESH_BINARY)
+    binary3 = cv2.bitwise_not(binary3)
+    contours3, hierarchy3 = cv2.findContours(binary3, cv2.RETR_CCOMP, cv2.CHAIN_APPROX_NONE)
+    if(len(contours3)>len(contours)):
+      continue
+    else:
+      dst2 = cv2.line(dst2, (all_circle[i][0],all_circle[i][1]), (all_circle[j][0],all_circle[j][1]), (255,255,255), 1, 8, 0)
+      # csv를 만들기 위한 리스트 구현
+      ori = int(i)
+      con = int(j)
+      wei = distance(all_circle[i][0],all_circle[i][1],all_circle[j][0],all_circle[j][1])
+      original.append(ori)
+      connected.append(con)
+      weight.append(wei)
+
+cv_imshow(dst2)
+
+tmp_pdf = {
+    'original':original,
+    'connected':connected,
+    'weight':weight
+}
+
+pdf = pd.DataFrame(tmp_pdf)
+# pdf --> csv
+# 구글 드라이브 내 AI-SW-HACK 폴더에 gragh라는 이름으로 csv 저장
+pdf.to_csv('/content/gdrive/MyDrive/AI-SW-HACK/graph.csv',header=True, index=False)
+```
+
+### 4. Q-learning
+
+```python
+from get_dict import get_dict
+from get_R_Q import initial_R
+from get_R_Q import initial_Q
+from get_result import get_result
+
+import pandas as pd
+import time
+
+data = pd.read_csv("/content/gdrive/MyDrive/AI-SW-HACK/graph.csv")
+graph = get_dict(data)
+
+A = graph["A"]
+Z = graph["Z"]
+weight = graph["weight"]
+A_Z_dict = graph["A_Z_dict"]
+
+##
+start = 40
+end = [51]
+
+R = initial_R(A,Z,weight,A_Z_dict)
+Q = initial_Q(R)
+
+alpha = 0.7 # learning rate
+epsilon = 0.1 #greedy policy
+n_episodes = 1000
+
+time0 = time.time()
+result = get_result(R,Q,alpha,epsilon,n_episodes,start,end)
+print("time is:",time.time() - time0)
+
+print(result["ends_find"])
+print(result["cost"])
+print(result["routes_number"])
+
+print(result["all_routes"])
+```
+
+
+### 5. 출발 - 도착 노드까지 최적 경로 보여주기
+
+
+```python
+Final_routes = result["all_routes"][end[0]][0]
+
+SHOW = Look.copy()
+
+path = '/content/gdrive/MyDrive/AI-SW-HACK/Show_image/show_image0.jpg'
+cv2.imwrite(path,SHOW)
+
+for i in range(0,len(Final_routes)-1):
+  num1 = Final_routes[i]
+  num2 = Final_routes[i+1]
+  SHOW = cv2.line(SHOW, (all_circle[num1][0],all_circle[num1][1]), (all_circle[num2][0],all_circle[num2][1]), (255,255,255), 8, 8, 0)
+  path = '/content/gdrive/MyDrive/AI-SW-HACK/Show_image/show_image' + str(i+1) + '.jpg'
+  cv2.imwrite(path,SHOW)
+  #cv_imshow(SHOW)
+
+cv_imshow(SHOW)
+```
+
+### 6. 위의 과정 비디오로 만들어주기
+
+```python
+import glob
+
+img_array = []
+for filename in glob.glob('/content/gdrive/MyDrive/AI-SW-HACK/Show_image/*.jpg'):
+    img = cv2.imread(filename)
+    height, width, layers = img.shape
+    size = (width,height)
+    img_array.append(img)
+ 
+ 
+out = cv2.VideoWriter('/content/gdrive/MyDrive/AI-SW-HACK/Show_video/show_video.avi',cv2.VideoWriter_fourcc(*'DIVX'), 1, size)
+ 
+for i in range(len(img_array)):
+    out.write(img_array[i])
+out.release()
+```
+### 최종 결과물
+
+![](/assets/img/2021_hackathon_img/final_node_map.png){: .center width="70%"}<br/><br/>
 
 ---
 
