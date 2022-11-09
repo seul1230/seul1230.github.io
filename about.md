@@ -10,7 +10,7 @@ redirect_from:
 
 # About
 
-<img src="/assets/img/profile_img.png" alt="<yeseul> <cho>" class="avatar"/>
+
 
       
 
