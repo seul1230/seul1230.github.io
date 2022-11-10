@@ -6,7 +6,7 @@ categories: Projects
 ---
 # [ Project ] 2021 Hackathon : 교내 건물들 간 최단거리 찾기
 
-## Project
+<!-- ## Project
 교내 SW * AI 중심대학추진단 주관 2021 제10회 SW인공지능 해커톤
 
 ## 🌿 Background
@@ -372,4 +372,4 @@ out.release()
 <mark style='background-color: #ffdce0'> 연한 빨강 </mark>
 <mark style='background-color: #dcffe4'> 연한 초록 </mark>
 <mark style='background-color: #f5f0ff'> 연한 보라 </mark>
--->
+--> -->
