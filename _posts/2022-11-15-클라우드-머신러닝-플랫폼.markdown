@@ -34,9 +34,36 @@ categories: Tips
 ETL 및 ELT는 DB에서 보편적으로 사용되는 2가지 데이터 파이프라인 구성이다.
 ML과 DL로 인해 두 파이프라인의 필요성이 커졌다. 일반적으로 빅데이터에서 가장 많은 시간이 소비되는 단계는 Load 단계이므로 ELT가 더 높은 유연성을 제공한다.
 
+![](/assets/img/img_cloud_platform/etl_elt.png){: .center width="90%"}
+
+
 #### ETL <font color="lightgray">Extract, Transform, Load</font>
+데이터소스에서 가져온 rawdata로 데이터 웨어하우스에 바로 저장할 수 없기 때문에 ETL 과정이 필요하다.
+
+**핵심은 Transform하는 단계**
+
+비즈니스 또는 분석 용도에 맞춰 데이터를 잘 정제하는 게 중요하다. 데이터 크기가 크면 클수록, Transform하는 시간도 오래 걸린다.
+
+ETL 파이프라인이 설계된 후에는 1일 1회 등의 방식으로 업데이트된 내용을 다시 가져와서 새로운 내용을 저장한다.
 
 #### ELT <font color="lightgray">Extract, Load, Transform</font>
+요즘은 ETL보다 ELT를 선호한다.
+데이터가 점점 많아지면서 Transform하는데 시간이 오래 걸리면서 ETL보다는 먼저 적재를 해놓고 어떻게 변형할지 고민하는 ELT 과정이 더 자주 쓰이고 있다. 또한, cpu, 메모리, ssd, hdd 등 리소스 가격의 인하와 글라우드 사용료 인하로 인해 전부 다 저장해버리는 게 낫겠다는 컨셉에서 데이터를 먼저 저장하게 되었다고도 한다.
+
+모든 데이터 소스를 하나의 공간 <font color='gray'>DataLake</font>로 적재한 뒤, 그 용도에 따라서 필요한 경우 툴이나 시스템이 직접 변형하게 하는 과정이다.
+
+#### 🤔 Data Lake vs Data Warehouse
+**Data Warehouse**
+
+* 어느 정도 가치가 있고 구조화된 데이터들이 모여있는 곳
+* 공간에 제약이 있음 -> 필요한 모든 데이터를 저장하지 않고 최근 데이터만 저장
+* BI툴과 연결해서 시각화 -> 지표계산 하는 것이 일반적
+
+**Data Lake**
+
+* Data Warehouse 기반 파이프라인보다 훨씬 더 큰 개념
+* 구조화된 데이터도 있지만 비구조화된 데이터 존재
+* DW보다 용량 크고, 비용 저렴 -> 모든 데이터 저장
 
 ## 3. 모델 구축을 위한 온라인 환경 지원
 #### ☎️<font color = 'gray'> PAST</font>
@@ -127,5 +154,12 @@ AutoML 시스템은 다수의 모델을 시도해서 최적의 목적 함수 값
 
 
 
-### 4. 마무리하면서
-이렇게 뉴스기사 1개에 대한 댓글을 수집하는 코드를 짜봤다. 다음엔 [참고 사이트](https://hoonzi-text.tistory.com/4)를 참고해서 더 많은 기사에 대한 댓글을 웹스크래핑해보도록 하자.
+### 마무리하면서
+머신러닝 공부하면서 모델의 배포까지는 생각해보지 못했는데 해당 글을 읽고 서비스를 배포할 때는 생각보다 많은 것을 고려해야된다는 것을 알았다. 앞으로 더 넓게, 멀리 생각해보는 연습을 해야겠다.
+
+### 참고
+[ETL ELT 차이 | 요즘엔 ETL에서 ELT로 흐름이 바뀌고 있다?](https://pearlluck.tistory.com/650)
+
+[클라우드 머신러닝 플랫폼 선택 기준 12가지](https://www.itworld.co.kr/news/160710#csidxec3e93b587f06c0976bc13668c50a61)
+
+[ETL vs ELT : Key Differences and Latest Trend](https://www.striim.com/blog/etl-vs-elt-differences/)
