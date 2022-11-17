@@ -72,9 +72,10 @@ sns.regplot(x = y_valid, y = model_lr.predict(X_valid))
 * 0801 파일과 다르게 수치형 변수 범주형 변수를 구분하지 않고 진행!
 
 ### 3. Extra Tree model
+![](/assets/img/img_221116/extra_tree_model.png){: .center width="60%"}
 * 가장 차별적인 임계값을 찾는 대신
-* 각 후보 기능에 대해 임계값이 무작위로 그려지고
-* 무작위로 생성된 임계값 중 가장 좋은 것을 -> 분할 규칙으로!
+* **각 후보 기능에 대해 임계값**이 무작위로 그려지고
+* **무작위로 생성된 임계값 중 가장 좋은 것**을 -> 분할 규칙으로!
     * 분기 지점을 랜덤으로 선택하기 때문에 randomforest보다 속도가 빠르고 더 많은 특성을 고려할 수 있다.
     * randomforest와 동일한 원리를 이용하기 때문에 많은 특징을 공유한다.
     * randomforest와 비교했을 때 성능이 미세하게 우위에 있음
@@ -94,13 +95,16 @@ sns.regplot(x = y_valid, y = model_lr.predict(X_valid))
     * **<mark style='background-color: #fff5b1'>개별 트리의 낮은 성능</mark>**이 문제일 때는 **이전 트리의 오차를 보완**해 가면서 만들기 때문에 부스팅이 좀 더 적합합니다.
 
 ### 5. 경사하강법
+![](/assets/img/img_221116/gradient_descent.png){: .center}
 * 목적
     * 손실함수가 가장 작고, 예측을 잘 하는 모델의 파라미터를 찾기 위함
 * 예측값과 정답값 사이에 손실이 가장 작은 지점을 찾기 위해서 기울기가 0인 지점을 찾아낸다.
 * 이 지점을 찾기 위해 경사를 점점 내리는 것을 경사하강법이라고 한다.
-* learning rate
+
+* **learning rate**
     * 학습률을 의미하는데 보폭이라고 번역하기도 함
     * 보폭이 너무 크면 대충 찾기 때문에 최소점을 지나치고 발산하기도 함
+![](/assets/img/img_221116/learning_rate.png){: .center}
 
 ### 6. GBM (Gradient Boosting Machine)
 * 회귀 / 분류 분석 수행할 수 있는 예측 모형
@@ -109,17 +113,20 @@ sns.regplot(x = y_valid, y = model_lr.predict(X_valid))
 * 계산량이 많이 필요하기 때문에, 하드웨어 효율적으로 구현하는 것이 중요
 
 ### 7. Gradient Boosting Tree
-* 랜덤포레스트와 다르게 무작위성이 없다.
-* 매개변수 잘 조정해야한다.
-* 훈련시간이 길다.
-* 데이터의 scale에 구애받지 않는다.
-* 고차원의 희소한 데이터에 잘 작동하지 않는다.
-
-### 8. Gradient Boosting Tree
+![](/assets/img/img_221116/gradient_boosting.png){: .center}
 * GBT라고도 부름
-* 부스팅이라는 앙상블 기법을 이용해 내부적으로 여러 모델을 생성한 후 모델들을 종합해 최종 모델을 생성
+* **부스팅**이라는 앙상블 기법을 이용해 **내부적으로 여러 모델을 생성**한 후 모델들을 **종합**해 최종 모델을 생성
+* **특징**
+  * 랜덤포레스트와 다르게 **무작위성이 없다**.
+  * 매개변수 잘 조정해야한다.
+  * **훈련시간**이 길다.
+  * 데이터의 **scale**에 구애받지 않는다.
+  * **고차원**의 **희소한 데이터**에 잘 작동하지 않는다.
 
-### 9. XGBoost (Extreme Gradient Boosting)
+
+### 8. XGBoost (Extreme Gradient Boosting)
+![](/assets/img/img_221116/xgboost.png){: .center}
+
 * 모든 가능한 트리를 나열하여 최적 트리 찾는 것은 거의 불가능
 * 2차 근사식을 바탕으로 한 손실함수를 토대로 매 iteration마다 하나의 leaf로부터 가지를 늘려나가는 것이 효율적
 * 손실 함수가 최대한 감소하도록 하는 split point를 찾는 것이 목표 𖤐 
@@ -138,7 +145,7 @@ sns.regplot(x = y_valid, y = model_lr.predict(X_valid))
   * overfitting 위험성
 * 해당 모델 활용한 플젝 포스트 + 미니플젝3 코드 및 과정 다시 읽어보기
 
-### 10. LightGBM
+### 9. LightGBM
 * Light Gradient Boosting Machine
 * **GOSS(Gradient based One Side Sampling)**과 **EFB(Exclusive Feature Bundling)**을 적용
     * **<mark style='background-color: #fff5b1'>GOSS 기반 단축 샘플링</mark>**
