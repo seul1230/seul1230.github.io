@@ -29,6 +29,8 @@ categories: SpecialLecture
 
 
 ## 2. 분류와 군집화는 어떻게 다를까?
+![](/assets/img/img_221121/class_cluster.png){: .center width="70%"} 
+
 * **분류 <font color='lightgray'>Classification</font>**
   * 사전 정의된 범주가 있는 labeled data로부터 예측 모델을 학습하는 문제
   * Supervised Learning (지도 학습)
@@ -36,6 +38,29 @@ categories: SpecialLecture
   * 사전 정의된 범주가 없는 unlabeled data에서 최적의 그룹을 찾아나가는 문제
   * Unsupervised Learning (비지도 학습)
 
+
+## 3. 군집화 활용  <font color = 'lightgray'>Application</font>
+군집화는 특히 **세분화 <font color = 'lightgray'>Segmentation</font>**에서 활용된다.
+
+* **E-commerce**
+  * 온라인 쇼핑몰
+    * 고객 특정 유형으로 분류 ➡️ 맞춤 서비스 제공
+    * 새로운 고객 유형 발견 ➡️ 마케팅 전략에 활용
+
+* **Tracking**
+  * 이미지 / 영상
+
+* **Anomaly detection**
+  * 이상검출
+  * 제조 / 물류 분야
+
+## 4. 군집화 알고리즘 <font color = 'lightgray'>Clustering Algorithm</font>
+
+* **K-Means (Centroid)**
+* **K-Medoids**
+* **Mean Shift (Centroid)**
+* **Gaussian Mixture Model (정규분포)**
+* **DBSCAN (밀도)**
 
 
 ## 마무리하면서..
