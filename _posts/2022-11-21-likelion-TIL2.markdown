@@ -17,7 +17,7 @@ categories: SpecialLecture
 
 ***
 
-## 주성분 분석 <font color='lightgray'>Principal Component Analysis</font>
+## 1. 주성분 분석 <font color='lightgray'>Principal Component Analysis</font>
 
 차원축소(dimensionality reduction)와 변수추출(feature extraction) 기법으로 널리 쓰이고 있는 **<mark style='background-color: #fff5b1'>PCA (Principal Component Analysis)</mark>**은 비지도학습 <font color = 'gray'>Unsupervised Learning</font>에서 
 자료에 **중복된 정보가 많을 경우**, 자료가 갖는 차원보다 **더 작은 수의 차원으로도** 자료에 내재한 정보를 설명할 수 있을 것이라는 아이디어에서 소개된 개념이다. 
@@ -35,7 +35,7 @@ categories: SpecialLecture
 * 변수가 너무 많아 기존 변수를 조합해 새로운 변수를 가지고 모델링을 하려고 하거나
 * **회귀 분석**과 같은 종속관계 분석을 할 때 **다중 공산성 <font color='gray'>multicollinearity</font>**을 없애기 위해 사용한다.
 
-## PCA의 원리 <font color='lightgray'>How It Works</font>
+## 2. PCA의 원리 <font color='lightgray'>How It Works</font>
 
 데이터의 차원을 축소할 때 기존의 정보가 최대한 보존될 수 있는 새로운 축을 찾아야 한다. 이렇게 찾은 축을 Principle Component라고 하며, 주로 줄여서 PC라고 부른다. <br/><br/>
 
@@ -44,14 +44,14 @@ categories: SpecialLecture
 
 PC를 찾기 위해서는 covaiance matrix(공분산 행렬) 의 eigen vector(고유 벡터) 값을 찾아야 하고, 이 값 중 가장 큰 값이 우리가 원하는 PC 에 만족한다고 볼 수 있다. 
 
-## 분산을 최대로 보존할 수 있는 축을 선택하는 이유?
+## 3. 분산을 최대로 보존할 수 있는 축을 선택하는 이유?
 ![](/assets/img/img_221121/pca_variance.png){: .center width="80%"} <br/>
 
 위의 그림처럼 간단한 2차원 데이터셋이 있을 때 c2의 직선을 선택하는 것이 분산을 가장 적게 나타내는 방법인데, 이렇게 되면 데이터를 유실하기가 쉬워진다.
 
 따라서, 다른 방향으로 투영하는 것 보다 분산을 최대로 보존할 수 있는 축을 선택하는 것이 정보를 가장 적게 손실할 수 있다고 생각할 수 있다. 분산이 커져야 데이터들사이의 차이점이 명확해지고, 그것이 모델을 더욱 좋은 방향으로 만들 수 있을 것이기 때문이다.
 
-## PCA 적용
+## 4. PCA 적용
 #### Step 1 : 데이터 정규화 (각 변수 값들의 평균 = 0)
 ![](/assets/img/img_221121/pca_regularization.png){: .center width="80%"} <br/>
 
@@ -81,7 +81,7 @@ PC를 찾기 위해서는 covaiance matrix(공분산 행렬) 의 eigen vector(�
 
 ![](/assets/img/img_221121/inverse_transform.png){: .center width="80%"} <br/>
 
-## 결과 확인
+## 5. 결과 확인
 
 ➡️ **Scree Plot** 
 
