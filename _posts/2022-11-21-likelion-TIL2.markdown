@@ -8,9 +8,11 @@ categories: SpecialLecture
 ## 👩🏻‍💻 K-MOOC 실습으로 배우는 머신러닝 강의
 오늘도 화이팅 :)
 
-오늘은 조은님 건강상의 이유로 [K-MOOC 강의](http://www.kmooc.kr/courses/course-v1:SSUk+SSMOOC20K+2022_T1/course/)로 대체되었다. **[[ 1121 Special Lecture TIL ] 인공지능과 머신러닝, 그리고 딥러닝](https://seul1230.github.io/speciallecture/2022-11-21-likelion-TIL1/)**와 같은 날 작성된 포스트이다. 
+오늘은 조은님 건강상의 이유로 [K-MOOC 강의](http://www.kmooc.kr/courses/course-v1:SSUk+SSMOOC20K+2022_T1/course/)로 대체되었다. 
 
-📙 이번 포스트는 강의 내용과 추가로 다른 자료들을 찾아 내용을 작성하였으며, **이론 및 개념**을 중심적으로 다룰 예정이다.
+**[[ 1121 Special Lecture TIL ] 인공지능과 머신러닝, 그리고 딥러닝](https://seul1230.github.io/speciallecture/2022-11-21-likelion-TIL1/)**와 같은 날 작성된 포스트이다. 
+
+📙 이번 포스트는 강의 내용과 추가로 다른 자료들을 찾아 내용을 작성하였으며, **이론 및 개념**에 대해 공부하고 **예제 실습**도 해본 후 내용을 정리하였다.
 
 <br/>
 
@@ -84,7 +86,7 @@ PC를 찾기 위해서는 covaiance matrix(공분산 행렬) 의 eigen vector(�
 
 ➡️ **Scree Plot** 
 
-![](/assets/img/img_221121/scree_plot.png){: .center width="80%"} <br/>
+![](/assets/img/img_221121/elbow_point.png){: .center width="80%"} <br/>
 
 위의 그래프에서 네모친 곳처럼 정보의 감소량이 확 줄어드는 구간을 Elbow point라고 부른다. Eigenvalue의 Elbowpoint를 확인하고 적절하게 몇 차원으로 축소할지 결정한다.
 
@@ -94,9 +96,106 @@ PC를 찾기 위해서는 covaiance matrix(공분산 행렬) 의 eigen vector(�
 
 ![](/assets/img/img_221121/loading_plot.png){: .center width="80%"} <br/>
 
-해당 plot은 각 주성분을 만들 때, 기존 데이터 x의 각 변수가 기여하는 정도를 판단하여 사후적인 변수에 대한 해석을 할 때 사용할 수 있다.
+해당 plot은 각 주성분을 만들 때, 기존 데이터 x의 각 변수가 기여하는 정도를 판단하여 사후적인 변수에 대한 해석을 할 때 사용할 수 있다. 
 
-<!-- ## 💻 실습 예제 코드 -->
+<br/>
+
+*** 
+
+## 💻 실습 예제 코드 
+```python
+import seaborn as sns
+import pandas as pd
+from sklearn.decomposition import PCA
+
+url = "https://archive.ics.uci.edu/ml/machine-learning-datebase/iris/irs.data"
+df = pd.read_csv(url, 
+                 naems = ['sepal length', 'sepal width', 'petal length',
+                          'petal width', 'target'])
+```
+
+![](/assets/img/img_221121/df_iris.png){: .center width="60%"} <br/>
+
+
+```python
+# Use only continuous data
+data = df[df.columns[0:4]]
+
+# Create PCA object with number of principal component
+pca = PCA(n_components = len(df.columns) - 1)
+pca_fit = pca.fit(data)
+```
+
+```python
+print('\n====== PCA Reulst Summary ======\n')
+print('Singular value : \n', pca.singular_values_)
+print('\n Singular vector : \n', pca.components_.T)
+print('\n Explain Standard deviations : \n', np.sqrt(pca.explained_variance_))
+print('\n Explain Variance Ratio : \n', pca.explained_variance_ratio_)
+print('\n Noise Variance : \n', pca.noise_variance_)
+```
+
+```
+====== PCA Reulst Summary ======
+
+Singular value : 
+ [25.08986398  6.00785254  3.42053538  1.87850234]
+
+ Singular vector : 
+ [[ 0.36158968  0.65653988 -0.58099728  0.31725455]
+ [-0.08226889  0.72971237  0.59641809 -0.32409435]
+ [ 0.85657211 -0.1757674   0.07252408 -0.47971899]
+ [ 0.35884393 -0.07470647  0.54906091  0.75112056]]
+
+ Explain Standard deviations : 
+ [2.05544175 0.49218246 0.28022118 0.15389291]
+
+ Explain Variance Ratio : 
+ [0.92461621 0.05301557 0.01718514 0.00518309]
+
+ Noise Variance : 
+ 0.0
+ ```
+
+```python
+# Scree Plot
+plt.title("Scree Plot")
+plt.xlabel("Number of Components")
+plt.ylabel("Cumulative Explained Variance")
+plt.plot(pca.explained_variance_, 'o-')
+```
+
+![](/assets/img/img_221121/scree_plot.png){: .center width="60%"} <br/>
+
+
+```python
+# get predict values
+pca_pred = pd.DataFrame(pca.fit_transform(data))
+pca_pred = pd.concat([pca_pred, df['target']], axis = 1)
+pca_pred
+```
+
+![](/assets/img/img_221121/pca_pred.png){: .center width="60%"} <br/>
+
+
+```python
+sns.scatterplot(pca_pred[0], pca_pred[1], data = pca_pred, hue = 'target',
+                style = 'target', s = 100);
+```
+
+![](/assets/img/img_221121/scatterplot_pca.png){: .center width="60%"} <br/>
+
+
+
+## 마무리하면서..
+지도학습만 주로 다루다 보니 PCA는 개념만 알고 있고 직접 해볼 기회가 없었는데 이번에 해당 내용에 대해 정리하면서 우연히 차원 축소 실습 코드를 발견했다. 직접 해보니 간단하고 더 직관적으로 해당 내용에 대해 이해할 수 있었다. 비지도학습을 다루게 되는 그 어느 날 오늘 공부한 내용이 도움이 되길!!
+
+### 다음 포스트에서 만나요 🙌
+<!-- 다음 포스트에서는 [K-MOOC 실습으로 배우는 머신러닝](http://www.kmooc.kr/courses/course-v1:SSUk+SSMOOC20K+2022_T1/course/)에서 내가 부족한 부분들을 정리해 더 작성할 예정이다. -->
+
+<br/>
+
+***
 
 ## 참고
 
@@ -107,9 +206,10 @@ PC를 찾기 위해서는 covaiance matrix(공분산 행렬) 의 eigen vector(�
 
 [Stack Exchange - Making sense of principal component analysis, eigenvectors & eigenvalues](https://stats.stackexchange.com/questions/2691/making-sense-of-principal-component-analysis-eigenvectors-eigenvalues)
 
+[[sklearn] PCA (Principal Component Analysis)](https://m.blog.naver.com/pjc1349/221996214527)
 
-### 다음 포스트에서 만나요 🙌
-<!-- 다음 포스트에서는 [K-MOOC 실습으로 배우는 머신러닝](http://www.kmooc.kr/courses/course-v1:SSUk+SSMOOC20K+2022_T1/course/)에서 내가 부족한 부분들을 정리해 더 작성할 예정이다. -->
+
+
 
 
 <!-- ### 🐾　　🐾
