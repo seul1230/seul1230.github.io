@@ -85,7 +85,7 @@ PC를 찾기 위해서는 covaiance matrix(공분산 행렬) 의 eigen vector(�
 
 ➡️ **Scree Plot** 
 
-![](/assets/img/img_221121/elbow_point.png){: .center width="80%"} <br/>
+![](/assets/img/img_221121/elbow_point.png){: .center width="70%"} <br/>
 
 위의 그래프에서 네모친 곳처럼 정보의 감소량이 확 줄어드는 구간을 Elbow point라고 부른다. Eigenvalue의 Elbowpoint를 확인하고 적절하게 몇 차원으로 축소할지 결정한다.
 
@@ -93,7 +93,7 @@ PC를 찾기 위해서는 covaiance matrix(공분산 행렬) 의 eigen vector(�
 
 ➡️ **Loading Plot**
 
-![](/assets/img/img_221121/loading_plot.png){: .center width="80%"} <br/>
+![](/assets/img/img_221121/loading_plot.png){: .center width="70%"} <br/>
 
 해당 plot은 각 주성분을 만들 때, 기존 데이터 x의 각 변수가 기여하는 정도를 판단하여 사후적인 변수에 대한 해석을 할 때 사용할 수 있다. 
 
