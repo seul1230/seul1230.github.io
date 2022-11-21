@@ -6,11 +6,8 @@ categories: SpecialLecture
 ---
 # [ 1121 Special Lecture TIL ] 인공지능과 머신러닝, 그리고 딥러닝
 ## 👩🏻‍💻 K-MOOC 실습으로 배우는 머신러닝 강의
-오늘도 화이팅 :)
 
-오늘은 조은님 건강상의 이유로 [K-MOOC 강의](http://www.kmooc.kr/courses/course-v1:SSUk+SSMOOC20K+2022_T1/course/)로 대체되었다.
-
-📙 이번 포스트는 강의 내용과 추가로 다른 자료들을 찾아 내용을 작성하였으며, **이론 및 개념**을 중심적으로 다룰 예정이다.
+📙 이번 포스트는 [K-MOOC 강의](http://www.kmooc.kr/courses/course-v1:SSUk+SSMOOC20K+2022_T1/course/) 내용과 추가로 다른 자료들을 찾아 내용을 작성하였으며, **이론 및 개념**을 중심적으로 다룰 예정이다.
 
 <br/>
 
