@@ -50,8 +50,51 @@ PC를 찾기 위해서는 covaiance matrix(공분산 행렬) 의 eigen vector(�
 
 따라서, 다른 방향으로 투영하는 것 보다 분산을 최대로 보존할 수 있는 축을 선택하는 것이 정보를 가장 적게 손실할 수 있다고 생각할 수 있다. 분산이 커져야 데이터들사이의 차이점이 명확해지고, 그것이 모델을 더욱 좋은 방향으로 만들 수 있을 것이기 때문이다.
 
+## PCA 적용
+#### Step 1 : 데이터 정규화 (각 변수 값들의 평균 = 0)
+![](/assets/img/img_221121/pca_regularization.png){: .center width="80%"} <br/>
+
+#### Step 2 : 최적화 문제 정의
+* 데이터를 사영시킨 후의 분산을 최대화하는 새로운 축을 찾는 것이 목표!
+
+![](/assets/img/img_221121/max_variance.png){: .center width="60%"} <br/>
+
+#### Step 3 : 최적해 도출
+
+![](/assets/img/img_221121/Lagrangian.png){: .center width="80%"} <br/>
+
+* Lagrangian multiplier를 사용하여 제약식을 목적식에 추가한 새 목적식 생성
+* 새 목적식을 미분하여 기울기가 0이 되는 점에서 최적해 발생
+
+#### Step 4 : 고유벡터 (eigenvector) 들을 고유값 (eigenvalue) 기준으로 내림차순 정렬
+* 각 고유벡터는 선형변환된 공간에서 서로 직교하는 새로운 축이 됨
+
+#### Step 5 : 변수 추출을 통한 데이터 변환
+
+![](/assets/img/img_221121/extracted_data.png){: .center width="80%"} <br/>
 
 
+#### Step 6 : 추출된 변수 중 일부만을 사용하여 데이터 역변환
+
+<br/>
+
+![](/assets/img/img_221121/inverse_transform.png){: .center width="80%"} <br/>
+
+## 결과 확인
+
+➡️ **Scree Plot** 
+
+![](/assets/img/img_221121/scree_plot.png){: .center width="80%"} <br/>
+
+위의 그래프에서 네모친 곳처럼 정보의 감소량이 확 줄어드는 구간을 Elbow point라고 부른다. Eigenvalue의 Elbowpoint를 확인하고 적절하게 몇 차원으로 축소할지 결정한다.
+
+<br/>
+
+➡️ **Loading Plot**
+
+![](/assets/img/img_221121/loading_plot.png){: .center width="80%"} <br/>
+
+해당 plot은 각 주성분을 만들 때, 기존 데이터 x의 각 변수가 기여하는 정도를 판단하여 사후적인 변수에 대한 해석을 할 때 사용할 수 있다.
 
 <!-- ## 💻 실습 예제 코드 -->
 
