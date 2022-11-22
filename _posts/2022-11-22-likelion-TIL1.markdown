@@ -14,6 +14,22 @@ categories: SpecialLecture
 👉 **[[ AI / ML ] 머신러닝 - 군집화 (Clustering)](https://seul1230.github.io/speciallecture/2022-11-21-likelion-TIL3/)** 여기로!
 
 
+<br/>
+
+***
+
+## 목차
+- [[ AI / ML ] 머신러닝 - 군집화 (Clustering) 실습](#-ai--ml--머신러닝---군집화-clustering-실습)
+  - [👩🏻‍💻 K-MOOC 실습으로 배우는 머신러닝 강의](#-k-mooc-실습으로-배우는-머신러닝-강의)
+  - [목차](#목차)
+  - [💻 실습 예제 코드](#-실습-예제-코드)
+    - [1.  K-Means Clustering](#1--k-means-clustering)
+    - [2. Hierarchical Clustering](#2-hierarchical-clustering)
+    - [3. DBSCAN Clustering](#3-dbscan-clustering)
+  - [마무리하면서..](#마무리하면서)
+    - [다음 포스트에서 만나요 🙌](#다음-포스트에서-만나요-)
+  - [참고](#참고)
+
 
 <br/>
 

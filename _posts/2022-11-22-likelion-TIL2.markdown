@@ -18,14 +18,29 @@ categories: SpecialLecture
 ***
 
 ## 목차
-
+- [[ AI / ML ] Logistic Regression](#-ai--ml--logistic-regression)
+  - [👩🏻‍💻 K-MOOC 실습으로 배우는 머신러닝 강의](#-k-mooc-실습으로-배우는-머신러닝-강의)
+  - [목차](#목차)
+  - [Logistic Regression](#logistic-regression)
+      - [이진 분류 Binary Classification](#이진-분류-binary-classification)
+      - [Sigmoid 함수](#sigmoid-함수)
+      - [비용 함수 Cost Function](#비용-함수-cost-function)
+      - [🤔 선형 회귀와 로지스틱 회귀의 cost function?](#-선형-회귀와-로지스틱-회귀의-cost-function)
+  - [💻 실습 예제 코드](#-실습-예제-코드)
+    - [PyTorch로 로지스트 회귀 구현하기](#pytorch로-로지스트-회귀-구현하기)
+      - [**[ 필요한 도구 import ]**](#-필요한-도구-import-)
+      - [**[ W와 b 값 초기화 ]**](#-w와-b-값-초기화-)
+      - [**[ 모델 훈련 ]**](#-모델-훈련-)
+      - [**[ 예측 ]**](#-예측-)
+    - [다음 포스트에서 만나요 🙌](#다음-포스트에서-만나요-)
+  - [참고](#참고)
 
 
 <br/>
 
 ***
 
-## 1. Logistic Regression
+## Logistic Regression
 로지스틱 회귀는 이름에 회귀가 들어가지만 **분류 <font color = 'lightgray'>Classification</font>** 작업에 사용할 수 있다. 
 
 #### 이진 분류 Binary Classification 
