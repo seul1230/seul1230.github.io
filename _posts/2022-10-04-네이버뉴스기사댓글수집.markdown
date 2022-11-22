@@ -26,14 +26,14 @@ categories: Tips
 ## 네이버 뉴스 기사 댓글 가져오기
 멋사 AI에서 미니프로젝트1을 진행하면서 기억하면 좋을 점을 기록해놓으려고 한다. 
 
-![naver_news](/assets/img/naver_news_comment/naver_news.png){:width="100%" height="100%"}
+![naver_news](/assets/img/naver_news_comment/naver_news.png){: width="100%" height="100%"}
 
 ### 1. URL 가져오기
 뉴스 기사 댓글 부분으로 들어가면 해당 기사에 대한 댓글만 볼 수 있다. 이 페이지에서 마우스 우클릭 > 검사 (Inspect) > Network를 눌러 다음과 같은 창이 나오면 🚫 표시를 눌러 초기화해준다. <br/><br/>
-![initialize_log](/assets/img/naver_news_comment/initialize_log.png){:width="70%" height="70%"} <br/><br/>
+![initialize_log](/assets/img/naver_news_comment/initialize_log.png){: width="70%" height="70%"} <br/><br/>
 여기서 밑으로 스크롤을 내리면 보이는 **`더보기`** 버튼을 눌러주면 JS request가 새로 생긴 것을 볼 수 있다.<br/><br/>
-![comment_more](/assets/img/naver_news_comment/comment_more.png){:width="100%" height="100%"} <br/><br/>
-![headers_requesturl](/assets/img/naver_news_comment/headers_requesturl.png){:width="100%" height="100%"} <br/><br/>
+![comment_more](/assets/img/naver_news_comment/comment_more.png){: width="100%" height="100%"} <br/><br/>
+![headers_requesturl](/assets/img/naver_news_comment/headers_requesturl.png){: width="100%" height="100%"} <br/><br/>
 url은 이 부분의 **`Headers`**에 있는 **`Request URL`**을 참고해서 가져올 것이다. <br/> <br/>
 
 
@@ -69,7 +69,7 @@ soup
 'referer'을 추가하여 실행해보면 다음과 같이 "**요청을 성공적으로 처리하였습니다.**"와 같은 메시지가 뜨면서 댓글을 받아오는 것을 확인할 수 있다. <br/>
 
 
-![message_success](/assets/img/naver_news_comment/message_success.png){:width="100%" height="100%"} <br/><br/>
+![message_success](/assets/img/naver_news_comment/message_success.png){: width="100%" height="100%"} <br/><br/>
 
 
 **`jQuery331019634359292220194_1664536607172`**로 감싸져 있는 부분만 추출해오기 위해 **`_callback`** 부분을 url에서 빼준다. 이렇게 한 뒤 위의 코드를 실행해주면 저 긴 `jQuery~` 대신 **`_callback`**으로 감싸져 있는 구조로 바뀐다. 이외에 조금의 파라미터 조정을 통해 내가 원하는 데이터를 받아오도록 해보자. url의 파라미터는 다음 코드를 통해 확인할 수 있다. 
@@ -79,7 +79,7 @@ from urllib.parse import urlparse, parse_qs
 url_param = parse_qs(urlparse(url).query)
 url_param
 ```
-![url_parameter](/assets/img/naver_news_comment/url_parameter.png){:width="50%" height="50%"} <br/><br/>
+![url_parameter](/assets/img/naver_news_comment/url_parameter.png){: width="50%" height="50%"} <br/><br/>
 
 위의 결과를 참고해서 url 주소를 조금 바꿔주었다. 여기서 pageSize는 수집해 올 댓글의 개수를 의미한다. 나는 현재 **`sort=NEW`**로, 최신순으로 정렬되어 있지만 공감순으로 바꾸고 싶다면 **`sort=favorite`**으로 바꾸면 된다.
 ```python
@@ -104,7 +104,7 @@ comment_text = json.loads(news_text[:-2])
 ### 2. 댓글만 가져오기
 **`comment_text`**에서 댓글만 가져오는 코드를 작성해보겠다.<br/>
 
-![comment_text](/assets/img/naver_news_comment/comment_text.png){:width="100%" height="100%"} <br/><br/>
+![comment_text](/assets/img/naver_news_comment/comment_text.png){: width="100%" height="100%"} <br/><br/>
 
 
 댓글은 **`comment_text`**의 'contents'에 위치해 있다.
@@ -115,7 +115,7 @@ comment_all
 ```
 위의 코드를 실행하면 댓글이 **`list`** 형태로 잘 담겨 있는 것을 확인할 수 있다. <br/>
 
-![comment_all](/assets/img/naver_news_comment/comment_all.png){:width="100%" height="100%"} <br/><br/>
+![comment_all](/assets/img/naver_news_comment/comment_all.png){: width="100%" height="100%"} <br/><br/>
 
 ### 3. 데이터 전처리
 
@@ -137,7 +137,7 @@ for i in range(len(df)):
     if len(df['comment'][i]) == 0:
         df['comment'][i] = "====== 삭제된 댓글입니다. ======"
 ```
-![result_comment](/assets/img/naver_news_comment/result_comment.png){:width="70%" height="70%"} <br/><br/>
+![result_comment](/assets/img/naver_news_comment/result_comment.png){: width="70%" height="70%"} <br/><br/>
 
 
 ### 4. 마무리하면서
