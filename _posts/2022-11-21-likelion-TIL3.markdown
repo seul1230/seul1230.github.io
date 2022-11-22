@@ -11,7 +11,28 @@ categories: SpecialLecture
 
 **[[ AI ] 인공지능과 머신러닝, 그리고 딥러닝](https://seul1230.github.io/speciallecture/2022-11-21-likelion-TIL1/)**와 같은 날 작성된 포스트이다. 
 
+<br/>
 
+
+***
+
+## 목차
+
+- [[ ML ] 머신러닝 - 군집화 (Clustering)](#-ml--머신러닝---군집화-clustering)
+  - [👩🏻‍💻 K-MOOC 실습으로 배우는 머신러닝 강의](#-k-mooc-실습으로-배우는-머신러닝-강의)
+  - [1. 군집화 <font color='lightgray'>Clustering</font>](#1-군집화-font-colorlightgrayclusteringfont)
+  - [2. 분류와 군집화는 어떻게 다를까?](#2-분류와-군집화는-어떻게-다를까)
+  - [3. 군집화 활용  <font color = 'lightgray'>Application</font>](#3-군집화-활용--font-color--lightgrayapplicationfont)
+  - [4. 군집화 알고리즘 <font color = 'lightgray'>Clustering Algorithm</font>](#4-군집화-알고리즘-font-color--lightgrayclustering-algorithmfont)
+    - [✔️ K-Means (Centroid)](#️-k-means-centroid)
+    - [✔️ Hierarchical Clustering](#️-hierarchical-clustering)
+      - [🤔 군집간의 거리 측정](#-군집간의-거리-측정)
+    - [✔️ DBSCAN <font color = 'lightgray'>Density-Based Spatial Clustering of Applications with Noise</font>](#️-dbscan-font-color--lightgraydensity-based-spatial-clustering-of-applications-with-noisefont)
+  - [5. 군집화 결과 측정 및 평가](#5-군집화-결과-측정-및-평가)
+  - [💻 실습 예제 코드](#-실습-예제-코드)
+  - [마무리하면서..](#마무리하면서)
+    - [다음 포스트에서 만나요 🙌](#다음-포스트에서-만나요-)
+  - [참고](#참고)
 
 <br/>
 
@@ -82,7 +103,7 @@ K-Means는 **군집 중심점 <font color='lightgray'>Centroid</font>** 기반�
 3. 소속이 결정되면 각 데이터의 중심 공간으로 Centrod들이 이동한다.
 4. 다시 A,B,C,D,E 데이터들은 각 Centroid와 거리를 계산하여 가까운 Centroid에 소속이 된다.(3번째그림)
 5. C데이터는 전과 다르게 다른 Centroid에 소속이 된것을 확인할 수 있다.(4번째 그림)
-6. 각 Centroid는 다시 자신의 속한 데이터들의 중심으로 이동하게 되고, 더이상 각 데이터들이  Centroid 소속이 변경되지 않는다면 종료된다.
+6. 각 Centroid는 다시 자신의 속한 데이터들의 중심으로 이동하게 되고, 더이상 각 데이터들이  Centroid 소속이 변경되지 않는다면 종료된다. (Elbow point)
 
 **장점**
 
@@ -123,6 +144,31 @@ K-Means 군집화 방법은 단순하고 강력한 방법이지만
 
 
 **DBSCAN** 군집화 방법은 데이터가 밀집한 정도 즉 밀도를 이용한다. DBSCAN 군집화는 군집의 형태에 구애받지 않으며 군집의 갯수를 사용자가 지정할 필요가 없다. 디비스캔 군집화 방법에서는 초기 데이터로부터 근접한 데이터를 찾아나가는 방법으로 군집을 확장한다.
+
+## 5. 군집화 결과 측정 및 평가
+* **SSE <font color = 'lightgray'>Sum of Squared Error</font>**
+  ![](/assets/img/img_221121/sse.png){: .center width="30%"} 
+  * 수식
+    ![](/assets/img/img_221121/sse_cal.png){: .center width="40%"} 
+  * 그래프
+    ![](/assets/img/img_221121/k_means_elbow.png){: .center width="70%"} 
+
+* **Silhouette**
+  ![](/assets/img/img_221121/silhouette_img.png){: .center width="60%"}
+  
+  ![](/assets/img/img_221121/silhouette_1.png){: width="35%"} ![](/assets/img/img_221121/silhouette_2.png){: width="25%"} ➡️ ![](/assets/img/img_221121/silhouette_3.png){: width="25%"} 
+
+
+  * a(i)
+    * 관측치 i로부터 같은 군집 내에 있는 모든 다른 개체들 사이의 평균 거리
+  * b(i)
+    * 관측치 i로부터 다른 군집 내에 있는 개체들 사이의 평균 거리 중 최솟값
+  
+  * 일반적으로 0.5보다 크면 군집 결과가 타당하다고 볼 수 있음
+  
+  ![](/assets/img/img_221121/silhouette_values.png){: .center width="60%"}
+
+<br/>  
 
 
 ## 💻 실습 예제 코드 
@@ -228,6 +274,8 @@ plt.show()
 [계층적 군집화](https://datascienceschool.net/03%20machine%20learning/16.04%20%EA%B3%84%EC%B8%B5%EC%A0%81%20%EA%B5%B0%EC%A7%91%ED%99%94.html)
 
 [DBSCAN 군집화](https://datascienceschool.net/03%20machine%20learning/16.03%20%EB%94%94%EB%B9%84%EC%8A%A4%EC%BA%94%20%EA%B5%B0%EC%A7%91%ED%99%94.html)
+
+
 
 
 

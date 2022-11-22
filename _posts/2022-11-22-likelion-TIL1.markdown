@@ -262,7 +262,7 @@ print("초승달 군집 AMI:", adjusted_mutual_info_score(y2, y_pred2))
 
 [계층적 군집화](https://datascienceschool.net/03%20machine%20learning/16.04%20%EA%B3%84%EC%B8%B5%EC%A0%81%20%EA%B5%B0%EC%A7%91%ED%99%94.html)
 
-
+[Clustering with Scikit with GIFs](https://dashee87.github.io/data%20science/general/Clustering-with-Scikit-with-GIFs/)
 
 <!-- ### 🐾　　🐾
 ### 🐾　　🐾

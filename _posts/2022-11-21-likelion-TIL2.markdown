@@ -9,9 +9,33 @@ categories: SpecialLecture
 
 📙 해당 포스트는 [K-MOOC 강의](http://www.kmooc.kr/courses/course-v1:SSUk+SSMOOC20K+2022_T1/course/) 내용과 추가로 다른 자료들을 찾아 내용을 작성하였으며, **이론 및 개념**에 대해 공부하고 **예제 실습**도 진행한 후 내용을 정리하였다.
 
-**[[ 1121 Special Lecture TIL ] 인공지능과 머신러닝, 그리고 딥러닝](https://seul1230.github.io/speciallecture/2022-11-21-likelion-TIL1/)**와 같은 날 작성된 포스트이다. 
+**[[ AI ] 인공지능과 머신러닝, 그리고 딥러닝](https://seul1230.github.io/speciallecture/2022-11-21-likelion-TIL1/)**와 같은 날 작성된 포스트이다. 
+
+<br/>
 
 
+***
+
+## 목차
+- [[ ML ] 머신러닝 - PCA (Principal Component Analysis)](#-ml--머신러닝---pca-principal-component-analysis)
+  - [👩🏻‍💻 K-MOOC 실습으로 배우는 머신러닝 강의](#-k-mooc-실습으로-배우는-머신러닝-강의)
+  - [목차](#목차)
+  - [1. 주성분 분석 <font color='lightgray'>Principal Component Analysis</font>](#1-주성분-분석-font-colorlightgrayprincipal-component-analysisfont)
+      - [따라서 PCA는 주로](#따라서-pca는-주로)
+  - [2. PCA의 원리 <font color='lightgray'>How It Works</font>](#2-pca의-원리-font-colorlightgrayhow-it-worksfont)
+  - [3. 분산을 최대로 보존할 수 있는 축을 선택하는 이유?](#3-분산을-최대로-보존할-수-있는-축을-선택하는-이유)
+  - [4. PCA 적용](#4-pca-적용)
+      - [Step 1 : 데이터 정규화 (각 변수 값들의 평균 = 0)](#step-1--데이터-정규화-각-변수-값들의-평균--0)
+      - [Step 2 : 최적화 문제 정의](#step-2--최적화-문제-정의)
+      - [Step 3 : 최적해 도출](#step-3--최적해-도출)
+      - [Step 4 : 고유벡터 (eigenvector) 들을 고유값 (eigenvalue) 기준으로 내림차순 정렬](#step-4--고유벡터-eigenvector-들을-고유값-eigenvalue-기준으로-내림차순-정렬)
+      - [Step 5 : 변수 추출을 통한 데이터 변환](#step-5--변수-추출을-통한-데이터-변환)
+      - [Step 6 : 추출된 변수 중 일부만을 사용하여 데이터 역변환](#step-6--추출된-변수-중-일부만을-사용하여-데이터-역변환)
+  - [5. 결과 확인](#5-결과-확인)
+  - [💻 실습 예제 코드](#-실습-예제-코드)
+  - [마무리하면서..](#마무리하면서)
+    - [다음 포스트에서 만나요 🙌](#다음-포스트에서-만나요-)
+  - [참고](#참고)
 
 <br/>
 
