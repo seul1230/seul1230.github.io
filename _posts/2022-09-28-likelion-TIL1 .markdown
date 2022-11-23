@@ -4,7 +4,7 @@ title:  "0927 데이터 분석 TIL"
 date:   2022-09-28 09:05:09 +0900
 categories: Python_DataAnalysis
 ---
-# [ 0928 TIL - I ] 네이버 금융 뉴스 웹스크래핑
+# [ 0928 ] 네이버 금융 뉴스 웹스크래핑
 
 
 
@@ -15,7 +15,6 @@ categories: Python_DataAnalysis
 
 ## 📚 오늘의 TIL - 네이버 금융 뉴스 웹스크래핑
 
-- [[ 0928 데이터 분석 TIL (1) ] 네이버 금융 뉴스 웹스크래핑](#-0928-데이터-분석-til-1--네이버-금융-뉴스-웹스크래핑)
   - [👩🏻‍💻 오늘코드 실시간 강의 _ 박조은님](#-오늘코드-실시간-강의-_-박조은님)
   - [📚 오늘의 TIL - 네이버 금융 뉴스 웹스크래핑](#-오늘의-til---네이버-금융-뉴스-웹스크래핑)
     - [🐾　뉴스 한 페이지를 수집하는 함수　🐾](#뉴스-한-페이지를-수집하는-함수)
@@ -432,4 +431,4 @@ get_item_list(item_code, item_name)
 ![get_item_list_kakao](/assets/img/img_220928/get_item_list_kakao.png) <br/><br/>
 
 ### 다음 포스트에서 만나요 🙌
-뒷 내용은 [**0928 데이터 분석 TIL (2)**](https://seul1230.github.io/2022_likelion/2022-09-28-likelion-TIL2/)에서 이어서 작성한다.
+뒷 내용은 [**[0928] ETF 수집**](https://seul1230.github.io/2022_likelion/2022-09-28-likelion-TIL2/)에서 이어서 작성한다.

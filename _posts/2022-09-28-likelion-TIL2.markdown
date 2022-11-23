@@ -4,18 +4,17 @@ title:  "0928 데이터 분석 TIL"
 date:   2022-09-28 16:05:09 +0900
 categories: Python_DataAnalysis
 ---
-# [ 0928 TIL - II ] ETF 데이터 수집
+# [ 0928 ] ETF 데이터 수집
 
 
 
 ## 👩🏻‍💻 오늘코드 실시간 강의 _ 박조은님
 
-[**0928 데이터 분석 TIL (1)**](https://seul1230.github.io/2022_likelion/2022-09-28-likelion-TIL1/)와 이어지는 TIL 내용이다. 
+[**[0928] 네이버 금융 뉴스 웹스크래핑**](https://seul1230.github.io/2022_likelion/2022-09-28-likelion-TIL1/)와 이어지는 TIL 내용이다. 
 <br/>
 
 ## 📚 오늘의 TIL - ETF 데이터 수집
 
-- [[ 0928 데이터 분석 TIL (2) ] ETF 데이터 수집](#-0928-데이터-분석-til-2--etf-데이터-수집)
   - [👩🏻‍💻 오늘코드 실시간 강의 _ 박조은님](#-오늘코드-실시간-강의-_-박조은님)
   - [📚 오늘의 TIL - ETF 데이터 수집](#-오늘의-til---etf-데이터-수집)
     - [🐾　ETF(상장지수펀드)　🐾](#etf상장지수펀드)

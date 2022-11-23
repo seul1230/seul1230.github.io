@@ -4,13 +4,13 @@ title:  "2022_likelion TIL"
 date:   2022-10-05 12:00:09 +0900
 categories: Python_DataAnalysis
 ---
-# [ 1005 TIL - III ] FinanceDataReader를 통한 여러 종목 daily price plotly로 비교
+# [ 1005 ] FinanceDataReader를 통한 여러 종목 daily price plotly로 비교
 
 ## 👩🏻‍💻 오늘코드 실시간 강의 _ 박조은님
 
 **📚 FinanceDataReader를 통한 여러 종목 daily price plotly로 비교**
 
-이전 게시물 [**1005 데이터 분석 TIL - II**](https://seul1230.github.io/2022_likelion/2022-10-05-likelion-TIL2/)과 이어지는 내용이다.
+이전 게시물 [**[ 1005 ] FinanceDataReader를 통한 여러 종목 수익률 비교**](https://seul1230.github.io/2022_likelion/2022-10-05-likelion-TIL2/)과 이어지는 내용이다.
 
 
 <br/>

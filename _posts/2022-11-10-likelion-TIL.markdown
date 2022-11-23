@@ -4,7 +4,7 @@ title:  "2022_likelion TIL"
 date:   2022-11-10 14:00:09 +0900
 categories: Python_DataAnalysis
 ---
-# [ 1109 TIL ] Kaggle competition - House Prices
+# [ 1109 ] Kaggle - House Prices
 ## 👩🏻‍💻 오늘코드 실시간 강의 _ 박조은님
 오늘도 화이팅 :)
 

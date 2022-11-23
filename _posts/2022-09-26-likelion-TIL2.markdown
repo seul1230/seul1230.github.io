@@ -4,10 +4,10 @@ title:  "0926 데이터 분석 TIL (2)"
 date:   2022-09-26 13:10:09 +0900
 categories: Python_DataAnalysis
 ---
-# [ 0926 TIL - II ] EDA 수치형 변수 
+# [ 0926 ] EDA 수치형 변수 
 
 ## 👩🏻‍💻 오늘코드 실시간 강의 _ 박조은님
-[**0926 데이터 분석 TIL (1)**](https://seul1230.github.io/2022_likelion/2022-09-26-likelion-TIL1/)와 이어지는 TIL 내용이다. 
+[**[0926] 파이썬 데이터 분석 기초**](https://seul1230.github.io/2022_likelion/2022-09-26-likelion-TIL1/)와 이어지는 TIL 내용이다. 
 
 ## 📚 오늘의 TIL - EDA 수치형 변수
 

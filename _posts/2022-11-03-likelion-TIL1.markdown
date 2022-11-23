@@ -4,7 +4,7 @@ title:  "2022_likelion TIL"
 date:   2022-11-03 16:00:09 +0900
 categories: Python_DataAnalysis
 ---
-# [ 1103 TIL ] Kaggle competition - Titanic
+# [ 1103 ] Kaggle - Titanic
 ## 👩🏻‍💻 오늘코드 실시간 강의 _ 박조은님
 오늘도 화이팅 :)
 

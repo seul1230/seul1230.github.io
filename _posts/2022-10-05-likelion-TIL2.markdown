@@ -4,13 +4,13 @@ title:  "2022_likelion TIL"
 date:   2022-10-05 12:00:09 +0900
 categories: Python_DataAnalysis
 ---
-# [ 1005 TIL - II ] FinanceDataReader를 통한 여러 종목 수익률 비교
+# [ 1005 ] FinanceDataReader를 통한 여러 종목 수익률 비교
 
 ## 👩🏻‍💻 오늘코드 실시간 강의 _ 박조은님
 
 **📚 FinanceDataReader를 통한 여러 종목 수익률 비교**
 
-이전 게시물 [**1005 데이터 분석 TIL - I**](https://seul1230.github.io/2022_likelion/2022-10-05-likelion-TIL1/)과 이어지는 내용이다.
+이전 게시물 [**[ 1005 ] 서울특별시 다산콜센터(120)의 주요 민원**](https://seul1230.github.io/2022_likelion/2022-10-05-likelion-TIL1/)과 이어지는 내용이다.
 
 
 <br/>

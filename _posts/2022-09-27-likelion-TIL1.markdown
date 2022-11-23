@@ -4,14 +4,13 @@ title:  "0927 데이터 분석 TIL"
 date:   2022-09-27 09:05:09 +0900
 categories: Python_DataAnalysis
 ---
-# [ 0927 TIL - I ] EDA 범주형 변수
+# [ 0927 ] EDA 범주형 변수
 
 ## 👩🏻‍💻 오늘코드 실시간 강의 _ 박조은님
 
 어제만 TIL 내용이 길어진 줄 알았는데 오늘도 양이 만만치 않은 거 같아 두개로 나누어 적을 거 같다. 
 오늘도 화이팅 ✨
 
-<br/>
 
 **범주형 변수**에 대한 데이터 분석도 **수치형 변수**와 크게 다르지 않다. 오늘은 어제와 중복되는 내용은 빼고 적을 예정이다. 
 
@@ -286,4 +285,4 @@ sns.catplot(data = df, x = "origin", kind = "count", col = "cylinders")
 : subplot 그리게 해준다. 
 
 ### 다음 포스트에서 만나요 🙌
-뒷 내용은 [**0927 데이터 분석 TIL (2)**](https://seul1230.github.io/2022_likelion/2022-09-27-likelion-TIL2/)에서 이어서 작성한다.
+뒷 내용은 [**[ 0927 ] 웹 스크래핑과 크롤링**](https://seul1230.github.io/2022_likelion/2022-09-27-likelion-TIL2/)에서 이어서 작성한다.
