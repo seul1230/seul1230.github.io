@@ -171,6 +171,8 @@ test[cat_col] = test[cat_col].astype("category")
 ## 5. 분류 모델의 평가 방법 : Accuracy
 
 ### Accuracy
+![](/assets/img/img_221124/accuracy.png){: .center width="80%"}
+
 - 예측 결과 전체 건수 중 실제 값을 올바르게 예측한 비율을 나타낸다.
 - 따라서 정확도는 0에서 1사이의 값을 가진다.
 - 다음 코드를 이용해 정확도를 계산할 수 있음
