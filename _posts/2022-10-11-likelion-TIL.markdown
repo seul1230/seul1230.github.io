@@ -10,7 +10,7 @@ categories: Python_DataAnalysis
 
 이번 시간에는 **서울특별시 코로나 확진자** 데이터를 가지고 EDA를 진행해보겠다. 데이터는 서울시에서 공개한 코로나19 발생동향 분석 데이터를 활용하였다.
 
-![](/assets/img/img_221011/seoul_corona.png){: .center width="80}
+![](/assets/img/img_221011/seoul_corona.png){: .center width="80%"}
 
 출처 : [서울특별시 코로나19](http://www.seoul.go.kr/coronaV/coronaStatus.do)
 
