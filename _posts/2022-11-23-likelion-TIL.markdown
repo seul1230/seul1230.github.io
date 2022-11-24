@@ -200,7 +200,7 @@ accuracy_score(df.y, pred)
 
 ## 6. 제안된 다른 평가 방법
 ### ✅ Precision
-![](/assets/img/img_221124/precision.png){: .center width="50%"}
+![](/assets/img/img_221124/precision.png){: .center width="40%"}
 
 * 정밀도
 * **<mark style='background-color: #fff5b1'>예측값</mark>** 중에 얼마나 맞았는지
@@ -216,7 +216,7 @@ precision_score(y_test, y_pred)
 
 
 ### ✅ Recall
-![](/assets/img/img_221124/recall.png){: .center width="50%"}
+![](/assets/img/img_221124/recall.png){: .center width="40%"}
 
 * 재현도
 * **<mark style='background-color: #fff5b1'>실제값</mark>** 중에 얼마나 맞았는지
