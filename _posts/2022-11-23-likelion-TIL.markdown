@@ -275,6 +275,8 @@ xgb.plot_tree(model_xgb, num_trees=1)
 fig = plt.gcf()
 fig.set_size_inches(30, 20)
 ```
+![](/assets/img/img_221124/xgb.png){: .center width="80%"}
+
 
 ```python
 score_xgb = model_xgb.score(X_valid, y_valid)
@@ -307,6 +309,7 @@ lgbm.plot_importance(model_lgbm)
 lgbm.plot_tree(model_lgbm, figsize=(20, 20), tree_index=0, 
                show_info=['split_gain', 'internal_value', 'internal_count', 'leaf_count'])
 ```
+![](/assets/img/img_221124/lgbm.png){: .center width="90%"}
 
 ```python
 score_lgbm = model_lgbm.score(X_valid, y_valid)
@@ -361,13 +364,17 @@ pd.DataFrame({"train-R2-mean": df_result.loc["train-R2-mean"],
               "test-R2-mean" :  df_result.loc["test-R2-mean"] }).tail(3)
 ```
 ```python
-pd.DataFrame({"train-R2-mean": df_result.loc["train-R2-mean"], 
+pd.DataFrame({"train-R2-mean": df_result.loc["train-R2-mean"]
               "test-R2-mean" :  df_result.loc["test-R2-mean"] }).plot()
 ```
+![](/assets/img/img_221124/r2_mean_all.png){: .center width="60%"}
+
 ```python
 pd.DataFrame({"train-R2-mean": df_result.loc["train-R2-mean"], 
-              "test-R2-mean" :  df_result.loc["test-R2-mean"] }).plot()
+              "test-R2-mean" :  df_result.loc["test-R2-mean"] }).tail(50).plot()
 ```
+![](/assets/img/img_221124/r2_mean_tail.png){: .center width="60%"}
+
 ```python
 # fit
 model_cat.fit(X_train, y_train)

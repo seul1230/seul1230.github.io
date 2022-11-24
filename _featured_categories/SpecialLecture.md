@@ -1,6 +1,6 @@
 ---
 layout: list
-title: SpecialLecture
+title: Special Lecture
 slug: SpecialLecture
 menu: true
 permalink: /2022_likelion/SpecialLecture
