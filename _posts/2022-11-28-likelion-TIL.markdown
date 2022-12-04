@@ -55,6 +55,7 @@ categories: Python_DataAnalysis
 
 두 그룹을 더 잘 구별할 수 있을수록 ROC 커브는 좌상단에 붙게 된다.
 
+➡️ <mark style='background-color: #ffdce0'>ROC 커브</mark>는 **이진 분류기의 성능**을 표현하는 커브이고, 가능한 **모든 threshol**d에 대해 **FPR과 TPR의 비율**을 표현한 것이다.
 
 
 ### 3. AUC
@@ -92,7 +93,7 @@ categories: Python_DataAnalysis
 
 인공지능은 1940년대에도 있었던 개념이며, 그 때부터 현재까지 하드웨어의 기술적 한계와 데이터의 부족으로 인한 2번의 AI 겨울이 있었다.
 
-#### 퍼셉트론 perceptron
+#### 퍼셉트론 <font color='lightgray'>Perceptron</font>
 사람의 신경망을 모방하였으며, 기계가 다층 구조를 통해 학습하도록 만드는 기술
 
 #### ANN의 한계
@@ -109,15 +110,16 @@ categories: Python_DataAnalysis
     * 출력층 -> 입력층 방향으로 가중치 업데이트
     * 속도는 느리지만 안정적인 결과를 얻을 수 있어 기계학습에 널리 사용
 
-### 8. 활성함수 Activation function
+### 8. 활성화 함수  <font color='lightgray'>Activation function</font>
 * 은닉층과 출력층의 뉴런에서 출력값을 결정하는 함수로 가중치 생성
 * 입력값들의 수학적 선형 결합을 다양한 형태의 nonlinear / linear 결합으로 변환하는 역할
-* sigomid
-* tanh
-* ReLU
-* Leaky ReLU
+* Activation function 종류
+  * sigomid
+  * tanh
+  * ReLU
+  * Leaky ReLU
 
-### 9. Gradient Vanishing
+### 9. 기울기 소실 문제 <font color='lightgray'>Gradient Vanishing</font>
 * 기울기 소실 : 깊은 인공 신경망을 학습할 때 역전파 과정에서 입력층으로 갈수록 기울기가 점차 작아지는 현상
     * ANN의 문제
 * 기울기 폭주 : 기울기가 커져 가중치들이 발산되기도 함.
