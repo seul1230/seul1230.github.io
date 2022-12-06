@@ -281,7 +281,7 @@ log_loss_val = np.around(log_loss_val, 3)
 log_loss(y_val['credit'], y_pred)
 ```
 ```
-0.8091264167319345
+=> 0.8091264167319345
 ```
 #### 9. Feature importance 시각화
 ```python
@@ -343,6 +343,11 @@ my_submission = run_kfold(clf)
 ### ➡️ 시도 History와 최종 성능 비교
 **History**
 
+|Baseline|Final Score|
+|:---:|:---:|
+|0.872|0.7836|
+
+
 ```
 # basline => 0.88
 # 점수 : ( Public / Private )
@@ -393,9 +398,6 @@ my_submission = run_kfold(clf)
 # income_mean 계산
 ```
 
-|Baseline|My Score|
-|:---:|:---:|
-|0.872|0.7836|
 
 
 
