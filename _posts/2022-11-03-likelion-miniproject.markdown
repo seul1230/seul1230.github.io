@@ -3,11 +3,12 @@ layout: post
 title:  "Project"
 date:   2022-11-03 15:00:09 +0900
 categories: Projects
+published: false
 ---
 # [ MiniProject I ] 월간 신용카드 사기 거래 탐지
 
 ### 🦁 Project 
-멋쟁이사자처럼 AI School 7th **MiniProject I** <br/>
+멋쟁이사자처럼 AI School 7th **MiniProject 3** <br/>
 
 ### 🙆‍♀️🙆 Team
 으쌰으쌰2팀 - **7ㅏ즈아** (승후님, 우진님, 하윤님, 준모님)
