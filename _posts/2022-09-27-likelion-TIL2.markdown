@@ -6,12 +6,11 @@ categories: Python_DataAnalysis
 ---
 # [ 0927 ] 웹 스크래핑과 크롤링
 
-## 👩🏻‍💻 오늘코드 실시간 강의 _ 박조은님
+#### 👩🏻‍💻 오늘코드 실시간 강의 _ 박조은님
 
-[**[0927] EDA 범주형 변수**](https://seul1230.github.io/2022_likelion/2022-09-27-likelion-TIL1/)와 이어지는 TIL 내용이다. 
+[**[0927] EDA 범주형 변수**](https://seul1230.github.io/2022_likelion/2022-09-27-likelion-TIL1/)와 이어지는 TIL 내용이다. 웹 스크래핑 실습 예제를 풀어보자.
 
 
-## 📚 오늘의 TIL - 웹 스크래핑과 크롤링
 
 ### 🐾　Requests : HTTP for Humans　🐾
 : 작은 브라우저로 웹사이트를 읽어오는 것이 목적

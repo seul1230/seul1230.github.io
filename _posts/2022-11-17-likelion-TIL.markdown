@@ -5,12 +5,8 @@ date:   2022-11-17 14:00:09 +0900
 categories: Python_DataAnalysis
 ---
 # [ 1116 ] Kaggle - Benz Manufacturing
-## 👩🏻‍💻 오늘코드 실시간 강의 _ 박조은님
-오늘도 화이팅 :)
-
-## 📚 오늘의 TIL - Kaggle : Mercedes-Benz Greener Manufacturing
-
-이번 시간에는 Kaggle에서 마감된 **Mercedes-Benz Greener Manufacturing** 데이터를 바탕으로 코드를 짜보았다.
+#### 👩🏻‍💻 오늘코드 실시간 강의 _ 박조은님
+이번 시간에는 Kaggle에서 마감된 Kaggle의 [**Mercedes-Benz Greener Manufacturing**](https://www.kaggle.com/c/mercedes-benz-greener-manufacturing) 데이터를 바탕으로 코드를 짜보았다.
 
 📙 이번 포스트에서는 **이론 및 개념**을 중심적으로 다룰 예정이다.
 <br/>

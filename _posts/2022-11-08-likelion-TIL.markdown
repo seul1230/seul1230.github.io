@@ -5,7 +5,7 @@ date:   2022-11-08 12:00:09 +0900
 categories: Python_DataAnalysis
 published: false
 ---
-# [ 1108 TIL] 
+# [ 1108 TIL ] 
 
 ## 👩🏻‍💻 오늘코드 실시간 강의 _ 박조은님
 

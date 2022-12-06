@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: page
 title: Basics
 description: >
@@ -576,4 +576,4 @@ Continue with [Writing](writing.md){:.heading.flip-title}
 [project]: https://hydejack.com/projects/default/
 
 [strings]: https://github.com/hydecorp/hydejack-site/blob/master/_data/strings.yml
-[resumeyml]: https://github.com/hydecorp/hydejack-site/blob/master/_data/resume.yml
+[resumeyml]: https://github.com/hydecorp/hydejack-site/blob/master/_data/resume.yml -->

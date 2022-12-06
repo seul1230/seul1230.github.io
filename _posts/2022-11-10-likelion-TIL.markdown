@@ -5,12 +5,8 @@ date:   2022-11-10 14:00:09 +0900
 categories: Python_DataAnalysis
 ---
 # [ 1109 ] Kaggle - House Prices
-## 👩🏻‍💻 오늘코드 실시간 강의 _ 박조은님
-오늘도 화이팅 :)
-
-## 📚 오늘의 TIL - Kaggle competition : House Prices
-
-이번 시간에는 Kaggle에서 현재 진행 중인 **House Prices - Advanced Regression Techniques** 데이터를 바탕으로 코드를 짜보았다.
+#### 👩🏻‍💻 오늘코드 실시간 강의 _ 박조은님
+이번 시간에는 Kaggle에서 현재 진행 중인 [**House Prices - Advanced Regression Techniques**](https://www.kaggle.com/c/house-prices-advanced-regression-techniques) 데이터를 바탕으로 코드를 짜보았다.
 
 <br/>
 

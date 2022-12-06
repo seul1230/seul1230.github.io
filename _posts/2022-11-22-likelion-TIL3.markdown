@@ -5,8 +5,7 @@ date:   2022-11-22 16:00:09 +0900
 categories: SpecialLecture
 ---
 # [ AI / ML / DL ] Neural Networks Basic - Basic Structure, Multi-layered Structure
-## 👩🏻‍💻 K-MOOC 실습으로 배우는 머신러닝 강의
-
+#### 👩🏻‍💻 K-MOOC 실습으로 배우는 머신러닝 강의
 📙 해당 포스트는 [K-MOOC 강의](http://www.kmooc.kr/courses/course-v1:SSUk+SSMOOC20K+2022_T1/course/) 내용과 추가로 다른 자료들을 찾아 내용을 작성하였으며, **이론 및 개념**에 대해 공부하고 **예제 실습**도 진행한 후 내용을 정리하였다.
 
 
@@ -19,14 +18,14 @@ categories: SpecialLecture
 
 ## 목차
 
-- [[ AI / ML / DL ] Neural Networks Basic - Basic Structure, Multi-layered Structure](#-ai--ml--dl--neural-networks-basic---basic-structure-multi-layered-structure)
-  - [👩🏻‍💻 K-MOOC 실습으로 배우는 머신러닝 강의](#-k-mooc-실습으로-배우는-머신러닝-강의)
+- [\[ AI / ML / DL \] Neural Networks Basic - Basic Structure, Multi-layered Structure](#-ai--ml--dl--neural-networks-basic---basic-structure-multi-layered-structure)
+      - [👩🏻‍💻 K-MOOC 실습으로 배우는 머신러닝 강의](#-k-mooc-실습으로-배우는-머신러닝-강의)
   - [목차](#목차)
   - [1. Basic Structure](#1-basic-structure)
       - [🤔 퍼셉트론이란](#-퍼셉트론이란)
   - [2. Multi-layered Structure](#2-multi-layered-structure)
-    - [활성화 함수 <font color = 'lightgray'>Activation Functions</font>](#활성화-함수-font-color--lightgrayactivation-functionsfont)
-      - [1. 비선형 함수 <font color = 'lightgray'>Nonlinear Functions</font>](#1-비선형-함수-font-color--lightgraynonlinear-functionsfont)
+    - [활성화 함수 Activation Functions](#활성화-함수-activation-functions)
+      - [1. 비선형 함수 Nonlinear Functions](#1-비선형-함수-nonlinear-functions)
       - [2. 시그모이드 함수와 기울기 소실](#2-시그모이드-함수와-기울기-소실)
       - [3. tanh 함수](#3-tanh-함수)
       - [4. ReLU 함수](#4-relu-함수)

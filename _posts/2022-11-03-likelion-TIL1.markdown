@@ -5,12 +5,8 @@ date:   2022-11-03 16:00:09 +0900
 categories: Python_DataAnalysis
 ---
 # [ 1103 ] Kaggle - Titanic
-## 👩🏻‍💻 오늘코드 실시간 강의 _ 박조은님
-오늘도 화이팅 :)
-
-## 📚 오늘의 TIL - Kaggle competition : Titanic
-
-이번 시간에는 Kaggle에서 현재 진행 중인 **Titanic - Machine Learning from Disaster** 데이터를 바탕으로 코드를 짜고 kaggle에 제출까지 해보았다.
+#### 👩🏻‍💻 오늘코드 실시간 강의 _ 박조은님
+이번 시간에는 Kaggle에서 현재 진행 중인 [**Titanic - Machine Learning from Disaster**](https://www.kaggle.com/competitions/titanic) 데이터를 바탕으로 코드를 짜고 kaggle에 제출까지 해보았다.
 
 ***
 

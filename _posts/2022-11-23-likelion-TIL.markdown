@@ -5,9 +5,7 @@ date:   2022-11-23 14:00:09 +0900
 categories: Python_DataAnalysis
 ---
 # [ 1123 ] Kaggle - Benz Boosting Model
-## 👩🏻‍💻 오늘코드 실시간 강의 _ 박조은님
-오늘도 화이팅 :)
-
+#### 👩🏻‍💻 오늘코드 실시간 강의 _ 박조은님
 오늘도 **[[ Kaggle ] Mercedes-Benz Greener Manufacturing](https://www.kaggle.com/competitions/mercedes-benz-greener-manufacturing/submissions)** 데이터를 가지고 실습을 진행하였다. 해당 포스트는 부스팅 모델 3대장 XGBoost, LightGBM, CatBoost를 적용한 내용에 대해 작성할 예정이다.
 
 ![](/assets/img/img_221124/kaggle_benz.png){: .center }

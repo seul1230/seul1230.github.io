@@ -5,8 +5,7 @@ date:   2022-11-21 17:00:09 +0900
 categories: SpecialLecture
 ---
 # [ AI / ML ] 머신러닝 - 군집화 (Clustering)
-## 👩🏻‍💻 K-MOOC 실습으로 배우는 머신러닝 강의
-
+#### 👩🏻‍💻 K-MOOC 실습으로 배우는 머신러닝 강의
 📙 해당 포스트는 [K-MOOC 강의](http://www.kmooc.kr/courses/course-v1:SSUk+SSMOOC20K+2022_T1/course/) 내용과 추가로 다른 자료들을 찾아 내용을 작성하였으며, **이론 및 개념**에 대해 공부하고 **예제 실습**도 진행한 후 내용을 정리하였다.
 
 **[[ AI ] 인공지능과 머신러닝, 그리고 딥러닝](https://seul1230.github.io/speciallecture/2022-11-21-likelion-TIL1/)**와 같은 날 작성된 포스트이다. 
@@ -18,16 +17,17 @@ categories: SpecialLecture
 
 ## 목차
 
-- [[ ML ] 머신러닝 - 군집화 (Clustering)](#-ml--머신러닝---군집화-clustering)
-  - [👩🏻‍💻 K-MOOC 실습으로 배우는 머신러닝 강의](#-k-mooc-실습으로-배우는-머신러닝-강의)
-  - [1. 군집화 <font color='lightgray'>Clustering</font>](#1-군집화-font-colorlightgrayclusteringfont)
+- [\[ AI / ML \] 머신러닝 - 군집화 (Clustering)](#-ai--ml--머신러닝---군집화-clustering)
+      - [👩🏻‍💻 K-MOOC 실습으로 배우는 머신러닝 강의](#-k-mooc-실습으로-배우는-머신러닝-강의)
+  - [목차](#목차)
+  - [1. 군집화 Clustering](#1-군집화-clustering)
   - [2. 분류와 군집화는 어떻게 다를까?](#2-분류와-군집화는-어떻게-다를까)
-  - [3. 군집화 활용  <font color = 'lightgray'>Application</font>](#3-군집화-활용--font-color--lightgrayapplicationfont)
-  - [4. 군집화 알고리즘 <font color = 'lightgray'>Clustering Algorithm</font>](#4-군집화-알고리즘-font-color--lightgrayclustering-algorithmfont)
+  - [3. 군집화 활용  Application](#3-군집화-활용--application)
+  - [4. 군집화 알고리즘 Clustering Algorithm](#4-군집화-알고리즘-clustering-algorithm)
     - [✔️ K-Means (Centroid)](#️-k-means-centroid)
     - [✔️ Hierarchical Clustering](#️-hierarchical-clustering)
       - [🤔 군집간의 거리 측정](#-군집간의-거리-측정)
-    - [✔️ DBSCAN <font color = 'lightgray'>Density-Based Spatial Clustering of Applications with Noise</font>](#️-dbscan-font-color--lightgraydensity-based-spatial-clustering-of-applications-with-noisefont)
+    - [✔️ DBSCAN Density-Based Spatial Clustering of Applications with Noise](#️-dbscan-density-based-spatial-clustering-of-applications-with-noise)
   - [5. 군집화 결과 측정 및 평가](#5-군집화-결과-측정-및-평가)
   - [💻 실습 예제 코드](#-실습-예제-코드)
   - [마무리하면서..](#마무리하면서)

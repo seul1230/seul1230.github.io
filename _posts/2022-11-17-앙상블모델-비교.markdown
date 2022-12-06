@@ -6,6 +6,8 @@ categories: Tips
 ---
 # [ ML ] sklearn 트리 앙상블 모델 4가지
 
+
+
 ## 앙상블 <font color = 'lightgray'>Ensemble</font>
 앙상블이란 
 여러 머신러닝 모델을 연결하여 더 강력한 모델을 만드는 기법으로, 해당 포스트는 그 중에서도

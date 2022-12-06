@@ -1,4 +1,4 @@
-An incomplete list of features included in all versions of **Hydejack**:
+<!-- An incomplete list of features included in all versions of **Hydejack**:
 
 * Responsive layout with unique design features for every screen size
 * Cover Pages for a stunning first impression.
@@ -20,4 +20,4 @@ An incomplete list of features included in all versions of **Hydejack**:
 
 [^12]: Some limitations apply, most notably the need to use use MathJax instead of KaTeX for math block rendering.
 
-*[FLIP]: First-Last-Invert-Play. A coding technique to achieve performant page transition animations.
+*[FLIP]: First-Last-Invert-Play. A coding technique to achieve performant page transition animations. -->

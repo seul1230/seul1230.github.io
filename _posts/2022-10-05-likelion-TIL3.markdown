@@ -6,10 +6,7 @@ categories: Python_DataAnalysis
 ---
 # [ 1005 ] FinanceDataReader를 통한 여러 종목 daily price plotly로 비교
 
-## 👩🏻‍💻 오늘코드 실시간 강의 _ 박조은님
-
-**📚 FinanceDataReader를 통한 여러 종목 daily price plotly로 비교**
-
+#### 👩🏻‍💻 오늘코드 실시간 강의 _ 박조은님
 이전 게시물 [**[ 1005 ] FinanceDataReader를 통한 여러 종목 수익률 비교**](https://seul1230.github.io/2022_likelion/2022-10-05-likelion-TIL2/)과 이어지는 내용이다.
 
 

@@ -5,8 +5,7 @@ date:   2022-11-21 13:00:09 +0900
 categories: SpecialLecture
 ---
 # [ AI / ML ] 머신러닝 - PCA (Principal Component Analysis) 
-## 👩🏻‍💻 K-MOOC 실습으로 배우는 머신러닝 강의
-
+#### 👩🏻‍💻 K-MOOC 실습으로 배우는 머신러닝 강의
 📙 해당 포스트는 [K-MOOC 강의](http://www.kmooc.kr/courses/course-v1:SSUk+SSMOOC20K+2022_T1/course/) 내용과 추가로 다른 자료들을 찾아 내용을 작성하였으며, **이론 및 개념**에 대해 공부하고 **예제 실습**도 진행한 후 내용을 정리하였다.
 
 **[[ AI ] 인공지능과 머신러닝, 그리고 딥러닝](https://seul1230.github.io/speciallecture/2022-11-21-likelion-TIL1/)**와 같은 날 작성된 포스트이다. 
@@ -17,12 +16,12 @@ categories: SpecialLecture
 ***
 
 ## 목차
-- [[ ML ] 머신러닝 - PCA (Principal Component Analysis)](#-ml--머신러닝---pca-principal-component-analysis)
-  - [👩🏻‍💻 K-MOOC 실습으로 배우는 머신러닝 강의](#-k-mooc-실습으로-배우는-머신러닝-강의)
+- [\[ AI / ML \] 머신러닝 - PCA (Principal Component Analysis)](#-ai--ml--머신러닝---pca-principal-component-analysis)
+      - [👩🏻‍💻 K-MOOC 실습으로 배우는 머신러닝 강의](#-k-mooc-실습으로-배우는-머신러닝-강의)
   - [목차](#목차)
-  - [1. 주성분 분석 <font color='lightgray'>Principal Component Analysis</font>](#1-주성분-분석-font-colorlightgrayprincipal-component-analysisfont)
+  - [1. 주성분 분석 Principal Component Analysis](#1-주성분-분석-principal-component-analysis)
       - [따라서 PCA는 주로](#따라서-pca는-주로)
-  - [2. PCA의 원리 <font color='lightgray'>How It Works</font>](#2-pca의-원리-font-colorlightgrayhow-it-worksfont)
+  - [2. PCA의 원리 How It Works](#2-pca의-원리-how-it-works)
   - [3. 분산을 최대로 보존할 수 있는 축을 선택하는 이유?](#3-분산을-최대로-보존할-수-있는-축을-선택하는-이유)
   - [4. PCA 적용](#4-pca-적용)
       - [Step 1 : 데이터 정규화 (각 변수 값들의 평균 = 0)](#step-1--데이터-정규화-각-변수-값들의-평균--0)

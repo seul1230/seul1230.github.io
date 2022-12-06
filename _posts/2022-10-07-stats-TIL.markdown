@@ -6,7 +6,7 @@ categories: SpecialLecture
 ---
 # [ 1007 Special Lecture TIL ] 통계 분석
 
-## 👩🏻‍💻 통계 강의 _ 유재명 교수님
+#### 👩🏻‍💻 통계 강의 _ 유재명 교수님
 - (주) 퀀트랩 대표
 - 국민대학교 겸임교수
 
