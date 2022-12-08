@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://seul1230.github.io/sitemap.xml
