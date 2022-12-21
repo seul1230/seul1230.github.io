@@ -63,7 +63,8 @@ Descriminator는 기울기 (Stochastic gradient) 가 **증가**하는 방향으�
 * Competitive with the better generative models
   * 이전의 다른 생성 모델과 비교했을 때 충분히 좋은 성능이 나옴
 * Images represent sharp
-  * Blurry하게 이미지를 생성하지 않고 꽤 선명하게 생성한다.
+  * Blurry하게 이미지를 생성하지 않고 꽤 선명하게 생성
+* 문장이 길어질수록 생성된 문장의 품질이 안 좋아짐
 
 
 ---
