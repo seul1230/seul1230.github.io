@@ -2,7 +2,7 @@
 layout: post
 title:  "1102 matplotlib study"
 date:   2022-11-02 03:30:09 +0900
-categories: DataAnalysis
+categories: Data_AI
 ---
 # Matplotlib 활용하기
 
