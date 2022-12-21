@@ -87,6 +87,7 @@ EC관측치가 클수록 냉방상태는 적었으며, 반대로 작을수록 �
 후에 알아보니 활성화 함수로 ReLU 함수를 사용하였을 때는
 출력값이 0으로 수렴하는 현상을 발생시키기 때문에 **He Initialization**을 적용해준다고 한다. He Initialization은 표준편차가 (루트 2/n) 인 정규분포를 따르도록 가중치 초기화해준다고 한다. 나중에 이 레이어 가중치 초기화 방법을 적용해 코드를 다시 작성해봐야겠다.
 
+<br/>
 <font color='gray'>출처 : </font>
 
 [[Deep Learning] Weight Initialization(기울기 초기화), Xavier , He](https://acdongpgm.tistory.com/215)
