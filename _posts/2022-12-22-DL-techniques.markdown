@@ -30,6 +30,8 @@ categories: Data_AI
 **2️⃣ Over-Fitting 방지** <br/>
 어느 정도 Regularization을 수행하는 효과
 
+<br/>
+
 
 ## 2. Label Smoothing
 **Label Smoothing**은 일반화 <font color='lightgray'>Generalization</font> 성능을 높이기 위해 label을 smoothing하는 방법이다. Mixup Training과 유사한 부분이 있지만 가장 큰 차이점은 이미지는 건드리지 않고 label만 바꿔준다는 것이다.
