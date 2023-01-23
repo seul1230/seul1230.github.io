@@ -84,7 +84,7 @@ paginate_path: /:num/
 
 # Theme
 # ---------------------------------------------------------------------------------------
-
+# bundle exec jekyll serve
 # theme: jekyll-theme-hydejack
 remote_theme: hydecorp/hydejack@v9
 
