@@ -18,10 +18,28 @@ categories: BackEnd
 
 **<font color='lightgray'>* 프로그래밍 언어</font>** <font color='lightgray'>: 문제를 해결하기 위해 컴퓨터에게 주어지는 처리 방법과 순서를 정해주는 명령문을 작성하는 언어</font>
 
-HTML은 마크업 언어로, 문서의 골격이라고 말할 수 있다. 하이퍼링크를 통해 한 문서에서 다른 문서로 즉시 접근할 수 있는 텍스트를 이용해 문서의 구조를 표현한다.
+<p align='center'>
+<img src='/assets/img/backend/html.png' width='70%'>
+</p>
+
+
+HTML은 마크업 언어로, 문서의 골격이라고 말할 수 있다. 위의 그림이 해당 페이지의 구조를 보여주는 그림으로, HTML 문서로 작성할 수 있다. HTML은 이처럼 하이퍼링크를 통해 한 문서에서 다른 문서로 즉시 접근할 수 있는 텍스트를 이용해 문서의 구조를 표현한다.
+
+```html
+<h1> 제목입니다. </h1>
+<p> 문단입니다. </p>
+```
 
 ## CSS <font color='lightgray'>Cascading Style Sheet</font>
 **CSS**는 **Cascading Style Sheet**의 줄임말로, 이때 캐스캐이딩은 위에서 아래로 흐르는 계단식 구조를 말한다. 스타일 시트는 글꼴의 크기, 모양, 컬러, 문단 설정 등 미리 정의해서 스타일로 만들고 웹 문서의 본문에서 그 스타일을 참조하여 사용하는 기능을 한다. 
+
+```html
+<style>
+    h1{
+        color:red;
+    }
+</style>
+```
 
 ## JavaScript 
 **JavaScript**는 당시 Java의 명성에 힘입기 위해서 이름을 따온 것이지 Java와 연관성은 없다고 한다! HTML과 CSS가 정적 언어인 반면, JS는 동적 언어로 HTML과 CSS로 만들어진 **정적인 페이지를 동적으로** 만들어 주는 역할을 한다.
