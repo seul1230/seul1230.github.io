@@ -1,0 +1,48 @@
+---
+layout: post
+title:  "0124 HTML CSS JS"
+date:   2023-01-24 16:03:09 +0900
+categories: BackEnd
+---
+# [FrontEnd] HTML, CSS, JS
+
+백엔드를 본격적으로 공부하기에 앞서, 프론트를 살짝 맛보고 넘어가려고 한다. 본 포스트는 `코알못에서 웹서비스 런칭까지 : 2021 제주 코딩 베이스캠프(Django)` 강의를 수강하고 공부한 내용을 정리하였다. 
+
+<p align='center'>
+<img src='/assets/img/backend/html_css_js.png' width='70%'>
+</p>
+
+
+## HTML <font color='lightgray'>Hyper Text Markup Language</font>
+**HTML**은 **Hyper Text Markup Language**의 줄임말로, 웹을 만들기 위한 가장 기초적인 언어이다. 그렇지만 프로그래밍 언어는 아니다. 
+
+**<font color='lightgray'>* 프로그래밍 언어</font>** <font color='lightgray'>: 문제를 해결하기 위해 컴퓨터에게 주어지는 처리 방법과 순서를 정해주는 명령문을 작성하는 언어</font>
+
+HTML은 마크업 언어로, 문서의 골격이라고 말할 수 있다. 하이퍼링크를 통해 한 문서에서 다른 문서로 즉시 접근할 수 있는 텍스트를 이용해 문서의 구조를 표현한다.
+
+## CSS <font color='lightgray'>Cascading Style Sheet</font>
+**CSS**는 **Cascading Style Sheet**의 줄임말로, 이때 캐스캐이딩은 위에서 아래로 흐르는 계단식 구조를 말한다. 스타일 시트는 글꼴의 크기, 모양, 컬러, 문단 설정 등 미리 정의해서 스타일로 만들고 웹 문서의 본문에서 그 스타일을 참조하여 사용하는 기능을 한다. 
+
+## JavaScript 
+**JavaScript**는 당시 Java의 명성에 힘입기 위해서 이름을 따온 것이지 Java와 연관성은 없다고 한다! HTML과 CSS가 정적 언어인 반면, JS는 동적 언어로 HTML과 CSS로 만들어진 **정적인 페이지를 동적으로** 만들어 주는 역할을 한다.
+
+<br>
+
+이외에도 프론트엔드 개발자가 알아두면 좋을 언어는 node나 express. 둘 중에 하나 정도는 선택해서 공부하면 좋다고 한다.
+
+<br/>
+
+## 참고
+
+코알못에서 웹서비스 런칭까지 : 2021 제주 코딩 베이스캠프(Django)
+
+
+
+
+
+<!-- ### 🐾　　🐾
+### 🐾　　🐾
+### 🐾　　🐾
+### 🐾　　🐾
+### 🐾　　🐾
+### 🐾　　🐾 -->
