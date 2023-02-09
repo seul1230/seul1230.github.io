@@ -9,6 +9,23 @@ categories: Data_AI
 
 본 포스트는 하나 금융과 함께 하는 연구 프로젝트 전에 받게 되는 교육을 받고 스스로 공부한 내용을 정리한 것이다. 컴퓨터 네트워크 기초에 관한 내용은 [이전 포스트](https://seul1230.github.io/data_ai/2023-02-02-Cloud-Week1-part2/)에 가볍게 정리해놓았으니 한 번 읽어봐도 좋을 것 같다. 
 
+- [\[ Cloud \] TCP/IP 네트워크 ( OSI 7 Layer, TCP/IP Protocal Suite )](#-cloud--tcpip-네트워크--osi-7-layer-tcpip-protocal-suite-)
+  - [표준 프로토콜](#표준-프로토콜)
+    - [TCP/IP 모델](#tcpip-모델)
+  - [Encapsulation \& De-encapsulation](#encapsulation--de-encapsulation)
+    - [✅ Encapsulation 캡슐화](#-encapsulation-캡슐화)
+      - [Layer 4 PDU](#layer-4-pdu)
+      - [Layer 3 PDU](#layer-3-pdu)
+      - [Layer 2 PDU](#layer-2-pdu)
+      - [Layer 1](#layer-1)
+    - [✅ De-encapsulation 역캡슐화](#-de-encapsulation-역캡슐화)
+      - [Layer 2](#layer-2)
+      - [Layer 3](#layer-3)
+      - [Layer 4](#layer-4)
+  - [Network Device](#network-device)
+  - [참고](#참고)
+
+
 ## 표준 프로토콜
 네트워크 상에서 통신이 이루어지기 위해서는 모든 시스템 간에 알맞은 프로토콜이 필요하다. 
 
