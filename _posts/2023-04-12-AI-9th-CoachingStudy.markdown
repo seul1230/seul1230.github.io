@@ -10,6 +10,8 @@ categories: Data_AI
 
 <p align='center'><img src='../../assets/img/AI_Basic_2023/study-ai100-2023.png' width='80%' ><figcaption><a href='https://m.boostcourse.org/study-ai100-2023/intro'>^ 해당 강좌 바로가기</a></figcaption></p>
 
+<br/>
+
 해당 스터디는 1월 중순부터 2월까지 짧게 진행되었는데, 그 기간에 조금 빠듯할 것 같아 처음엔 리드부스터로 지원하지 않고 부스터로 지원했다. 리드부스터는 팀원, 즉 부스터들의 학습 현황을 확인하고 활동일지에 체크하고 미션까지 종합해 제출하는 역할을 한다. 부스터봐는 조금 더 책임을 가지고 할 게 있다보니 바쁜 나보다 부스터들의 소중한 결과물을 더 잘 모아서 제출해줄 다른 분이 계실 거라고 생각했다.
 
 
