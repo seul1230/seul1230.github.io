@@ -31,7 +31,26 @@ Ethernet 은 각 기기들의 고유 주소 **MAC Address** 를 가지고 데이
 <img src='/assets/img/2023_cloud/arp_cache_table.png' width='70%'>
 </p>
 
+## IP Subnetting
+### IP Address 란?
 
+### CIDR 표기법 <font color='lightgray'>Classless Inter-Domain Routing</font>
+
+### 라우터와 스위치
+
+
+
+### 예제 1 : Host ID 를 나눠서 N 개의 네트워크를 만들어라 !
+* IP 주소 : 192.168.10.0
+* Subnet Mask : 255.255.255.0 / 24
+
+**✔️ 2 개의 네트워크로 나누면 ?**
+
+### 예제 2 : IP Address 를 N 개 만드려면 필요한 네트워크의 개수는 ?
+* IP 주소 : 192.168.10.0
+* Subnet Mask : 255.255.255.0 / 24
+
+**✔️ IP 주소가 54 개 필요한 네트워크가 몇 개 만들어질 수 있는가 ?**
 
 ## 참고
 
