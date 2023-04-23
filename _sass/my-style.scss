@@ -25,3 +25,61 @@ figcaption {
   margin-top: 0;
   padding: -10px 2px 2px 2px;
 }
+
+code {
+  /*mono-line code*/
+  color: crimson;
+  background-color: #f1f1f1;
+  padding: 3px;
+  margin: 1px;
+  border-radius: 4px;
+  font-size: 95%;
+  font-weight: bold;
+}
+
+.simple-table {
+  margin-top: 1em;
+  font-size: 0.875rem;
+  empty-cells: show;
+}
+
+table {
+  border-left: none;
+  border-right: none;
+}
+
+table {
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  white-space: normal;
+  line-height: normal;
+  font-weight: normal;
+  font-size: medium;
+  font-style: normal;
+  color: -internal-quirk-inherit;
+  text-align: start;
+  border-spacing: 2px;
+  border-color: gray;
+  font-variant: normal;
+}
+
+mark{
+  background-color: #fff5b1
+}
+
+.callout {
+  font-family: Hack, D2Coding, 'D2 coding', monospace;
+  background-color: #f4f4f4;
+  border: 1px solid #d8d8d8;
+  padding: 0;
+  padding-bottom: 20px;
+  margin: 0;
+  border-radius: 4px;
+  font-size: 95%;
+  line-height: 1.5;
+  color: #2d3139;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
