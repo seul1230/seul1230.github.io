@@ -66,20 +66,28 @@ table {
 }
 
 mark{
-  background-color: #fff5b1
+  background-color: #fff5b1;
 }
 
 .callout {
   font-family: Hack, D2Coding, 'D2 coding', monospace;
   background-color: #f4f4f4;
   border: 1px solid #d8d8d8;
-  padding: 0;
-  padding-bottom: 20px;
+  padding: 20px;
+  // padding-bottom: 20px;
   margin: 0;
+  margin-bottom: 10px;
   border-radius: 4px;
   font-size: 95%;
   line-height: 1.5;
   color: #2d3139;
   white-space: pre-wrap;
   word-wrap: break-word;
+}
+
+.line-mark{
+  padding: 5px;
+  padding-left: 10px;
+  background-color: #FDEBEB;
+  // #FDD9D9, #ffdce0
 }

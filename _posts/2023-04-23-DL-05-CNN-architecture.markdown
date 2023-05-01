@@ -41,7 +41,8 @@ CNN을 이용해 딥러닝 모델을 설계할 때 일반적으로 다음과 같
 <p align='center'>
 <img src="https://latex.codecogs.com/svg.image?Conv&space;=&space;\frac{input&space;-&space;kernel&space;&plus;&space;2*padding}{stride}&plus;1" title="https://latex.codecogs.com/svg.image?Conv = \frac{input - kernel + 2*padding}{stride}+1" /></p>
 
-### 📌 LeNet -5
+<h3 class='line-mark'>📌 LeNet -5</h3>
+
 * 1998년 르쿤 연구진 발표
 * 직관적인 구조
 * 가중치를 가진 5개의 층 > 모델의 계산 복잡도와 직결
@@ -61,7 +62,8 @@ CNN을 이용해 딥러닝 모델을 설계할 때 일반적으로 다음과 같
 * 활성화 함수  Tanh 함수
 
 
-### 📌 AlexNet
+<h3 class='line-mark'>📌 AlexNet</h3>
+
 * 알렉스크리체프스키 연구진 
 * LeNet이 MNIST에 대해서는 AlexNet보다는 높은 성능을 보임
 * AlexNet은 MNIST보다 복잡도가 높은 이미지넷 문제 해결을 위해 제안됨
@@ -95,7 +97,9 @@ CNN을 이용해 딥러닝 모델을 설계할 때 일반적으로 다음과 같
   * 2개의 GPU에 신경망을 나눠 담아 학습하는 복잡한 방식
   * 각 층을 두 GPU 메모리에 분리하고, GPU가 서로 통신하도록
 
-### 📌 VGGNet
+
+<h3 class='line-mark'>📌 VGGNet</h3>
+
 * 2014, 옥스퍼드 대학 VGG 연구 그룹 제안
 * AlexNet보다 깊이 있는 신경망
 * AlexNet보다 파라미터 개수 적음 ▶️ 연산효율성 👍
@@ -124,10 +128,10 @@ CNN을 이용해 딥러닝 모델을 설계할 때 일반적으로 다음과 같
 
 신경망의 층수를 늘리는 것과 같은 효과를 내면서 **파라미터 수는 억제**하여 더 낮은 비용으로 더 복잡한 특징을 학습할 수 있다.
 
-* 층수를 늘리고 합성곱 필터의 크기를 줄이면서 규제화와 같은 효과 발생 ⭐️
+➡️ 층수를 늘리고 합성곱 필터의 크기를 줄이면서 규제화와 같은 효과 발생 ⭐️
 
 
-### 📌 인셉션과 GoogLeNet
+<h3 class='line-mark'>📌 인셉션과 GoogLeNet</h3>
 
 * 2014, 구글 발표
 * 신경망 내부적으로 계산 자원의 효율을 높였음
@@ -168,7 +172,7 @@ CNN을 이용해 딥러닝 모델을 설계할 때 일반적으로 다음과 같
 <p align='center'><img src='/assets/img/DLsystem/googlenet.png' width='90%'></p>
 
 
-### 📌 ResNet <font color='lightgray'>Residual Neural Network</font>
+<h3 class='line-mark'>📌 ResNet <font color='lightgray'>Residual Neural Network</font></h3>
 
 * 2015, 마이크로소프트 리서치 팀 제안
 * **잔차 모듈 + 스킵 연결**
