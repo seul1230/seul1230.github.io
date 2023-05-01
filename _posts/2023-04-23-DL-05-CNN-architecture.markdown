@@ -11,7 +11,8 @@ categories: Data_AI
 본 포스트에서는 고급 합성곱 신경망 구조 <font color='lightgray'>Advanced CNN Architectures</font>에 대해 정리하겠다.
 
 
-## CNN의 디자인 패턴
+<!-- ## CNN의 디자인 패턴 -->
+<h2 class='line-mark-pink'>CNN의 디자인 패턴</h2>
 
 CNN을 이용해 딥러닝 모델을 설계할 때 일반적으로 다음과 같은 패턴 구조를 따른다.
 
@@ -35,13 +36,15 @@ CNN을 이용해 딥러닝 모델을 설계할 때 일반적으로 다음과 같
 * 이어지는 모든 FC층의 유닛을 같게 해서 신경망의 학습 능력이 저해되는 현상은 발생되지 않음
 
 
-## 합성곱 신경망 살펴보기
+<!-- ## 합성곱 신경망 살펴보기 -->
+<h2 class='line-mark-pink'>합성곱 신경망 살펴보기</h2>
 
+<br>
 
 <p align='center'>
 <img src="https://latex.codecogs.com/svg.image?Conv&space;=&space;\frac{input&space;-&space;kernel&space;&plus;&space;2*padding}{stride}&plus;1" title="https://latex.codecogs.com/svg.image?Conv = \frac{input - kernel + 2*padding}{stride}+1" /></p>
 
-<h3 class='line-mark'>📌 LeNet -5</h3>
+<h3 class='line-mark-gray'>📌 LeNet -5</h3>
 
 * 1998년 르쿤 연구진 발표
 * 직관적인 구조
@@ -62,7 +65,7 @@ CNN을 이용해 딥러닝 모델을 설계할 때 일반적으로 다음과 같
 * 활성화 함수  Tanh 함수
 
 
-<h3 class='line-mark'>📌 AlexNet</h3>
+<h3 class='line-mark-gray'>📌 AlexNet</h3>
 
 * 알렉스크리체프스키 연구진 
 * LeNet이 MNIST에 대해서는 AlexNet보다는 높은 성능을 보임
@@ -98,7 +101,7 @@ CNN을 이용해 딥러닝 모델을 설계할 때 일반적으로 다음과 같
   * 각 층을 두 GPU 메모리에 분리하고, GPU가 서로 통신하도록
 
 
-<h3 class='line-mark'>📌 VGGNet</h3>
+<h3 class='line-mark-gray'>📌 VGGNet</h3>
 
 * 2014, 옥스퍼드 대학 VGG 연구 그룹 제안
 * AlexNet보다 깊이 있는 신경망
@@ -131,7 +134,7 @@ CNN을 이용해 딥러닝 모델을 설계할 때 일반적으로 다음과 같
 ➡️ 층수를 늘리고 합성곱 필터의 크기를 줄이면서 규제화와 같은 효과 발생 ⭐️
 
 
-<h3 class='line-mark'>📌 인셉션과 GoogLeNet</h3>
+<h3 class='line-mark-gray'>📌 인셉션과 GoogLeNet</h3>
 
 * 2014, 구글 발표
 * 신경망 내부적으로 계산 자원의 효율을 높였음
@@ -172,7 +175,7 @@ CNN을 이용해 딥러닝 모델을 설계할 때 일반적으로 다음과 같
 <p align='center'><img src='/assets/img/DLsystem/googlenet.png' width='90%'></p>
 
 
-<h3 class='line-mark'>📌 ResNet <font color='lightgray'>Residual Neural Network</font></h3>
+<h3 class='line-mark-gray'>📌 ResNet <font color='gray'>Residual Neural Network</font></h3>
 
 * 2015, 마이크로소프트 리서치 팀 제안
 * **잔차 모듈 + 스킵 연결**
