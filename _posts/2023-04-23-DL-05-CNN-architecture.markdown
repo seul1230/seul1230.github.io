@@ -165,7 +165,7 @@ CNN을 이용해 딥러닝 모델을 설계할 때 일반적으로 다음과 같
 <p align='center'><img src='/assets/img/DLsystem/inception_1x1.png' width='70%'></p>
 
 #### GoogLeNet 구조
-<p align='center'><img src='/assets/img/DLsystem/GoogLeNet.png' width='90%'></p>
+<p align='center'><img src='/assets/img/DLsystem/googlenet.png' width='90%'></p>
 
 
 ### 📌 ResNet <font color='lightgray'>Residual Neural Network</font>
