@@ -4,7 +4,7 @@ title: 2022_likelion
 slug: 2022_likelion
 menu: true
 permalink: /2022_likelion/
-order: 1
+# order: 3
 sitemap: false
 description: >
     멋쟁이사자처럼 AI 스쿨 TIL (Today I Learned)

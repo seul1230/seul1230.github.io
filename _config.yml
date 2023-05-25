@@ -47,15 +47,14 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title: 2022_likelion
-    url: /2022_likelion/
-
   - title: Projects
     url: /Projects/
 
   - title: Blog
     url: /blog/
 
+  - title: 2022_likelion
+    url: /2022_likelion/
   # - title:             Tips
   #   url:               /Tips/
 
