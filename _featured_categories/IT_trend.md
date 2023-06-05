@@ -1,7 +1,7 @@
 ---
 layout: list
-title: IT trend
-slug: IT trend
+title: IT_trend
+slug: IT_trend
 permalink: /blog/IT_trend
 sitemap: false
 description: >

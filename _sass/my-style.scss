@@ -33,7 +33,7 @@ code {
   padding: 3px;
   margin: 1px;
   border-radius: 4px;
-  font-size: 95%;
+  font-size: 80%;
   font-weight: bold;
 }
 
@@ -69,6 +69,14 @@ mark{
   background-color: #fff5b1;
 }
 
+pre{
+  margin-left: 5px;
+}
+
+h4{
+  margin-left: 5px;
+}
+
 .callout {
   font-family: Hack, D2Coding, 'D2 coding', monospace;
   background-color: #f4f4f4;
@@ -87,10 +95,17 @@ mark{
 
 .line-mark-pink{
   padding: 4px;
-  padding-left: 0;
   padding-right: 0;
   padding-left: 10px;
   background-color: #FDEBEB;
+  // #FDD9D9, #ffdce0
+}
+
+.line-mark-blue {
+  padding: 4px;
+  padding-right: 0;
+  padding-left: 10px;
+  background-color: #f1f8ff;
   // #FDD9D9, #ffdce0
 }
 
