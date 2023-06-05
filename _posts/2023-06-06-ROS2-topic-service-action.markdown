@@ -8,6 +8,8 @@ categories: IT_trend
 
 [이전 포스트](https://seul1230.github.io//it_trend/2023-06-05-ROS2-node-package/)의 내용에서는 Node와 Package에 대해 다루었다. Node와 Package이 무엇인지 궁금하다면 해당 포스트를 방문하기 바란다. 본 포스트에서는 메시지 통신 방식 **Topic, Service, Action**에 대해 알아보자. 
 
+<br>
+
 ## Topic 
 
 <h3 class='line-mark-blue'>ROS2 Topic</h3>
@@ -24,6 +26,8 @@ Topic은 **여러 Node**에서 데이터를 받을 수 있고, **여러 Node**�
 
 Topic을 만들 수 있는 다른 명령어들은 다음 기회에 정리하겠다. 
 
+<br>
+
 ## Service
 
 <h3 class='line-mark-blue'>ROS2 Service</h3>
@@ -36,6 +40,7 @@ Service는 **<mark style='background-color: #fff5b1'>동기식 양방향</mark> 
 
 위의 gif를 보면 알 수 있듯이, 하나의 **Service Server**에는 여러 Client Node가 <code>request</code>할 수 있지만 **Server**는 동시에 여러 <code>request</code>를 처리하지는 못한다는 것을 기억해야 한다. 
 
+<br>
 
 ## Topic과 Service
 
@@ -50,6 +55,7 @@ Topic은 <code>Publish</code>하면 여러 Node가 <code>Subscribe</code> 가능
 - 분명한 요청의 주체가 존재, 빠르게 동작 완료되는 경우 ➡️ **Service**
 - 불특정한 Node가 subscribe의 대상이 되며, 지속적으로 데이터 송수신 일어나는 경우 ➡️ **Topic**
 
+<br>
 
 ## Action
 <h3 class='line-mark-blue'>Action의 특징</h3>

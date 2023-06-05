@@ -49,6 +49,7 @@ ROS는 로보틱스 연구 및 개발 과정에서 코드를 **Package화**하�
 - **활발한 커뮤니티 교류**
 - **오픈 소스**
 
+<br>
 
 ## 임베디드 보드 <font color='lightgray'>Embedded Board</font>
 
@@ -63,6 +64,7 @@ ROS는 로보틱스 연구 및 개발 과정에서 코드를 **Package화**하�
 - **Development Board**
   - 센서와 구동계 등을 연결하고 코딩을 하는 등의 특정 시스템 개발을 목적으로 만든 메인보드
 
+<br>
 
 ## Node와 Package
 <h3 class='line-mark-blue'>Node란?</h3>
