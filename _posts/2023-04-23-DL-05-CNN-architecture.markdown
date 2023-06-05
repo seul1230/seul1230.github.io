@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "After Boostcourse 9th Study"
+title:  "CNN Architectures"
 date:   2023-04-23 13:50:09 +0900
 categories: Data_AI
 ---
