@@ -141,4 +141,4 @@ $ ros2 pkg executables <package_name>
 <br>
 
 ## Next Post..
-[다음 포스트](https://seul1230.github.io//it_trend/2023-06-05-ROS2-node-package/)에서는 Topic, Service, Action에 대해 정리할 예정이다. 
+[다음 포스트](https://seul1230.github.io/it_trend/2023-06-06-ROS2-topic-service-action/)에서는 Topic, Service, Action에 대해 정리할 예정이다. 

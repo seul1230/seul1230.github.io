@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "ROS2"
-date:   2023-06-05 21:00:09 +0900
+date:   2023-06-06 01:00:09 +0900
 categories: IT_trend
 ---
 # [ ROS2 ] ROS 기초 II (Topic, Service, Action)
 
-[이전 포스트](https://seul1230.github.io//it_trend/2023-06-05-ROS2-node-package/)의 내용에서는 Node와 Package에 대해 다루었다. Node와 Package이 무엇인지 궁금하다면 해당 포스트를 방문하기 바란다. 본 포스트에서는 메시지 통신 방식 **Topic, Service, Action**에 대해 알아보자. 
+[이전 포스트](https://seul1230.github.io/it_trend/2023-06-05-ROS2-node-package/)의 내용에서는 Node와 Package에 대해 다루었다. Node와 Package이 무엇인지 궁금하다면 해당 포스트를 방문하기 바란다. 본 포스트에서는 메시지 통신 방식 **Topic, Service, Action**에 대해 알아보자. 
 
 <br>
 
@@ -78,4 +78,4 @@ Action은 내비게이션의 작동 원리와 상당히 유사하다.
 <br>
 
 ## Next Post..
-다음 포스트는 DDS와 QoS에 대해 정리할 예정이다. 
+[다음 포스트](https://seul1230.github.io/it_trend/2023-06-06-ROS2-DDS-QoS/)는 DDS와 QoS에 대해 정리할 예정이다. 

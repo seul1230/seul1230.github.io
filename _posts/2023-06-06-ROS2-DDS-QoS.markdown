@@ -1,0 +1,92 @@
+---
+layout: post
+title:  "ROS2"
+date:   2023-06-06 11:30:09 +0900
+categories: IT_trend
+---
+# [ ROS2 ] ROS 기초 III (DDS와 QoS)
+
+[이전 포스트](https://seul1230.github.io/it_trend/2023-06-06-ROS2-topic-service-action/)의 내용에서는 Topic과 Service, 그리고 Action에 대해 다루었다. Node 간 통신 방법이 궁금하다면 해당 포스트를 방문하기 바란다. 본 포스트에서는 메시지 통신 방식 **DDS와 QoS**에 대해 알아보자. 
+
+
+## DDS <font color='lightgray'>Data Distribution Service</font>
+
+<h3 class='line-mark-blue'>DDS란?</h3>
+
+ROS2는 산업용 시장을 위해 **표준 방식 사용**을 중요하게 여긴다. 그렇기 때문에 ROS2는 ROS1과 비슷하게 만들기보다는 **산업용 표준을 만들고 생태계를 꾸려가고 있었던 DDS**를 **통신 미들웨어**로서 사용한다. 
+
+<p align='center'><img src='/assets/img/ros/dds_domain.svg' width='90%'><figcaption><a href='https://fast-dds.docs.eprosima.com/en/latest/fastdds/getting_started/definitions.html'>DCPS model entities in the DDS Domain</a></figcaption></p>
+
+<h3 class='line-mark-blue'>DDS의 특징</h3>
+
+- **산업 표준**
+  - 비영리단체 OMG가 **분산객체**에 대한 기술 표준을 정하고자 만든 미들웨어
+  - 산업 표준으로 자리잡음
+- **운영체제 독립**
+  - DDS는 Window, Linux, MacOS, Android 등 다양한 OS 지원함
+- **언어 독립**
+  - DDS는 미들웨어로, 그 상위 레벨인 사용자 코드 레벨에서 프로그래밍 언어를 바꾸지 않아도 됨
+  - ROS2에서도 RMW <font color='lightgray'>ROS Middle Ware</font>로 디자인되어 다양한 언어 지원
+- **UDP 기반 전송 방식**
+  - 여러 목적지로 동시에 보낼 수 있음 ➡️ 빠른 전송 속도
+  - TCP 방식에 비해 신뢰성이 떨어지지만 <code>QoS</code>를 도입하여 어느 정도 해결함
+- **데이터 중심적**
+  - DDS 사양 중 **DCPS <font color='lightgray'>Data-Centric Publish-Subscribe</font>**는 적절한 수신자에게 적절한 정보를 효율적으로 전달하는 것을 목표로 하는 publish 및 subscribe 방식이다.
+- **동적 검색**
+  - 어떤 Topic이 어떤 도메인 영역에 있고, 어떤 Node가 이를 발신/수신하는지 알 수 있음
+  - ROS1의 Node 이름 지정 및 등록, Node 간 메시지 연결 지원하던 <code>ROS Master</code> 사용하지 않아도 됨
+  - 많은 Node들이 participant로 취급되어 동적 검색을 통해 **연결**됨
+
+<h3 class='line-mark-blue'>Summary</h3>
+
+ROS2는 실시간 데이터 전송을 보장하고, DDS의 사용으로 Node 간의 동적 검색 기능을 지원하고 있어서 기존 ROS1에서 각 Node들의 정보를 관리하였던 <code>ROS Master</code> 없이도 여러 DDS 프로그램 간에 통신이 가능하다. 
+
+**➡️ DDS를 사용함으로써**<br/>
+publish, subscribe형 메시지 전달이 가능하다. <br/>
+실시간 데이터 전송, 불안정한 네트워크에 대응하고 보안을 강화할 수 있다. 
+
+
+<br>
+
+
+## QoS <font color='lightgray'>Quality of Service</font>
+
+<h3 class='line-mark-blue'>QoS란?</h3>
+
+**QoS**란 <code>DDS</code>의 서비스 품질로, 데이터 통신의 옵션이라고 할 수 있다.
+
+ROS2에서는 **TCP처럼 신뢰성을 중시 여기는 통신 방식**과 **UDP처럼 통신 속도에 focus를 맞춤 통신 방식**을 선택적으로 사용할 수 있다. 
+
+이를 위해 <code>DDS</code>의 **QoS**를 도입하여 <code>Publisher</code>/<code>Subscriber</code> 등을 선언할 때 QoS를 매개변수 형태로 지정할 수 있어서 원하는 데이터 통신의 옵션 설정을 유저가 직접할 수 있다. 
+
+<h3 class='line-mark-blue'>QoS의 종류</h3>
+
+- **Reliability**
+  - <code>RELIABLE</code> : TCP처럼 데이터 손실 방지하고 신뢰도 우선
+  - <code>BEST_EFFORT</code> : UDP처럼 통신 속도를 최우선시
+- **History**
+  - 통신 상태에 따라 정해진 사이즈만큼의 데이터 보관
+  - <code>KEEP_LAST</code> : 정해진 메시지 큐 사이즈 만큼의 데이터 보관 (<code>depth</code> : 메시지 큐 사이즈)
+  - <code>KEEP_ALL</code> : 모든 데이터를 보관 (메시지 큐의 사이즈는 DDS 벤더마다 다름)
+- **Durability**
+  - 데이터 수신하는 <code>Subscriber</code>가 생성되기 전의 데이터를 폐기할지에 대한 설정
+  - <code>TRANSIENT_LOCAL</code> : Subscription이 생성되기 전의 데이터도 보관 (Publisher에만 적용 가능)
+  - <code>VOLATILE</code> : Subscription이 생성되기 전의 데이터는 무효
+- **Deadline**
+  - 정해진 주기 안에 데이터가 발신 및 수신되지 않을 경우 이벤트 함수를 실행
+  - <code>deadline_duration</code> : Deadline을 확인하는 주기
+- **Lifespan**
+  - 정해진 주기 안에서 수신되는 데이터만 유효 판정
+  - 그렇지 않은 데이터는 삭제
+  - <code>lifespan_duration</code> : Lifespan을 확인하는 주기
+- **Liveliness**
+  - 정해진 주기 안에서 Node, Topic 생사 확인
+  - <code>liveliness</code> : 자동/매뉴얼로 확인할지를 지정하는 옵션 
+    - AUTOMATIC / MANUAL_BY_NODE, MANUAL_BY_TOPIC
+  - <code>lease_duration</code> : Liveliness를 확인하는 주기
+
+
+<br>
+
+## Next Post..
+프로젝트가 마무리 되면 간단한 실습 내용도 함께 정리해서 업로드할 예정이다. 
