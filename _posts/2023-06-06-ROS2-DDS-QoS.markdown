@@ -6,7 +6,7 @@ categories: IT_trend
 ---
 # [ ROS2 ] ROS 기초 III (DDS와 QoS)
 
-[이전 포스트](https://seul1230.github.io/it_trend/2023-06-06-ROS2-topic-service-action/)의 내용에서는 Topic과 Service, 그리고 Action에 대해 다루었다. Node 간 통신 방법이 궁금하다면 해당 포스트를 방문하기 바란다. 본 포스트에서는 메시지 통신 방식 **DDS와 QoS**에 대해 알아보자. 
+[이전 포스트](https://seul1230.github.io/it_trend/2023-06-05-ROS2-topic-service-action/)의 내용에서는 Topic과 Service, 그리고 Action에 대해 다루었다. Node 간 통신 방법이 궁금하다면 해당 포스트를 방문하기 바란다. 본 포스트에서는 메시지 통신 방식 **DDS와 QoS**에 대해 알아보자. 
 
 
 ## DDS <font color='lightgray'>Data Distribution Service</font>

@@ -78,4 +78,4 @@ Action은 내비게이션의 작동 원리와 상당히 유사하다.
 <br>
 
 ## Next Post..
-[다음 포스트](https://seul1230.github.io/it_trend/2023-06-06-ROS2-DDS-QoS/)는 DDS와 QoS에 대해 정리할 예정이다. 
+[다음 포스트](https://seul1230.github.io/it_trend/2023-06-05-ROS2-DDS-QoS/)는 DDS와 QoS에 대해 정리할 예정이다. 
