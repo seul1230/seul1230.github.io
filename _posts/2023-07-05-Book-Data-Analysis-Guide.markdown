@@ -26,6 +26,8 @@ categories: Data_AI
 
 <p align='center'><img src='/assets/img/book_data_ai/book_cover.png' width='30%'><figcaption>[ 데이터 분석, 한 권에 입문하기 ] 커버</figcaption></p>
 
+<br/>
+
 이 책은 <strong>데이터 분석을 처음 시작하는 사람들</strong>에게 이해하기 쉬운 언어로 가이드라인을 제시하고 있다.
 데이터 분석을 처음 접하게 되면, 내용이 방대하고 어느 것이 중요한지, 또 어느 부분에 집중해 공부할지 알기 어렵다. 해당 책의 저자들 역시 그런 마음을 잘 알기에, 데이터 분석가 교육 과정을 수료하면서 느꼈던 핵심적인 부분들을 공유하면 좋을 것이라 생각했다.
 
