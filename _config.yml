@@ -53,8 +53,8 @@ menu:
   - title: Blog
     url: /blog/
 
-  - title: 2022_likelion
-    url: /2022_likelion/
+  # - title: 2022_likelion
+  #   url: /2022_likelion/
   # - title:             Tips
   #   url:               /Tips/
 

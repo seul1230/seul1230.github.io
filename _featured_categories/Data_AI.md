@@ -13,3 +13,12 @@ description: >
 #   background: rgb(32,32,32)
 #   overlay:    false
 ---
+# Data & AI
+
+
+### LIKELION DATA & AI 7th
+
+- [2022_likelion]{: .heading.flip-title} --- 멋쟁이사자처럼 AI 스쿨 7기 TIL (Today I Learned)
+
+
+[2022_likelion]: /Data_AI/2022_likelion/

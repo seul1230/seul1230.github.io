@@ -23,8 +23,6 @@ permalink: /blog/
 
 - [IT_trend]{: .heading.flip-title} --- 최신 **IT** 동향 및 **IT** 용어 정리 📰
 
-
-
 <!-- ## Back End
 
 - [BackEnd]{: .heading.flip-title} --- 백엔드 공부 👩🏻‍💻 -->
@@ -33,8 +31,11 @@ permalink: /blog/
 
 - [Tips]{: .heading.flip-title} --- 알아놓으면 좋은 Tips 💡
 
+
+
 [Data_AI]: /blog/Data_AI
 [IT_trend]: /blog/IT_trend
 [CS_Algorithm]: /blog/CS
 [BackEnd]: /blog/BackEnd
+[2022_likelion]: /Data_AI/2022_likelion/
 [Tips]: /blog/Tips

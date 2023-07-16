@@ -2,8 +2,8 @@
 layout: list
 title: 2022_likelion
 slug: 2022_likelion
-menu: true
-permalink: /2022_likelion/
+# menu: false
+permalink: /Data_AI/2022_likelion/
 # order: 3
 sitemap: false
 description: >
