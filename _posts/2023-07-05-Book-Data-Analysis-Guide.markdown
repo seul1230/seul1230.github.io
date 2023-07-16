@@ -24,6 +24,8 @@ categories: Data_AI
 
 <h2 class='line-mark-blue'>📖 책 소개</h2>
 
+<br/>
+
 <p align='center'><img src='/assets/img/book_data_ai/book_cover.png' width='30%'><figcaption>[ 데이터 분석, 한 권에 입문하기 ] 커버</figcaption></p>
 
 <br/>
