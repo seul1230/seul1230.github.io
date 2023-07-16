@@ -114,6 +114,7 @@ font_heading: Roboto Slab, Helvetica, Arial, sans-serif
 # The font used for code blocks. Expects a string that is a valid CSS font-family value.
 font_code: Fira Code, Menlo, Monaco, Consolas, monospace;
 
+# sitemap: https://www.xml-sitemaps.com/
 defaults:
   # You can use this to provide a default accent color and background for
   # all pages under a given path:
