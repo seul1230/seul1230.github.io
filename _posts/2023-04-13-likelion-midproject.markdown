@@ -58,8 +58,11 @@ categories: Projects
 
 ### 🗂️ Datasets
 
-**dacon 청경채 예측 데이터** : [https://dacon.io/competitions/official/235961/data](https://dacon.io/competitions/official/235961/data) 
-[청경채 성장 예측 AI 경진대회](https://dacon.io/competitions/official/235961/data)에서 제공된 데이터를 다운받아 이용하였다. 
+**전국인구현황 데이터** : 
+미니프로젝트2에서 [행정안전부 주민등록 인구통계 데이터 분석](https://jumin.mois.go.kr/ageStatMonth.do)에서 2015.01 - 2021.12 기간 동안 제공된 데이터를 다운받고 이를 활용해 병합 및 파생변수 추가 등 데이터를 수정해주었다. 
+
+**전국인구현황 데이터** : 
+[행정안전부 주민등록 인구통계 데이터 분석](https://jumin.mois.go.kr/ageStatMonth.do)에서 2015.01 - 2021.12 기간 동안 제공된 데이터를 다운받아 이용하였다.
 
 <br/>
   
