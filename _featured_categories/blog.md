@@ -4,7 +4,7 @@ title: Blog
 description: >
   이것 저것 그것 📝
 hide_description: false
-sitemap: false
+# sitemap: false
 permalink: /blog/
 ---
 

@@ -3,7 +3,7 @@ layout: list
 title: IT_trend
 slug: IT_trend
 permalink: /blog/IT_trend
-sitemap: false
+# sitemap: false
 description: >
     최신 IT 동향 및 IT 용어 정리 📰
 

@@ -5,7 +5,7 @@ slug: Projects
 menu: true
 permalink: /Projects/
 order: 1
-sitemap: false
+# sitemap: false
 description: >
     프로젝트 정리
 # accent_color: rgb(38,139,210)

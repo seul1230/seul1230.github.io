@@ -3,7 +3,7 @@ layout: list
 title: 2022_likelion
 slug: 2022_likelion
 permalink: /Data_AI/2022_likelion/
-sitemap: false
+# sitemap: false
 description: >
     멋쟁이사자처럼 AI 스쿨 TIL (Today I Learned)
 # accent_color: rgb(38,139,210)

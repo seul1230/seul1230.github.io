@@ -3,7 +3,7 @@ layout: list
 title: BackEnd
 slug: BackEnd
 
-sitemap: false
+# sitemap: false
 description: >
     백엔드 공부 👩🏻‍💻
 

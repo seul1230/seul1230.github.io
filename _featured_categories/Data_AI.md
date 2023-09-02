@@ -3,7 +3,7 @@ layout: list
 title: Data & AI
 slug: Data_AI
 permalink: /blog/Data_AI
-sitemap: false
+# sitemap: false
 description: >
     내가 스스로 하는 데이터 분석 & AI 공부 📚
 

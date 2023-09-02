@@ -3,7 +3,7 @@ layout: list
 title: CS_Algorithm
 slug: CS
 permalink: /blog/CS
-sitemap: false
+# sitemap: false
 description: >
     CS 지식 및 알고리즘 공부 🧩
 
