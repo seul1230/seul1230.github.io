@@ -3,6 +3,7 @@ layout: post
 title:  "Cloud Week 1"
 date:   2023-02-02 14:50:09 +0900
 categories: Data_AI
+published: false
 ---
 # [ Cloud ] 컴퓨터 네트워크 역사
 

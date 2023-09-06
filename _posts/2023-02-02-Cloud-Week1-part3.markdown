@@ -3,6 +3,7 @@ layout: post
 title:  "Cloud Week 1"
 date:   2023-02-04 17:50:09 +0900
 categories: Data_AI
+published: false
 ---
 # [ Cloud ] TCP/IP 네트워크 ( OSI 7 Layer, TCP/IP Protocal Suite )
 

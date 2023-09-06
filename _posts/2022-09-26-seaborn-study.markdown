@@ -3,6 +3,7 @@ layout: post
 title:  "0926 data analysis study"
 date:   2022-09-26 17:30:09 +0900
 categories: Data_AI
+published: false
 ---
 # [ 0926 스터디 ] 데이터 분석 - 캐글 필사
 
