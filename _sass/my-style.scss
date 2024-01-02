@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding : 0;
+}
+
 .dl-table {
   a {
     @supports ((text-decoration-thickness: initial) and (text-underline-offset: initial)) {
@@ -74,7 +79,7 @@ pre{
 }
 
 h4{
-  margin-left: 5px;
+  margin-left: 0px;
 }
 
 .callout {
@@ -94,28 +99,28 @@ h4{
 }
 
 .line-mark-pink{
-  padding: 4px;
+  // padding: 4px;
   padding-right: 0;
   padding-left: 10px;
   background-color: #FDEBEB;
 }
 
 .line-mark-blue {
-  padding: 4px;
+  // padding: 4px;
   padding-right: 0;
   padding-left: 10px;
   background-color: #f1f8ff;
 }
 
 .line-mark-purple {
-  padding: 4px;
+  // padding: 4px;
   padding-right: 0;
   padding-left: 10px;
   background-color: #f7e9fa;
 }
 
 .line-mark-gray {
-  padding: 4px;
+  // padding: 4px;
   padding-left: 10px;
   background-color: #f0f0f0;
 }
