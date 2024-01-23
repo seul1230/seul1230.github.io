@@ -27,9 +27,9 @@ permalink: /blog/
 
 - [BackEnd]{: .heading.flip-title} --- 백엔드 공부 👩🏻‍💻 -->
 
-## Tips
+<!-- ## Tips
 
-- [Tips]{: .heading.flip-title} --- 알아놓으면 좋은 Tips 💡
+- [Tips]{: .heading.flip-title} --- 알아놓으면 좋은 Tips 💡 -->
 
 
 
@@ -38,4 +38,4 @@ permalink: /blog/
 [CS_Algorithm]: /blog/CS
 [BackEnd]: /blog/BackEnd
 [2022_likelion]: /Data_AI/2022_likelion/
-[Tips]: /blog/Tips
+<!-- [Tips]: /blog/Tips -->

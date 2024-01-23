@@ -29,7 +29,7 @@ description: >
 tagline: AI Engineer
 
 # A list of keywords for your blog
-keywords: []
+keywords: [AI, Data, Tips]
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
@@ -52,6 +52,9 @@ menu:
 
   - title: Blog
     url: /blog/
+
+  - title: Tips
+    url: /Tips/
 
   # - title: 2022_likelion
   #   url: /2022_likelion/
@@ -119,7 +122,8 @@ defaults:
   # You can use this to provide a default accent color and background for
   # all pages under a given path:
   - scope:
-      path: hyde/
+      # path: hyde/
+      path: assets/icons/
     values:
       accent_color: rgb(237, 159, 159)
       theme_color: rgb(237, 159, 159)

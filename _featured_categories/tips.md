@@ -3,7 +3,7 @@ layout: list
 title: Tips
 slug: Tips
 menu: true
-permalink: /blog/Tips/
+permalink: /Tips/
 order: 1
 # sitemap: false
 description: >
