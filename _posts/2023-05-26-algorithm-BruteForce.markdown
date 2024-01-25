@@ -146,14 +146,14 @@ def solution (N, number):
 
 <p class='callout'><strong>[문제]</strong>
 비어있는 공집합 S가 주어졌을 때, 아래 연산을 수행하는 프로그램을 작성하시오. 
-(1 ≤ x ≤ 20)
+(1 ≤ x ≤ 20)<br/>
 
-* <strong>add x</strong>: S에 x를 추가한다. S에 x가 이미 있는 경우에는 연산을 무시한다.
-* <strong>remove x</strong>: S에서 x를 제거한다. S에 x가 없는 경우에는 연산을 무시한다.
-* <strong>check x</strong>: S에 x가 있으면 1을, 없으면 0을 출력한다. 
-* <strong>toggle x</strong>: S에 x가 있으면 x를 제거하고, 없으면 x를 추가한다.
-* <strong>all</strong>: S를 {1, 2, ..., 20} 으로 바꾼다.
-* <strong>empty</strong>: S를 공집합으로 바꾼다. 
+* <strong>add x</strong>: S에 x를 추가한다. S에 x가 이미 있는 경우에는 연산을 무시한다.<br/>
+* <strong>remove x</strong>: S에서 x를 제거한다. S에 x가 없는 경우에는 연산을 무시한다.<br/>
+* <strong>check x</strong>: S에 x가 있으면 1을, 없으면 0을 출력한다. <br/>
+* <strong>toggle x</strong>: S에 x가 있으면 x를 제거하고, 없으면 x를 추가한다.<br/>
+* <strong>all</strong>: S를 {1, 2, ..., 20} 으로 바꾼다.<br/>
+* <strong>empty</strong>: S를 공집합으로 바꾼다.
 <figcaption><a href='https://www.acmicpc.net/problem/11723'>[BOJ] 11723. 집합</a></figcaption></p>
 
 ```python
