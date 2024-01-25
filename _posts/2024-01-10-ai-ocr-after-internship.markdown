@@ -118,3 +118,4 @@ categories: Data_AI
 
 - [11. OCR 기술의 개요](https://velog.io/@xpelqpdj0422/11.-OCR-%EA%B8%B0%EC%88%A0%EC%9D%98-%EA%B0%9C%EC%9A%94)
 - [각종 문서, 이제 AI가 간편하게 처리한다! AI-OCR로 달라진 미래 산업](https://blog.naver.com/hanwhadays/223021763201)
+
