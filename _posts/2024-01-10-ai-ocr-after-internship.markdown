@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "End of 2023, Start of 2024"
+title:  "End of 2023, Start of 2024, AI-OCR"
 date:   2024-01-10 12:00:09 +0900
 categories: Data_AI
-published: false
+# published: false
 ---
-# [ AI ] AI-OCR이란? 
+# [ DL ] AI-OCR이란? 
 
 2023 하반기에 하나금융융합기술원 인턴으로 참여하면서 개인적으로도 열심히 공부했고 고마운 분들께 많은 것을 얻을 수 있었다. 이때 공부한 것을 여기에 조금씩 기록해 나가고자 한다. 
 
@@ -71,14 +71,44 @@ published: false
 </p>
 
 
-이전에는 글자 단위로 인식하여 결합하는 방식을 활용해왔다고 얘기한 바 있다. 해당 논문은 딥러닝을 활용해 단어 단위로 detection하는 법에 대해 설명한다. 네트워크 기본 구조로는 [SSD: single shot multibox detector](https://arxiv.org/pdf/1512.02325.pdf)를 사용하여 빠르게 문자 영역을 탐지해내었다. 기존의 SSD는 Regression을 위한 Convolution layer에서 3 x 3 크기의 kernel을 갖는다.  
+이전에는 글자 단위로 인식하여 결합하는 방식을 활용해왔다고 얘기한 바 있다. 해당 논문은 딥러닝을 활용해 단어 단위로 detection하는 법에 대해 설명한다. 네트워크 기본 구조로는 [SSD: single shot multibox detector](https://arxiv.org/pdf/1512.02325.pdf)를 사용하여 빠르게 문자 영역을 탐지해내었다. 
+
+
+<details>
+<summary class='line-mark-gray'><font color='gray'>[click!] 🔎  <strong>사물 탐지 알고리즘의 일반적인 프레임워크</strong></font></summary><br/>
+<div markdown="1">
+
+<p align='center'>
+<img src='/assets/img/Data_AI/region_proposal.png' width='60%'>
+</p>
+
+
+<strong>1️⃣ 영역 제안 (Region Proposal)</strong><br/>
+이미지에서 시스템이 처리할 영역 RoI (Regions of Interest) 를 제안하는 딥러닝 모델 또는 알고리즘을 말한다. 그리고 이때 RoI는 이미지 내 물체가 존재할 것이라 예상되는 영역을 의미한다.
+
+<strong>2️⃣ 특징 추출 및 예측</strong><br/>
+각 박스 영역의 시각적 특징을 추출한다. 이러한 특징을 평가해서 물체 존재 여부와 클래스를 판단한다.
+
+<strong>3️⃣ 비최대 억제 NMS, Non-Maximum Suppression</strong><br/>
+이 단계쯤이면 모델이 같은 물체에 대해 복수의 박스를 발견했을 가능성이 높다. NMS는 중복된 박스들을 탐지하고 통합하여 물체 하나마다 하나의 박스만 남도록 하는 역할을 한다.
+
+<strong>4️⃣ 평가 지표</strong><br/>
+이미지 분류의 정확도, 정밀도, 재현율 등과 비슷하게 사물탐지에도 성능을 측정하는 고유의 평가 지표가 있다. 그 중 가장 널리 쓰이는 지표로는 평균평균정밀도 (mean average precision, MAP) 와 PR 곡선 (Precision-Recall curve), 중첩률 (Intersection over Union, IoU) 가 있다. 
+
+
+
+
+</div>
+</details>
+<br/>
 
 <p align='center'>
 <img src='/assets/img/Data_AI/verticaloffset.png' width='60%'>
 <figcaption><a href='https://arxiv.org/pdf/1611.06779.pdf'>vertical offset 설명</a></figcaption>
 </p>
 
-단어는 일반적으로 가로로 쓰기 때문에 Aspect ratio(종횡비)가 크다는 특징이 있다. 그래서 이 논문에서는 SSD를 조금 변형해서 1 x 5 크기의 convolution filer를 정의하여 사용한다. 추가로 Anchor box의 aspect ratio를 1, 2, 3, 5, 7로 두고, 이에 vertical offset을 적용해서 세로 방향으로도 촘촘하게 배열된 단어에도 대응하도록 했다. 
+
+기존의 SSD는 Regression을 위한 Convolution layer에서 3 x 3 크기의 kernel을 갖는다.  그렇지만 단어는 일반적으로 가로로 쓰기 때문에 Aspect ratio(종횡비)가 크다는 특징이 있다. 그래서 이 논문에서는 SSD를 조금 변형해서 1 x 5 크기의 convolution filer를 정의하여 사용한다. 추가로 Anchor box의 aspect ratio를 1, 2, 3, 5, 7로 두고, 이에 vertical offset을 적용해서 세로 방향으로도 촘촘하게 배열된 단어에도 대응하도록 했다. 
 
 <h4 class='line-mark-gray'> 3.2. Text detection - Segmentation </h4>
 
