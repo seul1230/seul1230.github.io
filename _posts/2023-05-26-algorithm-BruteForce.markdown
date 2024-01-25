@@ -86,12 +86,12 @@ DFS는 재귀로 구현이 가능하며, BFS와 마찬가지로 **✅ <font colo
 이번에도 간단한 예를 들어 파이썬으로 구현해보겠다.
 <p class='callout'><strong>[문제]</strong>
 숫자 N과 number가 주어질 때, N과 사칙연산만 사용해서 표현 할 수 있는 방법 중 N 사용횟수의 최솟값을 return 하도록 solution 함수를 작성하세요. 
-(1<= N <=9, 1<= number <=32000)
+(1<= N <=9, 1<= number <=32000)<br/><br/>
 
-<strong>[예시]</strong> N = 5, number = 12
-12 = 5 + 5 + (5 / 5) + (5 / 5)
-12 = 55 / 5 + 5 / 5
-12 = (55 + 5) / 5
+<strong>[예시]</strong> N = 5, number = 12<br/>
+12 = 5 + 5 + (5 / 5) + (5 / 5)<br/>
+12 = 55 / 5 + 5 / 5<br/>
+12 = (55 + 5) / 5<br/><br/>
 
 ➡️ <strong>answer = 4</strong>
 <figcaption><a href='https://school.programmers.co.kr/learn/courses/30/lessons/42895'>[프로그래머스] N으로 표현</a></figcaption></p>
