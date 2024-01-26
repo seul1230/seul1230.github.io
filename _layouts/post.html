@@ -19,6 +19,9 @@
 layout: base
 ---
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7280083909521856"
+    crossorigin="anonymous"></script>
+
 {% assign version = jekyll.version | split:'.' %}
 {% assign major = version[0] | plus:0 %}
 {% assign minor = version[1] | plus:0 %}
@@ -27,9 +30,9 @@ layout: base
 {% include_cached components/post.html post=page no_link_title=true no_excerpt=true hide_image=page.hide_image
 hide_description=page.hide_description %}
 
+
 {% include components/dingbat.html %}
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7280083909521856"
-    crossorigin="anonymous"></script>
+
 <!-- 디스플레이 -->
 <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7280083909521856" data-ad-slot="7985783686"
     data-ad-format="auto" data-full-width-responsive="true"></ins>
@@ -45,6 +48,12 @@ hide_description=page.hide_description %}
 {% include_cached components/about.html author=page.author %}
 {% when 'related' %}
 {% include if-non-null try="components/related-posts.html" %}
+<!-- 디스플레이 -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7280083909521856" data-ad-slot="7985783686"
+    data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 {% when 'comments' %}
 {% include body/comments.html %}
 {% else %}
