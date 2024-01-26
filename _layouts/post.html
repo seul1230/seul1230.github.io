@@ -50,7 +50,6 @@ hide_description=page.hide_description %}
 {% include if-non-null try="components/related-posts.html" %}
 {% when 'comments' %}
 {% include body/comments.html %}
-{% else %}
 {% endcase %}
 <!-- 디스플레이 -->
 <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7280083909521856" data-ad-slot="7985783686"
@@ -58,4 +57,5 @@ hide_description=page.hide_description %}
 <script>
     (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+{% else %}
 {% endfor %}
