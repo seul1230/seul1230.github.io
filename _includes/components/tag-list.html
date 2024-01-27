@@ -21,13 +21,13 @@
     {%- endif -%}
 
     {%- if tag -%}
-      {%- capture content_temp -%}{{ content }}<a href="{{ tag.url | relative_url }}" class="flip-title">{{ tag.title }}</a>  {{ iter_separator }}
+      {%- capture content_temp -%} {{ content }}<a href="{{ tag.url | relative_url }}" class="flip-title">{{ tag.title }}</a>  {{ iter_separator }}
       <!-- {%- if minor > 1 -%}  <span class="material-icons">local_offer</span>{%- endif -%} -->
       {%- endcapture -%}
       
     {%- else -%}
       <!-- 샵 넣는 위치 : tag_slug 앞 -->
-      {%- capture content_temp -%} {{ content }}<span> {{ tag_slug | capitalize }} </span> {{ iter_separator }} {%- endcapture -%}
+      {%- capture content_temp -%} {{ content }} <span> {{ tag_slug | capitalize }} </span> {{ iter_separator }} {%- endcapture -%}
     {%- endif -%}
 
     {%- assign content = content_temp -%}
