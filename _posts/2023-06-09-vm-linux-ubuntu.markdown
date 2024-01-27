@@ -3,6 +3,7 @@ layout: post
 title:  "How to connect Network on VM Ubuntu Server"
 date:   2023-06-09 11:30:09 +0900
 categories: Tips
+Tags: linux network ubuntu wifi
 ---
 # [ Linux ] 가상머신에서 무선 네트워크 연결하는 법 | Ubuntu 20.04 
 
