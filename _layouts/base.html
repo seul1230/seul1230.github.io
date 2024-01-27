@@ -29,9 +29,6 @@ layout: compress
 
 <head>
     {% include head/index.html %}
-    {% for tag in page.tags %}
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"><a class="label">#{{ tag }}</a> &nbsp;{% unless forloop.last %}, {% endunless %}
-    {% endfor %}
 </head>
 
 
