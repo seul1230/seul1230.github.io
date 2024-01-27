@@ -4,7 +4,7 @@ title:  "How to connect Network on VM Ubuntu Server"
 date:   2023-06-09 11:30:09 +0900
 categories: Tips
 ---
-# [ Linux ] 가상머신에서 네트워크 연결하는 법 | Ubuntu 20.04 
+# [ Linux ] 가상머신에서 무선 네트워크 연결하는 법 | Ubuntu 20.04 
 
 UTM을 이용하여 가상머신에서 네트워크 연결을 연결하려다 찾은 방법을 공유하고자 한다. 구글링에 애를 먹은 거에 비하면 그 과정은 상당히 간단하다. 해당 글 작성 시점 기준 내가 사용한 Ubuntu의 버전은 **20.04.6 LTS**이다. 
 
