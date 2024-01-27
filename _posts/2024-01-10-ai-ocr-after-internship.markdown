@@ -112,7 +112,7 @@ categories: Data_AI
 
 <h4 class='line-mark-gray'> 3.2. Text detection - Segmentation </h4>
 
-
+작성중...
 
 <h3 class='line-mark-gray'>Reference</h3>
 
