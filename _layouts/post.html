@@ -27,9 +27,15 @@ layout: base
 {% assign minor = version[1] | plus:0 %}
 {% assign patch = version[2] | plus:0 %}
 
+
 {% include_cached components/post.html post=page no_link_title=true no_excerpt=true hide_image=page.hide_image
 hide_description=page.hide_description %}
 
+<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-hj+a-w-1e+66"
+    data-ad-client="ca-pub-7280083909521856" data-ad-slot="7249999080"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 {% include components/dingbat.html %}
 <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-hj+a-w-1e+66"
@@ -39,11 +45,7 @@ hide_description=page.hide_description %}
 </script>
 
 {% assign addons = page.addons | default:site.hydejack.post_addons %}
-<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-hj+a-w-1e+66"
-    data-ad-client="ca-pub-7280083909521856" data-ad-slot="7249999080"></ins>
-<script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+
 {% unless addons %}{% assign addons = "about,newsletter,related,random" | split:"," %}{% endunless %}
 {% for addon in addons %}
 {% case addon %}
