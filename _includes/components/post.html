@@ -76,6 +76,10 @@
 
     {% if no_excerpt %}<br/>
     {{ ' ' }}
+    <div class="toc list-group my-3">
+        <a class="list-group-item toc-active disabled text-white">Table of Contents</a>
+        {% include toc.html html=post.content %}
+    </div>
     {{ post.content }}
     {% else %}
     {{ post.excerpt }}

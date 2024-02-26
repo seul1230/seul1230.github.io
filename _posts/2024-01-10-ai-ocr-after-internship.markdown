@@ -136,7 +136,9 @@ PixelLink의 전체적은 구조는 U-Net과 유사하다. 아래 아키텍처�
 <figcaption><a href='https://arxiv.org/pdf/1801.01315.pdf'>PixelLink+VGG16 구조</a></figcaption>
 </p>
 
-output으로 Link Prediction과 Text/non-text Prediction을 가지고 있다. Text/non-text Prediction은 class segmentation map으로 해당 영역이 텍스트인지 배경인지에 대한 예측값을 의미하는 2개의 커널을 가진다. Link Prediction은 텍스트의 pixel을 중심으로 인접한 8개의 pixel에 대한 연결 여부를 의미하는 16개의 커널을 가진다고 한다. 
+<br/>
+
+output으로 Link Prediction과 Text/non-text Prediction을 가지고 있다. **Text/non-text Prediction**은 class segmentation map으로 해당 영역이 텍스트인지 배경인지에 대한 예측값을 의미하는 2개의 커널을 가진다. **Link Prediction**은 텍스트의 pixel을 중심으로 인접한 8개의 pixel에 대한 연결 여부를 의미하는 16개의 커널을 가진다고 한다. 
 
 이 과정을 거치며 인접한 pixel이 중심 pixel과 단어로 연결된 pixel인지 아닌지를 알 수 있으므로 문자 영역이 단어 단위로 분리된 Instance segmentation이 가능해진다.
 
@@ -144,7 +146,7 @@ output으로 Link Prediction과 Text/non-text Prediction을 가지고 있다. Te
 
 <h4 class='line-mark-gray'> 3.3. Text detection - 최근 </h4>
 
-위 두 가지 regression 방식과 segmentation 방식을 적절하게 활용한 Hybrid 방식을 사용하기도 하고, 사실 최근에는 어느 분야에서든 우수한 성능을 내는 Transformer를 주로 사용한다. 
+위 두 가지 regression 방식과 segmentation 방식을 적절하게 활용한 Hybrid 방식을 사용하기도 하고, 사실 최근에는 Feature extractor를 이용하는 것 같기도 하다.
 
 
 <h3 class='line-mark-pink'>4. Text Recognition</h3>
@@ -161,6 +163,7 @@ output으로 Link Prediction과 Text/non-text Prediction을 가지고 있다. Te
 <figcaption><a href='https://towardsdatascience.com/introduction-to-recurrent-neural-network-27202c3945f3'>RNN 개념</a></figcaption>
 </p>
 
+<br/>
 
 RNN(Recurrent Neural Network)의 개념을 간단히 말하자면 순환신경망 즉, 이전의 값을 참고하여 다음의 값을 추론하는 과정의 반복이다. 처음 등장했을 때는 각광 받았지만, 중간에 과정이 더해지고 복잡해질수록 오래전 값은 잊어버리는 경향이 있어 이를 극복하기 위해 LSTM(Long Short-Term Memory), GRU(Gated Recurrent Unit) 등이 등장해 성능을 높여 나갔다.
 
@@ -176,6 +179,8 @@ RNN(Recurrent Neural Network)의 개념을 간단히 말하자면 순환신경�
 <figcaption><a href='https://makeit.nhncloud.com/2022/program/12?utm_source=youtube&utm_medium=post&utm_campaign=makeit2022&utm_content=track2_4'>OCR에서 Transformer가 작동하는 모습</a></figcaption>
 </p>
 
+<br/>
+
 Transformer는 자연어 뿐만 아니라 OCR recognition에도 아주 유능한 모델이다. OCR recognition에 적용을 하게 되면, 문자열이 아닌 이미지가 입력값으로 들어가고 출력은 동일하게 문자열이 되겠다. 여기서 핵심 모듈은 Self Attention으로, 연산되는 곳은 다음 세 가지다. 
 
 
@@ -190,6 +195,8 @@ Transformer는 자연어 뿐만 아니라 OCR recognition에도 아주 유능한
 <img src='/assets/img/Data_AI/encoder_decoder_self_attention.png' width='80%'>
 <figcaption><a href='https://makeit.nhncloud.com/2022/program/12?utm_source=youtube&utm_medium=post&utm_campaign=makeit2022&utm_content=track2_4'>Encoder & Decoder Self Attention</a></figcaption>
 </p>
+
+<br/>
 
 먼저, **Encoder**에서는 입력으로 사용된 이미지 픽셀 이미지의 관계를 모두 추론하고 특징을 추출하는 역할을 한다. 주변에 있는 픽셀에 있는 관계성이 더 높게 나타나고, 멀수록 관계성이 더 낮게 나타난다. **Decoder**에서의 self-attention은 입력 이미지와 최종적으로 출력할 문자열 관의 관계를 매핑시키는 역할을 한다. 'N'이 어떤 픽셀에서 주로 나타나는지를 attention을 통해 매기고, 최종적으로 recognition 과정을 거치며 첫번째 글자가 'N'이라는 것을 나타낸다.
 
