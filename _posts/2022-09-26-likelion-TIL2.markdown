@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "0926 데이터 분석 TIL (2)"
+title:  "TIL | EDA 수치형 변수 "
 date:   2022-09-26 13:10:09 +0900
 categories: Python_DataAnalysis
 ---

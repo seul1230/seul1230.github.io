@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "NLP Text Generation Model - GAN"
+title:  "TIL | GAN - NLP Text Generation Model"
 date:   2022-12-21 03:30:09 +0900
 categories: Data_AI
+tags: [TIL, GAN, NLP]
 ---
 # [ NLP ] GAN : Generative Adversarial Nets
 

@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Project"
+title:  "Project | 2021 Hackathon"
 date:   2022-10-04 22:52:09 +0900
 categories: Projects
+tags: [Q-learning, Unsupervised, OpenCV]
 ---
 # [ Project ] 2021 Hackathon : 교내 건물들 간 최단거리 찾기
 

@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "Algorithm study"
+tags: [Computer Science]
+title:  "Summary | CS"
 date:   2023-11-04 12:00:09 +0900
 categories: CS
 ---

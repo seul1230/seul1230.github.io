@@ -1,7 +1,9 @@
 ---
 layout: post
+tags: [TIL Python]
 title:  "2022 멋사 AI | 2주차 TIL"
 date:   2022-09-22 16:10:09 +0900
+published: false
 categories: Python_DataAnalysis
 ---
 # [ 0920 - 0923 ] 멋사 TIL

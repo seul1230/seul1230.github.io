@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "ROS2"
+title:  "Summary | ROS2"
 date:   2023-06-06 01:00:09 +0900
 categories: IT_trend
+tags: [ROS2]
 ---
 # [ ROS2 ] ROS 기초 II (Topic, Service, Action)
 

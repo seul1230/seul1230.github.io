@@ -1,0 +1,32 @@
+html {
+  padding-left: calc(100vw - 100%);
+}
+
+body {
+  font-family: 'NanumSquare',"Poppins", sans-serif;
+}
+
+.badge {
+  font-weight: 500;
+}
+
+.bg-light,
+.badge-light {
+  &,
+  * {
+    color: $text-black !important;
+  }
+}
+
+.bg-dark,
+.badge-dark {
+  &,
+  * {
+    color: $text-white !important;
+  }
+}
+@font-face {
+  font-family: 'NanumSquare';
+  src: url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+  unicode-range: U+AC00-D7A3;
+}

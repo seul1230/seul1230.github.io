@@ -3,6 +3,7 @@ layout: post
 title:  "CNN Architectures"
 date:   2023-04-23 13:50:09 +0900
 categories: Data_AI
+tags: [DL, CNN]
 ---
 # [ DL ] 고급 합성곱 신경망 구조
 

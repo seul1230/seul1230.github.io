@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "2022_likelion TIL"
+title:  "TIL | Kaggle - House Prices"
 date:   2022-11-10 14:00:09 +0900
 categories: Python_DataAnalysis
+tags: [TIL]
 ---
 # [ 1109 ] Kaggle - House Prices
 #### 👩🏻‍💻 오늘코드 실시간 강의 _ 박조은님

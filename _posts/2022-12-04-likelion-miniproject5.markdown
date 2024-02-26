@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Project"
+title:  "Mini Project | 청경채 성장 예측"
 date:   2022-12-04 15:00:09 +0900
 categories: Projects
+tags: [likelion, AI]
 ---
 # [ MiniProject V ] 청경채 성장 예측 AI 경진대회
 

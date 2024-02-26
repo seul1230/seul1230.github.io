@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "2022_likelion TIL"
+title:  "TIL | COVID19 EDA"
 date:   2022-10-11 14:00:09 +0900
 categories: Python_DataAnalysis
+tags: [TIL]
 ---
 # [ 1011 ] 서울특별시 코로나 확진자 EDA
 #### 👩🏻‍💻 오늘코드 실시간 강의 _ 박조은님

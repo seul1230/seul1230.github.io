@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "1102 matplotlib study"
+title:  "Study | Using Matplotlib"
 date:   2022-11-02 03:30:09 +0900
 categories: Data_AI
+tags: [matplotlib, EDA]
 ---
 # Matplotlib 활용하기
 

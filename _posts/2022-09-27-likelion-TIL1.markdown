@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "0927 데이터 분석 TIL"
+title:  "TIL | EDA 범주형 변수"
 date:   2022-09-27 09:05:09 +0900
+tags: [TIL]
 categories: Python_DataAnalysis
 ---
 # [ 0927 ] EDA 범주형 변수

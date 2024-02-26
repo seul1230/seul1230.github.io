@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "0930 SQL TIL"
+title:  "TIL | SQL"
 date:   2022-09-30 09:05:09 +0900
 categories: SpecialLecture
 published: false

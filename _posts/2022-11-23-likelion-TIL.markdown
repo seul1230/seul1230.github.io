@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "2022_likelion TIL"
+title:  "TIL | Kaggle - Benz Boosting Model"
 date:   2022-11-23 14:00:09 +0900
 categories: Python_DataAnalysis
+tags: [TIL]
 ---
 # [ 1123 ] Kaggle - Benz Boosting Model
 #### 👩🏻‍💻 오늘코드 실시간 강의 _ 박조은님

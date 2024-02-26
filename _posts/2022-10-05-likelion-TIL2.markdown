@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "2022_likelion TIL"
+title:  "TIL | FinanceDataReader"
 date:   2022-10-05 12:00:09 +0900
 categories: Python_DataAnalysis
+tags: [TIL]
 ---
 # [ 1005 ] FinanceDataReader를 통한 여러 종목 수익률 비교
 

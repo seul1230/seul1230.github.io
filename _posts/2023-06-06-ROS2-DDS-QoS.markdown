@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "ROS2"
+title:  "Summary | ROS2"
 date:   2023-06-06 11:30:09 +0900
 categories: IT_trend
+tags: [ROS2]
 ---
 # [ ROS2 ] ROS 기초 III (DDS와 QoS)
 

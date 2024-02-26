@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "NLP Topic Modeling - LDA"
+title:  "TIL | LDA - NLP Topic Modeling"
 date:   2023-01-03 03:50:09 +0900
 categories: Data_AI
+tags: [NLP, LDA]
 ---
 # [ NLP ] Topic Modeling : LDA , 잠재 디리클레 할당
 

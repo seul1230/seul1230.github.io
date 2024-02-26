@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "0926 data analysis study"
+title:  "Study | 타이타닉 캐글 필사"
 date:   2022-09-26 17:30:09 +0900
 categories: Data_AI
 published: false

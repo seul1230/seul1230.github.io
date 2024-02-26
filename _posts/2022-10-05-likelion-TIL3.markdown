@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "2022_likelion TIL"
+title:  "TIL | daily price EDA"
 date:   2022-10-05 12:00:09 +0900
 categories: Python_DataAnalysis
+tags: [TIL]
 ---
 # [ 1005 ] FinanceDataReader를 통한 여러 종목 daily price plotly로 비교
 

@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "Book | Data Analysis Guide E-Book"
+tags: [Book, Data Analysis]
+title:  "Book | DA Guide E-Book"
 date:   2023-07-05 01:00:09 +0900
 categories: Data_AI
 ---

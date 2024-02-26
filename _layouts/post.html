@@ -1,39 +1,56 @@
 ---
-# Copyright (c) 2018 Florian Klampfer
-<https: //qwtel.com />
-#
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
-#
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-# GNU General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License
-# along with this program. If not, see
-<http: //www.gnu.org/licenses />.
-
-layout: base
+layout: page
 ---
-
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7280083909521856"
     crossorigin="anonymous"></script>
+<script>
+  window.addEventListener("load", function () {
+    if (document.getElementById("last-modified")) {
+      fetch("https://api.github.com/repos/moeun2/moeun2.github.io/commits?path={{ page.path }}")
+        .then((response) => {
+          return response.json();
+        })
+        .then((commits) => {
+          var modified = commits[0]["commit"]["committer"]["date"].slice(0, 10);
 
-{% assign version = jekyll.version | split:'.' %}
-{% assign major = version[0] | plus:0 %}
-{% assign minor = version[1] | plus:0 %}
-{% assign patch = version[2] | plus:0 %}
+          return modified;
+        })
+        .then((modified) => {
+          var date = modified.split("-");
+          var year = date[0];
 
+          var month = console.log(date[0]);
+          document.getElementById("last-modified").textContent = "last_modified_at : " + modified;
+        });
+    }
+  });
+</script>
 
-{% include_cached components/post.html post=page no_link_title=true no_excerpt=true hide_image=page.hide_image
-hide_description=page.hide_description %}
+<h1><b>{{ page.title }}</b></h1>
 
+<p class="post-metadata text-muted">
+  <span class="post-metadata text-muted" id="last-modified"></span>
+  <br />
+  created_at : {{ page.date | date_to_long_string }} -
+  <b>
+    {%- assign words = content | number_of_words -%} {%- if words < 360 -%} less than 1 min read
+    time {%- else -%} {{ words | divided_by: 180 }} mins read time {%- endif -%}
+  </b>
+  <br />
+  {%- if page.tags != empty -%} Tags: {% for tag in page.tags %}
+  <a
+    class="text-decoration-none no-underline"
+    href="{{ tag | slugify | prepend:'/blog/tags#' | relative_url }}"
+  >
+    <span class="tag badge badge-pill text-primary border border-primary">{{ tag }}</span>
+  </a>
+  {% endfor %} {%- endif -%}
+</p>
 
-
-{% include components/dingbat.html %}
+<div class="list-group my-3">
+  <a class="list-group-item active disabled text-white">Table of Contents</a>
+  {% include toc.html html=content %}
+</div>
 <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-hj+a-w-1e+66"
     data-ad-client="ca-pub-7280083909521856" data-ad-slot="7249999080"></ins>
 <script>
@@ -44,26 +61,37 @@ hide_description=page.hide_description %}
 <script>
     (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+{{ content }}
 
-{% assign addons = page.addons | default:site.hydejack.post_addons %}
+<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-hj+a-w-1e+66"
+    data-ad-client="ca-pub-7280083909521856" data-ad-slot="7249999080"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 
+<hr />
+<p style="text-align: center; color: #6c757d; font-size: 90%">
+  💙You need to log in to GitHub to write comments.💙
+</p>
+<script
+  src="https://utteranc.es/client.js"
+  repo="moeun2/moeun2.github.io"
+  issue-term="title"
+  theme="github-light"
+  crossorigin="anonymous"
+  async
+></script>
 
-{% unless addons %}{% assign addons = "about,newsletter,related,random" | split:"," %}{% endunless %}
-{% for addon in addons %}
-{% case addon %}
-{% when 'about' %}
-{% include_cached components/about.html author=page.author %}
-{% when 'related' %}
-{% include if-non-null try="components/related-posts.html" %}
-{% when 'comments' %}
-{% include body/comments.html %}
 <!-- 디스플레이 -->
 <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7280083909521856" data-ad-slot="7985783686"
     data-ad-format="auto" data-full-width-responsive="true"></ins>
 <script>
     (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-{% endcase %}
-{% else %}
-{% endfor %}
+
+<!-- {% if page.comments %}
+<div class="pt-5">
+  {% include blog/disqus.html %}
+</div>
+{% endif %} -->

@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "End of 2023, Start of 2024, AI-OCR"
+tags: [DL, Computer Vision, OCR]
+title:  "Summary | AI-OCR"
 date:   2024-01-10 12:00:09 +0900
 categories: Data_AI
 # published: false
@@ -11,9 +12,9 @@ categories: Data_AI
 
 📌 오늘의 주제 : <strong>AI-OCR</strong>
 
-<h3 class='line-mark-pink'>1. OCR 개념</h3>
+### 1. OCR 개념
 
-<h4 class='line-mark-gray'> OCR = Text detection + Text recognition </h4>
+#### OCR = Text detection + Text recognition 
 
 <strong>OCR <font color='lightgray'>Optical Character Recognition</font></strong> 은 광학 문자 인식으로, 이미지에 있는 글씨를 인지하여 텍스트 데이터로 치환해주는 기술을 말한다. OCR은 크게 문자 영역을 검출하는 **Text detection**과 검출된 영역의 문자를 인식하는 **Text recognition**으로 구분할 수 있다. 이 두 가지 기술을 통해 이미지 속 문자를 읽을 수 있다. 자동차 번호판 인식, 신용카드 번호 인식 등 일상생활에서도 OCR을 쉽게 찾아볼 수 있다.
 
@@ -30,7 +31,7 @@ categories: Data_AI
 - 방대한 서류를 분석하고 분류하는 데 유용
 
 
-<h3 class='line-mark-pink'>2. OCR before Deep Learning</h3>
+### 2. OCR before Deep Learning
 
 처음부터 OCR에 딥러닝이 쓰였던 건 아니다. 보통은 아래와 같은 프로세스로 진행되었다고 한다.
 
@@ -46,7 +47,7 @@ categories: Data_AI
 
 위 방법은 필요한 단계가 많기 때문에 다소 복잡하고 시간이 오래 걸린다. 현재는 이 점 때문에 딥러닝을 적용하여 원하는 단위로 문자를 검출하고 이를 한 번에 인식하도록 아키텍처를 단순하게 하여 빠르게 OCR 인식을 하고 있다. 
 
-<h3 class='line-mark-pink'>3. Text detection</h3>
+### 3. Text detection
 
 위에서 봤듯이, 딥러닝 이전에도 OCR은 **Text detection + Text recognition**의 기본적인 흐름은 동일했다. 
 
@@ -61,7 +62,7 @@ categories: Data_AI
 
 당시 detection에 있어서 주로 Text의 Bounding box를 구하는 방식에 초점을 맞추었다. 그림에서도 알 수 있듯이, 여러 방향(가로/세로/대각선 등)으로 써 있는 텍스트 박스를 구하는 방식을 다양하게 연구했다. 
 
-<h4 class='line-mark-gray'> 3.1. Text detection - Regression </h4>
+#### 3.1. Text detection - Regression
 
 [TextBoxes: A Fast Text Detector with a Single Deep Neural Network](https://arxiv.org/pdf/1611.06779.pdf)
 
@@ -110,7 +111,7 @@ categories: Data_AI
 
 기존의 SSD는 Regression을 위한 Convolution layer에서 3 x 3 크기의 kernel을 갖는다.  그렇지만 단어는 일반적으로 가로로 쓰기 때문에 Aspect ratio(종횡비)가 크다는 특징이 있다. 그래서 이 논문에서는 SSD를 조금 변형해서 1 x 5 크기의 convolution filer를 정의하여 사용한다. 추가로 Anchor box의 aspect ratio를 1, 2, 3, 5, 7로 두고, 이에 vertical offset을 적용해서 세로 방향으로도 촘촘하게 배열된 단어에도 대응하도록 했다. 
 
-<h4 class='line-mark-gray'> 3.2. Text detection - Segmentation </h4>
+#### 3.2. Text detection - Segmentation 
 
 <p align='center'>
 <img src='/assets/img/Data_AI/semantic_segmentation.jpeg' width='60%'>
@@ -144,14 +145,14 @@ output으로 Link Prediction과 Text/non-text Prediction을 가지고 있다. **
 
 
 
-<h4 class='line-mark-gray'> 3.3. Text detection - 최근 </h4>
+#### 3.3. Text detection - 최근
 
 위 두 가지 regression 방식과 segmentation 방식을 적절하게 활용한 Hybrid 방식을 사용하기도 하고, 사실 최근에는 Feature extractor를 이용하는 것 같기도 하다.
 
 
-<h3 class='line-mark-pink'>4. Text Recognition</h3>
+### 4. Text Recognition
 
-<h4 class='line-mark-gray'> 4.1. Text Recognition - RNN 계열</h4>
+#### 4.1. Text Recognition - RNN 계열
 
 
 
@@ -168,7 +169,7 @@ output으로 Link Prediction과 Text/non-text Prediction을 가지고 있다. **
 RNN(Recurrent Neural Network)의 개념을 간단히 말하자면 순환신경망 즉, 이전의 값을 참고하여 다음의 값을 추론하는 과정의 반복이다. 처음 등장했을 때는 각광 받았지만, 중간에 과정이 더해지고 복잡해질수록 오래전 값은 잊어버리는 경향이 있어 이를 극복하기 위해 LSTM(Long Short-Term Memory), GRU(Gated Recurrent Unit) 등이 등장해 성능을 높여 나갔다.
 
 
-<h4 class='line-mark-gray'> 4.2. Text Recognition - Transformer 계열</h4>
+#### 4.2. Text Recognition - Transformer 계열
 
 
 2017년도에 Transformer라는 모델이 나오게 되면서 RNN 계열 기반 recognition이 완전히 바뀌게 된다. Transformer는 원래 언어 처리 분야의 언어 번역을 위해 등장한 모델 구조로, Encoder + Decoder 구조로 이루어져 있다. 
@@ -209,18 +210,21 @@ Transformer는 자연어 뿐만 아니라 OCR recognition에도 아주 유능한
 <br/>
 
 
-<h4 class='line-mark-gray'> 4.3. Text Recognition - 그 외</h4>
+#### 4.3. Text Recognition - 그 외
 
 - **CNN과 RNN의 만남 CRNN**
   - [An End-to-End Trainable Neural Network for Image-based Sequence Recognition and Its Application to Scene Text Recognition](https://arxiv.org/pdf/1507.05717.pdf)
     - CNN 기반의 Feature Extractor + RNN 기반의 Recognition (LSTM)
 
+<br/>
+
 - **불규칙한 방향이나 휘어진 진행 방향 글자 OCR**
   - [Robust Scene Text Recognition With Automatic Rectification](https://arxiv.org/pdf/1603.03915.pdf)
     - TPS : Thin Plate Spline Transformation
 
+<br/>
 
-<h4 class='line-mark-gray'> 4.4. Text Recognition - 개선 가능 방안</h4>
+#### 4.4. Text Recognition - 개선 가능 방안
 
 
 - <code>Self attention</code> : global feature extraction
@@ -230,8 +234,9 @@ Transformer는 자연어 뿐만 아니라 OCR recognition에도 아주 유능한
 
 혹은, Encoder의 구조를 재설계하는 방안이 있을 수도 있다. 어떤 특정 사례에서는 Self Attention을 빼고 Feature Extractor로 multi-scale을 가지는 특징을 모두 반영하고 attention의 위치를 조금 조정해서 구조를 재설계했을 때 높아지는 경우도 있었다고 말하고 있다. 
 
+<br/>
 
-<h3 class='line-mark-pink'>5. OCR 데이터</h3>
+### 5. OCR 데이터
 
 - **오픈 데이터**
   - OCR 논문 연구 용도
@@ -240,6 +245,8 @@ Transformer는 자연어 뿐만 아니라 OCR recognition에도 아주 유능한
     - 다양한 종류의 태스크
     - 태스크별 접근 가능한 데이터
   - AI Hub - 한국어 글자체 이미지
+<br/><br/>
+
 - **합성 데이터**
   - 배경 이미지
   - 다양한 노이즈
@@ -249,7 +256,7 @@ Transformer는 자연어 뿐만 아니라 OCR recognition에도 아주 유능한
 
 작성중...
 
-<h3 class='line-mark-gray'>Reference</h3>
+### Reference
 
 - [11. OCR 기술의 개요](https://velog.io/@xpelqpdj0422/11.-OCR-%EA%B8%B0%EC%88%A0%EC%9D%98-%EA%B0%9C%EC%9A%94)
 - [각종 문서, 이제 AI가 간편하게 처리한다! AI-OCR로 달라진 미래 산업](https://blog.naver.com/hanwhadays/223021763201)

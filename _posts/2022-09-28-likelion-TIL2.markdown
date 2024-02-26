@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "0928 데이터 분석 TIL"
+title:  "TIL | ETF 데이터 수집"
 date:   2022-09-28 16:05:09 +0900
 categories: Python_DataAnalysis
+tags: [TIL]
 ---
 # [ 0928 ] ETF 데이터 수집
 

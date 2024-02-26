@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "2022_likelion TIL"
+title:  "TIL | 웹 데이터 수집"
 date:   2022-10-04 09:00:09 +0900
 categories: Python_DataAnalysis
+tags: [TIL]
 ---
 # [ 1004 ] 웹 데이터 수집
 #### 👩🏻‍💻 오늘코드 실시간 강의 _ 박조은님

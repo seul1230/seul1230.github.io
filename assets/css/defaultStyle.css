@@ -1,0 +1,76 @@
+*{
+  /* font-family: Hack, D2Coding, 'D2 coding', monospace; */
+  font-size: 100%
+}
+
+
+
+.header-link {
+  position: relative;
+  left: 0.5em;
+  opacity: 1;
+  font-size: 0.8em;
+  -webkit-transition: opacity 0.2s ease-in-out 0.1s;
+  -moz-transition: opacity 0.2s ease-in-out 0.1s;
+  -o-transition: opacity 0.2s ease-in-out 0.1s;
+  transition: opacity 0.2s ease-in-out 0.1s;
+}
+
+.scrollToTop {
+  display: none;
+  padding-top: 7px;
+  width: 40px;
+  height: 40px;
+  margin-right: 32px;
+  margin-bottom: 32px;
+  border-radius: 999px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 10px 15px -3px, rgb(0 0 0 / 5%) 0px 4px 6px -2px;
+  color: rgb(237, 159, 159);
+  background-color: rgb(237, 159, 159);
+  position: fixed;
+  outline: none;
+  bottom: 0px;
+  right: 0px;
+  cursor: pointer;
+  text-align: center;
+  border: 2px solid currentcolor;
+}
+/*toc가 아닐때의 list의 head를 grey색으로 변경*/
+.list-grey {
+  background-color: #586069 !important;
+  border-color: #586069 !important;
+}
+.center {
+  display: block;
+  margin: auto;
+}
+figcaption {
+  color: #808080;
+  font-size: 80%;
+  text-align: center;
+  margin-top: 0;
+  padding: -10px 2px 2px 2px;
+}
+
+.line-mark-pink {
+  padding-right: 0;
+  padding-left: 10px;
+  background-color: #FDEBEB;
+}
+
+.line-mark-blue {
+  padding-right: 0;
+  padding-left: 10px;
+  background-color: #f1f8ff;
+}
+
+.line-mark-purple {
+  padding-right: 0;
+  padding-left: 10px;
+  background-color: #f7e9fa;
+}
+
+.line-mark-gray {
+  padding-left: 10px;
+  background-color: #f0f0f0;
+}

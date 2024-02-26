@@ -3,6 +3,7 @@ layout: post
 title:  "After Boostcourse 9th Study"
 date:   2023-04-12 09:50:09 +0900
 categories: Data_AI
+tags: [AI, Study, Team]
 ---
 # [ AI ] 코칭스터디 9기 <AI Basic 2023> 가벼운 후기
 

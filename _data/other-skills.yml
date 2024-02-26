@@ -1,0 +1,11 @@
+- name: Korean
+  percentage: 95
+  color: info
+
+- name: English
+  percentage: 80
+  color: success
+
+- name: Japanese
+  percentage: 50
+  color: secondary

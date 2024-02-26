@@ -1,17 +1,11 @@
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q6RR9JVN3Z"></script>
-<script>
+{%- if jekyll.environment == 'production' and site.analytics.enabled == true -%}
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.google.tracking_id }}"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'G-Q6RR9JVN3Z');
-</script>
-
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-    (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "ca-pub-7280083909521856",
-        enable_page_level_ads: true
-    });
-</script>
+    gtag('config', '{{ site.analytics.google.tracking_id }}');
+  </script>
+{%- endif -%}

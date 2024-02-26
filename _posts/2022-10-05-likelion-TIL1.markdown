@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "2022_likelion TIL"
+title:  "TIL | 콜센터 주요 민원 데이터 전처리"
 date:   2022-10-05 09:00:09 +0900
 categories: Python_DataAnalysis
+tags: [TIL]
 ---
 # [ 1005 ] 서울특별시 다산콜센터(120)의 주요 민원
 

@@ -1,5 +1,6 @@
 ---
 layout: post
+tags: [Finance, AI, Club]
 title:  "Club | Finance IT FinAI"
 date:   2023-07-16 15:00:09 +0900
 categories: Data_AI

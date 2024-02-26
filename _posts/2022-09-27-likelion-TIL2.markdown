@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "0927 데이터 분석 TIL 2"
+title:  "TIL | 웹 스크래핑과 크롤링"
 date:   2022-09-27 13:05:09 +0900
 categories: Python_DataAnalysis
+tags: [TIL]
 ---
 # [ 0927 ] 웹 스크래핑과 크롤링
 

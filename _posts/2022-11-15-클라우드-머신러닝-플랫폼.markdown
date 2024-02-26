@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Cloud & Machine Learning Platform"
+title:  "Tips | Cloud & ML Platform"
 date:   2022-11-15 00:00:09 +0900
 categories: Tips
+tags: [Cloud, ML]
 ---
 # 클라우드 머신러닝 플랫폼 선택 기준 12가지
 

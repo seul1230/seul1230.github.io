@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "2022_likelion TIL"
+title:  "TIL | SMOTE for Imbalance Data"
 date:   2022-11-28 14:00:09 +0900
 categories: Python_DataAnalysis
+tags: [TIL, SMOTE, Imbalance Data]
 ---
 # [ 1128 ] ML 불균형 데이터 SMOTE와 분류 측정지표
 #### 👩🏻‍💻 오늘코드 실시간 강의 _ 박조은님

@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Algorithm study"
+title:  "Summary | Algorithm"
 date:   2023-05-26 12:00:09 +0900
 categories: CS
+tags: [Algorithm, Computer Science]
 ---
 # [ Algorithm ] 완전탐색 Brute-Force 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to connect Network on VM Ubuntu Server"
+title:  "How to connect Network on Ubuntu Server"
 date:   2023-06-09 11:30:09 +0900
 categories: Tips
 tags: [linux, network, ubuntu]

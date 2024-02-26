@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Project"
+title:  "Project | Weather Tour Application"
 date:   2022-10-05 22:52:09 +0900
 categories: Projects
+tags: [AI, Android Studio]
 ---
 # [ Project ] 2021 Weather Tour Application
 

@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "2022_likelion TIL"
+title:  "TIL | Clustering Code"
 date:   2022-11-22 09:00:09 +0900
 categories: SpecialLecture
+tags: [TIL]
 ---
 # [ AI / ML ] 머신러닝 - 군집화 (Clustering) 실습
 #### 👩🏻‍💻 K-MOOC 실습으로 배우는 머신러닝 강의

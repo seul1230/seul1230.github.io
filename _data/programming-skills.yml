@@ -1,0 +1,11 @@
+- name: Python
+  percentage: 90
+  color:
+
+- name: HTML/CSS
+  percentage: 70
+  color: danger
+
+- name: SQL
+  percentage: 60
+  color: warning
