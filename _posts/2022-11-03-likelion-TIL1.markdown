@@ -4,6 +4,7 @@ title:  "TIL | Kaggle : Titanic"
 date:   2022-11-03 16:00:09 +0900
 categories: Python_DataAnalysis
 tags: [TIL]
+published: false
 ---
 # [ 1103 ] Kaggle - Titanic
 #### 👩🏻‍💻 오늘코드 실시간 강의 _ 박조은님

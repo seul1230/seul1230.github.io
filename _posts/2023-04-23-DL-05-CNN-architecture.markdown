@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "CNN Architectures"
+title:  "Summary | CNN Architectures"
 date:   2023-04-23 13:50:09 +0900
 categories: Data_AI
 tags: [DL, CNN]

@@ -4,6 +4,7 @@ title:  "TIL | 콜센터 주요 민원 답변 정보"
 date:   2022-10-04 14:00:09 +0900
 categories: Python_DataAnalysis
 tags: [TIL]
+published: false
 ---
 # [ 1004 ] 서울 특별시 다산콜센터 (☎ 120) 의 주요 민원에 대한 답변 정보
 

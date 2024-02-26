@@ -6,7 +6,10 @@ categories: SpecialLecture
 tags: [TIL]
 ---
 # [ AI / ML ] 로지스틱 회귀
+
 #### 👩🏻‍💻 K-MOOC 실습으로 배우는 머신러닝 강의
+
+
 📙 해당 포스트는 [K-MOOC 강의](http://www.kmooc.kr/courses/course-v1:SSUk+SSMOOC20K+2022_T1/course/) 내용과 추가로 다른 자료들을 찾아 내용을 작성하였으며, **이론 및 개념**에 대해 공부하고 **예제 실습**도 진행한 후 내용을 정리하였다.
 
 
@@ -15,7 +18,7 @@ tags: [TIL]
 
 <br/>
 
-***
+<!-- ***
 
 ## 목차
 - [\[ AI / ML \] Logistic Regression](#-ai--ml--logistic-regression)
@@ -38,7 +41,7 @@ tags: [TIL]
 
 <br/>
 
-***
+*** -->
 
 ## Logistic Regression
 로지스틱 회귀는 이름에 회귀가 들어가지만 **분류 <font color = 'lightgray'>Classification</font>** 작업에 사용할 수 있다. 

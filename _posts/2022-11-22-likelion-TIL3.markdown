@@ -15,7 +15,7 @@ tags: [AI, ML, DL]
 
 <br/>
 
-***
+<!-- ***
 
 ## 목차
 
@@ -41,7 +41,7 @@ tags: [AI, ML, DL]
 
 <br/>
 
-***
+*** -->
 
 
 ## 1. Basic Structure

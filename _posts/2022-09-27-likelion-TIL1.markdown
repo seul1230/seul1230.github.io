@@ -4,6 +4,7 @@ title:  "TIL | EDA 범주형 변수"
 date:   2022-09-27 09:05:09 +0900
 tags: [TIL]
 categories: Python_DataAnalysis
+published: false
 ---
 # [ 0927 ] EDA 범주형 변수
 
