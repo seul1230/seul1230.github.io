@@ -5,7 +5,8 @@ description: 간단한 딥러닝 모델 성능 향상 테크닉 2가지 - Input 
 style: border
 color: danger
 date:   2022-12-22 03:10:09 +0900
-categories: Data_AI
+categories: Tips
+ermalink: /page_permalink/
 tags: [DL]
 ---
 # 간단한 딥러닝 모델 성능 향상 테크닉 2가지 - Input Mixup & Label Smoothing
