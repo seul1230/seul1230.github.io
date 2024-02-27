@@ -1,8 +1,11 @@
 ---
 layout: post
-title:  "Mini Project | 청경채 성장 예측"
+title:  "Mini Project LikeLion | 청경채 성장 예측"
+description: 🦁 청경채 성장 예측 AI 경진대회<img src='https://user-images.githubusercontent.com/72390138/205493584-af95700c-c420-4f95-a5fc-d1c05bb27bc7.png' width='90%'>
 date:   2022-12-04 15:00:09 +0900
 categories: Projects
+style: border
+color: success
 tags: [likelion, AI]
 ---
 # [ MiniProject V ] 청경채 성장 예측 AI 경진대회

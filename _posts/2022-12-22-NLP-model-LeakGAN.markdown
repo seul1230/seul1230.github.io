@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "TIL | LeakGAN - NLP Text Generation Model"
+description: LeakGAN  - Generative Adversarial Nets
 date:   2022-12-21 03:50:09 +0900
 categories: Data_AI
 tags: [TIL, GAN, NLP]

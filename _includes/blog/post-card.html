@@ -13,17 +13,12 @@ post.url | relative_url -%} {%- endif -%}
   <a
     href="{{ post_url }}"
     class="post card {{ card_style }}"
-    {%-
-    if
-    post.external_url
-    and
-    site.open_new_tab
-    -%}
     target="_blank"
-    {%-
-    endif
-    -%}
+    {%-if post.external_url and site.open_new_tab-%}
+    target="_blank"
+    {%-endif-%}
   >
+  
     <div class="card-body {{ text_style }}">
       <h3 class="card-title">{{ post.title }}</h3>
       <p class="card-text">
@@ -33,7 +28,7 @@ post.url | relative_url -%} {%- endif -%}
       </p>
       <p class="card-text">
         {%- if post.description -%} {{ post.description }} {%- else -%} {{ post.content |
-        truncatewords: 25, "<small><i> read more...</i></small
+        truncatewords: 25, "  <small><i> read more...</i></small
         >" }} {%- endif -%}
       </p>
     </div>

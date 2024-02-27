@@ -2,7 +2,8 @@
 layout: post
 title:  "TIL | NN Basic"
 date:   2022-11-22 16:00:09 +0900
-categories: SpecialLecture
+description: Neural Networks Basic 정리 <br/><br/>- Basic Structure<br/>- Multi-layered Structure<br/><br/>👩🏻‍💻 K-MOOC 실습으로 배우는 머신러닝 강의
+# categories: SpecialLecture
 tags: [AI, ML, DL]
 ---
 # [ AI / ML / DL ] Neural Networks Basic - Basic Structure, Multi-layered Structure

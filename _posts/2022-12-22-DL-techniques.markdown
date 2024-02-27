@@ -1,6 +1,9 @@
 ---
 layout: post
 title:  "Tips | DeepLearning Technique"
+description: 간단한 딥러닝 모델 성능 향상 테크닉 2가지 - Input Mixup & Label Smoothing<img src='/assets/img/data_ai_img/mixup.png' width="90%">
+style: border
+color: danger
 date:   2022-12-22 03:10:09 +0900
 categories: Data_AI
 tags: [DL]
@@ -11,7 +14,6 @@ tags: [DL]
 
 본 포스트에서는 최근 딥러닝 모델 학습에서 많이 사용되며, 모델의 구조를 바꾸지 않고 간단하게 딥러닝 모델 성능을 향상시킬 수 있는 2가지 방법에 대해 공부하고 정리하였다. 
 
-출처: [[YouTube] 간단한 딥러닝 모델 성능 향상 테크닉 2가지 소개 (코드 실습 포함) - Input Mixup과 Label Smoothing](https://www.youtube.com/watch?v=T54ouYCsawQ&list=PLRx0vPvlEmdADpce8aoBhNnDaaHQN1Typ&index=20)
 
 
 ## 1. Mixup Training

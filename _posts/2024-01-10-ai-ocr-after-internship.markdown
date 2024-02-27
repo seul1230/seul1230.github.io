@@ -3,6 +3,7 @@ layout: post
 tags: [DL, Computer Vision, OCR]
 title:  "Summary | AI-OCR"
 date:   2024-01-10 12:00:09 +0900
+description: 융기원 인턴 후, AI-OCR 개념 정리!
 categories: Data_AI
 # published: false
 ---

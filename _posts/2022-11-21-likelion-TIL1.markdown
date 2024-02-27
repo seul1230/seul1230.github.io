@@ -3,6 +3,7 @@ layout: post
 title:  "TIL | AI - ML - DL"
 date:   2022-11-21 09:00:09 +0900
 categories: SpecialLecture
+description: 인공지능과 머신러닝, 그리고 딥러닝<br/><br/>👩🏻‍💻 K-MOOC 실습으로 배우는 머신러닝 강의
 tags: [TIL]
 ---
 # [ AI ] 인공지능과 머신러닝, 그리고 딥러닝

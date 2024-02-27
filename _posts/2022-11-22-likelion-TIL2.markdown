@@ -2,14 +2,12 @@
 layout: post
 title:  "TIL | Logistic Regression"
 date:   2022-11-22 13:00:09 +0900
-categories: SpecialLecture
+description: 로지스틱 회귀<br/><br/>👩🏻‍💻 K-MOOC 실습으로 배우는 머신러닝 강의
+# categories: SpecialLecture
 tags: [TIL]
 ---
 # [ AI / ML ] 로지스틱 회귀
-
 #### 👩🏻‍💻 K-MOOC 실습으로 배우는 머신러닝 강의
-
-
 📙 해당 포스트는 [K-MOOC 강의](http://www.kmooc.kr/courses/course-v1:SSUk+SSMOOC20K+2022_T1/course/) 내용과 추가로 다른 자료들을 찾아 내용을 작성하였으며, **이론 및 개념**에 대해 공부하고 **예제 실습**도 진행한 후 내용을 정리하였다.
 
 
@@ -43,7 +41,7 @@ tags: [TIL]
 
 *** -->
 
-## Logistic Regression
+### Logistic Regression
 로지스틱 회귀는 이름에 회귀가 들어가지만 **분류 <font color = 'lightgray'>Classification</font>** 작업에 사용할 수 있다. 
 
 #### 이진 분류 Binary Classification 
@@ -368,11 +366,11 @@ tags: [TIL]
 
 ***
 
-## 💻 실습 예제 코드 
+### 💻 실습 예제 코드 
 
-### PyTorch로 로지스트 회귀 구현하기
+#### PyTorch로 로지스트 회귀 구현하기
 
-#### **[ 필요한 도구 import ]**
+##### **[ 필요한 도구 import ]**
 
 ```python
 import torch
@@ -391,7 +389,7 @@ y_train = torch.FloatTensor(y_data)
 
 <br/>
 
-#### **[ W와 b 값 초기화 ]**
+##### **[ W와 b 값 초기화 ]**
 
 W와 b를 전부 0으로 초기화해주자.
 
@@ -418,7 +416,7 @@ tensor([[0.5000],
 
 <br/>
 
-#### **[ 모델 훈련 ]**
+##### **[ 모델 훈련 ]**
 
 
 이제 모델을 훈련해보자.
@@ -497,7 +495,7 @@ for epoch in range(nb_epochs + 1):
 
 <br/>
 
-#### **[ 예측 ]**
+##### **[ 예측 ]**
 
 
 학습 끝! 학습 후 최적의 W와 b를 가지고 예측값을 구해보자.
@@ -537,7 +535,7 @@ print(prediction)
 
 ***
 
-## 참고
+### 참고
 
 
 [K-MOOC 실습으로 배우는 머신러닝](http://www.kmooc.kr/courses/course-v1:SSUk+SSMOOC20K+2022_T1/course/)

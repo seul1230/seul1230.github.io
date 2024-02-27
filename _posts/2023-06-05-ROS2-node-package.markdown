@@ -1,8 +1,11 @@
 ---
 layout: post
-title:  "Summary | ROS2 I"
+title:  "Summary | ROS2 I (Node, Package)"
 date:   2023-06-05 21:00:09 +0900
-categories: IT_trend
+description: ROS 기초 I (Node, Package)
+style: border
+color: info
+# categories: IT_trend
 tags: [ROS2, node, package]
 ---
 # [ ROS2 ] ROS 기초 I (Node, Package)

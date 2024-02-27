@@ -2,6 +2,7 @@
 layout: post
 title:  "TIL | Clustering"
 date:   2022-11-21 17:00:09 +0900
+description: 머신러닝 - 군집화 (Clustering)<br/><br/>👩🏻‍💻 K-MOOC 실습으로 배우는 머신러닝 강의
 categories: SpecialLecture
 tags: [TIL]
 ---

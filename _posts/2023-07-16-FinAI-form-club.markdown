@@ -1,9 +1,12 @@
 ---
 layout: post
-tags: [Finance, AI, Club]
 title:  "Club | Finance IT FinAI"
+discription: 금융IT동아리 FinAI를 만들자!<br/><br/><img src='/assets/img/FinAI/home.png' width='80%'>
 date:   2023-07-16 15:00:09 +0900
-categories: Data_AI
+style: fill
+color: warning
+# categories: Data_AI
+tags: [Finance, AI, Club]
 ---
 # [ 금융IT동아리 FinAI ] 동아리를 만들자! 
 
@@ -12,8 +15,9 @@ categories: Data_AI
 위의 공모전에 대한 이야기는 곧 작성하여 여기에 링크를 달아놓을 예정이다.
 
 나와 같이 금융 IT 직무에 취업하고자 하는 사람들과 함께 공부하면 자극도 되고 체계적으로 공부를 할 수 있을 것 같아 사람을 모으고자 하였고, 이에 대한 고민을 듣고 담임교수님이 흔쾌히 지도 교수님을 맡아주셨다. 
+<br/>
 
-<h2 class='line-mark-blue'>🏦 FinAI 핀아이는?</h2>
+## 🏦 FinAI 핀아이는?
 
 FinAI 내 교수님과 부원들은 매주 모여 금융 관련 뉴스기사 등을 통해 금융 트렌드를 알고 이에 대한 자신의 생각들을 나눈다. 금융권에서 IT 인재를 적극적으로 채용하고 있는 만큼 금융 프로젝트나 개발 등도 함께 동반하여 단순한 금융 동아리를 넘어 IT로 분야를 좁힌 것이 이 동아리의 특징이다.
 

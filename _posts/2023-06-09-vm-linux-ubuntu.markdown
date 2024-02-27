@@ -2,9 +2,10 @@
 layout: post
 title:  "Connect Network on Ubuntu"
 date:   2023-06-09 11:30:09 +0900
-color: "warning"
+color: "danger"
 style: fill
-categories: Tips
+description: Linux 가상머신(Ubuntu 20.04)에서 무선 네트워크 연결하는 법
+# categories: Tips
 tags: [HowTo, linux, network, ubuntu, ver20.04]
 ---
 # [ Linux ] 가상머신에서 무선 네트워크 연결하는 법

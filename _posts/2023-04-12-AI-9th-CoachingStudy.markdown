@@ -1,11 +1,14 @@
 ---
 layout: post
 title:  "After Boostcourse 9th Study"
+description: 네이버부스트코스 코칭스터디 9기 <AI Basic 2023> 가벼운 후기
 date:   2023-04-12 09:50:09 +0900
 categories: Data_AI
+style: border
+color: danger
 tags: [AI, Study, Team]
 ---
-# [ AI ] 코칭스터디 9기 <AI Basic 2023> 가벼운 후기
+# [ AI ] 네이버부스트코스 코칭스터디 9기 <AI Basic 2023> 가벼운 후기
 
 약 4개월 간의 '멋쟁이 사자처럼 AI School' 국비 과정 수료 후, 가볍게 복습하자는 마음에서 **네이버 부스트코스 코칭스터디 9기**에 지원하게 되었다. 
 

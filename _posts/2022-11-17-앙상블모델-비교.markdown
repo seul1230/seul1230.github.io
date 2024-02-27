@@ -3,6 +3,9 @@ layout: post
 title:  "Tips | Ensemble Model Comparison"
 date:   2022-11-17 16:00:09 +0900
 categories: Tips
+style: border
+color: danger
+description: sklearn 트리 앙상블 모델 4가지
 tags: [sklearn, Tree, Ensemble]
 ---
 # [ ML ] sklearn 트리 앙상블 모델 4가지

@@ -1,8 +1,11 @@
 ---
 layout: post
 title:  "Tips | get naver news comment"
+description: 📰 웹 스크래핑 - 네이버 뉴스 기사 댓글 수집하기<br/><br/><img src='/assets/img/naver_news_comment/naver_news.png' width='90%'>
 date:   2022-10-04 00:00:09 +0900
 categories: Tips
+style: fill
+color: danger
 tags: [Web Scraping, News, Comments, Crawling]
 ---
 # 웹 스크래핑 - 네이버 뉴스 기사 댓글 수집하기

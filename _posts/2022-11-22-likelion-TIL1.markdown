@@ -2,15 +2,12 @@
 layout: post
 title:  "TIL | Clustering Code"
 date:   2022-11-22 09:00:09 +0900
-categories: SpecialLecture
+description: 군집화 (Clustering) 실습<br/><br/<img src='/assets/img/img_221121/kmeans_works.gif' width='80%'><br/>👩🏻‍💻 K-MOOC 실습으로 배우는 머신러닝 강의
+# categories: SpecialLecture
 tags: [TIL]
 ---
 # [ AI / ML ] 머신러닝 - 군집화 (Clustering) 실습
-
-
 #### 👩🏻‍💻 K-MOOC 실습으로 배우는 머신러닝 강의
-
-<br/>
 
 📙 해당 포스트는 [K-MOOC 강의](http://www.kmooc.kr/courses/course-v1:SSUk+SSMOOC20K+2022_T1/course/) 내용과 추가로 다른 자료들을 찾아 내용을 작성하였으며, **이론 및 개념**에 대해 공부하고 **예제 실습**도 진행한 후 내용을 정리하였다.
 

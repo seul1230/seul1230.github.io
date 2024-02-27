@@ -3,6 +3,7 @@ layout: post
 title:  "TIL | PCA"
 date:   2022-11-21 13:00:09 +0900
 categories: SpecialLecture
+description: 머신러닝 - PCA (Principal Component Analysis) <br/><br/>👩🏻‍💻 K-MOOC 실습으로 배우는 머신러닝 강의
 tags: [TIL]
 ---
 # [ AI / ML ] 머신러닝 - PCA (Principal Component Analysis) 

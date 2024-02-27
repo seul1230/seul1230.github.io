@@ -3,6 +3,7 @@ layout: post
 tags: [Computer Science]
 title:  "Summary | CS"
 date:   2023-11-04 12:00:09 +0900
+description: Computer Architecture & Data Structure
 categories: CS
 ---
 # [ CS ] 개념 Summary

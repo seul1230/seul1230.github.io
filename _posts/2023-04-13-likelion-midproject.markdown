@@ -3,6 +3,8 @@ layout: post
 title:  "Project"
 date:   2022-10-25 15:00:09 +0900
 categories: Projects
+style: border
+color: success
 published: false
 ---
 # [ MidProject ] 의료기관 개폐업 현황 분석 및 인사이트 도출

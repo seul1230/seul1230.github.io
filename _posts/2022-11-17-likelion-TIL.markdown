@@ -3,6 +3,7 @@ layout: post
 title:  "TIL | Kaggle - Benz Manufacturing"
 date:   2022-11-17 14:00:09 +0900
 categories: Python_DataAnalysis
+description: Kaggle - Benz Manufacturing
 tags: [TIL]
 published: false
 ---

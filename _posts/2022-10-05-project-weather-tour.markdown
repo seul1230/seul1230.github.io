@@ -2,6 +2,9 @@
 layout: post
 title:  "Project | Weather Tour Application"
 date:   2022-10-05 22:52:09 +0900
+description: 2021 전공심화프로젝트 Weather Tour Application! <img src ="/assets/img/img_weathertour/corona_travel.png" width="60%">
+style: fill
+color: success
 categories: Projects
 tags: [AI, Android Studio]
 ---

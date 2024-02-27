@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Study | Using Matplotlib"
+title:  "Tips | Using Matplotlib"
 date:   2022-11-02 03:30:09 +0900
+description: Matplotlib 활용법 정리 <br/><br/>- PYCON KOREA 2022
 categories: Data_AI
 tags: [matplotlib, EDA]
 ---
@@ -12,7 +13,7 @@ tags: [matplotlib, EDA]
 
 해당 포스트는 위의 **YouTube 혼란한 Matplotlib에서 질서 찾기** 영상을 보고 matplotlib의 활용법에 대해 공부하면서 정리한 글이다.
 
-### [ <mark style='background-color: #fff5b1'>TO DO</mark> ]
+### [ TO DO ]
 **1. 안 예쁜 Matplotlib 그림을 예쁘게** - 딱 seaborn만큼만
 
 **2. 고급 그리는 법 알아보기** - 이게 Matplotlib으로 된다고?
@@ -32,6 +33,8 @@ tags: [matplotlib, EDA]
 5️⃣ **중요 데이터 강조 <font color = 'lightgray'>색 요소 변경</font>**     ; matplotlib
 
 6️⃣ **보조 요소 설정 <font color = 'lightgray'>정석적 전달력 강화</font>**  ; matplotlib
+
+<br/><br/>
 
 #### 문제 1. 안 예쁜 Matplotlib
 
