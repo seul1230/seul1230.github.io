@@ -74,12 +74,12 @@ analytics:
 ### Defaults for collections ###
 defaults:
   - scope:
-      path: "projects"
+      path: ""
       type: "projects"
     values:
       layout: "page"
   - scope:
-      path: "blog"
+      path: ""
       type: "posts"
     values:
       comments: true # Set to true to enable disqus comments
