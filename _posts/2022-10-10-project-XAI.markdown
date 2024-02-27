@@ -3,7 +3,7 @@ layout: post
 title:  "Project | Credit Rating XAI"
 date:   2022-10-10 09:00:09 +0900
 categories: Projects
-tags: [XAI, Finance, Paper]
+tags: [Project, XAI, Finance, Paper]
 ---
 # [ 논문 구현 + 개선 ] 설명 가능한 AI를 활용한 신용평가 모델
 

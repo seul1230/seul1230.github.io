@@ -1,11 +1,13 @@
 {%- if page.comments != false and jekyll.environment == "production" -%}
   <div id="disqus_thread"></div>
-  <script type="text/javascript">
+  <script type="text/javascript" repo="seul1230/blog-comments"  issue-term="pathname">
     var disqus_shortname = '{{ site.disqus.shortname }}';
     (function() {
       var disqus = document.createElement('script');
       disqus.type = 'text/javascript';
       disqus.async = true;
+      disqus.repo = "seul1230/blog-comments" ;
+      disqus.setAttribute('issue-term', "pathname")
       disqus.src = '//' + disqus_shortname + '.disqus.com/embed.js';
       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(disqus);
     })();
