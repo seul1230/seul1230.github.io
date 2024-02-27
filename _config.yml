@@ -79,10 +79,16 @@ defaults:
     values:
       layout: "page"
   - scope:
-      path: ""
+      path: "blog"
       type: "posts"
     values:
       comments: true # Set to true to enable disqus comments
+  - scope:
+      path: "tips"
+      type: "tips"
+    values:
+      comments: true # Set to true to enable disqus comments
+      categories: "tips"
 
 ### Exclude from processing ###
 exclude:

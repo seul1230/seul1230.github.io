@@ -1,11 +1,10 @@
 ---
 layout: post
 title:  "Club | Finance IT FinAI"
-discription: 금융IT동아리 FinAI를 만들자!<br/><br/><img src='/assets/img/FinAI/home.png' width='80%'>
-date:   2023-07-16 15:00:09 +0900
+description: 금융IT동아리 FinAI를 만들자!<br/><br/><img src='/assets/img/FinAI/home.png' width='80%'>
+date:  2023-07-16 15:00:10 +0900
 style: fill
 color: warning
-# categories: Data_AI
 tags: [Finance, AI, Club]
 ---
 # [ 금융IT동아리 FinAI ] 동아리를 만들자! 

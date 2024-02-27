@@ -1,0 +1,9 @@
+<div class="card-group mt-2">
+
+    {% for post in site.tips %}
+        {%- if post.categories contains 'tips' -%}
+            {% include tips/post-card.html %}
+        {%- endif -%}
+    {% endfor %}
+
+</div>

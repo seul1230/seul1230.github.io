@@ -5,7 +5,7 @@ date:   2023-06-09 11:30:09 +0900
 color: "danger"
 style: fill
 description: Linux 가상머신(Ubuntu 20.04)에서 무선 네트워크 연결하는 법
-categories: tips
+categories: Tips
 tags: [HowTo, linux, network, ubuntu, ver20.04]
 ---
 # [ Linux ] 가상머신에서 무선 네트워크 연결하는 법
