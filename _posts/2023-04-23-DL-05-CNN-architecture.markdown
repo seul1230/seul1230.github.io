@@ -2,7 +2,7 @@
 layout: post
 title:  "Summary | CNN Architectures"
 date:   2023-04-23 13:50:09 +0900
-description : 고급 합성곱 신경망 구조 정리<br/><br/>CNN, LeNet-5, AlexNet, VGGNet, 인셉션과 GoogLeNet,ResNet
+description : <strong>[ 공부 & 정리 ]</strong><br/>고급 합성곱 신경망 구조 정리<br/><br/>CNN, LeNet-5, AlexNet, VGGNet, 인셉션과 GoogLeNet,ResNet
 categories: Data_AI
 # style: border
 # color: danger

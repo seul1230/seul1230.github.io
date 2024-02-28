@@ -2,6 +2,8 @@
   box-shadow: none !important;
 }
 
+
+
 .post.card {
   border-radius: $rounded-borders;
   text-decoration: none !important;
@@ -13,6 +15,9 @@
     margin: 0 -15px -15px -15px;
     padding: 15px 35px;
   }
+  // .card-img-top {
+  //   border-radius: $rounded-borders $rounded-borders 0 0;
+  // }
 }
 
 .post-metadata {

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "After Boostcourse 9th Study"
-description: 네이버부스트코스 코칭스터디 9기 <AI Basic 2023> 가벼운 후기
+description: <strong>[ 후기 ]</strong><br/>네이버부스트코스 코칭스터디 9기 <AI Basic 2023> 가벼운 후기
 date:   2023-04-12 09:50:09 +0900
 categories: Tips
 style: border

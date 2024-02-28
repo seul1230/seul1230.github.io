@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Summary | Brute-Force Algorithm"
-description: 완전탐색 Brute-Force
+description: <strong>[ 공부 & 정리 ]</strong><br/>완전탐색 Brute-Force
 date:   2023-05-26 12:00:09 +0900
 categories: CS
 tags: [Algorithm, Computer Science]

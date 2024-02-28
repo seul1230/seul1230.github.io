@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "Project | 2021 Hackathon Shortest Path using Q-learning"
-description: 2021 Hackathon <br/>- 교내 건물들 간 최단거리 찾기<br/><img src='/assets/img/2021_hackathon_img/real_map.png' width='50%'>
+description: <strong>[ 프로젝트 ] 2021 Hackathon </strong> <br/>- 교내 건물들 간 최단거리 찾기<br/><br/><p align='center'><img src='/assets/img/2021_hackathon_img/real_map.png' width='80%'></p>
 date:   2022-10-04 22:52:09 +0900
-style: fill
+style: border
 color: success
 categories: Projects
 tags: [Project, Q-learning, Unsupervised, OpenCV]

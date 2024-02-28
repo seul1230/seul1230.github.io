@@ -3,7 +3,9 @@ layout: post
 title:  "Mini Project III | likelion"
 date:   2022-11-03 15:00:09 +0900
 categories: Project
-description: 🦁 월간 데이콘 신용카드 사용자 연체 예측 AI 경진대회
+style: border
+color: success
+description: <strong>[ 미니프로젝트 ]</strong><br/>🦁 월간 데이콘 신용카드 사용자 연체 예측 AI 경진대회<br/><br/><p align='center'><img src='/assets/img/img_221103/competition.png' width='100%'></p>
 ---
 # [ MiniProject III ] 월간 데이콘 신용카드 사용자 연체 예측 AI 경진대회
 

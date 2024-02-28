@@ -2,8 +2,7 @@
 layout: post
 title:  "TIL | NN Basic"
 date:   2022-11-22 16:00:09 +0900
-description: Neural Networks Basic 정리 <br/><br/>- Basic Structure<br/>- Multi-layered Structure<br/><br/>👩🏻‍💻 K-MOOC 실습으로 배우는 머신러닝 강의
-# categories: SpecialLecture
+description: <strong>[ 공부 & 정리 ] </strong> <br/> Neural Networks Basic<br/>- Basic Structure<br/>- Multi-layered Structure
 tags: [AI, ML, DL]
 ---
 # [ AI / ML / DL ] Neural Networks Basic - Basic Structure, Multi-layered Structure
@@ -11,8 +10,6 @@ tags: [AI, ML, DL]
 📙 해당 포스트는 [K-MOOC 강의](http://www.kmooc.kr/courses/course-v1:SSUk+SSMOOC20K+2022_T1/course/) 내용과 추가로 다른 자료들을 찾아 내용을 작성하였으며, **이론 및 개념**에 대해 공부하고 **예제 실습**도 진행한 후 내용을 정리하였다.
 
 
-<!-- 군집화에 대한 이론을 보고 싶다면 <br/>
-👉 **[[ ML ] 머신러닝 - 군집화 (Clustering)](https://seul1230.github.io/speciallecture/2022-11-21-likelion-TIL3/)** 여기로! -->
 
 <br/>
 

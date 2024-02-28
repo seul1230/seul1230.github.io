@@ -2,7 +2,7 @@
 layout: post
 title:  "Tips | Using Matplotlib"
 date:   2022-11-02 03:30:09 +0900
-description: Matplotlib 활용법 정리 <br/><br/>- PYCON KOREA 2022
+description: <strong>[ 공부 & 정리 ]</strong><br/>Matplotlib 활용법 정리<br/>- PYCON KOREA 2022
 categories: Data_AI
 tags: [matplotlib, EDA]
 ---

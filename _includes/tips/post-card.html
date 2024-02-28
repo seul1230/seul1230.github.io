@@ -5,20 +5,19 @@ prepend: 'bg-' -%} {%- if post.color != 'light' -%} {%- assign text_style = 'tex
 assign badge_style = 'badge-light text-' -%} {%- assign badge_style = badge_style | append:
 post.color -%} {%- endif -%} {%- else -%} {%- assign card_style = post.color | prepend: 'border
 border-' -%} {%- if post.color -%} {%- assign badge_style = post.color | prepend: 'badge-' -%} {%-
-endif -%} {%- endif -%} {%- comment -%} Determine Post URL {%- endcomment -%} {%- if
+endif -%} {%- endif -%} {%- if post.image != '' -%} {%- assign post_img = post.image -%} {%- endif -%}
+{%- if post.title -%} {%- assign post_id = post.title -%} {%- endif -%} {%- comment -%} Determine Post URL {%-
+endcomment -%} {%- if
 post.external_url -%} {%- assign post_url = post.external_url -%} {%- else -%} {%- assign post_url =
 post.url | relative_url -%} {%- endif -%}
 
 <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
-  <a
-    href="{{ post_url }}"
-    class="post card {{ card_style }}"
-    target="_blank"
-    {%-if post.external_url and site.open_new_tab-%}
-    target="_blank"
-    {%-endif-%}
-  >
-  
+  <a href="{{ post_url }}" class="post card {{ card_style }}" target="_blank" {%-if post.external_url and
+    site.open_new_tab-%} target="_blank" {%-endif-%}>
+    {%- if post_img -%}
+    <img id="{{ post_title }}-img" class="card-img-top" src="{{ post_img }}" alt="{{ post_title }}" />
+    {%- endif -%}
+
     <div class="card-body {{ text_style }}">
       <h3 class="card-title">{{ post.title }}</h3>
       <p class="card-text">
@@ -28,8 +27,7 @@ post.url | relative_url -%} {%- endif -%}
       </p>
       <p class="card-text">
         {%- if post.description -%} {{ post.description }} {%- else -%} {{ post.content |
-        truncatewords: 25, "  <small><i> read more...</i></small
-        >" }} {%- endif -%}
+        truncatewords: 25, " <small><i> read more...</i></small>" }} {%- endif -%}
       </p>
     </div>
     <div class="card-footer {{ text_style }}">

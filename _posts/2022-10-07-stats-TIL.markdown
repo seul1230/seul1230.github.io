@@ -3,7 +3,8 @@ layout: post
 title:  "TIL | Statistics"
 date:   2022-10-07 09:00:09 +0900
 categories: SpecialLecture
-description: 통계 분석 정리 <br/><br/>👩🏻‍💻 통계 강의 _ 유재명 교수님
+description: <strong>[ 공부 & 정리 ]</strong><br/>통계 분석
+published: false
 tags: [TIL]
 ---
 # [ 1007 Special Lecture TIL ] 통계 분석
@@ -18,7 +19,7 @@ tags: [TIL]
 
 ## 📚 오늘의 TIL - 데이터 분석을 위한 통계 기초<br/>
 
-### 🐾　통계 분석을 통해서 할 수 있는 일들　🐾
+#### 　통계 분석을 통해서 할 수 있는 일들　
 - 대상의 특성을 수치로 표현하기
 - 부분을 통해 전체를 추측하기
 - 비교하기
@@ -28,14 +29,14 @@ tags: [TIL]
 - 비슷한 것끼리 모으기
 
 
-### 🐾　이상한 통계학 용어　🐾
+#### 　이상한 통계학 용어　
 * 번역이 이상한 경우 : 모수
 * 역사적인 과정을 거쳐 의미가 변한 경우 : 회귀분석
 * 철학적 관점의 가설 검정 : 통계적 가설 검정
 
 => 그렇기 때문에 용어를 보고 뜻을 대충 짐작하면 안된다. <br/>
 
-### 🐾　통계 분석 도구　🐾
+#### 　통계 분석 도구　
 
 1. 엑셀
 - 데이터 분석에서 가장 널리 사용되는 도구
@@ -55,7 +56,7 @@ tags: [TIL]
 - 데이터 분석에서도 활발히 사용
 - 머신러닝, 인공지능 등에서는 학계와 산업계에서 사실상 표준<br/>
 
-#### R vs. Python
+##### R vs. Python
 
 |R|Python|
 |---|---|
@@ -64,10 +65,11 @@ tags: [TIL]
 
 
 
-### 🐾　Python으로 기술통계 알아보기　🐾
+#### 　Python으로 기술통계 알아보기　
 
 중고차 가격에 대한 정보가 들어있는 **`car`** dataset을 이용해 알아보도록 하겠다.
-#### 평균, 중간값, 최빈값
+
+##### 평균, 중간값, 최빈값
 ```python
 df = pd.read_excel('./dataset/car.xlsx')
 df.price.mean()         # 평균
@@ -76,7 +78,7 @@ df.model.mode()         # 최반값
 df.model.value_counts() # 값의 개수
 ```
 
-#### 분위수 &nbsp;<font color='lightgray'>quantile</font>
+##### 분위수 &nbsp;<font color='lightgray'>quantile</font>
 - 데이터를 4등분하는 위치
 - 분위수 qua<mark style='background-color: pink'>n</mark>tile
 - 사분위수 qua<mark style='background-color: pink'>r</mark>tile
@@ -92,7 +94,7 @@ df.price.quantile(.75)  # 제 3 사분위수
 df.price.quantile(.90)  # 상위 10%
 ```
 
-#### 상자 수염 그림 &nbsp;<font color='lightgray'>box-whisker plot</font>
+##### 상자 수염 그림 &nbsp;<font color='lightgray'>box-whisker plot</font>
 ![box-whisker]() <br/><br/>
 
 - 수염(whisker)
@@ -109,7 +111,7 @@ sns.boxplot(data = df, x = "price", y = "model")
 ![img_box_whisker]() <br/><br/>
 
 
-#### 분산 &nbsp;<font color='lightgray'>variance</font>
+##### 분산 &nbsp;<font color='lightgray'>variance</font>
 - 편차 제곱의 평균
 - 편차를 제곱하여 크기가 커지므로 표준편차를 많이 사용한다.
 
@@ -121,7 +123,7 @@ df.groupby('model').agg({'price':'std'}) # model명을 기준으로 price의 표
 
 ![img_groupby_std]() <br/><br/>
 
-#### 히스토그램 &nbsp;<font color='lightgray'>histogram</font>
+##### 히스토그램 &nbsp;<font color='lightgray'>histogram</font>
 - 데이터를 구간별로 나누어 각 구간의 사례 수를 막대그래프로 그린 것
 
 ```python
@@ -132,9 +134,9 @@ sns.histplot(x = 'price', data = df, bins = 30)
 
 
 
-### 🐾　모집단과 표본　🐾
+#### 　모집단과 표본　
 
-#### 모짐단과 무작위 표본
+##### 모짐단과 무작위 표본
 * 모집단 &nbsp;<font color='lightgray'>population</font>
     * 연구의 관심이 되는 집단 전체
 * 표본 &nbsp;<font color='lightgray'>sample</font>
@@ -142,7 +144,7 @@ sns.histplot(x = 'price', data = df, bins = 30)
 
 -> 집단 전체를 전수조사하기 어려운 경우, 무작위로 표본을 추출하여 모집단에 대해 추론 진행
 
-#### 모수 &nbsp;<font color='lightgray'>population parameter</font>
+##### 모수 &nbsp;<font color='lightgray'>population parameter</font>
 * 파라미터 &nbsp;<font color='lightgray'>parameter</font>
     * 어떤 시스템의 특성을 나타내는 값
 * 모수
@@ -151,12 +153,12 @@ sns.histplot(x = 'price', data = df, bins = 30)
 * '**표본의 크기**'를 '**모수**'라고 하는 경우도 있으나 이는 <font color = 'red'>잘못된 표현</font>이다.
 
 
-#### 통계량 &nbsp;<font color='lightgray'>sample statistic</font>
+##### 통계량 &nbsp;<font color='lightgray'>sample statistic</font>
 * 표본에서 얻어진 수로 계산한 값 (= 통계치)
 * **'모집단의 통계랑'**이라는 표현은 없음 -> 통계량은 **표본**에서 구한 값
 * **'표본의 모수'**라는 표현도 없음 -> 모수는 모집단에서 구한 값
 
-#### 표집 &nbsp;<font color='lightgray'>sampling</font>
+##### 표집 &nbsp;<font color='lightgray'>sampling</font>
 * 모집단에서 표본을 추출하는 절차
 * **표본 추출**이라고도 함
 * 표집 단위 &nbsp;<font color='lightgray'>sample unit</font>
@@ -164,7 +166,7 @@ sns.histplot(x = 'price', data = df, bins = 30)
 * 표집틀 &nbsp;<font color='lightgray'>sampling frame</font>
     * 표집 대상의 목록
 
-#### 표집방법 
+##### 표집방법 
 * 무작위 표집 &nbsp;<font color='lightgray'>random sampling</font>
     * 일정한 확률에 따라 표본을 선택
 * 단순 무작위 표집 &nbsp;<font color='lightgray'>simple random sampling</font>
@@ -173,22 +175,22 @@ sns.histplot(x = 'price', data = df, bins = 30)
     * 층화 표집
     * 집락 표집
 
-### 🐾　추정　🐾
-#### 추정 &nbsp;<font color='lightgray'>estimation</font>
+#### 　추정　
+##### 추정 &nbsp;<font color='lightgray'>estimation</font>
 * 통계량으로부터 모수를 추측하는 절차
 * 점 추정 &nbsp;<font color='lightgray'>point estimate</font>
     * 하나의 수치로 추정
 * 구간 추정 &nbsp;<font color='lightgray'>interval estimate</font>
     * 구간으로 추정
 
-#### 신뢰구간 &nbsp;<font color='lightgray'>confidence interval</font>
+##### 신뢰구간 &nbsp;<font color='lightgray'>confidence interval</font>
 * 대표적인 구간 추정 방법
 * 모수가 있을 법한 범위로 추정
 * 신뢰구간 = 통계량 +- 오차범위
 * 95% 신뢰구간 = 95%의 경우에 모수가 추정된 신뢰구간에 포함됨
 * 확률 높을수록 신뢰구간 커짐
 
-#### 신뢰 수준 &nbsp;<font color='lightgray'>confidence level</font>
+##### 신뢰 수준 &nbsp;<font color='lightgray'>confidence level</font>
 * 신뢰구간에 모수가 존재하는 표본의 비율
     * 신뢰수준이 높음 -> 많은 표본을 포함 -> 더 넓은 오차범위 -> 정보가 적음
     * 신뢰수준이 낮음 -> 적은 표본을 포함 -> 더 좁은 오차범위 -> 정보가 많음
@@ -202,7 +204,7 @@ sns.histplot(x = 'price', data = df, bins = 30)
     * 가장 쉬운 방법이나 시간과 비용이 증가
 
 
-#### Python 평균의 신뢰구간
+##### Python 평균의 신뢰구간
 * 설치
     ```shell
     pip install pingouin
@@ -215,7 +217,7 @@ sns.histplot(x = 'price', data = df, bins = 30)
     pg.ttest(df.price, 0, confidence = 0.95)
     ```
 
-#### 부트스트래핑 &nbsp;<font color='lightgray'>bootstrapping</font>
+##### 부트스트래핑 &nbsp;<font color='lightgray'>bootstrapping</font>
 * 평균과 달리 중간값, 최빈값 등의 통계량은 표집분포의 형태를 간단히 알기 어려움
 * 표본이 충분히 크면 **부트스트래핑**이라는 시뮬레이션 기법을 사용해서 신뢰구간을 추정
 
@@ -233,8 +235,8 @@ for _ in range(10000):
 np.quantile(ms, [.025, .975])
 ```
 
-### 🐾　통계적 가설 검정　🐾
-#### 통계적 가설 검정 &nbsp;<font color='lightgray'>statistical hypothesis testing</font>
+#### 　통계적 가설 검정　
+##### 통계적 가설 검정 &nbsp;<font color='lightgray'>statistical hypothesis testing</font>
 
 * 귀무가설 &nbsp;<font color='lightgray'>null hypothesis</font>
     * **기각**하고자 하는 가설
@@ -257,7 +259,7 @@ np.quantile(ms, [.025, .975])
 ![statistical_hypothesis]() <br/><br/>
 
 
-#### 유의수준과 p 값
+##### 유의수준과 p 값
 * p 값 
     * 귀무가설을 바탕으로 데이터에서 관찰된 결과와 그 이상의 극단적 결과가 나올 확률을 계산한 것
 
@@ -270,7 +272,7 @@ np.quantile(ms, [.025, .975])
 * p-val이 유의수준(5%) 보다 작으면 귀무가설을 기각한다.
 * 참고 자료 : [귀무가설과 대립가설 / 유의수준 설명](http://www.incodom.kr/%EA%B7%80%EB%AC%B4%EA%B0%80%EC%84%A4#:~:text=%EC%98%88%EB%A5%BC%20%EB%93%A4%EC%96%B4%20'%EC%A7%80%EA%B5%AC%EB%8A%94,%EB%8A%94%20%EB%8C%80%EB%A6%BD%EA%B0%80%EC%84%A4%EC%9D%B4%20%EB%90%9C%EB%8B%A4.)
 
-#### p와 유의수준의 비교 108p
+##### p와 유의수준의 비교 108p
 * p > 유의수준
     * 결론을 유보
     * 결론을 내릴 필요가 있을 경우, 데이터를 더 모은다.
@@ -284,7 +286,7 @@ np.quantile(ms, [.025, .975])
 cohen-d : (N - df.price.mean()) / df.price.std()
 
 
-#### 가설 검정의 결과
+##### 가설 검정의 결과
 
 ||귀무가설<br/>기각|귀무가설<br/>기각 못 함|
 |---|:---:|:---:|
@@ -292,8 +294,8 @@ cohen-d : (N - df.price.mean()) / df.price.std()
 |귀무가설 거짓||2종 오류 <br/>&nbsp;<font color='lightgray'>Miss</font>|
 
 
-### 🐾　상관 분석　🐾
-#### 상관계수 <font color='lightgray'>correlation coefficient</font>
+#### 　상관 분석　
+##### 상관계수 <font color='lightgray'>correlation coefficient</font>
 * 두 변수의 연관성을 `-1` ~ `+1` 범위의 수치로 나타낸 것
 * 두 변수의 연관성을 파악하기 위해 사용
     * 어휘력과 독해력의 관계
@@ -302,7 +304,7 @@ cohen-d : (N - df.price.mean()) / df.price.std()
 ![corr_coef]() <br/><br/>
 
 
-#### 상관계수의 해석
+##### 상관계수의 해석
 * 부호
     * `+` : 두 변수가 같은 방향으로 변화
     * `-` : 두 변수가 반대 방향으로 변화
@@ -340,20 +342,20 @@ pg.corr(sp.SPX, sp.GLD)
 p < 0.05 -> 귀무가설 기각 (모상관계수 != 0)<br/>
 
 
-#### 공분산
+##### 공분산
 * X의 편차와 Y의 편차를 곱한 것의 평균 (`X = Y`이면 분산과 같음)
 * 우상향하는 추세 -> +로 커짐
 * 우하향하는 추세 -> -로 커짐
 
 
-### 🐾　회귀 분석　🐾
-#### 지도학습 <font color='lightgray'>supervised learning</font>
+#### 　회귀 분석　
+##### 지도학습 <font color='lightgray'>supervised learning</font>
 * 독립변수 x를 이용하여 종속변수 y를 예측하는 것
     * 통계학에서 예측은 어떤 값에 대한 추론을 의미
     * 지도학습에서 예측은 **변수들 사이의 패턴을 파악하여 한 변수로 다른 변수를 추론하는 것**
     * 시계열 분석 등에서 하는 미래에 대한 예측은 forecasting이라고 구분
 
-#### 종속변수에 대한 지도학습의 구분
+##### 종속변수에 대한 지도학습의 구분
 * 회귀분석 <font color='lightgray'>regression</font>
     * 종속변수가 연속
     * 예측값 - 실제값으로 정확성을 계산
@@ -362,7 +364,7 @@ p < 0.05 -> 귀무가설 기각 (모상관계수 != 0)<br/>
     * 예측의 정확성을 다른 방식으로 계산
 
 
-#### 회귀분석
+##### 회귀분석
 * 관계식
     * 회귀분석 모형 설정을 위한 문법
     * **종속변수(y) ~ 독립변수(x)** 형식으로 관계식을 표현
@@ -374,7 +376,7 @@ m = ols("price ~ mileage", data = df).fit()
 m.summar()
 ```
 
-#### 회귀계수의 가설 검정
+##### 회귀계수의 가설 검정
 * 귀무가설 : 모집단에서 회귀계수 = 0
 
 |가설검정|신뢰구간|
@@ -383,8 +385,8 @@ m.summar()
 |유의함 (p< $$\alpha$$)|- ~ - 또는 + ~ +|
 
 
-### 🐾　더미 코딩　🐾
-#### 더미 코딩 <font color='lightgray'>dummy coding</font>
+#### 　더미 코딩　
+##### 더미 코딩 <font color='lightgray'>dummy coding</font>
 * 범주형 변수에 범주가 k개 있을 경우 k-1개의 더미 변수를 대신 투입
     * 범주 중에 하나를 기준 <font color='lightgray'>reference</font>로 지정
     * 기본적으로 ABC 순으로 먼저 나오는 것이 기준(변경할 수도 있음)
@@ -393,20 +395,20 @@ m.summar()
     * 더미변수의 기울기는 기준과의 차이를 의미
 
 
-### 🐾　다중 회귀 분석　🐾
-#### 다중 회귀 분석
+#### 　다중 회귀 분석　
+##### 다중 회귀 분석
 * 독립변수가 2개 이상인 회귀분석
 * R과 Python에서는 관계식에서 <font color = 'red'>+</font>로 변수 구분
 
 
 
-#### 표준화 <font color='lightgray'>standardization</font>
+##### 표준화 <font color='lightgray'>standardization</font>
 * 다중회귀분석에서 독립변수는 단위가 다르므로 종속변수에 대한 영향력을 비교하기 어려움
 * 표준화를 하면 평균 = 0, 표준편차 = 1이 됨
 * 표준화를 통해 변수의 단위를 제거하여 상대적인 영향력을 비교할 수 있음
 
 
-#### 관계식에서 표준화하기
+##### 관계식에서 표준화하기
 * scale 함수를 이용하여 표준화를 할 수 있음
 ```pythonß
 ols('price ~ scale(mileage) + scale(year)', df).fit().summar()

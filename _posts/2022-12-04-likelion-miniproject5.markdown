@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Mini Project LikeLion | 청경채 성장 예측"
-description: 🦁 청경채 성장 예측 AI 경진대회<img src='https://user-images.githubusercontent.com/72390138/205493584-af95700c-c420-4f95-a5fc-d1c05bb27bc7.png' width='90%'>
+description: <strong>[ 미니프로젝트 ]</strong><br/>🦁 청경채 성장 예측 AI 경진대회<br/><br/><img src='https://user-images.githubusercontent.com/72390138/205493584-af95700c-c420-4f95-a5fc-d1c05bb27bc7.png' width='100%'>
 date:   2022-12-04 15:00:09 +0900
 categories: Projects
 style: border

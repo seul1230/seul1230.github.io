@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "TIL | Clustering"
-date:   2022-11-21 17:00:09 +0900
-description: 머신러닝 - 군집화 (Clustering)<br/><br/>👩🏻‍💻 K-MOOC 실습으로 배우는 머신러닝 강의
+date:   2022-11-21 17:00:10 +0900
+description: <strong>[ 공부 & 정리 ]</strong><br/>머신러닝 - 군집화 (Clustering)<br/><br/><p align='center'><img src='/assets/img/img_221121/clustering.png' width='80%'></p>
 categories: SpecialLecture
 tags: [TIL]
 ---
@@ -10,12 +10,12 @@ tags: [TIL]
 #### 👩🏻‍💻 K-MOOC 실습으로 배우는 머신러닝 강의
 📙 해당 포스트는 [K-MOOC 강의](http://www.kmooc.kr/courses/course-v1:SSUk+SSMOOC20K+2022_T1/course/) 내용과 추가로 다른 자료들을 찾아 내용을 작성하였으며, **이론 및 개념**에 대해 공부하고 **예제 실습**도 진행한 후 내용을 정리하였다.
 
-**[[ AI ] 인공지능과 머신러닝, 그리고 딥러닝](https://seul1230.github.io/speciallecture/2022-11-21-likelion-TIL1/)**와 같은 날 작성된 포스트이다. 
+**[[ AI ] 인공지능과 머신러닝, 그리고 딥러닝](https://seul1230.github.io/blog/likelion-TIL1/)**와 같은 날 작성된 포스트이다. 
 
 <br/>
 
 
-***
+<!-- ***
 
 ## 목차
 
@@ -38,7 +38,7 @@ tags: [TIL]
 
 <br/>
 
-***
+*** -->
 
 ## 1. 군집화 <font color='lightgray'>Clustering</font>
 ![](/assets/img/img_221121/clustering.png){: .center width="50%"} 

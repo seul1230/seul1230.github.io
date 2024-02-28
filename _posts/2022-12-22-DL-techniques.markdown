@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "Tips | DeepLearning Technique"
-description: 간단한 딥러닝 모델 성능 향상 테크닉 2가지 - Input Mixup & Label Smoothing<img src='/assets/img/data_ai_img/mixup.png' width="90%">
+description: <strong>[ 공부 & 정리 ]</strong><br/>간단한 딥러닝 모델 성능 향상 테크닉 2가지 <br/>- Input Mixup & Label Smoothing<br/><br/><img src='/assets/img/data_ai_img/mixup.png' width="100%">
+# image: /assets/img/data_ai_img/mixup.png
 style: border
 color: danger
 date:   2022-12-22 03:10:09 +0900
 categories: Tips
-ermalink: /page_permalink/
 tags: [DL]
 ---
 # 간단한 딥러닝 모델 성능 향상 테크닉 2가지 - Input Mixup & Label Smoothing
