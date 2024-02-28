@@ -1,7 +1,9 @@
 ### Site Settings ###
 title: 📍 sseul's blog
 description: >
-  인공지능이 좋은 예수리의 블로그 🚀
+  AI ➕ Data Analysis<br/><br/>🚀<br/>
+  Wheresoever you go, <br/>
+  go with all your heart.
 baseurl: "" # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository: seul1230/seul1230.github.io # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme: YoussefRaafatNasry/portfolYOU
