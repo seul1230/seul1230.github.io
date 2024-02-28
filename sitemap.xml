@@ -9,363 +9,178 @@
 
 <url>
   <loc>https://seul1230.github.io/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
+  <lastmod>2024-02-28T11:43:26+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://seul1230.github.io/data_ai/2023-07-16-FinAI-form-club/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/blog/Data_AI</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/data_ai/2023-07-04-Book-Data-Analysis-Guide/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/tips/2023-06-09-vm-linux-ubuntu/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/blog/Tips/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/it_trend/2023-06-06-ROS2-DDS-QoS/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/blog/IT_trend</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/it_trend/2023-06-05-ROS2-topic-service-action/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/it_trend/2023-06-05-ROS2-node-package/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/cs/2023-05-26-algorithm-BruteForce/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/blog/CS</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/data_ai/2023-04-23-DL-05-CNN-architecture/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/data_ai/2023-04-12-AI-9th-CoachingStudy/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/data_ai/2023-02-04-Cloud-Week1-part3/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/data_ai/2023-02-02-Cloud-Week1-part2/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/2/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/Projects/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
+  <loc>https://seul1230.github.io/projects/</loc>
+  <lastmod>2024-02-28T11:43:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://seul1230.github.io/blog/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
+  <lastmod>2024-02-28T11:43:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://seul1230.github.io/tips/</loc>
+  <lastmod>2024-02-28T11:43:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://seul1230.github.io/activities/</loc>
+  <lastmod>2024-02-28T11:43:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://seul1230.github.io/about/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
+  <lastmod>2024-02-28T11:43:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://seul1230.github.io/Data_AI/2022_likelion/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
+  <loc>https://seul1230.github.io/blog/project-XAI</loc>
+  <lastmod>2024-02-28T11:43:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://seul1230.github.io/data_ai/2023-02-02-Cloud-Week1-part1/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
+  <loc>https://seul1230.github.io/blog/project-shortest-path</loc>
+  <lastmod>2024-02-28T11:43:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://seul1230.github.io/data_ai/2023-01-02-topic-modeling-LDA/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
+  <loc>https://seul1230.github.io/blog/project-weather-tour</loc>
+  <lastmod>2024-02-28T11:43:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://seul1230.github.io/data_ai/2022-12-21-DL-techniques/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
+  <loc>https://seul1230.github.io/blog/ai-ocr-after-internship</loc>
+  <lastmod>2024-02-28T11:43:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://seul1230.github.io/data_ai/2022-12-20-NLP-model-LeakGAN/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
+  <loc>https://seul1230.github.io/blog/computer-science-summary</loc>
+  <lastmod>2024-02-28T11:43:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://seul1230.github.io/data_ai/2022-12-20-NLP-model-GAN/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
+  <loc>https://seul1230.github.io/blog/FinAI-form-club</loc>
+  <lastmod>2024-02-28T11:43:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://seul1230.github.io/data_ai/2022-11-01-matplotlib/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
+  <loc>https://seul1230.github.io/blog/Book-Data-Analysis-Guide</loc>
+  <lastmod>2024-02-28T11:43:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://seul1230.github.io/data_ai/2022-09-26-seaborn-study/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
+  <loc>https://seul1230.github.io/blog/vm-linux-ubuntu</loc>
+  <lastmod>2024-02-28T11:43:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://seul1230.github.io/tips/2022-11-17-%EC%95%99%EC%83%81%EB%B8%94%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
+  <loc>https://seul1230.github.io/blog/ROS2-DDS-QoS</loc>
+  <lastmod>2024-02-28T11:43:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://seul1230.github.io/tips/2022-11-14-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%ED%94%8C%EB%9E%AB%ED%8F%BC/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
+  <loc>https://seul1230.github.io/blog/ROS2-topic-service-action</loc>
+  <lastmod>2024-02-28T11:43:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://seul1230.github.io/tips/2022-10-03-%EB%84%A4%EC%9D%B4%EB%B2%84%EB%89%B4%EC%8A%A4%EA%B8%B0%EC%82%AC%EB%8C%93%EA%B8%80%EC%88%98%EC%A7%91/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
+  <loc>https://seul1230.github.io/blog/ROS2-node-package</loc>
+  <lastmod>2024-02-28T11:43:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://seul1230.github.io/backend/2023-01-24-frontend/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
+  <loc>https://seul1230.github.io/blog/algorithm-BruteForce</loc>
+  <lastmod>2024-02-28T11:43:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://seul1230.github.io/blog/BackEnd</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
+  <loc>https://seul1230.github.io/blog/DL-05-CNN-architecture</loc>
+  <lastmod>2024-02-28T11:43:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://seul1230.github.io/python_dataanalysis/2022-12-08-likelion-TIL/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
+  <loc>https://seul1230.github.io/blog/AI-9th-CoachingStudy</loc>
+  <lastmod>2024-02-28T11:43:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://seul1230.github.io/blog/2022_likelion/Python_DataAnalysis</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
+  <loc>https://seul1230.github.io/blog/topic-modeling-LDA</loc>
+  <lastmod>2024-02-28T11:43:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://seul1230.github.io/projects/2022-12-04-likelion-miniproject5/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
+  <loc>https://seul1230.github.io/blog/DL-techniques</loc>
+  <lastmod>2024-02-28T11:43:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://seul1230.github.io/python_dataanalysis/2022-11-28-likelion-TIL/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
+  <loc>https://seul1230.github.io/blog/NLP-model-LeakGAN</loc>
+  <lastmod>2024-02-28T11:43:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://seul1230.github.io/3/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
+  <loc>https://seul1230.github.io/blog/NLP-model-GAN</loc>
+  <lastmod>2024-02-28T11:43:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://seul1230.github.io/projects/2022-11-03-likelion-miniproject3/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
+  <loc>https://seul1230.github.io/blog/likelion-miniproject5</loc>
+  <lastmod>2024-02-28T11:43:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://seul1230.github.io/projects/2022-10-25-likelion-midproject/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
+  <loc>https://seul1230.github.io/blog/likelion-TIL3</loc>
+  <lastmod>2024-02-28T11:43:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://seul1230.github.io/projects/2022-10-10-project-XAI/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
+  <loc>https://seul1230.github.io/blog/likelion-TIL2</loc>
+  <lastmod>2024-02-28T11:43:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://seul1230.github.io/projects/2022-10-05-project-weather-tour/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
+  <loc>https://seul1230.github.io/blog/likelion-TIL1</loc>
+  <lastmod>2024-02-28T11:43:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://seul1230.github.io/projects/2022-10-04-project-shortest-path/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
+  <loc>https://seul1230.github.io/blog/%EC%95%99%EC%83%81%EB%B8%94%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90</loc>
+  <lastmod>2024-02-28T11:43:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://seul1230.github.io/python_dataanalysis/2022-11-23-likelion-TIL/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
+  <loc>https://seul1230.github.io/blog/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%ED%94%8C%EB%9E%AB%ED%8F%BC</loc>
+  <lastmod>2024-02-28T11:43:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seul1230.github.io/blog/likelion-miniproject3</loc>
+  <lastmod>2024-02-28T11:43:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seul1230.github.io/blog/matplotlib</loc>
+  <lastmod>2024-02-28T11:43:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seul1230.github.io/blog/stats-TIL</loc>
+  <lastmod>2024-02-28T11:43:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seul1230.github.io/blog/%EB%84%A4%EC%9D%B4%EB%B2%84%EB%89%B4%EC%8A%A4%EA%B8%B0%EC%82%AC%EB%8C%93%EA%B8%80%EC%88%98%EC%A7%91</loc>
+  <lastmod>2024-02-28T11:43:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seul1230.github.io/blog/tags</loc>
+  <lastmod>2024-02-28T11:43:26+00:00</lastmod>
   <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/speciallecture/2022-11-22-likelion-TIL3/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/speciallecture/2022-11-22-likelion-TIL2/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/speciallecture/2022-11-22-likelion-TIL1/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/speciallecture/2022-11-21-likelion-TIL3/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/speciallecture/2022-11-21-likelion-TIL2/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/speciallecture/2022-11-21-likelion-TIL1/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/python_dataanalysis/2022-11-17-likelion-TIL/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/python_dataanalysis/2022-11-10-likelion-TIL/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/python_dataanalysis/2022-11-03-likelion-TIL1/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/python_dataanalysis/2022-10-11-likelion-TIL/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/speciallecture/2022-10-07-stats-TIL/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/python_dataanalysis/2022-10-05-likelion-TIL3/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/python_dataanalysis/2022-10-05-likelion-TIL2/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/python_dataanalysis/2022-10-05-likelion-TIL1/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/python_dataanalysis/2022-10-04-likelion-TIL2/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/python_dataanalysis/2022-10-04-likelion-TIL1/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/backend/2022-09-29-backend/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/python_dataanalysis/2022-09-28-likelion-TIL2/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/python_dataanalysis/2022-09-28-likelion-TIL1/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/python_dataanalysis/2022-09-27-likelion-TIL2/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/python_dataanalysis/2022-09-27-likelion-TIL1/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/python_dataanalysis/2022-09-26-likelion-TIL2/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/python_dataanalysis/2022-09-26-likelion-TIL1/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/speciallecture/2022-09-23-likelion-SQL-TIL/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/python_dataanalysis/2022-09-22-likelion-2%EC%A3%BC%EC%B0%A8-TIL/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/4/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/5/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://seul1230.github.io/6/</loc>
-  <lastmod>2023-09-02T13:03:21+00:00</lastmod>
-  <priority>0.33</priority>
 </url>
 
 
