@@ -3,12 +3,17 @@
   to: 20214.02
   description: 지능기전공학부<br/>Intelligence Engineering
 
-- title: Intern, Advanced AI Lab<br/>Hana Financial Convergence Technology Institute
-  from: 2023.09
-  to: 2023.12
-  description: 하나금융 융합기술원<br/>Computer Vision >> AI-OCR project
-
 - title: Student, LIKELION AI School 7th
   from: 2022.09
   to: 2023.01
   description: 멋쟁이사자처럼 AI school 7th<br/>AI 기술을 활용하여 데이터로부터 인사이트를 개발하는 데이터 분석가
+
+- title: Intern, Advanced AI Lab,<br/>Hana Institue of Technology
+  from: 2023.09
+  to: 2023.12
+  description: 하나금융 융합기술원<br/>Computer Vision >> AI-OCR project
+
+- title: President, FinAI
+  from: 2023.07
+  to: present
+  description: 금융IT 동아리<br/>- 금융/경제뉴스 & 강화학습
