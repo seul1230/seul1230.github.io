@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Project | 2021 Hackathon Shortest Path using Q-routing"
-description: <strong>[ 프로젝트 ] 2021 Hackathon </strong> <br/>- 교내 건물들 간 최단거리 찾기<br/><br/><p align='center'><img src='/assets/img/2021_hackathon_img/real_map.png' width='80%'></p>
+description: <strong>[ 프로젝트 ] 2021 Hackathon </strong> <br/>- 교내 건물들 간 최단거리 찾기<br/><br/><p align='center'><img src='/assets/img/2021_hackathon_img/thumbnail.png' width='100%'></p>
 date:   2022-07-30 22:52:09 +0900
 style: border
 color: success
@@ -27,12 +27,12 @@ Naver나 Daum과 같은 기존의 지도앱은 최단 거리 및 다양한 경�
 <!-- ![univ](https://github.com/seul1230/2021_hackerton/blob/master/sejongUniv.png?raw=true){: width="31%"} ▶️
 ![](https://github.com/seul1230/2021_hackerton/blob/master/%EA%B1%B4%EB%AC%BC+%EC%9E%A5%EC%95%A0%EB%AC%BC+%EA%B8%B8%EB%85%B8%EB%93%9C.png?raw=true){:  width="31%"} ▶️
 ![](https://github.com/seul1230/2021_hackerton/blob/master/%EA%B1%B4%EB%AC%BC+%EA%B8%B8%EB%85%B8%EB%93%9C%20%EC%A7%81%EC%84%A0%20%EC%9D%B4%EC%9D%80%20%EA%B7%B8%EB%A6%BC.png?raw=true){: width="31%"} -->
-![maps](/assets/img/2021_hackathon_img/final_color_map.png){: .center width="70%"} <br/>
+
+<p align='center'><img src='/assets/img/2021_hackathon_img/final_color_map.png' width='70%'><figcaption>광개토관 - 학술정보원 - 진관홀 최적거리</figcaption></p>
 
 
 🔴 **빨간색 노드** : 건물 입구 <br/>
 🟢 **초록색 노드** : 코너
-
 <br/>
 
 
