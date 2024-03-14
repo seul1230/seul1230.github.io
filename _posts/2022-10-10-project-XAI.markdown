@@ -5,20 +5,29 @@ date:   2022-10-10 09:00:09 +0900
 categories: Projects
 style: fill
 color: success
-description: <strong>[ 프로젝트 ] 논문 구현 + 개선 </strong><br/> 설명 가능한 AI를 활용한 신용평가 모델
+description: <strong>[ 프로젝트 ] 논문 구현 + 개선 </strong><br/> 설명 가능한 AI를 활용한 신용평가 모델<br/><br/><p align='center'><img src='/assets/img/논문구현_XAI/credit_score_img.jpeg' width='100%'></p>
 tags: [Project, XAI, Finance, Paper]
 ---
 # [ 논문 구현 + 개선 ] 설명 가능한 AI 를 활용한 신용평가모델
 
+
+
 최근, **금융(Finance)**과 **IT 기술(technology)**을 결합한 서비스, **핀테크(FinTech)**가 주목을 받고 있다. 이런 뉴스를 접하면서 나도 자연스럽게 금융 쪽에 관심이 생기면서 관련 정보를 많이 찾아보게 되었다. 이번 포스트는 인공지능을 이용해 신용평가 모형에 대한 연구한 논문을 바탕으로 구현한 내용을 정리할 예정이다. 가장 높은 성능을 냈던 모델들을 가져와서 구현한다. 활용한 데이터셋은 조금 차이가 있어 보인다.
+
+<br/>
+<p align='center'><img src='/assets/img/논문구현_XAI/credit_score_img.jpeg' width='50%'></p><figcaption><a href='https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.nj.com%2Fpersonal-finance%2Farticle%2Fwhat-is-a-good-credit-score&psig=AOvVaw3boUKx87PhQ879E-NidtYP&ust=1710481306059000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCIC75MmF84QDFQAAAAAdAAAAABAD'>credit score</a></figcaption><br/>
 
 ## 🗂 Reference
 천예은, 김세빈, 이자윤, 우지환, _설명 가능한 AI 기술을 활용한 신용평가 모형에 대한 연구_, 한국데이터정보과학회지(2021). 
 
-## 📚 데이터셋
-**HELOC (Home Equity Line of Credit)** dataset <br/>
-출처 : [kaggle Home Equity Line of Credit(HELOC)](https://www.kaggle.com/datasets/averkiyoliabev/home-equity-line-of-creditheloc) 
+<br/>
 
+## 📚 데이터셋
+[kaggle Home Equity Line of Credit(HELOC)](https://www.kaggle.com/datasets/averkiyoliabev/home-equity-line-of-creditheloc) 
+
+Dataset은 10459개의 데이터로 이루어져있으며, y 라벨 중 5000개는 ‘Good’, 5459개는 ‘Bad’에 속한다. 이때 ‘Good’과 ‘Bad’는 각각 대출 가능과 대출 불가능을 나타낸다.
+
+<br/>
 
 * `ExternalRiskEstimate`- 위험 지표의 통합 지표(폴란드 BIK의 비율에 해당)
 * `MSinceOldestTradeOpen`- 최초 거래 이후 경과된 개월 수
@@ -42,10 +51,11 @@ tags: [Project, XAI, Finance, Paper]
 * `NumRevolvingTradesWBalance`- 잔액이 있는 회전 거래 수
 * `NumInstallTradesWBalance`- 잔액이 있는 할부 거래 횟수
 * `NumBank2NatlTradesWHighUtilization`- 이용률이 높은 거래 건수(신용 이용률 - 신용 한도 대비 신용카드 잔액)
-* PercentTradesWBalance- 잔액이 있는 거래의 비율
+* `PercentTradesWBalance`- 잔액이 있는 거래의 비율
+
+<br/>
 
 
-Dataset은 10459개의 데이터로 이루어져있으며, y 라벨 중 5000개는 ‘Good’, 5459개는 ‘Bad’에 속한다. 이때 ‘Good’과 ‘Bad’는 각각 대출 가능과 대출 불가능을 나타낸다.
 
 출처 : <https://pbiecek.github.io/xai_stories/story-heloc-credits.html>
 
@@ -211,7 +221,8 @@ sns.heatmap(data = df_diff.corr(), annot=True,
 shap.summary_plot(shap_values, X_train_n)
 ```
 
-![shap_summary](/assets/img/논문구현_XAI/shap_summary.png) <br/><br/>
+<img src='/assets/img/논문구현_XAI/shap_summary.png' width="70%" >
+<br/><br/>
 
 <br/><br/>
 
