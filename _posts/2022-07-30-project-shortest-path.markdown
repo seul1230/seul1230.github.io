@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "Project | 2021 Hackathon Shortest Path using Q-learning"
+title:  "Project | 2021 Hackathon Shortest Path using Q-routing"
 description: <strong>[ 프로젝트 ] 2021 Hackathon </strong> <br/>- 교내 건물들 간 최단거리 찾기<br/><br/><p align='center'><img src='/assets/img/2021_hackathon_img/real_map.png' width='80%'></p>
 date:   2022-07-30 22:52:09 +0900
 style: border
 color: success
 categories: Projects
-tags: [Project, Q-learning, Unsupervised, OpenCV]
+tags: [Project, Q-learning, Q-routing, Unsupervised, OpenCV]
 ---
-# [ Project ] 2021 Hackathon : Q-learning을 이용하여 교내 건물들 간 최단거리 찾기
+# [ Project ] 2021 Hackathon : Q-routing 이용하여 교내 건물들 간 최단거리 찾기
 
 ## Project
 교내 SW * AI 중심대학추진단 주관 2021 제10회 SW인공지능 해커톤
@@ -92,6 +92,11 @@ Q-Learning은 Model이 없이(Model-Free) 학습하는 강화학습의 한 방�
 
 즉, 사람이 생각하듯 출발지부터 어디로 갈지 선택해나가는것이 아니라, 최종 목표지점부터 거꾸로 계산해오며 최적의 길을 찾아낸다.
 
+<br/><br/>
+
+위의 Q-learning 을 적용한 Q-routing 기법을 적용했다고 생각하면 될 것 같다!
+
+> So I develop a algorithm using reinforcemenet learning in path finding problem. In reinforcemnt learning problem, we have action, rewards and states and discount rate. To solve traditional problem, we have Q-learning. Q-learning can be used to find an optimal action-selection policy for any given (finite) Markov decision process (MDP). Similarly, to solve best-path-finding problem, we have Q-rounting. <br/>The difference between Q-Learning and Q-Rounting is that, Q-Rounting doesn't have a discount rate, and for each state, it will choose the minimun furture cost instead of maximum future reward.
 
 <br/><br/><br/>
 
