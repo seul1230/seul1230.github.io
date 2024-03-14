@@ -2,13 +2,13 @@
 layout: post
 title:  "Project | 2021 Hackathon Shortest Path using Q-learning"
 description: <strong>[ 프로젝트 ] 2021 Hackathon </strong> <br/>- 교내 건물들 간 최단거리 찾기<br/><br/><p align='center'><img src='/assets/img/2021_hackathon_img/real_map.png' width='80%'></p>
-date:   2022-10-04 22:52:09 +0900
+date:   2022-07-30 22:52:09 +0900
 style: border
 color: success
 categories: Projects
 tags: [Project, Q-learning, Unsupervised, OpenCV]
 ---
-# [ Project ] 2021 Hackathon : 교내 건물들 간 최단거리 찾기
+# [ Project ] 2021 Hackathon : Q-learning을 이용하여 교내 건물들 간 최단거리 찾기
 
 ## Project
 교내 SW * AI 중심대학추진단 주관 2021 제10회 SW인공지능 해커톤
@@ -65,7 +65,7 @@ Q-Learning은 Model이 없이(Model-Free) 학습하는 강화학습의 한 방�
 
 
 #### 더 자세히
-![q_learning](https://user-images.githubusercontent.com/86948867/181782592-9743e629-7a5e-45e2-b731-54ccefe4366a.png){: .center width = "50%"}
+![q_learning](https://user-images.githubusercontent.com/86948867/181782592-9743e629-7a5e-45e2-b731-54ccefe4366a.png){: .center width = "30%"}
 
 이때, 강화학습은 State → Action에 따른 Reward가 주어지는 방식으로 진행된다.
 
@@ -91,7 +91,7 @@ Q-Learning은 Model이 없이(Model-Free) 학습하는 강화학습의 한 방�
 
 ---
 
-## 💻 구현 &nbsp;&nbsp;<font color='lightgray'>Implementation</font>
+## 💻 구현 &nbsp;&nbsp;<font color='lightgray'>Implementation</font><br/>
 
 ### 1. 교내 건물 및 모든 입구, 코너 약도 그리기
 우리는 직접 학교를 돌아다니며, 사람들이 통행할 수 있는 통로와 입구를 파악하였다. 이때 코로나 19로 인해 폐쇄된 입구는 해당 서비스를 이용하는 신입생들에게 혼란을 줄 수 있을 것이라 판단해 배제하고 그렸다. 
@@ -154,8 +154,8 @@ cv_imshow(dst2)
 ```
 위의 코드를 실행하면 아래와 같이 잘 검출되는 것을 볼 수 있다. <br/>
 
-![outline](/assets/img/2021_hackathon_img/outline.png){: width="47%"} 
-![red_green_node](/assets/img/2021_hackathon_img/red_green_node.png){: width="47%"}  <br/><br/>
+<div align='center'><img src='/assets/img/2021_hackathon_img/outline.png' width="37%"/><img src='/assets/img/2021_hackathon_img/red_green_node.png' width="37%"/></div>
+<br/><br/>
 
 ### 3. 출발 - 도착 - 두 노드 사이의 거리 정보 저장
 해커톤 대회 시간, 24시간이라는 짧은 시간 안에 Q-learning 코드를 직접 구현하는 것은 어렵다고 판단! <br/>
@@ -170,6 +170,7 @@ Q-learning은 [오픈 소스](https://github.com/shiluyuan/Reinforcement-Learnin
 
 이 부분에서 팀원들과 정말 많은 아이디어를 내고 고민했던 것 같다. 
 
+> 두 점을 이은 사진에서 외곽선의 개수를 추출하여 처음의 외곽선의 개수와 비교를 한다. 만일 두 점을 이은 사진에서의 외곽선의 개수가 더 많다면, 두 점을 이음으로써 보라색 도형이 쪼개져 외곽선의 갯수가 늘어나는 것이므로 해당 길은 사람이 지나갈 수 없는 길로 판단하고 정보에 담지 않았다.
 
 통행가능한 길을 하얀색 선으로 이미지에 나타내면, 다음과 같이 건물을 통과하는 선이 없는 것을 확인할 수 있다.
 

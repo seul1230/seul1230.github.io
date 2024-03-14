@@ -3,7 +3,9 @@
   font-size: 100%
 }
 
-
+image {
+  margin: 11px;
+}
 
 .header-link {
   position: relative;
