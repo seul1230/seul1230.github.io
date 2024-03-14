@@ -51,9 +51,15 @@ Naver나 Daum과 같은 기존의 지도앱은 최단 거리 및 다양한 경�
 
 ## 🗂 Reference
 
-Q-learning을 구현할 때는 [Open Source](https://github.com/shiluyuan/Reinforcement-Learning-in-Path-Finding)를 이용하였다.
+Q-learning을 구현할 때는 [Open Source](https://github.com/shiluyuan/Reinforcement-Learning-in-Path-Finding)를 참고하였다. 위 알고리즘은 두 지점 사이 가장 작은 cost를 반환해 주어, 최단 거리를 구하는 데 활용할 수 있다. 
 
-<br/><br/><br/>
+이는 소규모 네트워크를 사용한 예이고, 70K개의 node와 20K개의 edge가 있는 크고 복잡한 네트워크에서 시도했을 때, Q-learning 알고리즘은 여전히 ​​빠르며 몇 분 안에 깊이가 10인 모든 최단 경로를 찾을 수 있다고 하니 참고하자!
+
+<br/>
+
+> 전통적인 최단 경로 알고리즘에는 BFS(Breadth First Search), DFS(Depth First Search) 및 Dijkstra 알고리즘 정도가 있다. <br/>그러나 BFS와 DFS는 매우 느리고 크고 복잡한 그래프의 경우 그래프 트리가 점점 더 깊어짐에 따라 기하급수적인 시간이 걸린다. 내 경험에 따르면 70K개의 node와 200K개의 edge 그래프가 있을 때 BFS와 DFS는 5 depth를 검색하는 데 몇 시간이 걸린다. 따라서 최단 경로가 6 depth 이상이면 불가능하다는 한계가 존재한다.
+
+<br/><br/>
 
 ---
 ## 🧐 개념 설명 <br/>
