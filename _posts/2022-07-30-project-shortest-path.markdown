@@ -181,7 +181,7 @@ Q-learning은 [오픈 소스](https://github.com/shiluyuan/Reinforcement-Learnin
 
 이 부분에서 팀원들과 정말 많은 아이디어를 내고 고민했던 것 같다. 
 
-> 두 점을 이은 사진에서 외곽선의 개수를 추출하여 처음의 외곽선의 개수와 비교를 한다. 만일 두 점을 이은 사진에서의 외곽선의 개수가 더 많다면, 두 점을 이음으로써 보라색 도형이 쪼개져 외곽선의 갯수가 늘어나는 것이므로 해당 길은 사람이 지나갈 수 없는 길로 판단하고 정보에 담지 않았다.
+> 두 점을 이은 사진에서 외곽선의 개수를 추출하여 처음의 외곽선의 개수와 비교를 한다. 만일 두 점을 이은 사진에서의 외곽선의 개수가 더 많다면, 두 점을 이음으로써 보라색 도형이 쪼개져 외곽선의 갯수가 늘어나게 된다.<br/> 해당 길은 사람이 지나갈 수 없는 길로 판단하고 정보에 담지 않았다.
 
 통행가능한 길을 하얀색 선으로 이미지에 나타내면, 다음과 같이 건물을 통과하는 선이 없는 것을 확인할 수 있다.
 
@@ -245,6 +245,8 @@ for i in range(len(all_circle)):
     ret3, binary3 = cv2.threshold(gray3, 127, 255, cv2.THRESH_BINARY)
     binary3 = cv2.bitwise_not(binary3)
     contours3, hierarchy3 = cv2.findContours(binary3, cv2.RETR_CCOMP, cv2.CHAIN_APPROX_NONE)
+
+    # 사람이 다닐 수 없는 길이면 continue
     if(len(contours3)>len(contours)):
       continue
     else:
@@ -359,6 +361,14 @@ out.release()
 ### 최종 결과물
 
 ![](/assets/img/2021_hackathon_img/final_video.gif){: .center width="70%"}<br/><br/>
+
+### 추가 구현 및 Future Work
+
+중간에 경유지를 추가하는 경우의 최단거리도 구현할 수 있었다. 내가 아이패드로 그렸던 컬러 지도 이미지에 위에서 얻은 최단루트를 겹치게 되면 다음과 같은 이미지를 구할 수 있다. 
+
+<p align='center'><img src='/assets/img/2021_hackathon_img/final_color_map.png' width='70%'><figcaption>광개토관 - 학술정보원 - 진관홀 최단거리</figcaption></p>
+
+이를 추가로 더 응용시킨다면, N개의 건물들을 최단 거리로 방문할 수 있는 거리를 제안할 수 있겠다!
 
 ---
 
