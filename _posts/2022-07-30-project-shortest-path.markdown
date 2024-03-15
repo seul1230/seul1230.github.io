@@ -120,7 +120,6 @@ Q-Learning은 Model이 없이(Model-Free) 학습하는 강화학습의 한 방�
 ```python
 import cv2
 from google.colab.patches import cv_imshow
-2021_hackathon_img
 src = cv2.imread("/content/gdrive/MyDrive/AI-SW-HACK/only_purple_map.png") #원본 이미지
 #cv_imshow(src)
 dst = src.copy()
