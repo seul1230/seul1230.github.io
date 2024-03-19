@@ -1,8 +1,8 @@
 ### Site Settings ###
 title: 📍 sseul's blog
 description: >
-  sseul<br/> 
-  'AI ➕ Data Analysis'<br/><br/>🚀<br/>
+  👩🏻‍💻 sseul<br/> 
+  > AI + Data Analysis<br/><br/>🚀<br/>
   Wheresoever you go, <br/>
   go with all your heart.
 baseurl: "" # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
@@ -32,7 +32,7 @@ nav_exclude: # The following paths are excluded from navbar
 ### Author Info ###
 author:
   name: seul1230
-  image: assets/icons/main.png
+  image: assets/profile_img.png
   # behance           : your_username
   # dribbble          : your_username
   email: pink0569@naver.com
