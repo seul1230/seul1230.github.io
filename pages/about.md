@@ -7,7 +7,7 @@ weight: 5
 
 # **About Me**
 
-Hi I am **sseul** :wave:,<br>
+Hi, I am **sseul** :wave:<br>
 빅데이터/AI 개발자를 희망하고 있습니다. 
 
 <div class="row">
