@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Project | 2021 Hackathon Shortest Path using Q-routing"
+title:  "Project | Q-routing으로 건물들 간 최단 거리 구하기 | Shortest Path using Q-routing"
 description: <strong>[ 프로젝트 ] 2021 Hackathon </strong> <br/>- 교내 건물들 간 최단거리 찾기<br/><br/><p align='center'><img src='/assets/img/2021_hackathon_img/thumbnail.png' width='100%'></p>
 date:   2022-07-30 22:52:09 +0900
 style: border

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Project | Credit Rating XAI"
+title:  "Project | 설명 가능한 AI를 활용한 신용평가모델 | Credit Rating XAI"
 date:   2022-10-10 09:00:09 +0900
 categories: Projects
 style: fill
