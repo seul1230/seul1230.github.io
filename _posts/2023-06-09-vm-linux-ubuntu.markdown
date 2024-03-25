@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "가상머신 우분투에 무선 네트워크 연결하는 법 | Connect Wireless Network(wifi) on Ubuntu"
+title:  "가상머신 우분투에 무선 네트워크 인터넷 연결하는 법 | Connect Wireless Network(wifi) on Ubuntu"
 date:   2023-06-09 11:30:09 +0900
 color: "danger"
 style: fill
