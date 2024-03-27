@@ -63,6 +63,9 @@ collections:
     permalink: /projects/:name
   elements: # For Documentation Only
     output: true # For Documentation Only
+  coding:
+    output: true
+    permalink: /coding/:name
 
 ### Disqus ###
 disqus:
@@ -81,6 +84,12 @@ defaults:
       type: "projects"
     values:
       layout: "page"
+  - scope:
+      path: ""
+      type: "coding"
+    values:
+      comments: true # Set to true to enable disqus comments
+
   - scope:
       path: ""
       type: "posts"
