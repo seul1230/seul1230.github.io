@@ -4,7 +4,7 @@ title:  "완전탐색 | BOJ 백준 9079번 동전게임 | Python"
 description: <strong>🩶 Silver 2</strong><font color='gray'><br/>- 난이도 ★★☆☆<br/>- 완전탐색(BFS) & 비트마스킹</font>
 date:   2024-03-26 15:30:09 +0900
 categories: coding
-tags: [완전탐색]
+tags: [완전탐색, 비트마스킹]
 ---
 # BOJ 백준 9079번 동전게임
 
