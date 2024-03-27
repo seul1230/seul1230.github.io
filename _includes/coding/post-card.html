@@ -24,14 +24,18 @@ post.url | relative_url -%} {%- endif -%}
         <span class="badge {{ badge_style }}">{{ tag }}</span>
         {% endfor %}
       </p>
-      <p class="card-text">
+      <!-- <p class="card-text">
         {%- if post.description -%} {{ post.description }} {%- else -%} {{ post.content |
         truncatewords: 25, " <small><i> read more...</i></small>" }} {%- endif -%}
-      </p>
+      </p> -->
     </div>
     <div class="card-footer {{ text_style }}">
+      {%- if post.description -%} {{ post.description }} {%- else -%} {{ post.content |
+      truncatewords: 25, " <small><i> read more...</i></small>" }} {%- endif -%}
+    </div>
+    <!-- <div class="card-footer {{ text_style }}">
       ⏰ last_modified_at : {{ post.last_modified_at | date: '%d %b %Y' }} <br />⏰ created_at : {{
       post.date | date_to_long_string }}
-    </div>
+    </div> -->
   </a>
 </div>
