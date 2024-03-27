@@ -6,7 +6,7 @@ description: <strong>[ 프로젝트 ] 2021 전공심화 프로젝트 </strong> <
 style: border
 color: success
 categories: Projects
-tags: [AI, Android Studio]
+tags: [AI/ML/DL, Android Studio]
 ---
 # [ Project ] 2021 Weather Tour Application
 

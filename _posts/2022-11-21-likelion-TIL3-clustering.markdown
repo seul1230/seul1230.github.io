@@ -4,7 +4,7 @@ title:  "TIL | Clustering"
 date:   2022-11-21 17:00:10 +0900
 description: <strong>[ 공부 & 정리 ]</strong><br/>머신러닝 - 군집화 (Clustering)<br/><br/><p align='center'><img src='/assets/img/img_221121/clustering.png' width='80%'></p>
 categories: SpecialLecture
-tags: [TIL]
+tags: [TIL, AI/ML/DL]
 ---
 # [ AI / ML ] 머신러닝 - 군집화 (Clustering)
 #### 👩🏻‍💻 K-MOOC 실습으로 배우는 머신러닝 강의

@@ -6,7 +6,7 @@ date:   2022-07-30 22:52:09 +0900
 style: border
 color: success
 categories: Projects
-tags: [Project, Q-learning, Q-routing, Unsupervised, OpenCV]
+tags: [Project, Q-learning, Unsupervised, OpenCV]
 ---
 # [ Project ] 2021 Hackathon : Q-routing 이용하여 교내 건물들 간 최단거리 찾기
 

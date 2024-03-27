@@ -6,7 +6,7 @@ date:   2022-12-04 15:00:09 +0900
 categories: Projects
 style: border
 color: success
-tags: [likelion, AI]
+tags: [likelion, AI/ML/DL]
 ---
 # [ MiniProject V ] 청경채 성장 예측 AI 경진대회
 

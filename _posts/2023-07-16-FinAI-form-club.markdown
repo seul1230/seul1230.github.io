@@ -6,7 +6,7 @@ categories: activities
 date:  2023-07-16 15:00:10 +0900
 style: fill
 color: warning
-tags: [Finance, AI, Club]
+tags: [Finance, AI/ML/DL, Activities]
 ---
 # [ 금융IT동아리 FinAI ] 동아리를 만들자! 
 

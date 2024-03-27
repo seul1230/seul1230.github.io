@@ -1,6 +1,6 @@
-<!-- Collect tags from all posts -->
+<!-- Collect tags from all coding -->
 {%- assign tags = blank -%}
-{%- for post in site.codings -%}
+{%- for post in site.coding -%}
   {%- assign post_tags = post.tags | join:'|' | append:'|' -%}
   {%- if post_tags != '|' -%}
     {%- assign tags = tags | append:post_tags -%}
@@ -8,7 +8,7 @@
 {%- endfor -%}
 {%- assign tags = tags | split:'|' | uniq | sort -%}
 
-<!-- List tags & related posts -->
+<!-- List tags & related coding -->
 {% for tag in tags %}
 <div class="py-3">
   <h4 id="{{ tag | slugify }}">{{ tag }}</h4>

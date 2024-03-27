@@ -6,7 +6,7 @@ description: <strong>[ 공부 & 정리 ]</strong><br/>ROS 기초 II (Topic, Serv
 style: border
 color: info
 # categories: IT_trend
-tags: [ROS2, topic, service, action]
+tags: [ROS2]
 ---
 # [ ROS2 ] ROS 기초 II (Topic, Service, Action)
 

@@ -3,7 +3,7 @@ layout: post
 title:  "TIL | NN Basic"
 date:   2022-11-22 16:00:09 +0900
 description: <strong>[ 공부 & 정리 ] </strong> <br/> Neural Networks Basic<br/>- Basic Structure<br/>- Multi-layered Structure
-tags: [AI, ML, DL]
+tags: [AI/ML/DL]
 ---
 # [ AI / ML / DL ] Neural Networks Basic - Basic Structure, Multi-layered Structure
 #### 👩🏻‍💻 K-MOOC 실습으로 배우는 머신러닝 강의

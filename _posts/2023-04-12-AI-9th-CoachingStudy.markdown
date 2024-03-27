@@ -6,7 +6,7 @@ date:   2023-04-12 09:50:09 +0900
 categories: Tips
 style: border
 color: danger
-tags: [AI, Study, Team]
+tags: [AI/ML/DL, Study]
 ---
 # [ AI ] 네이버부스트코스 코칭스터디 9기 <AI Basic 2023> 가벼운 후기
 

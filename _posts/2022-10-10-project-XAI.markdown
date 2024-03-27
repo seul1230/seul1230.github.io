@@ -6,7 +6,7 @@ categories: Projects
 style: fill
 color: success
 description: <strong>[ 프로젝트 ] 논문 구현 + 개선 </strong><br/> 설명 가능한 AI를 활용한 신용평가 모델<br/><br/><p align='center'><img src='/assets/img/논문구현_XAI/credit_score_img.jpeg' width='100%'></p>
-tags: [Project, XAI, Finance, Paper]
+tags: [Project, XAI, Finance, AI/ML/DL]
 ---
 # [ 논문 구현 + 개선 ] 설명 가능한 AI 를 활용한 신용평가모델
 

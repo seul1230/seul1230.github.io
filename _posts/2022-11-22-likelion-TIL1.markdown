@@ -4,7 +4,7 @@ title:  "TIL | Clustering Code"
 date:   2022-11-22 09:00:09 +0900
 description: <strong>[ 공부 & 정리 ] </strong> <br/> 군집화 (Clustering) 실습<br/><br/><p align='center'><img src='https://seul1230.github.io/assets/img/img_221121/kmeans_works.gif' width='80%'></p>
 # categories: SpecialLecture
-tags: [TIL]
+tags: [TIL, AI/ML/DL]
 ---
 # [ AI / ML ] 머신러닝 - 군집화 (Clustering) 실습
 #### 👩🏻‍💻 K-MOOC 실습으로 배우는 머신러닝 강의

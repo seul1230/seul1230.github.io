@@ -6,7 +6,7 @@ categories: Tips
 style: border
 color: danger
 description: sklearn 트리 앙상블 모델 4가지
-tags: [sklearn, Tree, Ensemble]
+tags: [AI/ML/DL]
 ---
 # [ ML ] sklearn 트리 앙상블 모델 4가지
 

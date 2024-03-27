@@ -4,7 +4,7 @@ title:  "TIL | GAN - NLP Text Generation Model"
 description: GAN - Generative Adversarial Nets
 date:   2022-12-21 03:30:09 +0900
 categories: Data_AI
-tags: [TIL, GAN, NLP]
+tags: [TIL, NLP]
 ---
 # [ NLP ] GAN : Generative Adversarial Nets
 

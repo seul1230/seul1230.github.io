@@ -6,7 +6,7 @@ description: <strong>[ 공부 & 정리 ]</strong><br/>ROS 기초 I (Node, Packag
 style: border
 color: info
 # categories: IT_trend
-tags: [ROS2, node, package]
+tags: [ROS2]
 ---
 # [ ROS2 ] ROS 기초 I (Node, Package)
 

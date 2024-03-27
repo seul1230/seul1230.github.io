@@ -6,7 +6,7 @@ description : <strong>[ 공부 & 정리 ]</strong><br/>고급 합성곱 신경�
 categories: Data_AI
 # style: border
 # color: danger
-tags: [DL, CNN]
+tags: [AI/ML/DL, CNN]
 ---
 # [ DL ] 고급 합성곱 신경망 구조
 

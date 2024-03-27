@@ -6,7 +6,7 @@ categories: Tips
 style: border
 color: danger
 description: <strong>[ 공부 & 정리 ]</strong><br/>클라우드 머신러닝 플랫폼 선택 기준 12가지
-tags: [Cloud, ML]
+tags: [Cloud, AI/ML/DL]
 ---
 # 클라우드 머신러닝 플랫폼 선택 기준 12가지
 

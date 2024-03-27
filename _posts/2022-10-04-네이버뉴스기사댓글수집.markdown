@@ -7,7 +7,7 @@ date:   2022-10-04 00:00:09 +0900
 categories: Tips
 style: border
 color: danger
-tags: [Web Scraping, News, Comments, Crawling]
+tags: [HowTo, Web Scraping & Crawling]
 ---
 # 웹 스크래핑 - 네이버 뉴스 기사 댓글 수집하기
 

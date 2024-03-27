@@ -6,7 +6,7 @@ description: <strong>[ 공부 & 정리 ]</strong><br/>ROS 기초 III (DDS와 QoS
 style: border
 color: info
 # categories: IT_trend
-tags: [ROS2, dds, qos]
+tags: [ROS2]
 ---
 # [ ROS2 ] ROS 기초 III (DDS와 QoS)
 

@@ -4,7 +4,7 @@ title:  "TIL | Logistic Regression"
 date:   2022-11-22 13:00:09 +0900
 description: <strong>[ 공부 & 정리 ]</strong><br/>  Logistic Regression (로지스틱 회귀)
 # categories: SpecialLecture
-tags: [TIL]
+tags: [TIL, AI/ML/DL]
 ---
 # [ AI / ML ] 로지스틱 회귀
 #### 👩🏻‍💻 K-MOOC 실습으로 배우는 머신러닝 강의
