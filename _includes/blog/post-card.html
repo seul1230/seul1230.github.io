@@ -37,7 +37,8 @@ post.url | relative_url -%} {%- endif -%}
       </p>
     </div>
     <div class="card-footer {{ text_style }}">
-      ⏰ last_modified_at : {{ post.last_modified_at | date: '%d %b %Y' }} <br />⏰ created_at : {{
+      ⏰ last_modified_at : {{ post.last_modified_at | date: '%d %b %Y' }} <br />
+      ⏰ created_at : {{
       post.date | date_to_long_string }}
     </div>
   </a>
