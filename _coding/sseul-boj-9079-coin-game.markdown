@@ -30,6 +30,9 @@ C언어 수업에서 동전 뒤집기 문제를 했던 기억이 나서 반가�
 
 > ✅ 10진수가 <code>0</code> 이거나 <code>511</code> 이면 반복문 종료!
 
+<br/>
+
+
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7280083909521856"
      crossorigin="anonymous"></script>
 <ins class="adsbygoogle"
@@ -41,6 +44,8 @@ C언어 수업에서 동전 뒤집기 문제를 했던 기억이 나서 반가�
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+
+<br/>
 
 ## 내 코드
 
