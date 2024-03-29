@@ -204,22 +204,22 @@ Transformer는 자연어 뿐만 아니라 OCR recognition에도 아주 유능한
 
 <br/>
 
-- **Transformer 이용한 OCR 참고할만 한 논문**
+<!-- - **Transformer 이용한 OCR 참고할만 한 논문**
   - [A Simple and Robust Convolutional-Attention Network for Irregular Text Recognition](https://arxiv.org/pdf/1904.01375v1.pdf)
-  - [>> 논문 리뷰](https://hulk89.github.io/machine%20learning/2019/05/15/A-Simple-and-Robust-Convolutional-Attention-Network-For-Irregular-Text-Recognition/)
+  - [>> 논문 리뷰](https://hulk89.github.io/machine%20learning/2019/05/15/A-Simple-and-Robust-Convolutional-Attention-Network-For-Irregular-Text-Recognition/) -->
 
 <br/>
 
 
 #### 4.3. Text Recognition - 그 외
 
-- **CNN과 RNN의 만남 CRNN**
+- **CNN과 RNN의 만남, CRNN**
   - [An End-to-End Trainable Neural Network for Image-based Sequence Recognition and Its Application to Scene Text Recognition](https://arxiv.org/pdf/1507.05717.pdf)
     - CNN 기반의 Feature Extractor + RNN 기반의 Recognition (LSTM)
 
 <br/>
 
-- **불규칙한 방향이나 휘어진 진행 방향 글자 OCR**
+- **불규칙한 방향이나 휘어진 글자의 경우**
   - [Robust Scene Text Recognition With Automatic Rectification](https://arxiv.org/pdf/1603.03915.pdf)
     - TPS : Thin Plate Spline Transformation
 
@@ -228,8 +228,10 @@ Transformer는 자연어 뿐만 아니라 OCR recognition에도 아주 유능한
 #### 4.4. Text Recognition - 개선 가능 방안
 
 
-- <code>Self attention</code> : global feature extraction
-- <code>Convolution module</code> : local feature extraction
+- 📍 <code>Self attention</code> : global feature extraction
+- 📍 <code>Convolution module</code> : local feature extraction
+
+<br/>
 
 입력 이미지와 모든 픽셀을 참조하게 되는 global attention으로, Local 특징에 조금 더 집중하는 convolution과 차이가 존재한다. 그래서 local 특징에도 집중하기 위해 convolution layer를 포함한 모듈을 추가하여 개선시킬 수 있을 것이다. 
 
@@ -241,21 +243,17 @@ Transformer는 자연어 뿐만 아니라 OCR recognition에도 아주 유능한
 
 - **오픈 데이터**
   - OCR 논문 연구 용도
-    - OCR 연구 논문 위주 사용되는 합성 데이터
+    - <font color='gray'>OCR 연구 논문 위주 사용되는 합성 데이터</font>
   - ICDAR (Challenge)
-    - 다양한 종류의 태스크
-    - 태스크별 접근 가능한 데이터
+    - <font color='gray'>다양한 종류의 태스크</font>
+    - <font color='gray'>태스크별 접근 가능한 데이터</font>
   - AI Hub - 한국어 글자체 이미지
 <br/><br/>
 
 - **합성 데이터**
-  - 배경 이미지
-  - 다양한 노이즈
-  - 폰트
-  - 단어 사전
-  - 휘어짐 등
+  - 배경 이미지, 다양한 노이즈, 폰트, 단어 사전, 휘어짐 등
 
-작성중...
+<br/>
 
 ### Reference
 

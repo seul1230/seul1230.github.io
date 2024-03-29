@@ -41,13 +41,18 @@
   h6 {
     margin-top: 20px;
     font-weight: bold;
-    padding-left: 10px;
-    padding: 5px 5px 5px 10px;
-    font-size: 120%;
+    // padding-left: 10px;
+    // padding: 5px 5px 5px 10px;
+    font-size: 110%;
   }
 
   hr {
     background: $secondary;
+  }
+
+  ul {
+    list-style: disc;
+    padding-left: 12px;
   }
 
   img:not(.emoji) {
@@ -124,7 +129,7 @@
 
   ul.task-list {
     list-style: none;
-    padding-left: 24px;
+    padding-left: 12px;
   }
 
   input.task-list-item-checkbox {
