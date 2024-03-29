@@ -1,3 +1,5 @@
+
+
 .markdown-body {
   h1,
   h2 {
@@ -50,10 +52,17 @@
     background: $secondary;
   }
 
+  .toc {
+    ul {
+      list-style: none;
+    }
+  }
+
   ul {
     list-style: disc;
     padding-left: 12px;
   }
+
 
   img:not(.emoji) {
     display: block;
