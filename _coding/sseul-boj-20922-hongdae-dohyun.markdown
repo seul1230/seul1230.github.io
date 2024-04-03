@@ -4,7 +4,7 @@ title:  "완전탐색 | BOJ 백준 20922번 겹치는 건 싫어 | Python"
 description: <strong>🩶 Silver 1</strong><font color='gray'><br/>- 난이도 ★☆☆☆<br/>- 투포인터</font>
 date:   2024-04-02 14:30:09 +0900
 categories: coding
-tags: [투포인터]
+tags: [투포인터, 실버1]
 ---
 # BOJ 백준 20922번 겹치는 건 싫어
 

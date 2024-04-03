@@ -1,22 +1,23 @@
 ---
 layout: post
-title:  "TIL | daily price EDA"
+title:  "TIL | FinanceDataReader를 통한 여러 종목 daily price 비교"
+description: <strong>[ 공부 & 정리 ]</strong><br/>FinanceDataReader로 여러 종목 daily price plotly로 비교하기
 date:   2022-10-05 12:00:09 +0900
 categories: Python_DataAnalysis
 tags: [TIL]
-published: false
+# published: false
 ---
-# [ 1005 ] FinanceDataReader를 통한 여러 종목 daily price plotly로 비교
+# TIL | FinanceDataReader를 통한 여러 종목 daily price plotly로 비교
 
-#### 👩🏻‍💻 오늘코드 실시간 강의 _ 박조은님
-이전 게시물 [**[ 1005 ] FinanceDataReader를 통한 여러 종목 수익률 비교**](https://seul1230.github.io/2022_likelion/2022-10-05-likelion-TIL2/)과 이어지는 내용이다.
+FinanceDataReader 라이브러리를 이용해 주식 데이터를 실시간으로 가져올 수 있다. 
+
+이전 게시물 [**FinanceDataReader를 통한 여러 종목 수익률 비교**](https://seul1230.github.io/blog/financedatareader-profitloss-compare/)과 이어지는 내용이다.
 
 
 <br/>
 
-***
 
-## 📑 이론 및 개념 📑
+## 📑 이론 및 개념
 
 #### Python 데이터 시각화 도구
 
@@ -76,7 +77,7 @@ published: false
 
 ## 💻 실습 예제 코드
 
-### 1. 필요한 라이브러리 로드
+#### 1. 필요한 라이브러리 로드
 
 ```python
 # plotly 최신버전을 사용해 주세요. 최신버전이 아닐 때 동작하지 않을 수 있습니다.
@@ -87,7 +88,7 @@ published: false
 import plotly.express as px
 ```
 
-### 2. plotly 예제 따라하기
+#### 2. plotly 예제 따라하기
 
 [참고 : Time Series and Date Axes in Python](https://plotly.com/python/time-series/)
 
@@ -97,7 +98,7 @@ df = px.data.stocks()
 ```
 ![](/assets/img/img_221005/data_stocks.png){: .center width="60%"}<br/><br/>
 
-### 3. 일별 수익률 선그래프 그리기
+#### 3. 일별 수익률 선그래프 그리기
 
 ```python
 px.line(df, x = "date", y = "GOOG", title = "일별 시세")
@@ -112,16 +113,25 @@ df.set_index("date").plot()
 ![](/assets/img/img_221005/date_plot.png){: .center width="50%"}<br/><br/>
 
 ```python
+# 1. line chart
+_ = df.set_index("date").plot(kind = "line", subplots = True)
+# 2. area chart
 _ = df.set_index("date").plot(kind = "area", subplots = True)
 ```
-![](/assets/img/img_221005/date_subplots_area.png){: .center width="50%"}<br/><br/>
+그래프는 아래 그림의 양옆을 누르면 두 코드 결과 모두 확인할 수 있다.
+
+{% capture carousel_images %}
+/assets/img/img_221005/date_plot_line.png
+/assets/img/img_221005/date_subplots_area.png
+{% endcapture %}
+{% include elements/carousel.html %}
 
 ```python
 px.line(df.set_index("date"))
 ```
-![](/assets/img/img_221005/date_subplots_line_px.png){: .center width="50%"}<br/><br/>
+![](/assets/img/img_221005/date_subplots_line_px.png){: .center width="90%"}<br/><br/>
 
-### 4. 일별 수익률 막대그래프 그리기
+#### 4. 일별 수익률 막대그래프 그리기
 
 ```python
 df_1 = df.set_index("date") - 1
@@ -131,9 +141,9 @@ df_1 = df.set_index("date") - 1
 ```python
 px.bar(df_1["GOOG"])
 ```
-![](/assets/img/img_221005/date_profits_GOOG.png){: .center width="50%"}<br/><br/>
+![](/assets/img/img_221005/date_profits_GOOG.png){: .center width="90%"}<br/><br/>
 
-### 5. facet_col을 이용한 서브플롯 그리기
+#### 5. facet_col을 이용한 서브플롯 그리기
 
 ```python
 df_1.columns.name = "company"
@@ -148,27 +158,27 @@ Index(['GOOG', 'AAPL', 'AMZN', 'FB', 'NFLX', 'MSFT'], dtype='object', name='comp
 # facet_col 을 통해 서브플롯을 그릴 수 있습니다.
 px.area(df_1, facet_col = "company", facet_col_wrap = 2)
 ```
-![](/assets/img/img_221005/profits_facetcol_company.png){: .center width="50%"}<br/><br/>
+![](/assets/img/img_221005/profits_facetcol_company.png){: .center width="90%"}<br/><br/>
 
-### 6. 여러 종목을 하나의 그래프로 표현하기
+#### 6. 여러 종목을 하나의 그래프로 표현하기
 
 ```python
 # px.line 으로 전체 데이터의 수익률을 구합니다.
 # hover_data={"date": "|%Y-%m-%d"} 로 시간을 표현할 수 있습니다.
 px.line(df, hover_data={"date": "|%Y-%m-%d"})
 ```
-![](/assets/img/img_221005/profits_hover.png){: .center width="50%"}<br/><br/>
+![](/assets/img/img_221005/profits_hover.png){: .center width="90%"}<br/><br/>
 
-### 7. Range Slider와 함께 시계열 그래프 그리기
+#### 7. Range Slider와 함께 시계열 그래프 그리기
 
 ```python
 fig = px.line(df_1["GOOG"])
 fig.update_xaxes(rangeslider_visible=True)
 fig.show()
 ```
-![](/assets/img/img_221005/profits_rangeslider.png){: .center width="50%"}<br/><br/>
+![](/assets/img/img_221005/profits_rangeslider.png){: .center width="90%"}<br/><br/>
 
-### 8. Candle Chart 그리기
+#### 8. Candle Chart 그리기
 
 [참고 : Candlestick Charts in Python](https://plotly.com/python/candlestick-charts/)
 
@@ -190,14 +200,16 @@ fig = go.Figure(data=[go.Candlestick(x=df['Date'],
 
 fig.show()
 ```
-![](/assets/img/img_221005/go_candlestick.png){: .center width="50%"}<br/><br/>
+![](/assets/img/img_221005/go_candlestick.png){: .center width="90%"}<br/><br/>
 
 
-### 8. OHLC 차트 <font color = "lightgray">Open-High-Low-Close</font>
+#### 8. OHLC 차트 <font color = "lightgray">Open-High-Low-Close</font>
 
 [참고 : OHLC Charts in Python](https://plotly.com/python/ohlc-charts/)
 
-![](/assets/img/img_221005/ohlc_chart_def.png){: .center width="50%"}<br/><br/>
+<p align='center'><img src='/assets/img/img_221005/ohlc_chart_def.png' width="70%">
+<figcaption> 일반적인 OHLC 차트 그래프 </figcaption></p>
+
 
 ```python
 # go.Ohlc를 그립니다.
@@ -210,9 +222,9 @@ fig = go.Figure(data=[go.Ohlc(x=df['Date'],
 fig.show()
 ```
 
-![](/assets/img/img_221005/go_ohlc.png){: .center width="50%"}<br/><br/>
+![](/assets/img/img_221005/go_ohlc.png){: .center width="90%"}<br/><br/>
 
-### 9. Candlestick without RangeSlider
+#### 9. Candlestick without RangeSlider
 ```python
 fig = go.Figure(data=[go.Candlestick(x=df['Date'],
                 open=df['AAPL.Open'],
@@ -222,11 +234,11 @@ fig = go.Figure(data=[go.Candlestick(x=df['Date'],
 
 fig.update_layout(xaxis_rangeslider_visible=False)
 ```
-![](/assets/img/img_221005/candle_wo_rangeslider.png){: .center width="50%"}<br/><br/>
+![](/assets/img/img_221005/candle_wo_rangeslider.png){: .center width="90%"}<br/><br/>
 
-### 10. 직접 수집한 주가 데이터로 시각화 해보기
+#### 10. 직접 수집한 주가 데이터로 시각화 해보기
 
-#### 데이터 불러오기
+##### - 데이터 불러오기
 ```python
 # FinanceDataReader의 DataReader는 미국 주식의 경우 종목코드대신 티커(Ticker)를 사용합니다.
 # 티커는 약자와 비슷합니다.(마이크로소프트:MSFT, 스타벅스:SBUX 등)
@@ -236,7 +248,7 @@ amd
 
 ![](/assets/img/img_221005/amd_df.png){: .center width="50%"}<br/><br/>
 
-#### 선그래프 그리기
+##### - 선그래프 그리기
 ```python
 px.line(amd, y = "Close", title = "Advanced Micro Devices 일별 종가")
 px.line(amd.iloc[:,:4], title = "Advanced Micro Devices 일별 종가")
