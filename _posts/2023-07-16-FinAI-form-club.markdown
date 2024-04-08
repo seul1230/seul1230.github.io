@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Club | Finance IT 동아리 FinAI"
+title:  "Club | Finance IT 동아리 FinAI를 만들자!"
 description: 금융IT동아리 FinAI를 만들자!<br/><br/><img src='/assets/img/FinAI/home.png' width='100%'>
 categories: activities
 date:  2023-07-16 15:00:10 +0900
