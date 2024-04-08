@@ -276,15 +276,15 @@ for ID in range(1,439):
         if want_day not in data.loc[i,'tm']:
                 List.append(i)
     data = data.drop(List,axis = 0)
-    #print(data.head())
     x_test = x_test.append(data,ignore_index=True)
-    #print(x_test.head())
 x_test = x_test.drop_duplicates(['spotName'], keep='first')
 ```
 
 <br/>
 
 **[ Client ]**
+
+이전 랩탑에 있는 코드는 추후 작성하여 업로드하도록 하겠다.
 
 ```python
 
