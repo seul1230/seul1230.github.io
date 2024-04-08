@@ -1,12 +1,12 @@
 ---
 layout: post
 tags: [Computer Science]
-title:  "Summary | CS"
+title:  "Summary | 컴퓨터 구조 & 자료구조 | Computer Architecture & Data Structure"
 date:   2023-11-04 12:00:09 +0900
 description: <strong>[ 공부 & 정리 ]</strong><br/>Computer Architecture & Data Structure
 categories: CS
 ---
-# [ CS ] 개념 Summary
+# [ CS ] 컴퓨터 구조 & 자료구조 개념 Summary
 
 CS 개념을 공부하고 다음에 볼 수 있도록 한 페이지에 정리해나가고자 한다. 참고한 페이지들은 밑에 첨부하였다. 가장 많이 도움이 되었던 건 gyoogle님의 신입 개발자 전공지식 & 기술 면접 백과사전! 더 자세한 내용을 공부하고 싶다면 아래 참고한 페이지를 보자!
 

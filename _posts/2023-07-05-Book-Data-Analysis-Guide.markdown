@@ -1,8 +1,8 @@
 ---
 layout: post
 tags: [Data Analysis, Activities]
-title:  "Book | DA Guide E-Book <데이터 분석, 한 권에 입문하기> 집필 후기"
-description: <strong>[ 후기 ]</strong> 나도 이제 작가! <br/><데이터 분석, 한 권에 입문하기> 집필 참여 후기<br/><br/><img src='/assets/img/book_data_ai/book.png' width='100%'>
+title:  "Book | <데이터 분석, 한 권에 입문하기> 집필 후기 | DA Guide E-Book"
+description: <strong>[ 후기 ]</strong> 👩‍🎨 나도 이제 작가! <br/><데이터 분석, 한 권에 입문하기> 집필 참여 후기<br/><br/><img src='/assets/img/book_data_ai/book.png' width='100%'>
 date:   2023-07-05 01:00:09 +0900
 categories: activities
 style: border

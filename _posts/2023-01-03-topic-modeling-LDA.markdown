@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "TIL | LDA - NLP Topic Modeling"
+title:  "TIL | LDA란? - NLP Topic Modeling"
 description: <strong>[ 공부 & 정리 ]</strong><br/>Topic Modeling - LDA , 잠재 디리클레 할당
 date:   2023-01-03 03:50:09 +0900
 categories: Data_AI
