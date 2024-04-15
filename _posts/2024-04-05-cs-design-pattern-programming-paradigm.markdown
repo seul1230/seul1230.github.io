@@ -3,7 +3,7 @@ layout: post
 tags: [Computer Science]
 title:  "Summary | 디자인 패턴 & 프로그래밍 패러다임 | Design Pattern & Programming Paradigm"
 date:   2024-04-05 12:00:09 +0900
-description: <strong>[ 공부 & 정리 ]</strong><br/>Design Pattern & Programming Paradigm
+description: <strong>[ 공부 & 정리 ]</strong><br/>디자인 패턴 & 프로그래밍 패러다임<br/>Design Pattern & Programming Paradigm
 categories: CS
 ---
 # [ CS ] 디자인 패턴 & 프로그래밍 패러다임 개념 Summary
