@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "TIL | Clustering Code"
+title:  "TIL | Clustering Code | <br/>군집화 실습 코드"
 date:   2022-11-22 09:00:09 +0900
 description: <strong>[ 공부 & 정리 ] </strong> <br/> 군집화 (Clustering) 실습<br/><br/><p align='center'><img src='https://seul1230.github.io/assets/img/img_221121/kmeans_works.gif' width='80%'></p>
 # categories: SpecialLecture

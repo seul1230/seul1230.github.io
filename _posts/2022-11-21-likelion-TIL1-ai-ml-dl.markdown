@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "TIL | AI - ML - DL"
+title:  "TIL | AI - ML - DL | <br/>인공지능, 머신러닝, 딥러닝"
 date:   2022-11-21 09:00:09 +0900
 categories: SpecialLecture
 description: <strong>[ 공부 & 정리 ]</strong><br/>인공지능과 머신러닝, 그리고 딥러닝<br/><br/>

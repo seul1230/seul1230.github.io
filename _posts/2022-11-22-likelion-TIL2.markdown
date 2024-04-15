@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "TIL | Logistic Regression"
+title:  "TIL | Logistic Regression | <br/>로지스틱 회귀란?"
 date:   2022-11-22 13:00:09 +0900
 description: <strong>[ 공부 & 정리 ]</strong><br/>  Logistic Regression (로지스틱 회귀)
 # categories: SpecialLecture

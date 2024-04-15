@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Mini Project III | likelion"
+title:  "Mini Project III | likelion | <br/>🦁 월간 데이콘 신용카드 사용자 연체 예측 AI 경진대회"
 date:   2022-11-03 15:00:09 +0900
 categories: Project
 style: border

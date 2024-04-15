@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Summary | ROS2 III (DDS, QoS)"
+title:  "Summary | ROS2 III |<br/> DDS, QoS란?"
 date:   2023-06-06 11:30:09 +0900
 description: <strong>[ 공부 & 정리 ]</strong><br/>ROS 기초 III (DDS와 QoS)
 style: border

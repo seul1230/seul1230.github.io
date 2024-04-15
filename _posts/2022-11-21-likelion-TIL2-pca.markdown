@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "TIL | PCA"
+title:  "TIL | PCA (Principal Component Analysis) 란?"
 date:   2022-11-21 13:00:09 +0900
 categories: SpecialLecture
 description: <strong>[ 공부 & 정리 ]</strong><br/>머신러닝 - PCA (Principal Component Analysis)

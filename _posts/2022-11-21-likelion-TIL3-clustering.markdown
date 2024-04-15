@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "TIL | Clustering"
+title:  "TIL | Clustering이란?"
 date:   2022-11-21 17:00:10 +0900
 description: <strong>[ 공부 & 정리 ]</strong><br/>머신러닝 - 군집화 (Clustering)<br/><br/><p align='center'><img src='/assets/img/img_221121/clustering.png' width='80%'></p>
 categories: SpecialLecture

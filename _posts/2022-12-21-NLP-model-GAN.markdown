@@ -4,7 +4,7 @@ title:  "TIL | GAN - NLP Text Generation Model"
 description: GAN - Generative Adversarial Nets
 date:   2022-12-21 03:30:09 +0900
 categories: Data_AI
-tags: [TIL, NLP]
+tags: [TIL, NLP, AI/ML/DL]
 ---
 # [ NLP ] GAN : Generative Adversarial Nets
 
@@ -12,7 +12,7 @@ tags: [TIL, NLP]
 
 본 포스트에서는 문장 생성 모델에 관한 프로젝트를 진행하기 위해 공부한 내용을 정리하였다. GAN에 대해 알아보자. 
 
-### Generative Model 의 목표
+## Generative Model 의 목표
 <p align='center'>
 <img src='/assets/img/data_ai_img/GAN_goal.png' width="90%">
 </p>
@@ -57,7 +57,7 @@ Generative Adversarial Networks의 약자로,
 매 epoch당 **Descriminator**를 먼저 학습하고, **Generator**의 학습이 이루어진다. <br/>
 Descriminator는 기울기 (Stochastic gradient) 가 **증가**하는 방향으로 학습되고, generator는 기울기가 **감소**하는 방향으로 학습된다.
 
-## GAN 특징
+### GAN 특징
 * Not cherry-picked
   * 이미지를 선별해서 넣은 게 아니라 랜덤하게 넣어줌
 * **Not memorized** the training set
@@ -224,6 +224,7 @@ from IPython.display import Image
 
 Image('92000.png')
 ```
+
 
 ## 참고
 

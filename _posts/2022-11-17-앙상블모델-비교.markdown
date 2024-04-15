@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Tips | Ensemble Model Comparison"
+title:  "Tips | Ensemble Models | <br/> sklearn 트리 앙상블 모델 4가지"
 date:   2022-11-17 16:00:09 +0900
 categories: Tips
 style: border
