@@ -6,7 +6,7 @@ date:   2024-03-27 15:30:09 +0900
 categories: coding
 tags: [완전탐색, DP, 실버3]
 ---
-# BOJ 백준 14501번 퇴사
+# BOJ 백준 14501번 퇴사 | Python
 
 <p align='center'>
 <img src='/assets/img/coding/boj_14501.png' width='100%'>

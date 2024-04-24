@@ -6,7 +6,7 @@ date:   2024-03-26 15:30:09 +0900
 categories: coding
 tags: [완전탐색, 비트마스킹, 실버2]
 ---
-# BOJ 백준 9079번 동전게임
+# BOJ 백준 9079번 동전게임 | Python
 
 <p align='center'>
 <img src='/assets/img/coding/boj_9079.png' width='100%'>

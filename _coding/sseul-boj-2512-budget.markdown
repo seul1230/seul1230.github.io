@@ -1,31 +1,36 @@
 ---
 layout: post
-title:  "투포인터 | BOJ 백준 20922번 겹치는 건 싫어 | Python"
-description: <strong>🩶 Silver 1</strong><font color='gray'><br/>- 난이도 ★☆☆☆<br/>- 투포인터</font>
-date:   2024-04-02 14:30:09 +0900
+title:  "이분탐색 | BOJ 백준 2512번 예산 | Python"
+description: <strong>🩶 Silver 2</strong><font color='gray'><br/>- 난이도 ★☆☆☆<br/>- 이분탐색</font>
+date:   2024-04-23 14:30:09 +0900
 categories: coding
-tags: [투포인터, 실버1]
+tags: [투포인터, 실버2]
 ---
-# BOJ 백준 20922번 겹치는 건 싫어 | Python
+# BOJ 백준 2512번 예산 | Python
 
 <p align='center'>
-<img src='/assets/img/coding/boj_20922.png' width='100%'>
-<figcaption><a href='https://www.acmicpc.net/problem/20922'>📌 백준 20922번 문제 바로가기</a></figcaption>
+<img src='/assets/img/coding/boj_2512.png' width='100%'>
+<figcaption><a href='https://www.acmicpc.net/problem/2512'>📌 백준 2512번 문제 바로가기</a></figcaption>
 </p>
 
 
 
 ## 문제 설명
 
-<strong>🩶 실버 1</strong>
+<strong>🩶 실버 2</strong>
 ```
 - 난이도 ★☆☆☆
-- 투포인터
+- 이분탐색
 ```
 
-처음엔 count 메소드나 Counter 라이브러리를 가져와서 중복되는 수의 개수를 세어줄까 했지만, <code>시간 초과</code> 의 문제가 발생한다.<br/>
-그래서 연속 구간의 시작과 끝을 움직이면서, 끝쪽에 있는 수의 개수를 조절해가면서 풀도록 설계하였다. 실버 1이었지만 투포인터를 생각해낸다면 체감 상으로는 훨씬 쉬웠던 문제였다. 코드는 다음과 같다.
+이분탐색의 대표적인 예시 문제이다. '[백준 나무 자르기 문제](https://www.acmicpc.net/problem/2805)' 와 상황이 거의 비슷한 문제라 이 문제를 접했다면 어렵지 않게 해결할 수 있다.
 
+<br/>
+
+📌 문제 풀이 큰 틀은 다음과 같다.
+
+- <code><strong>기준점(mid)</strong></code> = 가능한 한 최대의 총 예산
+- 정해진 총액 이하에서 기준점을 기준으로 합을 계산
 
 
 <br/>
@@ -51,27 +56,32 @@ tags: [투포인터, 실버1]
 import sys
 input = sys.stdin.readline
 
-from collections import defaultdict
+N = int(input())
+cities = list(map(int, input().split()))
+budget = int(input())
 
-N, K = map(int, input().split())
-arr = list(map(int, input().split()))
-cnt_dict = defaultdict(int)
 
-end = 0
-max_len = 0
-cnt = 0
+start, end = 0, max(cities)
+answer = 0
+total = 0
 
-for start in range(N):
-    while end < N:
-        now = arr[end]
-        if cnt_dict[now] + 1 > K: 
-            break
-        cnt_dict[now] += 1
-        end += 1
-        max_len = max(max_len, end - start)
-    cnt_dict[arr[start]] -= 1
+while start <= end:
+    total = 0
+    mid = (start + end)//2
 
-print(max_len)
+    for i in cities:
+        if mid > i:
+            total += i
+        else:
+            total += mid
+
+    if total > budget:
+        end = mid - 1
+    else:
+        start = mid + 1
+        answer = mid
+
+print(answer)
 ```
 
 

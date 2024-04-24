@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "완전탐색 | BOJ 백준 21921번 블로그 | Python"
+title:  "투포인터 | BOJ 백준 21921번 블로그 | Python"
 description: <strong>🩶 Silver 3</strong><font color='gray'><br/>- 난이도 ★★☆☆<br/>- 투포인터</font>
 date:   2024-04-02 13:30:09 +0900
 categories: coding
 tags: [투포인터, 실버2]
 ---
-# BOJ 백준 21921번 블로그
+# BOJ 백준 21921번 블로그 | Python
 
 <p align='center'>
 <img src='/assets/img/coding/boj_21921.png' width='100%'>
