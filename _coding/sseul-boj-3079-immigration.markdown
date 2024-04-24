@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "이분탐색 | BOJ 백준 2512번 예산 | Python"
-description: <strong>🩶 Silver 2</strong><font color='gray'><br/>- 난이도 ★☆☆☆<br/>- 이분탐색</font>
+title:  "이분탐색 | BOJ 백준 3079번 입국심사 | Python"
+description: <strong>💛 Gold 5</strong><font color='gray'><br/>- 난이도 ★★★☆<br/>- 이분탐색</font>
 date:   2024-04-23 14:30:09 +0900
 categories: coding
-tags: [이분탐색, 실버2]
+tags: [이분탐색, 골드5]
 ---
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7280083909521856"
@@ -21,31 +21,33 @@ tags: [이분탐색, 실버2]
 
 <br/>
 
-# BOJ 백준 2512번 예산 | Python
+# BOJ 백준 3079번 입국심사 | Python
 
 <p align='center'>
-<img src='/assets/img/coding/boj_2512.png' width='100%'>
-<figcaption><a href='https://www.acmicpc.net/problem/2512'>📌 백준 2512번 문제 바로가기</a></figcaption>
+<img src='/assets/img/coding/boj_3079.png' width='100%'>
+<figcaption><a href='https://www.acmicpc.net/problem/3079'>📌 백준 3079번 문제 바로가기</a></figcaption>
 </p>
 
 
 
 ## 문제 설명
 
-<strong>🩶 실버 2</strong>
+<strong>💛 골드 5</strong>
 ```
-- 난이도 ★☆☆☆
+- 난이도 ★★★☆
 - 이분탐색
 ```
 
-이분탐색의 대표적인 예시 문제이다. '[백준 나무 자르기 문제](https://www.acmicpc.net/problem/2805)' 와 상황이 거의 비슷한 문제라 이 문제를 접했다면 어렵지 않게 해결할 수 있다.
+이분탐색을 떠올리는 데 조금 시간이 걸렸다. 그리고 각 심사대별로 어떻게 시간을 분배해 계산해줄지 찾는 것이 관건이었다. 이분탐색은 실버까지는 쉽게 풀리나, 골드처럼 조금만 문제를 꼬아도 생각하기 까다로운 문제인 것 같다. 더 연습해야지,,!
+
+
 
 <br/>
 
 📌 문제 풀이 큰 틀은 다음과 같다.
 
-- <code><strong>기준점(mid)</strong></code> = 가능한 한 최대의 총 예산
-- 정해진 총액 이하에서 기준점을 기준으로 합을 계산
+- <code><strong>기준점(mid)</strong></code> = 상근이와 친구들이 심사를 받는데 걸리는 총 시간
+- 총 시간을 각 심사대별 시간으로 나누어 <strong>검사 가능한 인원 수 <code>ppl</code></strong>를 계산한다.
 
 
 <br/>
@@ -71,31 +73,27 @@ tags: [이분탐색, 실버2]
 import sys
 input = sys.stdin.readline
 
-N = int(input())
-cities = list(map(int, input().split()))
-budget = int(input())
+N, M = map(int, input().split())
+T = []
+for n in range(N):
+    T.append(int(input()))
 
-
-start, end = 0, max(cities)
-answer = 0
-total = 0
+start, end = min(T), max(T)*M
+answer = float('inf')
 
 while start <= end:
-    total = 0
+    ppl = 0
     mid = (start + end)//2
+    
+    for t in T:
+        ppl += mid // t
 
-    for i in cities:
-        if mid > i:
-            total += i
-        else:
-            total += mid
-
-    if total > budget:
+    if ppl >= M:
         end = mid - 1
+        answer = min(answer, mid)
     else:
         start = mid + 1
-        answer = mid
-
+    
 print(answer)
 ```
 

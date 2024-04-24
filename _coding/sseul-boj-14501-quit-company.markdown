@@ -6,6 +6,21 @@ date:   2024-03-27 15:30:09 +0900
 categories: coding
 tags: [완전탐색, DP, 실버3]
 ---
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7280083909521856"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-7280083909521856"
+     data-ad-slot="4964002703"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<br/>
+
 # BOJ 백준 14501번 퇴사 | Python
 
 <p align='center'>

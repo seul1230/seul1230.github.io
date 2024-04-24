@@ -6,6 +6,21 @@ date:   2024-03-26 15:30:09 +0900
 categories: coding
 tags: [완전탐색, 비트마스킹, 실버2]
 ---
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7280083909521856"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-7280083909521856"
+     data-ad-slot="4964002703"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<br/>
+
 # BOJ 백준 9079번 동전게임 | Python
 
 <p align='center'>
