@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "분할정복 | BOJ 백준 2630번 색종이 만들기 | Python"
-description: <strong>🩶 실버 2</strong><font color='gray'><br/>- 난이도 ★☆☆☆<br/>- 분할정복 (재귀)</font>
-date:   2024-04-25 14:30:09 +0900
+title:  "분할정복 | BOJ 백준 17829번 222-풀링 | Python"
+description: <strong>🩶 실버 2</strong><font color='gray'><br/>- 난이도 ★★★☆<br/>- 분할정복 (재귀)</font>
+date:   2024-04-25 16:30:09 +0900
 categories: coding
 tags: [분할정복, 실버2]
 ---
@@ -21,35 +21,54 @@ tags: [분할정복, 실버2]
 
 <br/>
 
-# BOJ 백준 2630번 색종이 만들기 | Python
+# BOJ 백준 17829번 222-풀링 | Python
 
 <p align='center'>
-<img src='/assets/img/coding/boj_2630.png' width='100%'>
-<figcaption><a href='https://www.acmicpc.net/problem/3079'>📌 백준 2630번 문제 바로가기</a></figcaption>
+<img src='/assets/img/coding/boj_17829_1.png' width='100%'>
+<img src='/assets/img/coding/boj_17829_2.png' width='100%'>
+<figcaption><a href='https://www.acmicpc.net/problem/17829'>📌 백준 17829번 문제 바로가기</a></figcaption>
 </p>
 
 
 
-## 문제 설명
+## 🔎 문제 설명
 
 <strong>🩶 실버 2</strong>
 ```
-- 난이도 ★☆☆☆
+- 난이도 ★★★☆
 - 분할정복
 ```
 
-분할정복은 큰 문제를 작은 문제로 분할하여 해결하는 방법이다. 크기가 커지지만 않으면 굉장히 효율적인 방법으로, 시간복잡도는 O(NlogN)을 가진다. 그러나 재귀를 사용하기 때문에 크기가 커지면 메모리가 제한적이라는 단점이 있다.
 
-이 문제는 많이 접하지 않았다면 풀이에 시간을 꽤나 소요했을 것이다. 
+전공 수업에서 CNN 합성곱 계산을 했던 기억이...ㅎ
 
+<p align='center'>
+<img src="https://latex.codecogs.com/svg.image?&space;L_{out}=\left[\frac{L_{in}&plus;2\times{padding}-kernel_{size}}{stride}&plus;1\right]" title=" L_{out}=\left[\frac{L_{in}+2\times{padding}-kernel_{size}}{stride}+1\right]" /><figcaption>PyTorch에서 Conv2D 클래스 출력 공식</figcaption></p>
+
+
+
+일단 문제 설정이 너무 웃펐다. 특히 마지막 문장...🫠<br/>
+> 랩실 활동에 치여 삶이 사라진 종욱이를 애도하며 종욱이의 궁금증을 대신 해결해주자.
+
+
+
+
+<br/><br/>
+
+### 🚀 힌트
+
+이 문제를 풀면서 느꼈는데 이게 가장 큰 힌트다. 잊지 말자!!
+```
+분할정복은 큰 문제를 작은 문제로 분할하여 해결하는 방법이다.
+```
 
 
 <br/>
 
 📌 문제 풀이 큰 틀은 다음과 같다.
 
-- 다른 색을 발견하면 색종이를 4개로 자르기
-- 같은 색으로만 된 종이가 나온다면, 개수 추가
+- 각 2 x 2 사각형에서 두 번째로 큰 숫자만 뽑아와서 임시 리스트로 저장
+- 1 x 1이 될 때까지 반복
 
 
 <br/>
@@ -69,39 +88,32 @@ tags: [분할정복, 실버2]
 <br/>
 
 
-## 내 코드
+## 💻 내 코드
 
 ```python
 import sys
 input = sys.stdin.readline
-
 N = int(input())
-papers = []
+squares = []
 for _ in range(N):
-    papers.append(list(map(int, input().split())))
+    squares.append(list(map(int, input().split())))
     
-white, blue = 0, 0
-
 def solution(x, y, n):
-    global white, blue
-    color = papers[x][y]
-    for i in range(x, x+n):
-        for j in range(y, y+n):
-            if color != papers[i][j]:
-                # 잘라진 종이가 모두 같은 색이 아니라면 네 개로 자르기
-                solution(x, y, n//2)
-                solution(x + n//2, y, n//2)
-                solution(x + n//2, y + n//2, n//2)
-                solution(x, y + n//2, n//2)
-                return
-    # 모두 같은 색이면 더해주기
-    if color == 0:
-        white += 1
-    else:
-        blue += 1
-solution(0, 0, N)     
-print(white)
-print(blue)
+    if n == 2:
+        answer = [squares[x][y], squares[x+1][y], squares[x][y+1], squares[x+1][y+1]]
+        answer.sort()
+        return answer[-2]
+
+    lu = solution(x, y, n//2)
+    ld = solution(x+n//2, y, n//2)
+    ru = solution(x, y+n//2, n//2)
+    rd = solution(x+n//2, y+n//2, n//2)
+    answer = [lu, ld, ru, rd]
+    answer.sort()
+    return answer[-2]
+
+answer = solution(0,0,N)
+print(answer)
 ```
 
 
