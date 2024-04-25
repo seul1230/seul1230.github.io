@@ -41,7 +41,7 @@ tags: [투포인터, 실버2]
 <figcaption><a href='https://www.acmicpc.net/problem/21921'>📌 백준 21921번 문제 제한</a></figcaption>
 </p>
 
-## 문제 설명
+## 🔎 문제 설명
 
 <strong>🩶 실버 3</strong>
 ```
@@ -73,7 +73,7 @@ tags: [투포인터, 실버2]
 <br/>
 
 
-## 내 코드
+## 💻 내 코드
 
 ```python
 import sys

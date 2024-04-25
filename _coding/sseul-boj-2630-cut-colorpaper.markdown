@@ -25,7 +25,7 @@ tags: [분할정복, 실버2]
 
 <p align='center'>
 <img src='/assets/img/coding/boj_2630.png' width='100%'>
-<figcaption><a href='https://www.acmicpc.net/problem/3079'>📌 백준 2630번 문제 바로가기</a></figcaption>
+<figcaption><a href='https://www.acmicpc.net/problem/2630'>📌 백준 2630번 문제 바로가기</a></figcaption>
 </p>
 
 

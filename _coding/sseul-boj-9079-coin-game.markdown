@@ -28,7 +28,7 @@ tags: [완전탐색, 비트마스킹, 실버2]
 <figcaption><a href='https://www.acmicpc.net/problem/9079'>📌 백준 9079번 문제 바로가기</a></figcaption>
 </p>
 
-## 문제 설명
+## 🔎 문제 설명
 
 <strong>🩶 실버 2</strong>
 ```
@@ -62,7 +62,7 @@ C언어 수업에서 동전 뒤집기 문제를 했던 기억이 나서 반가�
 
 <br/>
 
-## 내 코드
+## 💻 내 코드
 
 ```python
 import sys

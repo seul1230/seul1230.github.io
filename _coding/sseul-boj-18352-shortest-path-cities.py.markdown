@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "이분탐색 | BOJ 백준 3079번 입국심사 | Python"
-description: <strong>💛 Gold 5</strong><font color='gray'><br/>- 난이도 ★★★☆<br/>- 이분탐색</font>
-date:   2024-04-23 14:30:09 +0900
+title:  "그래프탐색 BFS | BOJ 백준 18352번 특정 거리의 도시 찾기 | Python"
+description: <strong>🩶 실버 2</strong><font color='gray'><br/>- 난이도 ★☆☆☆<br/>- 그래프탐색 (BFS)</font>
+date:   2024-04-25 18:30:09 +0900
 categories: coding
-tags: [이분탐색, 골드5]
+tags: [그래프탐색, 실버2]
 ---
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7280083909521856"
@@ -21,24 +21,27 @@ tags: [이분탐색, 골드5]
 
 <br/>
 
-# BOJ 백준 3079번 입국심사 | Python
+# BOJ 백준 18352번 특정 거리의 도시 찾기 | Python
 
 <p align='center'>
-<img src='/assets/img/coding/boj_3079.png' width='100%'>
-<figcaption><a href='https://www.acmicpc.net/problem/3079'>📌 백준 3079번 문제 바로가기</a></figcaption>
+<img src='/assets/img/coding/boj_18352_1.png' width='100%'>
+<img src='/assets/img/coding/boj_18352_2.png' width='100%'>
+<figcaption><a href='https://www.acmicpc.net/problem/18352'>📌 백준 18352번 문제 바로가기</a></figcaption>
 </p>
 
 
 
 ## 🔎 문제 설명
 
-<strong>💛 골드 5</strong>
+<strong>🩶 실버 2</strong>
 ```
-- 난이도 ★★★☆
-- 이분탐색
+- 난이도 ★☆☆☆
+- 그래프탐색
 ```
 
-이분탐색을 떠올리는 데 조금 시간이 걸렸다. 그리고 각 심사대별로 어떻게 시간을 분배해 계산해줄지 찾는 것이 관건이었다. 이분탐색은 실버까지는 쉽게 풀리나, 골드처럼 조금만 문제를 꼬아도 생각하기 까다로운 문제인 것 같다. 더 연습해야지,,!
+최단거리를 구하는 방법엔 다양한 알고리즘이 있지만, 난 가장 익숙한 BFS로 풀었다. 
+
+이 문제는 최단거리 찾는 유형 중 기본 유형에 속한다. 방문여부를 저장하는 <code>visited</code> 에 거리를 함께 저장했다.
 
 
 
@@ -46,8 +49,8 @@ tags: [이분탐색, 골드5]
 
 📌 문제 풀이 큰 틀은 다음과 같다.
 
-- <code><strong>기준점(mid)</strong></code> = 상근이와 친구들이 심사를 받는데 걸리는 총 시간
-- 총 시간을 각 심사대별 시간으로 나누어 <strong>검사 가능한 인원 수 <code>ppl</code></strong>를 계산한다.
+- BFS로 가장 가까운 노드부터 최단거리를 계산
+- <code>visited</code> 에 거리를 1씩 더해 첫 도시 - 도시의 거리를 계산
 
 
 <br/>
@@ -70,31 +73,38 @@ tags: [이분탐색, 골드5]
 ## 💻 내 코드
 
 ```python
+# 최단 거리가 정확히 K인 모든 도시들의 번호 출력
+
 import sys
+from collections import deque
 input = sys.stdin.readline
 
-N, M = map(int, input().split())
-T = []
-for n in range(N):
-    T.append(int(input()))
+# N개의 도시, M개의 도로, 출발 도시 X
+N, M, K, X = map(int, input().split())
+graph = [[] for _ in range(N+1)]
+for _ in range(M):
+    a, b = map(int, input().split())
+    graph[a].append(b)
 
-start, end = min(T), max(T)*M
-answer = float('inf')
+queue = deque([X])
+visited = [-1 for _ in range(N+1)]
+visited[X] = 0
 
-while start <= end:
-    ppl = 0
-    mid = (start + end)//2
-    
-    for t in T:
-        ppl += mid // t
-
-    if ppl >= M:
-        end = mid - 1
-        answer = min(answer, mid)
-    else:
-        start = mid + 1
-    
-print(answer)
+# BFS
+def bfs():
+    while queue:
+        now = queue.popleft()
+        for node in graph[now]:
+            if visited[node] == -1:
+                visited[node] = visited[now] + 1
+                queue.append(node)
+bfs()
+if visited.count(K) == 0:
+    print(-1)
+else:
+    for i in range(N+1):
+        if visited[i] == K:
+            print(i)
 ```
 
 
