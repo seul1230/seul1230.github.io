@@ -155,7 +155,7 @@ layout: page
   var before = undefined;
 
   document.addEventListener('scroll', function (e) {
-    if (window.scrollY >= titleY) {
+    if (window.scrollY >= titleY - 60) {
       toc.style.cssText = "position: fixed; top: 60px;";
       toc.text="";
     }
