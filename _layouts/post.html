@@ -36,7 +36,10 @@ layout: page
   (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
+
+<article class="post-title">
 <h1><b>{{ page.title }}</b></h1>
+</article>
 
 <p class="post-metadata text-muted">
   <span class="post-metadata text-muted" id="last-modified"></span>
@@ -57,10 +60,20 @@ layout: page
   {% endfor %} {%- endif -%}
 </p>
 
+
+
+
+
 <div class="list-group my-3 toc" list-style="none">
   <a class="list-group-item active disabled text-white toc" list-style="none">Table of Contents</a>
   {% include toc.html html=content %}
 </div>
+<div class="float-toc" list-style="none">
+  {% include float_toc.html html=content %}
+</div>
+
+
+
 <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-hj+a-w-1e+66"
     data-ad-client="ca-pub-7280083909521856" data-ad-slot="7249999080"></ins>
 <script>
@@ -71,7 +84,10 @@ layout: page
 <script>
     (adsbygoogle = window.adsbygoogle || []).push({});
 </script> -->
+
+<article class="post-article">
 {{ content }}
+</article>
 
 &nbsp;<hr/>
 
@@ -108,6 +124,81 @@ layout: page
 <script>
     (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+
+<script>
+  function getTOCNodes(master) {
+    var nodes = Array.prototype.slice.call(master.getElementsByTagName("*"), 0);
+    var tocNodes = nodes.filter(function (elem) {
+      return elem.tagName == "A";
+    });
+    return tocNodes;
+  }
+  function getHeaderNodes(master) {
+    var nodes = Array.prototype.slice.call(master.getElementsByTagName("*"), 0);
+    var headerNodes = nodes.filter(function (elem) {
+      return elem.tagName == "H1" || elem.tagName == "H2" || elem.tagName == "H3" || elem.tagName == "H4" || elem.tagName == "H5" || elem.tagName == "H6";
+    });
+    return headerNodes;
+  }
+
+  var title = document.getElementsByClassName("post-title")[0];
+  var titleY = window.pageYOffset + title.getBoundingClientRect().top;
+
+  var article = document.getElementsByClassName("post-article")[0];
+  var articleY = window.pageYOffset + article.getBoundingClientRect().top;
+
+  var toc = document.getElementsByClassName("float-toc")[0];
+
+  var headerNodes = getHeaderNodes(article);
+  var tocNodes = getTOCNodes(toc);
+
+  var before = undefined;
+
+  document.addEventListener('scroll', function (e) {
+    if (window.scrollY >= titleY) {
+      toc.style.cssText = "position: fixed; top: 60px;";
+      toc.text="";
+    }
+    else {
+      toc.style.cssText = "";
+    }
+
+    var current = headerNodes.filter(function (header) {
+      var headerY = window.pageYOffset + header.getBoundingClientRect().top;
+      return window.scrollY >= headerY - 60;
+    });
+
+    if (current.length > 0) {
+      current = current[current.length - 1];
+
+      var currentA = tocNodes.filter(function (tocNode) {
+        return tocNode.innerHTML == current.innerHTML;
+      })
+
+      currentA = currentA[0];
+      if (currentA) {
+        if (before == undefined) before = currentA;
+
+        if (before != currentA) {
+          before.classList.remove("toc-active");
+          before = currentA;
+        }
+
+        currentA.classList.add("toc-active");
+      }
+      else {
+        if (before)
+          before.classList.remove("toc-active");
+      }
+    }
+    else {
+      if (before)
+        before.classList.remove("toc-active");
+    }
+
+  }, false);
+</script>
+
 
 <!-- {% if page.comments %}
 <div class="pt-5">
