@@ -1,10 +1,20 @@
-@mixin themed($property, $light-value, $dark-value) {
+@mixin themed($pink, $light-value, $dark-value) {
   [data-theme="light"] & {
-    #{$property}: $light-value;
+    #{$pink}: $light-value;
   }
 
   [data-theme="dark"] & {
-    #{$property}: $dark-value;
+    #{$pink}: $dark-value;
+  }
+}
+
+@mixin themed_style($style, $light-value, $dark-value) {
+  [data-theme="light"] & {
+    $style: $light-value;
+  }
+
+  [data-theme="dark"] & {
+    $style: $dark-value;
   }
 }
 

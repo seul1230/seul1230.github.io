@@ -4,7 +4,7 @@ title:  "이분탐색 | BOJ 백준 3079번 입국심사 | Python"
 description: <strong>💛 Gold 5</strong><font color='gray'><br/>- 난이도 ★★★☆<br/>- 이분탐색</font>
 date:   2024-04-23 14:30:09 +0900
 categories: coding
-tags: [이분탐색, 골드5]
+tags: [이분탐색]
 ---
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7280083909521856"

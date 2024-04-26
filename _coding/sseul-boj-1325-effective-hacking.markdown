@@ -4,7 +4,7 @@ title:  "그래프탐색 BFS | BOJ 백준 1325번 효율적인 해킹 | Python"
 description: <strong>🩶 Silver 1</strong><font color='gray'><br/>- 난이도 ★★☆☆<br/>- 그래프탐색 BFS</font>
 date:   2024-04-25 16:30:09 +0900
 categories: coding
-tags: [그래프탐색 BFS, 실버1]
+tags: [그래프탐색]
 ---
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7280083909521856"

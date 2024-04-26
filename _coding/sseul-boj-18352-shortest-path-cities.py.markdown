@@ -4,7 +4,7 @@ title:  "그래프탐색 BFS | BOJ 백준 18352번 특정 거리의 도시 찾�
 description: <strong>🩶 Silver 2</strong><font color='gray'><br/>- 난이도 ★☆☆☆<br/>- 그래프탐색 (BFS)</font>
 date:   2024-04-25 18:30:09 +0900
 categories: coding
-tags: [그래프탐색, 실버2]
+tags: [그래프탐색]
 ---
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7280083909521856"

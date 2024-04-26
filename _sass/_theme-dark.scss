@@ -81,4 +81,95 @@ $dark-900: #17191a;
   .timeline-body .timeline-item:after{
     background-color: $dark-900;
   }
+
+  // Table of Content
+  .toc ul{
+    background-color: $dark-600;
+  }
+
+  h3,h4{
+    text-shadow: -1px 0 #909090, 0 1px #909090, 1px 0 #909090, 0 -1px #909090;
+  }
+  .float-toc{
+    color: $text-white;
+  }
+
+  a:not(.btn):not([class^="carousel-"]):not([class^="list-"]):not(.no-underline) {
+    display: inline-block;
+    text-decoration: none;
+    color: $text-white;
+
+    &:hover {
+      color: $pink;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      height: 0.15em;
+      margin-top: -0.15em;
+      width: 0;
+      background: $pink;
+      transition: width 0.35s;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+
+
+  .float-toc {
+    position: absolute;
+    right: 10px !important;
+    width: 200px;
+    color: currentColor;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-left: 0.3rem;
+    padding-right: 0.5rem !important;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    margin-right: 0px !important;
+    font-size: 0.7rem;
+    border-left: 2px solid #e6ccff;
+    display: none;
+
+
+    @media (min-width: 88em) {
+      width: 250px;
+      display: block;
+    }
+
+    @media (min-width: 95em) {
+      width: 300px;
+      display: block;
+    }
+
+    a.toc-active {
+      font-weight: bold;
+      transition: all 0.125s ease-in 0s;
+      font-size: 0.75rem;
+      color: #9075aa;
+    }
+
+    ul {
+      list-style-type: none !important;
+      margin-bottom: 0.1rem;
+      padding-left: 0.3rem;
+
+      li {
+        padding-left: .3rem;
+      }
+    }
+
+    a {
+      color: currentColor;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: $pink;
+    }
+  }
 }

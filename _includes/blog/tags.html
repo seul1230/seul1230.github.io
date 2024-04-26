@@ -20,7 +20,7 @@
       {%- else -%}
         {%- assign url = post.url | relative_url -%}
       {%- endif -%}
-    <a href="{{ url }}"><li>{{ post.title }}</li></a>
+    <a href="{{ url }}"><div style="color: rgb(237, 159, 159);"><li>{{ post.title }}</li></div></a>
     <small class="text-muted"> - {{ post.date | date_to_long_string }}</small>
     <br/>
     {%- endif -%}

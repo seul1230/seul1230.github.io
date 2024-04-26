@@ -8,7 +8,7 @@ color: success
 categories: Projects
 tags: [AI/ML/DL, Android Studio]
 ---
-# [ Project ] 2021 Weather Tour Application
+# [ Project ] 2021 Weather Tour Application 오늘 여행하기 딱 좋은 국내 관광지 추천 앱 만들기
 
 ## Project
 **2021-1 전공심화프로젝트**

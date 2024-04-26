@@ -4,7 +4,7 @@ title:  "이분탐색 | BOJ 백준 2512번 예산 | Python"
 description: <strong>🩶 Silver 2</strong><font color='gray'><br/>- 난이도 ★☆☆☆<br/>- 이분탐색</font>
 date:   2024-04-23 14:30:09 +0900
 categories: coding
-tags: [이분탐색, 실버2]
+tags: [이분탐색]
 ---
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7280083909521856"
