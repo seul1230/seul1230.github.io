@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "분할정복 | BOJ 백준 17829번 222-풀링 | Python"
-description: <strong>🩶 실버 2</strong><font color='gray'><br/>- 난이도 ★★★☆<br/>- 분할정복 (재귀)</font>
+description: <strong>🩶 Silver 2</strong><font color='gray'><br/>- 난이도 ★★★☆<br/>- 분할정복 (재귀)</font>
 date:   2024-04-25 16:30:09 +0900
 categories: coding
 tags: [분할정복, 실버2]
