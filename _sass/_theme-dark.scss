@@ -42,12 +42,31 @@ $dark-900: #17191a;
   // Cards
   .card {
     background-color: $dark-600;
+    width: 100%;
+
   }
 
   .card.border {
     .card-footer {
       background-color: rgba(0, 0, 0, 0.1);
     }
+  }
+
+  .post.card {
+    border-radius: $rounded-borders;
+    text-decoration: none !important;
+    padding: 15px;
+    height: 100%;
+
+    .card-footer {
+      font-size: 14px;
+      margin: 0px -15px -15px -15px;
+      padding: 15px 35px;
+    }
+  
+      // .card-img-top {
+      //   border-radius: $rounded-borders $rounded-borders 0 0;
+      // }
   }
 
   // Tables
@@ -75,6 +94,9 @@ $dark-900: #17191a;
   // Post
   .post footer {
     text-decoration: none;
+    font-size: 14px;
+    margin: 0px -15px -15px -15px;
+    padding: 15px 35px;
   }
 
   // Timeline 
@@ -87,39 +109,37 @@ $dark-900: #17191a;
     background-color: $dark-600;
   }
 
-  h3,h4{
+  h3,h4,h5{
     text-shadow: -1px 0 #909090, 0 1px #909090, 1px 0 #909090, 0 -1px #909090;
   }
-  .float-toc{
-    color: $text-white;
-  }
 
-  a:not(.btn):not([class^="carousel-"]):not([class^="list-"]):not(.no-underline) {
-    display: inline-block;
-    text-decoration: none;
-    color: $text-white;
+  // a:not(.btn):not([class^="carousel-"]):not([class^="list-"]):not(.no-underline) {
+  //   display: inline-block;
+  //   text-decoration: none;
+  //   color: $text-white;
 
-    &:hover {
-      color: $pink;
-    }
+  //   &:hover {
+  //     color: $pink;
+  //   }
 
-    &::after {
-      content: "";
-      display: block;
-      height: 0.15em;
-      margin-top: -0.15em;
-      width: 0;
-      background: $pink;
-      transition: width 0.35s;
-    }
+  //   &::after {
+  //     content: "";
+  //     display: block;
+  //     height: 0.15em;
+  //     margin-top: -0.15em;
+  //     width: 0;
+  //     background: $pink;
+  //     transition: width 0.35s;
+  //   }
 
-    &:hover::after {
-      width: 100%;
-    }
-  }
+  //   &:hover::after {
+  //     width: 100%;
+  //   }
+  // }
 
 
   .float-toc {
+    color: $text-white !important;
     position: absolute;
     right: 10px !important;
     width: 200px;
@@ -149,6 +169,7 @@ $dark-900: #17191a;
     a.toc-active {
       font-weight: bold;
       transition: all 0.125s ease-in 0s;
+      color: $text-white !important;
       font-size: 0.75rem;
       color: #9075aa;
     }
@@ -159,12 +180,12 @@ $dark-900: #17191a;
       padding-left: 0.3rem;
 
       li {
-        padding-left: .3rem;
+        padding-left: .4rem;
       }
     }
 
     a {
-      color: currentColor;
+      color: $text-white !important;
       text-decoration: none;
     }
 
