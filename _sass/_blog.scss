@@ -36,7 +36,7 @@
   position: absolute;
   right: 10px !important;
   width: 200px;
-  color: currentColor;
+  color: $text-black !important;
   overflow-y: auto;
   overflow-x: hidden;
   padding-left: 0.3rem;
@@ -74,18 +74,25 @@
     list-style-type: none !important;
     margin-bottom: 0.1rem;
     padding-left: 0rem;
+    color: $text-black !important;
 
     li {
       padding-left: .3rem;
+      color: $text-black !important;
     }
   }
 
   a {
-    color: currentColor;
+    color: $pink;
     text-decoration: none;
   }
 
   a:hover {
     color: $pink;
+  }
+
+  // Lists
+  .list-group-item-action {
+    color: $text-black;
   }
 }
