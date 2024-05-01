@@ -28,7 +28,7 @@ tags: [누적합, 구현]
 <img src='/assets/img/coding/swexpert_2001_1.png' width='100%'>
 <img src='/assets/img/coding/swexpert_2001_2.png' width='100%'>
 <img src='/assets/img/coding/swexpert_2001_3.png' width='100%'>
-<figcaption><a href='https://www.acmicpc.net/problem/14940'>📌 SW Expert Academy 2001번 문제 바로가기</a></figcaption>
+<figcaption><a href='https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=1&problemLevel=2&problemLevel=3&contestProbId=AV5PzOCKAigDFAUq&categoryId=AV5PzOCKAigDFAUq&categoryType=CODE&problemTitle=&orderBy=FIRST_REG_DATETIME&selectCodeLang=ALL&select-1=3&pageSize=10&pageIndex=1'>📌 SW Expert Academy 2001번 문제 바로가기</a></figcaption>
 </p>
 
 
