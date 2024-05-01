@@ -2,7 +2,7 @@
 layout: post
 title:  "누적합 & 구현 | SW Expert Academy 2001번 파리 퇴치 | Python"
 description: <strong>🩶 D2</strong><font color='gray'><br/>- 난이도 ★★☆☆<br/>- 누적합 / 구현</font>
-date:   2024-05-01 14:30:09 +0900
+date:   2024-05-01 16:30:09 +0900
 categories: coding
 tags: [누적합, 구현]
 ---
