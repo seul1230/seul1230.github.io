@@ -27,7 +27,7 @@ tags: [그래프탐색]
 <p align='center'>
 <img src='/assets/img/coding/swexpert_2806_1.png' width='100%'>
 <img src='/assets/img/coding/swexpert_2806_2.png' width='100%'>
-<figcaption><a href='https://www.acmicpc.net/problem/9663'>📌 백준 9663번 N-Queen 문제 바로가기</a><br/><a href='https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=1&problemLevel=2&problemLevel=3&contestProbId=AV5PzOCKAigDFAUq&categoryId=AV5PzOCKAigDFAUq&categoryType=CODE&problemTitle=&orderBy=FIRST_REG_DATETIME&selectCodeLang=ALL&select-1=3&pageSize=10&pageIndex=1'>📌 SW Expert Academy 2806번 문제 바로가기</a></figcaption>
+<figcaption><a href='https://www.acmicpc.net/problem/9663'>📌 백준 9663번 N-Queen 문제 바로가기</a><br/><a href='https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=1&problemLevel=2&problemLevel=3&contestProbId=AV7GKs06AU0DFAXB&categoryId=AV7GKs06AU0DFAXB&categoryType=CODE&problemTitle=&orderBy=FIRST_REG_DATETIME&selectCodeLang=ALL&select-1=3&pageSize=10&pageIndex=1'>📌 SW Expert Academy 2806번 문제 바로가기</a></figcaption>
 </p>
 
 
