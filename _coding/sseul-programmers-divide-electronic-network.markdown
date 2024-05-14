@@ -24,7 +24,7 @@ tags: [그래프탐색, 유니온파인드 Union-Find]
 # 프로그래머스 고득점kit 전력망을 둘로 나누기 | Python
 
 <p align='center'>
-<img src='/assets/img/coding/prog_target_number.png' width='100%'>
+<img src='/assets/img/coding/prog_divide_elec_network.png' width='100%'>
 <figcaption><a href='https://school.programmers.co.kr/learn/courses/30/lessons/43165?language=python3'>📌 프로그래머스 고득점kit 전력망을 둘로 나누기 바로가기</a></figcaption>
 </p>
 
