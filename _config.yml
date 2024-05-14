@@ -17,6 +17,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-last-modified-at
+  - jekyll-include-cache
 
 ### LastModifedAt Setting : Optional. The default date format, used if none is specified in the tag.
 last-modified-at:

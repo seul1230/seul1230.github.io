@@ -187,6 +187,26 @@
     margin-right: 10px;
     vertical-align: middle;
   }
+  table .related-table{
+    display: block;
+      overflow-x: auto;
+      margin: 1rem 0;
+    
+      td {
+        border: none;
+        padding: 8px 16px;
+      }
+    
+      th {
+        @extend td;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        font-weight: 500;
+        text-align: left;
+        background-color: $primary;
+        color: white;
+      }
+  }
 
   table:not(.highlight) {
     display: block;
