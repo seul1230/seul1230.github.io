@@ -73,17 +73,19 @@
   ul {
     list-style-type: none !important;
     margin-bottom: 0.1rem;
-    padding-left: 0rem;
+    padding-left: 12px !important;
     color: $text-black !important;
 
     li {
-      padding-left: .3rem;
+      padding-left: .3rem !important;
+      // padding-left: 12px ;
       color: $text-black !important;
     }
   }
 
+
   a {
-    color: $pink;
+    color: $text-black !important;
     text-decoration: none;
   }
 

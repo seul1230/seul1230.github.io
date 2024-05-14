@@ -1,5 +1,10 @@
+pre{
+  font-family: 'D2 Coding', monospace !important;
+}
+
 *{
-  font-family: D2Coding, 'D2 coding', monospace;
+  /* 글씨체 문제 생기면 여기 주석 풀기  */
+  /* font-family: 'NanumGothic', 'D2 Coding', monospace; */
   line-height: 180%;
   font-size: 98%
 }
@@ -77,3 +82,4 @@ figcaption {
   padding-left: 10px;
   background-color: #f0f0f0;
 }
+

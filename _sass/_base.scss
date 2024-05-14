@@ -4,6 +4,7 @@ html {
 
 body {
   font-family: 'NanumSquare',"Poppins", sans-serif;
+
 }
 
 .badge {
@@ -31,4 +32,17 @@ body {
   font-family: 'NanumSquare';
   src: url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
   unicode-range: U+AC00-D7A3;
+}
+
+@font-face {
+  font-family: 'Nanum Gothic';
+  src: url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+  unicode-range: U+AC00-D7A3;
+}
+
+@font-face {
+  font-family: 'D2Coding';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
