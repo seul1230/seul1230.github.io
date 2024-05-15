@@ -22,7 +22,7 @@ tags: [Algorithm, Computer Science]
 모든 경우의 수를 돌기 때문에 그만큼 경우의 수가 많아지면 시간을 많이 소요한다는 단점이 있기 때문에 주의해야 한다. 이에 해당하는 알고리즘으로 **BFS**, **DFS**, **비트마스크**에 대해 정리하였다.
 
 <!-- ## CNN의 디자인 패턴 -->
-<h3 class='line-mark-pink'>완전탐색 : BFS</h3>
+### 완전탐색 : BFS
 
 **너비 우선 탐색 <font color='lightgray'> BFS, Breadth-First Search</font>** 이란 루트 노드에서 시작해 **인접한 노드**를 먼저 탐색하는 방법을 말한다. 뒤에서 DFS 할 때도 나오겠지만, 이 두 알고리즘은 특히 **✅ <font color='darkgreen'>어떤 노드를 방문했는지</font>** 기억해야 한다. 이 부분이 빠진다면 무한루프에 빠질 위험이 있다. 
 
@@ -75,8 +75,9 @@ else:
   print(-1)
 ```
 
+<br/>
 
-<h3 class='line-mark-pink'>완전탐색 : DFS</h3>
+### 완전탐색 : DFS
 
 **깊이 우선 탐색 <font color='lightgray'> DFS, Depth-First Search</font>** 이란 루트 노드에서 시작해서 다음 브랜치로 넘어가기 전에 **해당 브랜치**를 **끝까지 탐색**하고 넘어가는 방법을 말한다. 
 
@@ -134,9 +135,10 @@ def solution (N, number):
   return -1
 ```
 
+<br/>
 
 
-<h3 class='line-mark-pink'>완전탐색 : 비트마스크</h3>
+### 완전탐색 : 비트마스크
 
 #### Q. 왜 비트마스크를 사용할까?
 * DP, 순열, 배열 활용만으로 해결할 수 없는 문제를 해결하기 위해

@@ -76,7 +76,9 @@ LDA 를 이용하여 토픽 모델링 실습도 해보자. 마찬가지로, 실�
 
 
 ---
-### 💻 코드 실습 - LSA
+## 💻 코드 실습
+
+### - LSA
 scikit-learn의 Twenty Newsgroups 데이터를 이용해 LSA 실습을 진행해보자. 
 
 해당 데이터셋은 20개의 다른 주제를 가진 뉴스그룹 데이터를 포함하고 있고, 이를 이용해 문서를 원하는 토픽의 수로 압축하여 각 토픽 당 가장 중요한 단어 5개를 추출할 것이다.
@@ -146,8 +148,8 @@ len(svd_model.components_)
 
 <br>
 
----
-## 💻 코드 실습 - LDA
+
+### - LDA
 이번엔 약 15년 간 발행된 영어 뉴스 기사 제목을 모아놓은 [데이터셋](https://www.kaggle.com/therohk/million-headlines)을 이용하여 scikit learn의 LDA 실습을 해보겠다.
 
 참고 : [Wikidocs : 사이킷런의 잠재 디리클레 할당 학습](https://wikidocs.net/40710)

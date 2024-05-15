@@ -14,9 +14,9 @@ tags: [ROS2]
 
 <br>
 
-## Topic 
+## 1️⃣ Topic 
 
-<h3 class='line-mark-blue'>ROS2 Topic</h3>
+### ROS2 Topic
 
 ROS2에서는 모듈식 노드를 많이 분할함으로써 복잡한 시스템을 만들 수 있다. 이때 Topic이 **Node 사이에 데이터 <font color='lightgray'>Message</font>가 오가는 길 <font color='lightgray'>Bus</font> 역할**을 한다. 
 
@@ -32,9 +32,9 @@ Topic을 만들 수 있는 다른 명령어들은 다음 기회에 정리하겠�
 
 <br>
 
-## Service
+## 2️⃣ Service
 
-<h3 class='line-mark-blue'>ROS2 Service</h3>
+### ROS2 Service
 
 Service는 **<mark style='background-color: #fff5b1'>동기식 양방향</mark> 메시지 송수신 방식**으로 동작한다. 모터 on/off, 순간적 회피 기동, 파라미터 service 등 **<mark style='background-color: #fff5b1'>단발적</mark>이고 <mark style='background-color: #fff5b1'>빠른 통신</mark>이 요구될 때** 많이 사용되는 메시지 통신 기법이다. 
 
@@ -46,9 +46,8 @@ Service는 **<mark style='background-color: #fff5b1'>동기식 양방향</mark> 
 
 <br>
 
-## Topic과 Service
+## 📌 Topic과 Service의 차이점
 
-<h3 class='line-mark-blue'>둘의 차이점?</h3>
 
 Topic과 Service는 언뜻 보면 비슷해 보이지만 다르다.
 
@@ -61,14 +60,16 @@ Topic은 <code>Publish</code>하면 여러 Node가 <code>Subscribe</code> 가능
 
 <br>
 
-## Action
-<h3 class='line-mark-blue'>Action의 특징</h3>
+## 3️⃣ Action
+### Action의 특징
 
 Action Client는 Action Server가 <code>response</code>를 보내기 전까지 계속 기다리지 않고, 다른 일을 할 수 있다. 또한 Action Client는 <code>request</code> 보낸 뒤에도 지속적으로 <code>feedback</code>을 받을 수 있다. 이때, feedback을 받다고 뭔가가 잘못 돌아가고 있다는 것을 감지한 경우엔 <code>cancel</code>할 수도 있다. 
 
 여러 <code>request</code>를 동시에 작업하는 건 본질적으로 불가하지만 프로그래밍적으로 해결이 가능하다는 특징을 가지고 있다. 
 
-<h3 class='line-mark-blue'>Action의 예시</h3>
+<br/>
+
+### Action의 예시
 
 <p align='center'><strong>"Action = 내비게이션 ?"</strong></p>
 

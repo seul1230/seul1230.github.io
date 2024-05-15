@@ -164,8 +164,11 @@ cv_imshow(dst2)
 ```
 위의 코드를 실행하면 아래와 같이 잘 검출되는 것을 볼 수 있다. <br/>
 
-<div align='center'><img src='/assets/img/2021_hackathon_img/outline.png' width="37%"/><img src='/assets/img/2021_hackathon_img/red_green_node.png' width="37%"/></div>
+<div align='center'>
+<!-- <img src='/assets/img/2021_hackathon_img/outline.png' width="37%"/> -->
+<img src='/assets/img/2021_hackathon_img/red_green_node.png' width="37%"/></div>
 <br/><br/>
+
 
 ### 3. 출발 - 도착 - 두 노드 사이의 거리 정보 저장
 해커톤 대회 시간, 24시간이라는 짧은 시간 안에 Q-learning 코드를 직접 구현하는 것은 어렵다고 판단! <br/>

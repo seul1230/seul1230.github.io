@@ -16,7 +16,7 @@ tags: [ROS2]
 
 ## ROS <font color='lightgray'>Robot Operating System</font>
 
-<h3 class='line-mark-blue'>ROS란?</h3>
+### ROS란?
 
 <br>
 
@@ -43,7 +43,7 @@ ROS는 **로봇 공학 애플리케이션을 위한 오픈 소스 소프트웨�
   - 가판대에 내려둔 뒤 다시 반복
 
 
-<h3 class='line-mark-blue'>ROS의 특징</h3>
+### ROS의 특징
 
 ROS는 로보틱스 연구 및 개발 과정에서 코드를 **Package화**하여 **<mark style='background-color: #fff5b1'>재사용을 극대화</mark>**하는 것에 초점을 맞춘 SDK이다. 이를 위해 Node 단위의 분산 프로세스, 공유 및 재배포를 쉽게 하기 위한 Package 단위 관리, 다양한 프로그래밍 언어 지원 기능 등을 갖추었다. 
 
@@ -71,7 +71,7 @@ ROS는 로보틱스 연구 및 개발 과정에서 코드를 **Package화**하�
 <br>
 
 ## Node와 Package
-<h3 class='line-mark-blue'>Node란?</h3>
+### Node란?
 
 **Node**는 **<mark style='background-color: #fff5b1'>실행 가능한 최소 단위의 프로세서</mark>**를 말한다. 
 
@@ -82,12 +82,12 @@ ROS는 로보틱스 연구 및 개발 과정에서 코드를 **Package화**하�
 
 각 노드의 역할을 목적에 맞게 세분화시켜서 각 노드들 간의 의존성을 줄이고 독립성을 높여서 다른 목적의 작업에서도 일부 노드를 재사용할 수 있다.
 
-### +) Topic, Service, Action
+#### +) Topic, Service, Action
 뒤에서 다룰 예정이지만 간단하게 짚고 넘어가자.<br/>
 Node들 사이에 Topic, Service, Action, Parameter를 통해 다른 노드로 데이터를 주고 받을 수 있다. 
 
 
-<h3 class='line-mark-blue'>Package란?</h3>
+### Package란?
 
 Package는 ROS를 구성하는 기본 단위이자 개발 단위이다. 
 
@@ -101,7 +101,7 @@ Package는 ROS를 구성하는 기본 단위이자 개발 단위이다.
 또, <code>colcon build</code>가 수행되는 빌드의 단위이기도 하다.
 
 
-<h3 class='line-mark-blue'>Package 만들기 : ament</h3>
+### Package 만들기 : ament
 
 ```bash
 $ ros2 pkg create --build-type ament-type ament_python <pkg_name> --dependencies rclpy <dependency>
@@ -110,28 +110,37 @@ $ ros2 pkg create --build-type ament-type ament_python <pkg_name> --dependencies
 위의 코드를 실행하면 빌드를 위한 기본 파일 구조를 만들 수 있다. <code>colcon build</code>를 통해 빌드하고, 검사 후 build 폴더로 바로가기를 생성한다.
 
 
-<h3 class='line-mark-blue'>Node, Package 관련 명령어</h3>
+### Node, Package 관련 명령어
 
 #### Node의 실행
 
 ```bash
 $ ros2 run <node_name>
 ```
+<br/>
+
 #### 실행 중 Node들의 리스트 확인
 
 ```bash
 $ ros2 node list
 ```
+
+<br/>
+
 #### 특정 Node 정보 살펴보기
 
 ```bash
 $ ros2 node info <node_name>
 ```
+
+<br/>
+
 #### 사용가능 Package 리스트 확인
 
 ```bash
 $ ros2 pkg list
 ```
+<br/>
 
 #### 사용하고 싶은 패키지에서 사용가능한 Node 확인
 
