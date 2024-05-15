@@ -67,8 +67,8 @@ from collections import deque
 
 def possible(a, b):
     cnt = 0
-    for i in range(len(a)):
-        if a[i] != b[i]:
+    for x, y in zip(a,b):
+        if x != y:
             cnt += 1
     if cnt == 1:
         return True
