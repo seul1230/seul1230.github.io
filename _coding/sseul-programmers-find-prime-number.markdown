@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "그래프탐색 DFS | 프로그래머스 고득점kit 타겟 넘버 | Python"
-description: <strong>💚 Level 2</strong><font color='gray'><br/>- 난이도 ★☆☆☆<br/>- 그래프탐색</font>
-date:   2024-05-13 13:30:09 +0900
+title:  "완전탐색 | 프로그래머스 고득점kit 소수 찾기 | Python"
+description: <strong>💚 Level 2</strong><font color='gray'><br/>- 난이도 ★☆☆☆<br/>- 완전탐색</font>
+date:   2024-05-15 13:30:09 +0900
 categories: coding
-tags: [그래프탐색]
+tags: [완전탐색]
 ---
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7280083909521856"
@@ -21,11 +21,11 @@ tags: [그래프탐색]
 
 <br/>
 
-# 프로그래머스 고득점kit 타겟 넘버 | Python
+# 프로그래머스 고득점kit 소수 찾기 | Python
 
 <p align='center'>
-<img src='/assets/img/coding/prog_target_number.png' width='100%'>
-<figcaption><a href='https://school.programmers.co.kr/learn/courses/30/lessons/43165?language=python3'>📌 프로그래머스 고득점kit 타겟 넘버 문제 바로가기</a></figcaption>
+<img src='/assets/img/coding/prog_find_prime_numbers.png' width='100%'>
+<figcaption><a href='https://school.programmers.co.kr/learn/courses/30/lessons/42839'>📌 프로그래머스 고득점kit 소수 찾기 문제 바로가기</a></figcaption>
 </p>
 
 <br/>
@@ -35,11 +35,11 @@ tags: [그래프탐색]
 <strong>💚 Level 2</strong>
 ```
 - 난이도 ★☆☆☆
-- 그래프탐색 DFS
+- 완전탐색
 ```
 
-그래프탐색 DFS를 이용하면 그리 어렵지 않은 문제다. 사실 그냥 다 더하고 빼서 <code>target</code> 점수가 되는 값만 세어도 된다.
-그러나 재귀로 엄청 깔끔하게 코드로 작성할 수 있어서 가져와 보았다.
+<code>itertools</code> 의 <code>permutations</code> 를 이용하면 쉽게 풀리는 문제다. 시간초과도 나지 않는 무난한 문제!<br/>
+아, 난 이제까지 <code>set</code> 에 원소를 더할 때 <code>add</code> 함수를 이용해서 더해줬는데 <code>|=</code> 로도 더할 수 있다고 한다! 아래는 이 방법을 이용해 원소를 더한 코드이다.
 
 <br/>
 
@@ -60,40 +60,33 @@ tags: [그래프탐색]
 
 ## 💻 내 코드
 
-### 1️⃣ DFS를 이용한 코드
 
 ```python
-answer = 0
+# 소수 찾는 함수
+def find_prime(x):
+    # 0과 1은 소수가 아니다
+    if x < 2:
+        return False
+    for i in range(2,x):
+        if x % i == 0:
+            return False
+    return True
 
-def dfs(idx, now, target, numbers):
-    global answer
-    num_len = len(numbers)
-    if idx == num_len and now == target:
-        answer += 1
-    if idx < num_len:
-        dfs(idx+1, target, now - numbers[idx], numbers)
-        dfs(idx+1, target, now + numbers[idx], numbers)
-    return
+from itertools import permutations
+def solution(numbers):
+    answer = 0
+    numbers = list(numbers)
+    possible = set()
+    for i in range(1,len(numbers)+1):
+        possible |= set(map(int, [''.join(a) for a in permutations(numbers, i)]))
 
-def solution(numbers, target):
-    dfs(0, 0, target, numbers)
+    for p in possible:
+        answer += find_prime(p)
+
     return answer
 ```
 
-### 2️⃣ 재귀를 이용한 코드
 
-
-```python
-def solution(numbers, target):
-     # numbers 끝까지 순회하고 target 값 달성했을 때
-     if not numbers and target == 0:
-          return 1
-     # numbers 끝까지 순회했지만 target 값 달성 못했을 때
-     elif not numbers:
-          return 0
-     else:
-          return solution(numbers[1:], target-numbers[0]) + solution(numbers[1:], target+numbers[0])
-```
 
 
 <br/><br/><br/>

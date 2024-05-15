@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "그래프탐색 DFS | 프로그래머스 고득점kit 타겟 넘버 | Python"
-description: <strong>💚 Level 2</strong><font color='gray'><br/>- 난이도 ★☆☆☆<br/>- 그래프탐색</font>
-date:   2024-05-13 13:30:09 +0900
+title:  "그래프탐색 BFS | 프로그래머스 고득점kit 게임 맵 최단거리 | Python"
+description: <strong>💚 Level 2</strong><font color='gray'><br/>- 난이도 ★☆☆☆<br/>- 그래프탐색 BFS</font>
+date:   2024-05-15 15:30:09 +0900
 categories: coding
 tags: [그래프탐색]
 ---
@@ -21,11 +21,12 @@ tags: [그래프탐색]
 
 <br/>
 
-# 프로그래머스 고득점kit 타겟 넘버 | Python
+# 프로그래머스 고득점kit 게임 맵 최단거리 | Python
 
 <p align='center'>
-<img src='/assets/img/coding/prog_target_number.png' width='100%'>
-<figcaption><a href='https://school.programmers.co.kr/learn/courses/30/lessons/43165?language=python3'>📌 프로그래머스 고득점kit 타겟 넘버 문제 바로가기</a></figcaption>
+<img src='/assets/img/coding/prog_shortest_game_map_1.png' width='100%'>
+<img src='/assets/img/coding/prog_shortest_game_map_2.png' width='100%'>
+<figcaption><a href='https://school.programmers.co.kr/learn/courses/30/lessons/1844'>📌 프로그래머스 고득점kit 게임 맵 최단거리 문제 바로가기</a></figcaption>
 </p>
 
 <br/>
@@ -35,11 +36,12 @@ tags: [그래프탐색]
 <strong>💚 Level 2</strong>
 ```
 - 난이도 ★☆☆☆
-- 그래프탐색 DFS
+- 그래프탐색 BFS
 ```
 
-그래프탐색 DFS를 이용하면 그리 어렵지 않은 문제다. 사실 그냥 다 더하고 빼서 <code>target</code> 점수가 되는 값만 세어도 된다.
-그러나 재귀로 엄청 깔끔하게 코드로 작성할 수 있어서 가져와 보았다.
+> BFS를 구현할 수만 있다면 쉽게 풀 수 있는 문제!
+
+최단거리를 구하는 일반적인 방법 중 하나로 출발지에서 목적지까지 <code>1</code> 를 더해가며 마지막 목적지의 거리를 구하는 방법이 있다. 이 문제는 그렇게 풀었으며, 목적지까지 가지 못하는 경우를 고려하면서 코드를 작성했다. 
 
 <br/>
 
@@ -60,40 +62,36 @@ tags: [그래프탐색]
 
 ## 💻 내 코드
 
-### 1️⃣ DFS를 이용한 코드
 
 ```python
-answer = 0
-
-def dfs(idx, now, target, numbers):
-    global answer
-    num_len = len(numbers)
-    if idx == num_len and now == target:
-        answer += 1
-    if idx < num_len:
-        dfs(idx+1, target, now - numbers[idx], numbers)
-        dfs(idx+1, target, now + numbers[idx], numbers)
-    return
-
-def solution(numbers, target):
-    dfs(0, 0, target, numbers)
+from collections import deque
+def solution(maps):
+    answer = 0
+    n = len(maps)
+    m = len(maps[0])
+    
+    def bfs():
+        dx = [0,0,1,-1]
+        dy = [1,-1,0,0]
+        queue = deque([(0,0)])
+        while queue:
+            x, y = queue.popleft()
+            if (x,y) == (n-1,m-1):
+                return maps[n-1][m-1]
+            for i in range(4):
+                nx = x+dx[i]
+                ny = y+dy[i]
+                if 0<=nx<n and 0<=ny<m:
+                    if maps[nx][ny] == 1:
+                        maps[nx][ny] = maps[x][y]+1
+                        queue.append((nx,ny))
+        # 목적지까지 가지 못한 경우
+        return -1
+    answer = bfs()
     return answer
 ```
 
-### 2️⃣ 재귀를 이용한 코드
 
-
-```python
-def solution(numbers, target):
-     # numbers 끝까지 순회하고 target 값 달성했을 때
-     if not numbers and target == 0:
-          return 1
-     # numbers 끝까지 순회했지만 target 값 달성 못했을 때
-     elif not numbers:
-          return 0
-     else:
-          return solution(numbers[1:], target-numbers[0]) + solution(numbers[1:], target+numbers[0])
-```
 
 
 <br/><br/><br/>
