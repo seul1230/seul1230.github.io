@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "완전탐색 | BOJ 백준 14501번 퇴사 | Python"
-description: <strong>🩶 Silver 3</strong><font color='gray'><br/>- 난이도 ★★☆☆<br/>- 완전탐색(DFS) & 동적프로그래밍(DP)</font>
+description: <strong>🩶 Silver 3</strong><font color='gray'><br/>- 난이도 ★★☆☆<br/>- 완전탐색 & 동적프로그래밍(DP)</font>
 date:   2024-03-27 15:30:09 +0900
 categories: coding
 tags: [완전탐색, DP 동적프로그래밍]

@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "완전탐색 | BOJ 백준 9079번 동전게임 | Python"
-description: <strong>🩶 Silver 2</strong><font color='gray'><br/>- 난이도 ★★☆☆<br/>- 완전탐색(BFS) & 비트마스킹</font>
+title:  "그래프탐색 BFS | BOJ 백준 9079번 동전게임 | Python"
+description: <strong>🩶 Silver 2</strong><font color='gray'><br/>- 난이도 ★★☆☆<br/>- 그래프탐색 BFS & 비트마스킹</font>
 date:   2024-03-26 15:30:09 +0900
 categories: coding
-tags: [완전탐색, 비트마스킹]
+tags: [완전탐색, 그래프탐색, 비트마스킹]
 ---
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7280083909521856"
@@ -33,7 +33,7 @@ tags: [완전탐색, 비트마스킹]
 <strong>🩶 실버 2</strong>
 ```
 - 난이도 ★★☆☆
-- 완전탐색 & 비트마스킹
+- 그래프탐색 BFS & 비트마스킹
 ```
 
 
