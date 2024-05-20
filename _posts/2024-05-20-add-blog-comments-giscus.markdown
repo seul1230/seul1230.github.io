@@ -6,7 +6,7 @@ color: "danger"
 # style: fill
 description: <strong>[ 공부 & 정리 ]</strong><br/>Giscus로 깃블로그에 댓글 기능 추가하기 & Utterance의 한계점
 categories: tips
-tags: [HowTo, linux, network, ubuntu]
+tags: [HowTo, gitblog]
 ---
 # [ Tip ] 깃블로그, 티스토리에 댓글 기능 추가하는 법 | Giscus, Utterance
 
