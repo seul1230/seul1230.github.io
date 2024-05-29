@@ -102,11 +102,15 @@ t-SNE는 비선형 차원 축소 기법으로, 대략적인 원리는 다음과 
 <br/>
 
 <p class='line-mark-blue'><strong>💡 활용 분야</strong></p>
-LDA의 이러한 특성 때문에 토픽모델링 태스크에서도 활용되었었다. 문서 내 단어들에 토픽을 부여하고, 문서-토픽, 토픽-단어 확률을 학습해나가면서 가장 높은 확률을 가진 토픽을 찾아낸다. 현재는 물론 LLM이 성능이 훨씬 뛰어나다!
+LDA의 이러한 특성 때문에 토픽모델링 태스크에서도 활용되었었다. LDA 는 특정 토픽에 특정 단어가 나타날 확률을 계산해준다. 
 
-<p align='center'><img src='/assets/img/Data_AI/lda_topicmodeling.png' width='70%'><figcaption>문서에서 LDA를 이용해 주제를 찾는 모습</figcaption></p>
+<p align='center'><img src='/assets/img/topic_modeling/LDA_structure.png' width='70%'><figcaption>문서에서 LDA를 이용해 주제를 찾는 모습</figcaption></p>
 
+위의 그림을 예시로 들어보자면, 노란색 토픽은 gene, dna, genetic 이라는 단어가 나올 확률이 높은 걸로 보아 유전자 관련 주제일 것이다. 한편, 문서를 보면 빨간색, 파란색 토픽에 해당하는 단어보다 노란색 토픽에 해당하는 단어가 더 많은 걸로 보아 노란색 토픽일 가능성이 높을 것이다. 이런식으로 LDA를 이용해 문서의 토픽을 추출해낸다. 현재는 물론 LLM이 성능이 훨씬 뛰어나다!
 
+<br/>
+
+> 📍 <strong>더 자세히 보러가기</strong> <br/>[LDA란? - NLP Topic Modeling](https://seul1230.github.io/blog/topic-modeling-LDA)
 
 <br/>
 
