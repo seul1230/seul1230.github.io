@@ -11,7 +11,7 @@ tags: [TIL, NLP, AI/ML/DL]
 <!-- LeakGAN : Long Text Generation via Adversarial Training with Leaked Information -->
 
 
-본 포스트에서는 **[저번 포스트](https://seul1230.github.io/blog/NLP-model-GAN/)**에 이어 문장 생성 모델에 관한 프로젝트를 진행하기 위해 공부한 내용을 정리하였다. LeakGAN에 대해 알아보자. 
+본 포스트에서는 **[저번 포스트](https://seul1230.github.io/blog/NLP-model-GAN)**에 이어 문장 생성 모델에 관한 프로젝트를 진행하기 위해 공부한 내용을 정리하였다. LeakGAN에 대해 알아보자. 
 
 ## 기존 연구에서 문제점
 * 문장이 완성되어야 신호를 줄 수 있는 D 때문에 문장이 길어질 경우 D의 신호가 희박해짐
