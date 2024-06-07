@@ -50,7 +50,7 @@ N으로 만들 수 있는 수로 사칙연산을 할 때 N을 최소한으로 �
 
 > 1. N이 9번 이상 사용되면 -1 반환 <br/>➡️ 미리 N이 사용될 횟수 후보(1~8번)를 만든다.
 > <br/><br/>
-> 2. 횟수 후보 안에서 만들 수 있는 수 <code>numbers[j]</code>, <code>numbers[i-j]</code> 로 사칙연산을 하고 그 결과를 <code>numbers</code> 에 추가 
+> 2. 횟수 후보 안에서 만들 수 있는 수 <code>x</code>, <code>y</code> 로 사칙연산을 하고 그 결과를 <code>numbers</code> 에 추가 
 > <br/>➡️ <code>numbers</code> 에 타깃 넘버 <code>number</code> 가 있으면 횟수 반환
 
 
