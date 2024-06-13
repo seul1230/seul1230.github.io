@@ -68,6 +68,9 @@ collections:
   coding:
     output: true
     permalink: /coding/:name
+  daily:
+    output: true
+    permalink: /daily/:name
 
 ### Disqus ###
 disqus:
