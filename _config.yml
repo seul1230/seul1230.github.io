@@ -27,6 +27,7 @@ last-modified-at:
 nav_exclude: # The following paths are excluded from navbar
   - pages/tags.html
   - pages/coding_tags.html
+  - pages/daily_tags.html
   - pages/404.html
   - pages/index.md
   - documentation/partials/** # For Documentation Only
@@ -56,7 +57,7 @@ author:
 # keybase           : your_username
 
 ### Posts ###
-permalink: /tech/:title
+permalink: /blog/:title
 
 ### Collections ###
 collections:
