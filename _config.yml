@@ -91,7 +91,11 @@ defaults:
       type: "coding"
     values:
       comments: true # Set to true to enable disqus comments
-
+  - scope:
+      path: ""
+      type: "daily"
+    values:
+      comments: true # Set to true to enable disqus comments
   - scope:
       path: ""
       type: "posts"
