@@ -44,23 +44,23 @@ tags: [🇯🇵 일본]
 
 우리가 여행 계획 세우기 전에 중요하게 고려한 부분은 <code>대중교통</code>, <code>숙소</code>, 그리고 <code>여행 중 발생하는 경비</code> 정도 였다.
 
-[x] 교통카드 or 교통패스
-[x] 숙소 고려요소 - 최소한의 보안 & 교통
-[x] 먹고 싶은 음식 리스트업
-[x] 공동 경비 모아서 한 번에 지불 - 나머지는 개인이
+- [x] 교통카드 or 교통패스
+- [x] 숙소 고려요소 - 최소한의 보안 & 교통
+- [x] 먹고 싶은 음식 리스트업
+- [x] 공동 경비 모아서 한 번에 지불 - 나머지는 개인이
 
 <br/>
 
-이걸 고려해서 여행 전에 미리 결제한 리스트는 요정도 되겠다.
+이걸 고려해서 여행 전에 미리 결제한 리스트는 요정도 되겠다. 하나 예약할 때 한 사람이 다 결제하고 엔빵하는 형식으로 진행했다. 
 
 <p align='center'>
-<img src='/assets/img/daily/japan_before_money.png' width='80%'>
+<img src='/assets/img/daily/japan_before_money.png' width='100%'>
 <figcaption>📌 여행 전 정산 현황</figcaption>
 </p>
 
 <br/>
 
-사실 3박4일이면 오사카랑 교토 둘다 둘러보기엔 짧은 시간이다. 좀 더 시간이 넉넉했다면 더 좋았겠지만 그렇진 않아서 계획은 교토 1박 / 오사카 2박으로 정하고 다음과 같이 노션에 계획을 세웠다. 이때 정리한 맛집 리스트는 아래에 >>
+사실 3박4일이면 오사카랑 교토 둘다 둘러보기엔 짧은 시간이다. 좀 더 시간이 넉넉했다면 더 좋았겠지만 그렇진 않아서 계획은 교토 1박, 오사카 2박으로 정하고 다음과 같이 노션에 계획을 세웠다. 이때 정리한 맛집 리스트는 아래에 >>
 
 {% capture carousel_images %}
 /assets/img/daily/restaurant_kyoto.png
@@ -80,49 +80,97 @@ tags: [🇯🇵 일본]
 
 ### 1일차 - 교토
 
+...
+
 <br/>
 
 ### 2일차 - 교토 & 오사카
+
+...
 
 <br/>
 
 ### 3일차 - 유니버셜 스튜디오 재팬
 
+> 유니바 추천 앱 : USJ
+
+<p align='center'>
+<img src='/assets/img/daily/usj_app.png' width='80%'>
+<figcaption><a href='https://www.usj.co.jp/web/ko/kr/enjoy/app'>📌 USJ 앱 이미지</a></figcaption>
+</p>
+
+이 앱 안에서 웬만한 건 다 해결할 수 있다. 가장 도움이 되었던 건 어트랙션 설명과 대기시간을 볼 수 있다는 점이다. 출발 전 어트랙션을 자세히 알아보고 가지 않아서 도움이 많이 되었다. 퍼레이드 시간도 여기서 확인할 수 있으니 다 확인해서 놓치지 말자!
+
+<p align='center'>
+<img src='/assets/img/daily/usj_app.png' width='80%'>
+<img src='/assets/img/daily/usj_download.png' width='80%'>
+<figcaption><a href='https://www.usj.co.jp/web/ko/kr/enjoy/app'>📌 USJ 앱 다운로드 QR</a></figcaption>
+</p>
+
+<br/>
+
+특히 유니버셜 스튜디오 재팬은 슈퍼 닌텐도 월드에 입장하기 위해서는 확약권 포함 입장권이 필요하다. 확약권이 포함되면 티켓이 좀 더 비싸진다. 그러나 한국인은 항상 언제나 방법을 찾지. 구체적인 방법은 아래에 첨부하였다. 
+
+<br/>
+
+#### 슈퍼 닌텐도 월드 확약권 무료로 발권하기
+
+우리는 확약권 미포함 입장권을 예매했기 때문에 빠르게 파크 안에서 슈퍼 닌텐도 월드 e정리권을 발권했다. 많은 시간대 중에 하나를 선택해 발권할 수 있고, 해당 시간대가 아니면 재입장이 불가하다. 
+
+모두 무료로 발권할 수 있다면 확약권 포함 입장권은 존재하지 않겠지. <strong>선착순이다.</strong> 물론 유니버설 스튜디오까지 오는 데에도 지하철에 사람이 굉장히 많았으니 오전에 가는 걸 추천한다. 우리 같은 경우 한 오전 11시 정도에 갔는데도 발권이 무난하게 가능했던 걸 보면 오픈런까지는 필요 없을지도.
+
+<br/>
+
+
+#### 닌텐도 월드
+
+> 점심은 무조건... 닌텐도 월드 밖에서..
+
+하나 더 꿀팁이 있다면 절대 닌텐도 월드 안에서 밥 먹을 생각을 하지마.. 우리는 입장 시간대가 점심 시간이랑 겹쳐서 안에 버섯 캐릭터 <code>키노피오</code> 가 주방장인 레스토랑에 들어갔는데 웨이팅만 2시간 기다린 것 같다. 메뉴가 귀엽긴 하지만 웨이팅 2시간 정도는 아냐. 이걸 아껴서 어트랙션을 더 탈 것을 추천한다.
+
+<br/>
+
+
+> 마리오 카트: 쿠파의 도전장
+
+보이는 게 다가 아닌 어트랙션. 쿠파 입 속으로 들어가는 어트랙션인데, 밖에서 보이는 줄이 적어서 만만하게 봤다가 큰 코 다쳤다. 여기도 웨이팅 2시간 - 3시간은 걸렸다.
+
+마리오 헬멧을 쓰고 마리오 카트를 타고 달리면서 움직이는 별(이었던가...?) 생명체를 맞추면 마지막에 점수도 알려준다. 엄청 재밌진 않지만 3D라 생생하고 아무래도 닌텐도 월드의 꽃이 아닐까 싶다. 안 타면 아쉬울 뻔.
+
+
+<br/>
+
+
+#### 위저딩 월드 오브 해리포터
+
+<br/>
+
+
+#### 미니언 파크
+
+<br/>
+
+
+#### 할리우드
+
+스파이더맨
+
+<br/>
+
+
+
+>
+
+
+...
+
 <br/>
 
 ### 4일차 - 한국으로 !
 
+...
+
 <br/>
-
-<p align='center'>
-<img src='/assets/img/coding/boj_1325.png' width='100%'>
-<figcaption><a href='https://www.acmicpc.net/problem/1325'>📌 백준 1325번 문제 바로가기</a></figcaption>
-</p>
-
-
-
-## 🔎 문제 설명
-
-<strong>🩶 실버 1</strong>
-```
-- 난이도 ★★☆☆
-- 그래프탐색 BFS
-```
-
-
-기본적인 그래프탐색을 구현만 할 수 있다면 쉽게 풀 수 있는 문제다! 그러나 시간초과가 항상 문제가 되는...
-
-나는 BFS/DFS로 구현을 해서 해결했으나, Python3로는 계속 시간초과가 떠서 Pypy3로 제출해서 성공했다. 다른 방법이 있나 더 찾아봐야겠다.
-
-
-
-<br/><br/>
-
-
-📌 문제 풀이 큰 틀은 다음과 같다.
-
-- A가 B를 신뢰한다 = B를 해킹하면 A도 해킹이 된다!
-- 그래프 탐색으로 해결
 
 
 <br/>
@@ -142,48 +190,6 @@ tags: [🇯🇵 일본]
 <br/> -->
 
 
-## 💻 내 코드
-
-```python
-import sys
-from collections import deque
-input = sys.stdin.readline
-
-N, M = map(int, input().split())
-computers = [[] for _ in range(N+1)]
-for _ in range(M):
-    a, b = map(int, input().split())
-    computers[b].append(a)
-    
-answer = 0
-ans_lst = []
-
-def bfs(node):
-    visited = [0 for _ in range(N+1)]
-    queue = deque([node])
-    visited[node] = 1
-    cnt = 1
-
-    while queue:
-        now = queue.popleft()
-        for n in computers[now]:
-            if not visited[n]:
-                visited[n] = 1
-                queue.append(n)
-                cnt += 1
-    return cnt
-
-for i in range(1, N+1):
-    if len(computers[i]) > 0:
-        tmp = bfs(i)
-        if answer < tmp:
-            answer = tmp
-            ans_lst=[i]
-        elif answer == tmp:
-            ans_lst.append(i)
-
-print(*ans_lst)
-```
 
 
 <br/><br/><br/>
