@@ -232,7 +232,7 @@ tags: [🇯🇵 일본]
 /assets/img/daily/japan/kyoto_street_4.jpeg
 {% endcapture %}
 {% include elements/carousel.html carousel_id="7" img_width="70%" %}
-<figcaption>🚏 요미즈데라 가는 길<br/><font color='lightgray'>그림 오른쪽을 누르면 다음 그림으로 넘어간다.</font></figcaption>
+<figcaption>🚏 기요미즈데라 가는 길<br/><font color='lightgray'>그림 오른쪽을 누르면 다음 그림으로 넘어간다.</font></figcaption>
 </p>
 
 <br/>
