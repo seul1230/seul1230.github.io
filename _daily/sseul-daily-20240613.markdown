@@ -23,7 +23,7 @@ tags: [🇯🇵 일본]
 
 <br/> -->
 
-# 🇯🇵 일본 | 대학생 여자 둘이서 떠난 3박4일 오사카 & 교토 여행
+# 🇯🇵 일본 | 짐니랑 둘이서 떠난 3박4일 오사카 & 교토 여행
 
 일본에 2023년 초에 갔으니까 여행을 다녀온지는 1년 반 정도 되겠다. 사진첩에서 추억여행 하는 김에 기록하려고 꺼내보았다!
 
@@ -82,6 +82,13 @@ tags: [🇯🇵 일본]
 </p>
 
 <br/>
+
+<p align='center'>
+<img src='/assets/img/daily/japan/notion.jpeg' width='80%'>
+<figcaption>📌 날짜별 여행 일정 요약<br/><font color='lightgray'>계획대로 진행된 건 체크</font></figcaption>
+</p>
+
+<br/><br/>
 
 
 ### 🛫 출발 - 인천 06:30
