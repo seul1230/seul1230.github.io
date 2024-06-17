@@ -633,7 +633,7 @@ tags: [🇯🇵 일본]
 모두 무료로 발권할 수 있다면 확약권 포함 입장권은 존재하지 않겠지. <strong>선착순이다.</strong> 물론 유니버설 스튜디오까지 오는 데에도 지하철에 사람이 굉장히 많았으니 오전에 가는 걸 추천한다. 우리 같은 경우 한 오전 11시 정도에 갔는데도 발권이 무난하게 가능했던 걸 보면 오픈런까지는 필요 없을지도.
 
 <br/>
----
+
 <br/>
 
 
@@ -1156,28 +1156,3 @@ tags: [🇯🇵 일본]
 
 
 
-
-
-
-
-<!--
-<sup id="a1">[2](#f2)</sup>
- <b id="f1">1</b> 천예은, 김세빈, 이자윤, 우지환, _설명 가능한 AI 기술을 활용한 신용평가 모형에 대한 연구_, 한국데이터정보과학회지(2021). [↩](#a1)
-
-<b id="f2">2</b> 천예은, 김세빈, 이자윤, 우지환, _설명 가능한 AI 기술을 활용한 신용평가 모형에 대한 연구_, 한국데이터정보과학회지(2021). [↩](#a1) -->
-
-
-<!-- ### 🐾　　🐾
-### 🐾　　🐾
-### 🐾　　🐾
-### 🐾　　🐾
-### 🐾　　🐾
-### 🐾　　🐾 
-<font color='dodgerblue'> 예쁜 파랑 </font>
-<font color='lightgray'>Miss</font>
-<mark style='background-color: #f1f8ff'> 연한 파랑 </mark>
-<mark style='background-color: #fff5b1'> 연한 노랑 </mark>
-<mark style='background-color: #ffdce0'> 연한 빨강 </mark>
-<mark style='background-color: #dcffe4'> 연한 초록 </mark>
-<mark style='background-color: #f5f0ff'> 연한 보라 </mark>
--->
