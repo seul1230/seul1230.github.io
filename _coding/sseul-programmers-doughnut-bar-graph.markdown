@@ -115,6 +115,11 @@ def solution(edges):
 
 
 
+<br/>
+
+개인적으로 문제 이해에 도움되었던 페이지를 남긴다.<br/>
+✔️ [[해설] 초보자를 위한 상세한 해설](https://school.programmers.co.kr/questions/69108)
+
 
 <br/><br/><br/>
 
