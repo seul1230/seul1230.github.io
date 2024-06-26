@@ -27,7 +27,7 @@ FinAI 내 교수님과 부원들은 매주 모여 금융 관련 뉴스기사 등
 
 <br/>
 
-<p align='center'><img src='/assets/img/FinAI/home.png' width='80%'><figcaption><a href='https://finai.notion.site/1985b06cae4045f282f8f315dbc3ded6?v=e5d9c9a3aee9498da94f61430622320f&pvs=4'>FinAI의 Notion 페이지</a></figcaption></p>
+<p align='center'><img src='/assets/img/FinAI/home.png' width='80%'><figcaption><a href='https://seul1230.notion.site/FinAI-s-HOME-abc5068dfe0241eea592b3f3589bc9f4'>FinAI의 Notion 페이지</a></figcaption></p>
 
 
 
