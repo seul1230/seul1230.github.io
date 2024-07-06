@@ -1,7 +1,6 @@
 <div class="card-group mt-2">
-    
-    {% for daily_post in site.daily %}
-        {% assign post = daily_post %}
+
+    {% for post in site.daily reversed %}
         {% include daily/post-card.html %}
     {% endfor %}
 

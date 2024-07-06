@@ -11,8 +11,14 @@ endcomment -%} {%- if post.external_url -%} {%- assign post_url = post.external_
 post.url | relative_url -%} {%- endif -%}
 
 <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
-  <a href="{{ post_url }}" class="post card {{ card_style }}" target="_blank" {%-if post.external_url and
-    site.open_new_tab-%} target="_blank" {%-endif-%}>
+  <a
+    href="{{ post_url }}"
+    class="post card {{ card_style }}"
+    target="_blank"
+    {%-if post.external_url and site.open_new_tab-%}
+    target="_blank"
+    {%-endif-%}
+  >
     {%- if post_img -%}
     <img id="{{ post_title }}-img" class="card-img-top" src="{{ post_img }}" alt="{{ post_title }}" />
     {%- endif -%}
@@ -32,9 +38,13 @@ post.url | relative_url -%} {%- endif -%}
     <div class="card-footer {{ text_style }}">
       {%- if post.description -%} {{ post.description }} {%- else -%} {{ post.content |
       truncatewords: 25, " <small><i> read more...</i></small>" }} {%- endif -%}
+      <!-- <br />
+      ⏰ created_at : {{
+      post.date | date_to_long_string }} -->
     </div>
     <!-- <div class="card-footer {{ text_style }}">
-      ⏰ last_modified_at : {{ post.last_modified_at | date: '%d %b %Y' }} <br />⏰ created_at : {{
+      ⏰ last_modified_at : {{ post.last_modified_at | date: '%d %b %Y' }} <br />
+      ⏰ created_at : {{
       post.date | date_to_long_string }}
     </div> -->
   </a>

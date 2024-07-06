@@ -1,6 +1,6 @@
 <div class="card-group mt-2">
     
-    {% for coding_post in site.coding %}
+    {% for coding_post in site.coding reversed %}
         {% assign post = coding_post %}
         {% include coding/post-card.html %}
     {% endfor %}
