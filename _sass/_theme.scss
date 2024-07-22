@@ -18,6 +18,7 @@
   }
 }
 
+
 #theme-toggler:before {
   @include themed(content, "🌙", "🌞");
 }
