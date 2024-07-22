@@ -96,7 +96,7 @@ public class Customer extends Person
 
 <br/><br/>
 
-## 📌 정리 <font color='lightgray'>---------</font>
+## 📌 최종 정리 <font color='lightgray'>---------</font>
 
 인터페이스와 추상 클래스 (abstract) 모두 <strong>추상 메서드를 통해 구현/상속을 통한 메서드 강제 구현</strong> 규칙을 가지는 추상화 클래스이다.
 
@@ -157,7 +157,7 @@ class Whale extends Fish implements Swim {
 
 <br/><br/>
 
-## 참고 <font color='lightgray'>---------</font>
+## 참고
 
 - [ ☕ 인터페이스 vs 추상클래스 용도 차이점 - 완벽 이해 ](https://inpa.tistory.com/entry/JAVA-%E2%98%95-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4-vs-%EC%B6%94%EC%83%81%ED%81%B4%EB%9E%98%EC%8A%A4-%EC%B0%A8%EC%9D%B4%EC%A0%90-%EC%99%84%EB%B2%BD-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0)
 - [ Abstract Class(추상 클래스)와 Interface(인터페이스)의 차이 ](https://2jinishappy.tistory.com/281)
