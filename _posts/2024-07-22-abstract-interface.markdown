@@ -16,48 +16,52 @@ tags: [Java]
 
 ## 인터페이스 vs 추상클래스 한눈에 비교
 
-<table class="w-100 p-3" style="width:100%;">
-    <tr>
-        <th style="background-color: gray"></th>
-        <th style="background-color: gray">추상 클래스 (abstract class)</th>
-        <th style="background-color: gray">인터페이스 (interface)</th>
-    </tr>
-    <tr>
-        <td>사용 가능한 변수</td>
-        <td>제한 없음</td>
-        <td>static final</td>
-    </tr>
-    <tr>
-        <td>접근 제한자</td>
-        <td>제한 없음</td>
-        <td>public</td>
-    </tr>
-    <tr>
-        <td>메소드</td>
-        <td>제한 없음</td>
-        <td>abstract, default, static, private</td>
-    </tr>
-    <tr>
-        <td>상속 키워드</td>
-        <td>extends</td>
-        <td>implements</td>
-    </tr>
-    <tr>
-        <td>다중 상속 가능</td>
-        <td>X</td>
-        <td>O</td>
-    </tr>
-    <tr>
-        <td>공통점</td>
-        <td colspan="2">
-            1. 추상 메서드 <font color="lightgray">(클래스에 구현부가 없는 메서드가 있음)</font> <br/>
-            2. 객체를 생성할 수 없다 (인스턴스화 x)<br/>
-            3. 구현/상속 받은 클래스는 반드시 추상 메서드를 구현해야 한다.<br/>
-        </td>
-    </tr>
-
-
-</table>
+<div class="table-responsive">
+    <table class="table align-middle table-hover w-100 d-block d-md-table">
+    <thead>
+        <tr>
+            <th style="background-color: gray"></th>
+            <th style="background-color: gray">추상 클래스 (abstract class)</th>
+            <th style="background-color: gray">인터페이스 (interface)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>사용 가능한 변수</td>
+            <td>제한 없음</td>
+            <td>static final</td>
+        </tr>
+        <tr>
+            <td>접근 제한자</td>
+            <td>제한 없음</td>
+            <td>public</td>
+        </tr>
+        <tr>
+            <td>메소드</td>
+            <td>제한 없음</td>
+            <td>abstract, default, static, private</td>
+        </tr>
+        <tr>
+            <td>상속 키워드</td>
+            <td>extends</td>
+            <td>implements</td>
+        </tr>
+        <tr>
+            <td>다중 상속 가능</td>
+            <td>X</td>
+            <td>O</td>
+        </tr>
+        <tr>
+            <td>공통점</td>
+            <td colspan="2">
+                1. 추상 메서드 <font color="lightgray">(클래스에 구현부가 없는 메서드가 있음)</font> <br/>
+                2. 객체를 생성할 수 없다 (인스턴스화 x)<br/>
+                3. 구현/상속 받은 클래스는 반드시 추상 메서드를 구현해야 한다.<br/>
+            </td>
+        </tr>
+    </tbody>
+    </table>
+</div>
 
 <br/><br/>
 

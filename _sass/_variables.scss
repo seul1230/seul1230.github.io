@@ -16,4 +16,12 @@ $text-border-h3h4-dark: #7b7b7b;
 $text-black: #343a40;
 $text-white: rgba(white, .9);
 
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1320px
+);
+
 $rounded-borders: 15px;
