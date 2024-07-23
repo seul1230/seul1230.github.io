@@ -96,7 +96,7 @@ public class Customer extends Person
 
 <br/><br/>
 
-## 📌 최종 정리 <font color='lightgray'>---------</font>
+## 📌 정리 & 활용 <font color='lightgray'>---------</font>
 
 인터페이스와 추상 클래스 (abstract) 모두 <strong>추상 메서드를 통해 구현/상속을 통한 메서드 강제 구현</strong> 규칙을 가지는 추상화 클래스이다.
 
