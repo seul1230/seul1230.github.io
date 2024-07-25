@@ -28,14 +28,7 @@ tags: [투포인터]
 <figcaption><a href='https://www.acmicpc.net/problem/21921'>📌 백준 21921번 문제 바로가기</a></figcaption>
 </p>
 
-```
-첫째 줄에 블로그를 시작하고 지난 일수 N와 X가 공백으로 구분되어 주어진다.
-둘째 줄에는 블로그 시작 1일차부터 N일차까지 하루 방문자 수가 공백으로 구분되어 주어진다.
-```
-```
-첫째 줄에 X일 동안 가장 많이 들어온 방문자 수를 출력한다. 만약 최대 방문자 수가 0명이라면 SAD를 출력한다.
-만약 최대 방문자 수가 0명이 아닌 경우 둘째 줄에 기간이 몇 개 있는지 출력한다.
-```
+
 <p align='center'>
 <img src='/assets/img/coding/boj_21921_1.png' width='100%'>
 <figcaption><a href='https://www.acmicpc.net/problem/21921'>📌 백준 21921번 문제 제한</a></figcaption>

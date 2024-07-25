@@ -3,7 +3,10 @@ const COPY_BUTTON_TEXT_BEFORE = 'Copy';
 const COPY_BUTTON_TEXT_AFTER = 'Copied';
 const COPY_ERROR_MESSAGE = '코드를 복사할 수 없습니다. 다시 시도해 주세요.';
 
-const codeBlocks = document.querySelectorAll('pre > code');
+// const language = document.querySelectorAll('div.highlighter-rouge').
+console.log($("#highlighter-rouge div")); 
+const codeBlocks = document.querySelectorAll('div.highlighter-rouge > div'); // pre > code
+
 
 const copyBlockCode = async (target = null) => {
   if (!target) return;
@@ -23,15 +26,19 @@ const copyBlockCode = async (target = null) => {
 
 for (const codeBlock of codeBlocks) {
   const codes = codeBlock.innerHTML.match(/(.*)(\n|.*$)/g);
-//   console.log(codes.slice(0,-1));
-  const processedCodes = codes.slice(0,-1).reduce((prevCodes, curCode) => prevCodes + 
-`<div class="line">${curCode}</div>`, '');
+  const codesHead = codes[0].split('<code>')
+  // console.log(codes.slice(1,-1));
+  const processedCodes = codesHead[0] + `<code>` + [codesHead[1]].concat(codes.slice(1,-1)).reduce((prevCodes, curCode) => prevCodes + 
+`<span class="line">${curCode}</span>`, '') + `</code>`;
+console.log(processedCodes);
   
   const copyButton = `<button type="button" class="copy-btn" 
 data-code="${encodeURI(codeBlock.textContent)}" 
 onclick="copyBlockCode(this)">${COPY_BUTTON_TEXT_BEFORE}</button>`;
   
-  const codeBody = `<div class="code-body">${processedCodes}</div>`;
+  const codeBody = `
+  <div class="code-body">${processedCodes}</div>
+  `;
   
   const codeHeader = `
   <div class="code-header">
@@ -40,6 +47,7 @@ onclick="copyBlockCode(this)">${COPY_BUTTON_TEXT_BEFORE}</button>`;
     <span class="green btn"></span>
     ${copyButton}
   </div>`;
+  // console.log(codeHeader+codeBody);
   
   codeBlock.innerHTML = codeHeader + codeBody;
 }
