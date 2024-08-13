@@ -28,7 +28,7 @@ for (const codeBlock of codeBlocks) {
   const codes = codeBlock.innerHTML.match(/(.*)(\n|.*$)/g);
   const codesHead = codes[0].split('<code>')
   // console.log(codes.slice(1,-1));
-  const processedCodes = codesHead[0] + `<code>` + [codesHead[1]].concat(codes.slice(1,-1)).reduce((prevCodes, curCode) => prevCodes + 
+  const processedCodes = codesHead[0] + `<code>` + [codesHead[1]].concat(codes.slice(1,-2)).reduce((prevCodes, curCode) => prevCodes + 
 `<span class="line">${curCode}</span>`, '') + `</code>`;
 console.log(processedCodes);
   
