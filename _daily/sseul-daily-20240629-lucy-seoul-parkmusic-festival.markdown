@@ -129,7 +129,7 @@ tags: [🎈 콘서트]
 /assets/img/daily/2024_parkmusic/before_stage.jpeg
 /assets/img/daily/2024_parkmusic/pmf_selfie.jpeg
 {% endcapture %}
-{% include elements/carousel.html carousel_id="1" img_width="70%" %}
+{% include elements/carousel.html carousel_id="1" img_width="50%" %}
 <figcaption>무대 시작 전까지 소미랑 놀기<br/><font color='lightgray'>그림 오른쪽을 누르면 다음 그림으로 넘어간다.</font></figcaption>
 </p>
 
