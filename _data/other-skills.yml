@@ -4,7 +4,7 @@
 
 - name: English
   percentage: 80
-  color: success
+  color: warning
 
 - name: Japanese
   percentage: 50

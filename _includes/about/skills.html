@@ -14,7 +14,7 @@
   </div>
 
   <div class="progress mb-4 bg-themed" style="height: 8px;">
-    <div class="progress-bar bg-{{ skill.color | default: "primary" }} wow animated slideInLeft"
+    <div class="progress-bar bg-{{ skill.color | default: primary }} wow animated slideInLeft"
       data-wow-delay="{{ forloop.index | divided_by: 20.0 }}"
       role="progressbar"
       style="width: {{ skill.percentage }}%;"
