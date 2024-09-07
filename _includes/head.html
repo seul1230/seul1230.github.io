@@ -45,4 +45,7 @@
   <link rel="canonical" href="https://seul1230.github.io/index.html" />
 
   <link rel="stylesheet" type="text/css" href="/assets/css/defaultStyle.css" />
+  {% if page.use_math %}
+  {% include mathjax_support.html %}
+  {% endif %}
 </head>
