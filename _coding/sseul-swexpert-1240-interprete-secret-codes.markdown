@@ -25,11 +25,10 @@ tags: [그래프탐색]
 # SW Expert Academy 1240번 단순 2진 암호코드 | Python
 
 <p align='center'>
-<img src='/assets/img/coding/swe_1249_1.png' width='100%'>
-<img src='/assets/img/coding/swe_1249_2.png' width='100%'>
-<img src='/assets/img/coding/swe_1249_3.png' width='100%'>
-<img src='/assets/img/coding/swe_1249_4.png' width='100%'>
-<figcaption><a href='https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=3&problemLevel=4&contestProbId=AV15QRX6APsCFAYD&categoryId=AV15QRX6APsCFAYD&categoryType=CODE&problemTitle=&orderBy=INQUERY_COUNT&selectCodeLang=ALL&select-1=4&pageSize=10&pageIndex=1'>📌 SW Expert Academy 1240. [S/W 문제해결 응용] 1일차 - 단순 2진 암호코드 문제 바로가기</a></figcaption>
+<img src='/assets/img/coding/swea_1240_1.png' width='100%'>
+<img src='/assets/img/coding/swea_1240_2.png' width='100%'>
+<img src='/assets/img/coding/swea_1240_3.png' width='100%'>
+<figcaption><a href='https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV15FZuqAL4CFAYD'>📌 SW Expert Academy 1240. [S/W 문제해결 응용] 1일차 - 단순 2진 암호코드 문제 바로가기</a></figcaption>
 </p>
 
 
