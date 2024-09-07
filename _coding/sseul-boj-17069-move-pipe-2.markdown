@@ -2,6 +2,7 @@
 layout: post
 title:  "DP | BOJ 백준 17069번 파이프 옮기기 2 | Java"
 description: <strong>💛 Gold 4</strong><font color='gray'><br/>- 난이도 ★★☆☆<br/>- DP</font>
+use_math: true
 date:   2024-09-06 19:30:09 +0900
 categories: coding
 tags: [동적 프로그래밍]
@@ -46,7 +47,7 @@ tags: [동적 프로그래밍]
 
 바로 이전에 풀어본 <a href='https://www.acmicpc.net/problem/17070'>📌 백준 파이프 옮기기1</a> 문제와 거의 동일한 문제였다. 차이점이 있다면 N의 범위가 2배로 늘어났다는 점!
 
-$$O(3^N^2)$$
+\[ O(3^{N*N}) \]
 
 시간복잡도가 위와 같기 때문에 파이프옮기기1은 DFS로 풀렸지만 파이프옮기기2는 DFS로 풀면 시간초과가 난다. 이를 극복하기 위해서 생각한 게 바로 ➡️ **DP 동적 계획법!**
 

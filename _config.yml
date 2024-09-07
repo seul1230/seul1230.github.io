@@ -77,6 +77,13 @@ collections:
 disqus:
   shortname: # Your website Shortname on disqus
 
+# Math equation
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
 ### Analytics ###
 analytics:
   enabled: true # Set true to enable analytics

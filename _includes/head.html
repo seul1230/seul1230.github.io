@@ -1,8 +1,10 @@
 <head>
   {% assign title = page.title | default: site.title | escape %} {% assign description =
   page.description | default: site.description | strip_html | strip_newlines | truncate: 160 %} {%
-  if page.name and page.collection == 'projects' %} {% assign title = page.name | escape %} {% endif
-  %}
+  if page.name and page.collection == 'projects' %} {% assign use_math = page.use_math | default: false %}{% assign title = page.name | escape %} {% endif
+  %}{% if page.use_math %}
+  {% include mathjax_support.html %}
+  {% endif %}
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -45,7 +47,5 @@
   <link rel="canonical" href="https://seul1230.github.io/index.html" />
 
   <link rel="stylesheet" type="text/css" href="/assets/css/defaultStyle.css" />
-  {% if page.use_math %}
-  {% include mathjax_support.html %}
-  {% endif %}
+
 </head>
