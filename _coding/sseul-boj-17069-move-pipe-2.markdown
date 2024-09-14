@@ -23,7 +23,7 @@ tags: [동적 프로그래밍]
 <br/>
 
 
-# BOJ 백준 17069번 파이프 옮기기 2 | Python
+# BOJ 백준 17069번 파이프 옮기기 2 | Java
 
 <p align='center'>
 <img src='/assets/img/coding/boj_17069_1.png' width='100%'>

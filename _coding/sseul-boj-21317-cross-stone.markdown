@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "DP 동적프로그래밍 | BOJ 백준 21317번 가장 큰 증가하는 부분 수열 | Python"
+title:  "DP 동적프로그래밍 | BOJ 백준 21317번 징검다리 건너기 | Python"
 description: <strong>🩶 Silver 1</strong><font color='gray'><br/>- 난이도 ★★★★<br/>- DP 동적프로그래밍</font>
 date:   2024-04-02 13:30:09 +0900
 categories: coding
