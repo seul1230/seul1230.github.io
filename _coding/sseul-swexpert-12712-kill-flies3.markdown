@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "구현 | SW Expert Academy 12712번 파리 퇴치3 | Python"
-description: <strong>🩶 D2</strong><font color='gray'><br/>- 난이도 ★☆☆☆<br/>- 구현</font>
+description: <strong>💙 D2</strong><font color='gray'><br/>- 난이도 ★☆☆☆<br/>- 구현</font>
 date:   2024-07-06 16:30:09 +0900
 categories: coding
 tags: [구현]
@@ -34,11 +34,13 @@ tags: [구현]
 
 ## 🔎 문제 설명
 
-<strong>🩶 D2</strong>
-```
+<strong>💙 D2</strong>
+
+<pre class="callout">
 - 난이도 ★★☆☆
 - 구현
-```
+</pre>
+
 
 처음엔 스프레이 노즐에 해당하는 부분의 위치를 하나씩 검사해 파리수를 합하는 쪽으로 생각했으나 너무 코드가 더러워져서 생각을 다시 했다. 
 

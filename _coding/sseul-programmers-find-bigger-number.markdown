@@ -33,10 +33,12 @@ tags: [그리디]
 ## 🔎 문제 설명
 
 <strong>💚 Level 2</strong>
-```
+
+<pre class="callout">
 - 난이도 ★★☆☆
 - 그리디 (LIFO)
-```
+</pre>
+
 
 LIFO 방식을 이용하여 코드를 작성하였다. 앞에서부터 수를 스택에 넣어주고 이전에 마지막으로 넣은 값 <code>stack[-1]</code> 보다 큰 값을 만나면 <code>stack[-1]</code> 를 빼준다.
 

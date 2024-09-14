@@ -33,10 +33,12 @@ tags: [해시]
 ## 🔎 문제 설명
 
 <strong>💚 Level 3</strong>
-```
+
+<pre class="callout">
 - 난이도 ★☆☆☆
 - 해시
-```
+</pre>
+
 
 어렵지 않은 유형이나 딕셔너리 정렬법을 알고 있지 않다면 못 푸는 문제이다. 장르별로 재생횟수 총합 딕셔너리 <code>total_play_dict</code> 와 장르별 고유번호 + 재생횟수를 저장한 <code>lst_play_dict</code> 를 이용해 풀이하였다. 
 

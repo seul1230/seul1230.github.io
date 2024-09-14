@@ -33,10 +33,12 @@ tags: [완전탐색]
 ## 🔎 문제 설명
 
 <strong>💚 Level 2</strong>
-```
+
+<pre class="callout">
 - 난이도 ★☆☆☆
 - 완전탐색
-```
+</pre>
+
 
 <code>itertools</code> 의 <code>permutations</code> 를 이용하면 쉽게 풀리는 문제다. 시간초과도 나지 않는 무난한 문제!<br/>
 아, 난 이제까지 <code>set</code> 에 원소를 더할 때 <code>add</code> 함수를 이용해서 더해줬는데 <code>|=</code> 로도 더할 수 있다고 한다! 아래는 이 방법을 이용해 원소를 더한 코드이다.

@@ -33,11 +33,13 @@ tags: [그래프탐색, 유니온파인드 Union-Find]
 ## 🔎 문제 설명
 
 <strong>💚 Level 2</strong>
-```
+
+<pre class="callout">
 - 난이도 ★★☆☆
 - 그래프탐색 DFS
 - Union-Find
-```
+</pre>
+
 
 두 가지 접근으로 풀이할 수 있다. 각각의 풀이법은 아래에 설명과 함께 올려놓았다!
 

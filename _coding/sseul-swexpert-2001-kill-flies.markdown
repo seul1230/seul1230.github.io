@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "누적합 & 구현 | SW Expert Academy 2001번 파리 퇴치 | Python"
-description: <strong>🩶 D2</strong><font color='gray'><br/>- 난이도 ★★☆☆<br/>- 누적합 / 구현</font>
+description: <strong>💙 D2</strong><font color='gray'><br/>- 난이도 ★★☆☆<br/>- 누적합 / 구현</font>
 date:   2024-05-01 16:30:09 +0900
 categories: coding
 tags: [누적합, 구현]
@@ -35,11 +35,13 @@ tags: [누적합, 구현]
 
 ## 🔎 문제 설명
 
-<strong>🩶 D2</strong>
-```
+<strong>💙 D2</strong>
+
+<pre class="callout">
 - 난이도 ★★☆☆
 - 누적합 / 구현
-```
+</pre>
+
 
 <code>N</code>과 <code>M</code>의 범위가 그렇게 크지 않아서 4중 for문으로도 충분히 풀 수 있는 문제다. 조금 더 커지면 누적합으로 풀어야할 듯하다. 그래서 통과한 풀이도 1) for문 구현, 2) 누적합 이렇게 2개다. 2차원 배열 누적합은 처음인데 처음 접하면 시간을 많이 잡아먹을 것 같다. 더 연습해서 익숙하게 해야겠다는 생각이 들었다!
 

@@ -67,7 +67,7 @@
     color: $dark;
     border-radius: 8px;
     margin: 0;
-    padding: 0.2em 0.65em;
+    padding: 0.1em 0.5em;
   }
 
   blockquote {
@@ -76,10 +76,11 @@
     padding: 0 1em;
   }
 
-  .callout {
+  pre.callout {
     border: 1px solid lightgray;
     background-color: rgb(248, 248, 248);
     border-radius: 5px;
+    padding: 10px 17px;
     margin: 15px 10px;
   }
 
@@ -131,7 +132,7 @@
     code {
       display: flex !important;
       flex-direction: column;
-      padding: 20px 10px !important;
+      padding: 10px 10px 10px 0px !important;
       font-size: 14px;
       border-radius: 0 0 8px 8px;
       box-shadow: 0 12px 24px rgba(0, 0, 0, 40%);
@@ -176,7 +177,7 @@
     display: flex;
     vertical-align: top;
     align-items: center;
-    padding: 8px 8px 8px 15px;
+    padding: 4px 4px 4px 10px;
     margin: 0;
     background-color: #434041;
     border-radius: 8px 8px 0 0;
@@ -202,8 +203,8 @@
     background-color: #43C645;
   }
   .highlighter-rouge .line {
-  counter-increment: line-idx;
-  line-height: 1.5;
+    counter-increment: line-idx;
+    line-height: 1.5;
   }
 
   .highlighter-rouge .line::before {

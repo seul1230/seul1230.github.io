@@ -33,10 +33,12 @@ tags: [그리디]
 ## 🔎 문제 설명
 
 <strong>💚 Level 1</strong>
-```
+
+<pre class="callout">
 - 난이도 ★☆☆☆
 - 그리디
-```
+</pre>
+
 
 <code>lost</code> 배열에 대해 for문을 돌리면서 불가능한 경우를 <code>impossible</code> 로 세어줬다. 그리고 여분 체육복을 빌려준 경우는 <code>reserve</code> 배열에서 제거해주는 식으로 반복문을 돌면 쉽게 풀린다.
 
