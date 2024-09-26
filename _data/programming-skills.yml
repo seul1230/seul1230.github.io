@@ -11,5 +11,5 @@
   color: warning
 
 - name: Java
-  percentage: 30
+  percentage: 50
   color: success
