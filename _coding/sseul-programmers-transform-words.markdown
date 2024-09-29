@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "그래프탐색 BFS | 프로그래머스 고득점kit 단어 변환 | Python"
+title:  "그래프탐색 BFS | 프로그래머스 고득점kit 단어 변환 | Python, Java"
 description: <strong>💚 Level 3</strong><font color='gray'><br/>- 난이도 ★★☆☆<br/>- 그래프탐색 BFS</font>
 date:   2024-05-15 17:30:09 +0900
 categories: coding
@@ -21,7 +21,7 @@ tags: [그래프탐색]
 
 <br/>
 
-# 프로그래머스 고득점kit 단어 변환 | Python
+# 프로그래머스 고득점kit 단어 변환 | Python, Java
 
 <p align='center'>
 <img src='/assets/img/coding/prog_transform_words.png' width='100%'>
@@ -43,6 +43,8 @@ tags: [그래프탐색]
 
 처음엔 전체 문자열에서 1개의 문자를 빼서 비교하는 식으로 했는데, 그냥 <code>for문</code> 으로 돌리면서 다른 문자가 1회 나오는 값만 찾으면 되는 거였다! 그리고 변환횟수를 같이 인자로 넘겨주어 저장할 수 있도록 했다. 코드는 밑에 첨부해놓았다.
 
+*(2024.09.29 자바 풀이 추가)
+
 <br/>
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7280083909521856"
@@ -62,7 +64,7 @@ tags: [그래프탐색]
 
 ## 💻 내 코드
 
-
+### Python 버전 코드
 ```python
 from collections import deque
 
@@ -91,6 +93,49 @@ def solution(begin, target, words):
     return bfs(begin, words, target)
 ```
 
+
+### 자바 버전 코드
+```java
+import java.util.*;
+import java.io.*;
+class Solution {
+    static int answer = 0;
+    static boolean[] visited;
+    public int solution(String begin, String target, String[] words) {
+        answer = 0;
+        visited = new boolean[words.length];
+        dfs(begin, target, words, 0);
+        return answer;
+    }
+    
+    private void dfs(String now, String target, String[] words, int cnt) {
+        if (now.equals(target)) {
+            answer = cnt;
+            return;
+        }
+        for (int i=0; i<words.length; i++) {
+            if (visited[i]) continue;
+            if (possible(now, words[i])) {
+                visited[i] = true;
+                dfs(words[i], target, words, cnt + 1);
+                visited[i] = false;
+            }
+        }
+    }
+    
+    private boolean possible(String a, String b) {
+        int cnt = 0;
+        for (int i=0; i<a.length(); i++) {
+            if (cnt > 2) break; 
+            if (a.charAt(i)!=b.charAt(i)) {
+                cnt ++;
+            }
+        }
+        if (cnt == 1) return true;
+        return false;
+    }
+}
+```
 
 
 
