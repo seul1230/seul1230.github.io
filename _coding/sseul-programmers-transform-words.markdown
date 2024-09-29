@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "그래프탐색 BFS | 프로그래머스 고득점kit 단어 변환 | Python, Java"
-description: <strong>💚 Level 3</strong><font color='gray'><br/>- 난이도 ★★☆☆<br/>- 그래프탐색 BFS</font>
+title:  "그래프탐색 BFS/DFS | 프로그래머스 고득점kit 단어 변환 | Python, Java"
+description: <strong>💚 Level 3</strong><font color='gray'><br/>- 난이도 ★★☆☆<br/>- 그래프탐색 BFS/DFS</font>
 date:   2024-05-15 17:30:09 +0900
 categories: coding
 tags: [그래프탐색]
@@ -36,7 +36,7 @@ tags: [그래프탐색]
 
 <pre class="callout">
 - 난이도 ★★☆☆
-- 그래프탐색 BFS
+- 그래프탐색 BFS/DFS
 </pre>
 
 보통의 그래프탐색과 달리 이 문제는 방문 여부를 저장해줄 필요는 없다. <code>한 번에 한 개의 알파벳만 바꿀 수 있는지</code> 만 확인해서 해당하는 노드만 돌려주면 충분히 시간초과 없이 해결할 수 있다. 
@@ -64,7 +64,7 @@ tags: [그래프탐색]
 
 ## 💻 내 코드
 
-### Python 버전 코드
+### Python 버전 코드 (BFS)
 ```python
 from collections import deque
 
@@ -94,7 +94,7 @@ def solution(begin, target, words):
 ```
 
 
-### 자바 버전 코드
+### 자바 버전 코드 (DFS)
 ```java
 import java.util.*;
 import java.io.*;
