@@ -95,6 +95,13 @@ def solution(begin, target, words):
 
 
 ### 자바 버전 코드 (DFS)
+
+<p align='center'>
+<img src='/assets/img/coding/prog_transform_words_res.png' width='100%'>
+<figcaption>📌 자바 코드 제출 결과</figcaption>
+</p>
+
+
 ```java
 import java.util.*;
 import java.io.*;
