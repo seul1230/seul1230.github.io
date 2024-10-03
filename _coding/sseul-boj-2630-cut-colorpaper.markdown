@@ -34,7 +34,6 @@ tags: [분할정복]
 
 <strong>🩶 실버 2</strong>
 
-
 <pre class="callout">
 - 난이도 ★☆☆☆
 - 분할정복
