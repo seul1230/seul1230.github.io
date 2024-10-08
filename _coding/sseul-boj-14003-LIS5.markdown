@@ -98,7 +98,7 @@ for (int i=N-1, x=list.size()-1; i>=0; i--) {
 
 내가 이해한 개념을 간단하게 정리하려고 적었지만 혹시나 이 글을 보는 누군가도 이해가 잘 되었길 바라며, **[성공한 최종 코드](https://seul1230.github.io/coding/sseul-boj-14003-lis5#-내-코드)는 아래에 첨부해놓았다.**
 
-혹시나 해서 내가 이해할 때 도움이 되었던 [블로그](https://hstory0208.tistory.com/entry/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-LIS%EC%B5%9C%EC%9E%A5-%EC%A6%9D%EA%B0%80-%EB%B6%80%EB%B6%84-%EC%88%98%EC%97%B4%EC%9D%B4%EB%9E%80)도 가져왔다! 그림이 알기 쉽게 설명되어 있다.<br/> *(왜인지 모르겠지만 이 블로그에 있는 LIS 구현 코드는 잘 작동하지 않으니 주의하길..)*
+혹시나 해서 내가 이해할 때 도움이 되었던 [블로그](https://hstory0208.tistory.com/entry/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-LIS%EC%B5%9C%EC%9E%A5-%EC%A6%9D%EA%B0%80-%EB%B6%80%EB%B6%84-%EC%88%98%EC%97%B4%EC%9D%B4%EB%9E%80)도 가져왔다! 그림이 알기 쉽게 설명되어 있다.<br/> *(이 링크에 있는 LIS 구현 코드는 잘 작동하지 않으니 주의하길.. 구현 코드는 아래 최종코드 참고하시면 될 것 같습니다.)*
 
 
 <br/>
