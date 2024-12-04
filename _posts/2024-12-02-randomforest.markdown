@@ -113,7 +113,7 @@ accuracy = random_forest_score(titanic)
 print(accuracy)
 ```
 
-여기에 결측치 및 이상치 처리까지 더해준다면 더 높은 성능을 기대할 수 있다. 결측치 처리 방법에는 평균/중간값 등으로 채워주는 방법, 결측치는 버리는 방법 등이 있으며, 이상치 탐지 방법에는 사분위수(IQR), Isolation Tree, DBScan(Density Based Spatial Clustering of Applications with Noise) 등이 있다.
+여기에 결측치 및 이상치 처리까지 더해준다면 더 높은 성능을 기대할 수 있다. 결측치 처리 방법에는 평균/중간값 등으로 채워주는 방법, 제거하는 방법 등이 있으며, 이상치 탐지 방법에는 사분위수(IQR), Isolation Tree, DBScan(Density Based Spatial Clustering of Applications with Noise) 등이 있다.
 
 <br/><br/>
 
