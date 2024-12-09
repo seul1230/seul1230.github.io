@@ -24,7 +24,43 @@ tags: [🇰🇷 한국, 💙 ]
 
 # 🏝️ 대부도 | 싸피 1학기 마무리 기념 MT
 
-7월부터 참여한 싸피도 어느덧 1학기가 끝났다. 약 4개월 간 한 반에서 8시간씩 같은 강의를 듣고, 스터디를 하고, 프로젝트를 하고 너무 가까워진 우리 12반. 2학기에는 또다시 반배정이 이루어지기에 우리끼리 마무리할 겸 MT를 가기로 했다!
+> 1학기 끝-!
+
+7월부터 참여한 싸피도 어느덧 1학기가 끝났다. 다같이 8시간씩 같은 강의 듣고, 스터디 하고, 프로젝트도 하면서 약 4개월 간 동고동락한 12반 벌써 마지막이라니 말도 안 된다... 2학기에는 또다시 반배정이 이루어지기에 우리끼리 마무리할 겸 단체로 대부도를 가기로 했다!
+
+<p align='center'>
+<img src='/assets/img/daily/ssafyMT/to_daebudo_road.jpeg' width='80%'>
+<figcaption>🚗 대부도 가는 길 🚙<br> <font color="lightgray">잘못 찍어서 많이 흐릿해보이지만 사실은 따수운 햇살 받으면서 갔습니다 ~.~</font></figcaption>
+</p>
+
+<br/>
+
+
+
+
+
+
+<p align='center'>
+<img src='/assets/img/daily/ssafyMT/12_group_present.jpeg' width='80%'>
+<figcaption>쓸데없는 선물 교환식 성공 - 🎁</figcaption>
+</p>
+
+<br/>
+
+
+
+
+
+<br>
+
+
+> 12반 계 아직 살아있어요
+
+오랜만의 MT 고등학교 때로 돌아간 느낌이라 더 즐겁고 행복했다. 여행 이슈로 못 온 @류현 @정현 @승근 도 다음엔 같이 가는 거야 ㅎ.ㅎ <br>
+2학기에 떨어져도 다들 좋은 일만 있길 바라! 12반 오래보쟈~~💙
+
+
+
 <!-- 
 <p align='center'>
 <img src='/assets/img/daily/japan/airplane_wing.jpeg' width='80%'>
