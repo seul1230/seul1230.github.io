@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "구현/시뮬레이션 | BOJ 백준 15683번 감시 | Java"
+title:  "삼성기출 | 구현/시뮬레이션 | BOJ 백준 15683번 감시 | Java"
 description: <strong>💛 Gold 3</strong><font color='gray'><br/>- 난이도 ★★☆☆<br/>- 구현/시뮬레이션</font>
 date:   2024-12-09 12:30:09 +0900
 categories: coding
@@ -21,7 +21,7 @@ tags: [시뮬레이션]
 
 <br/>
 
-# BOJ 백준 15683번 감시 | Java
+# 삼성기출 | BOJ 백준 15683번 감시 | Java
 
 <p align='center'>
 <img src='/assets/img/coding/boj_15683_1.png' width='100%'>
