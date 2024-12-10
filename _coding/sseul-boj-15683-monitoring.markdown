@@ -93,7 +93,7 @@ tags: [시뮬레이션]
 
 ## 💻 내 코드
 
-```python
+```java
 public class Main_15683_G3_감시 {
 	static final int INF = Integer.MAX_VALUE;
 	static int N, M, answer, directions[];
