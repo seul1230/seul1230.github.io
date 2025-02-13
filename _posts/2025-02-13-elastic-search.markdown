@@ -12,7 +12,13 @@ tags: [dev]
 
 최근 개발을 하면서 Elastic Search를 사용했다. 정확히 개념을 이해하고 또 다음에 필요할 때 꺼내쓰기 위해 이게 무엇인지 정리하고자 한다.
 
-<br/><br/>
+<br><br><br>
+
+<p align="center">
+➿ ➿ ➿
+</p>
+
+<br>
 
 ## 🌐 Elasticsearch란
 
@@ -196,9 +202,13 @@ db.articles.find({ $text: { $search: "Elasticsearch" } })
   - Lucene, Solr, Sphinx와 같은 외부 검색 엔진을 사용할 수 있음
 - 하지만 Lucene은 직접 구현해야 해서 개발 부담이 큼. Solr은 Elasticsearch보다 설정이 복잡하고 확장성이 떨어질 수 있음
    
-  
-
 <br><br><br>
+
+<p align="center">
+➿ ➿ ➿
+</p>
+
+<br>
 
 ## 📌 Elasticsearch 간단 실습: 인덱스 생성 ~ 검색까지!
 
@@ -209,9 +219,7 @@ Elasticsearch는 자바 기반으로 되어 있어, 설치 전에 JDK(Java Devel
 
 Elasticsearch의 설정은 `elasticsearch.yml` 파일에 지정하고 클러스터 이름, 노드 이름, 메모리 등을 설정할 수 있다. 기본 네트워크 설정은 localhost:9200이다!
 
-Elasticsearch를 설치하고 실행하려면 공식 사이트에서 다운로드하거나 Docker를 사용할 수 있다. 
-
-다음은 Elasticsearch를 실행할 수 있는 명령어다. 
+Elasticsearch를 설치하고 실행하려면 공식 사이트에서 다운로드하거나 Docker를 사용할 수 있다. 다음은 Elasticsearch를 실행할 수 있는 명령어다. 
 
 - 로컬에 Elasticsearch를 설치했을 경우
 ```bash
