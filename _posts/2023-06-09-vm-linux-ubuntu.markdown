@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "가상머신 우분투에 간단하게 무선 네트워크 인터넷 연결하는 법 | Connect Wireless Network(wifi) on Ubuntu"
+title:  "가상머신 우분투에 간단하게 무선 네트워크 인터넷 연결하는 법 | Connect Wireless Network(wifi) on Ubuntu(MAC)"
 date:   2023-06-09 11:30:09 +0900
 color: "danger"
 style: fill
@@ -8,9 +8,9 @@ description: <strong>[ 공부 & 정리 ]</strong><br/>Linux 가상머신(Ubuntu 
 categories: tips
 tags: [HowTo, linux, network, ubuntu]
 ---
-# [ Linux ] 가상머신에서 간단하게 무선 네트워크 연결하는 법
+# [ Linux ] 간단하게 가상머신에서 무선 네트워크 연결하는 법
 
-UTM을 이용하여 가상머신에서 네트워크 연결을 연결하려다 찾은 방법을 공유하고자 한다. 구글링에 애를 먹은 거에 비하면 그 과정은 상당히 간단하다. 해당 글 작성 시점 기준 내가 사용한 Ubuntu의 버전은 **20.04.6 LTS**이다. 
+UTM을 이용하여 가상머신에서 네트워크 연결을 연결하려다 찾은 방법을 공유하고자 한다. 윈도우는 모바비나 다양한 프로그램을 이용해 가상머신 환경에서 네트워크 연결을 진행할 수 있는데, MAC OS은 그 과정이 쉽지 않았다. 구글링에 애를 먹은 거에 비하면 연결하는 과정은 상당히 간단하다. 해당 글 작성 시점 기준 내가 사용한 Ubuntu의 버전은 **20.04.6 LTS**이다. 
 
 참고 : [ubuntu cannot connect to internet](https://www.youtube.com/watch?v=DSa8e1HwYEc)
 
