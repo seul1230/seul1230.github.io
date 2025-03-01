@@ -368,15 +368,16 @@
       padding-bottom: 12px;
       font-weight: 500;
       text-align: left;
-      background-color: $primary;
-      color: white;
+      background-color: #facbcb;
+      color: black;
     }
   }
 
   table:not(.highlight) {
-    display: block;
+    display: table;
     overflow-x: auto;
     margin: 1rem 0;
+    width: 100%;
 
     td {
       border: 1px solid #ddd;
@@ -385,16 +386,16 @@
 
     th {
       @extend td;
-      padding-top: 12px;
-      padding-bottom: 12px;
+      padding-top: 10px;
+      padding-bottom: 10px;
       font-weight: 500;
       text-align: left;
-      background-color: $primary;
-      color: white;
+      background-color: #ffefef;
+      color: black;
     }
 
     tr:nth-child(even) {
-      background-color: rgba(0, 0, 0, 0.03);
+      background-color: rgba(0, 0, 0, 0.02);
     }
   }
 }
