@@ -3,7 +3,7 @@ layout: post
 title:  "개발 | 엘라스틱서치(Elastic Search)란?"
 description: 엘라스틱 서치 제대로 알고 쓰자!<br/><font color="lightgray">📌 ElasticSearch, 왜 성능이 좋을까?</font>
 date:  2025-02-13 19:00:10 +0900
-style: fill
+# style: fill
 use_math: true
 color: info
 tags: [dev]
