@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "개발 | GitLab에서 Github으로 마이그레이션하기 (커밋 기록 포함 저장소 클론)"
+title:  "개발 | GitLab에서 Github으로 마이그레이션하기 (깃 마이그레이션: 커밋 기록 포함 저장소 클론)"
 description: 🚀 깃랩에서 깃허브로 커밋 기록 포함해서 클론하기!
 date:  2025-03-01 19:00:10 +0900
 style: fill
