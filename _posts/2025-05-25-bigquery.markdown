@@ -285,7 +285,6 @@ def run_bigquery(query):
             raise RuntimeError("SQL 실행 결과가 없습니다.")
 
         return {
-            "question": question,
             "sql_query": query,
             "data": df.to_dict(orient="records") if df is not None else None
         }
