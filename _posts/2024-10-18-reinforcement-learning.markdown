@@ -5,7 +5,7 @@ description: <font color="lightgray">내가 쉽게 기억하려고 쓰는 강화
 categories: 
 date:  2024-10-18 09:00:10 +0900
 # style: fill
-published: false
+published: true
 use_math: true
 color: info
 tags: [RL]
