@@ -63,7 +63,7 @@ tags: [🇰🇷 한국, 💙 ]
 <br/>
 
 <p align='center'>
-<img src='/assets/img/daily/ssafyMT/sky.png' width='40%'>
+<img src='/assets/img/daily/ssafyMT/sky.png' width='60%'>
 <figcaption>🏞️ 보기만 해도 기분 좋아지는 뷰 2</figcaption>
 </p>
 
@@ -86,14 +86,14 @@ tags: [🇰🇷 한국, 💙 ]
 <br/>
 
 <p align='center'>
-<img src='/assets/img/daily/ssafyMT/geun_30.jpeg' width='40%'>
+<img src='/assets/img/daily/ssafyMT/geun_30.jpeg' width='60%'>
 <figcaption>서른이 된 승근씨가 부르는 서른 즈음에</figcaption>
 </p>
 
 <br/>
 
 <p align='center'>
-<img src='/assets/img/daily/ssafyMT/dochak.jpeg' width='40%'>
+<img src='/assets/img/daily/ssafyMT/dochak.jpeg' width='60%'>
 <figcaption>🏞️ 바깥 뷰</figcaption>
 </p>
 
@@ -119,7 +119,7 @@ tags: [🇰🇷 한국, 💙 ]
 
 
 <p align='center'>
-<img src='/assets/img/daily/ssafyMT/barbeque_2506.png' width='50%'>
+<img src='/assets/img/daily/ssafyMT/barbeque_2506.png' width='60%'>
 <figcaption>음 냄새 좋다</figcaption>
 </p>
 
@@ -140,14 +140,14 @@ tags: [🇰🇷 한국, 💙 ]
 /assets/img/daily/ssafyMT/stickers.jpeg
 /assets/img/daily/ssafyMT/stickers_big.jpeg
 {% endcapture %}
-{% include elements/carousel.html carousel_id="1" img_width="60%" %}
+{% include elements/carousel.html carousel_id="1" img_width="70%" %}
 <figcaption>스티커 붙이고 노는 귀여운 12반 <br><font color='lightgray'>률아가 귀여운 스티커를 가져와서 서로 붙여주고 놀았다</font></figcaption>
 </p>
 
 <br/>
 
 <p align='center'>
-<img src='/assets/img/daily/ssafyMT/group_2506.jpeg' width='60%'>
+<img src='/assets/img/daily/ssafyMT/group_2506.jpeg' width='80%'>
 <figcaption>보기 드문 단체 사진 <br><font color='lightgray'>나의 초록색 포카칩을 구하러 고군분투해준 류현과 정현에게 감사의 말씀을 전합니다 💚</font></figcaption>
 </p>
 
@@ -155,12 +155,12 @@ tags: [🇰🇷 한국, 💙 ]
 <br/>
 
 <p align='center'>
-<img src='/assets/img/daily/ssafyMT/mz_v.jpeg' width='60%'>
+<img src='/assets/img/daily/ssafyMT/mz_v.jpeg' width='80%'>
 <figcaption>어때요 MZ 같나요?</figcaption>
 </p>
 
 <p align='center'>
-<img src='/assets/img/daily/cute.png' width='20%'>
+<img src='/assets/img/daily/cute.png' width='40%'>
 <figcaption><font color='lightgray'>크크</font></figcaption>
 </p>
 
@@ -169,21 +169,21 @@ tags: [🇰🇷 한국, 💙 ]
 <br/>
 
 <p align='center'>
-<img src='/assets/img/daily/ssafyMT/wan.jpeg' width='40%'>
+<img src='/assets/img/daily/ssafyMT/wan.jpeg' width='50%'>
 <figcaption>소파에서 요상한 자세로 "다들 이러잖아, 아니냐구" 하던 와니<br><font color='lightgray'>반팔티가 신축성이 좋더라고 정보 좀 물어볼걸</font></figcaption>
 </p>
 
 <br/>
 
 <p align='center'>
-<img src='/assets/img/daily/ssafyMT/geun_joonsu.jpeg' width='60%'>
+<img src='/assets/img/daily/ssafyMT/geun_joonsu.jpeg' width='80%'>
 <figcaption>술에 취한 부장님과 부장님 비위 맞춰드리는 대리님</figcaption>
 </p>
 
 <br/>
 
 <p align='center'>
-<img src='/assets/img/daily/ssafyMT/hj.jpeg' width='40%'>
+<img src='/assets/img/daily/ssafyMT/hj.jpeg' width='50%'>
 <figcaption>아늑한 자리를 찾아 들어가서 우리를 아빠처럼 흐뭇하게 지켜보던 현진쿤</figcaption>
 </p>
 
@@ -212,13 +212,13 @@ tags: [🇰🇷 한국, 💙 ]
 
 <p align='center'>
 <img src='/assets/img/daily/ssafyMT/jiho_mic.jpeg' width='50%'>
-<figcaption>어제 밤 아니고 술 다 깬 아침이라면 믿으시겠습니까</figcaption>
+<figcaption>어제 밤 아니고 술 다 깬 아침</figcaption>
 </p>
 
 <br/>
 
 <p align='center'>
-<img src='/assets/img/daily/ssafyMT/seunggeun_monkey.jpeg' width='40%'>
+<img src='/assets/img/daily/ssafyMT/seunggeun_monkey.jpeg' width='50%'>
 <figcaption>승근 오빠 닮은꼴<br><font color='lightgray'>당사자와 원만한 합의 후 업로드하였습니다</font></figcaption>
 </p>
 
