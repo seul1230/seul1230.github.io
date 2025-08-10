@@ -88,3 +88,11 @@ figcaption {
   background-color: #fff5b1;
 }
 
+p.gray {
+  margin-top: 20px;
+  font-weight: bold;
+  background-color: #f5f5f5;
+  color: #3d3d3d;
+  padding: 2px 2px 2px 8px;
+  font-size: 102%;
+}
