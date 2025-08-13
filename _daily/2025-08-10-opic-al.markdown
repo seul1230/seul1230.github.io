@@ -29,7 +29,7 @@ tags: [Language]
 
 <p align='center'>
 <img src='/assets/img/daily/opic_lv.png' width='100%'>
-<figcaption>오픽 등급표<br><font color="lightgray">위로 갈수록 높은 등급</font></figcaption>
+<figcaption>오픽 등급표 <font color="lightgray">위로 갈수록 높은 등급</font></figcaption>
 </p>
 
 <br>
@@ -59,9 +59,28 @@ tags: [Language]
 
 다들 아실지 모르겠지만 오픽은 미국 외국어교육위원회(ACTFL)에서 개발한 다국어 언어 말하기 어학시험으로, 같은 언어라면 마지막으로 시험을 본 날짜로부터 <code>25일 경과 후</code> 응시 가능합니다. 어학 성적이 맘에 들지 않고 급한 사람에겐 굉장히 슬픈 제도죠. <font color="gray">그게 바로 ㄴr..</font> 
 
-근데 저는 Wavier를 이용해 2주 뒤에 또 시험을 접수했습니다!! 이런 사람들에게 한 줄기 빛 Wavier는 응시제한 면제권으로 이것도 <code>150일마다 1회 사용 가능</code>합니다. 사실 오픽을 재응시할 수 있는 기간이 25일 -> 150일로 늘어날 수 있는 도박이었음에도 불구하고 똑같은 실수를 반복하지 않으리라! 하면서 패기있게 접수했습니다.
+<br>
 
-그럼에도 불구하고 개인적인 일정이 너무 많아서 온전히 공부할 수 있는 기간은 단 하루였습니다.
+<p align='center'>
+<img src='/assets/img/daily/opic_25.png' width='100%'>
+<figcaption>오픽 시험 관리 규정 <a href="https://www.opic.or.kr/opics/servlet/controller.opic.site.applyinfor.ActflTestRuleServlet?p_process=move-actfl_test_rule">> 더 자세히 </a></figcaption>
+</p>
+
+<br>
+
+근데 저는 Waiver를 이용해 2주 뒤에 또 시험을 접수했습니다!! 이런 사람들에게 한 줄기 빛 Waiver는 응시제한 면제권으로 이것도 <code>150일마다 1회 사용 가능</code>합니다. 사실 오픽을 재응시할 수 있는 기간이 25일 -> 150일로 늘어날 수 있는 도박이었지만..! 똑같은 실수를 반복하지 않으리라! 하면서 패기있게 접수했습니다.
+
+<br>
+
+<p align='center'>
+<img src='/assets/img/daily/waiver.png' width='100%'>
+<figcaption>Waiver 관련 규정 <a href="https://www.opic.or.kr/opics/servlet/controller.opic.site.applyinfor.ActflTestRuleServlet?p_process=move-actfl_test_rule">> 더 자세히 </a></figcaption>
+</p>
+
+<br>
+
+
+그럼에도 불구하고 개인적인 일정이 너무 많았기 때문에 온전히 공부할 수 있는 기간은 단 하루였습니다. 하루 투자로 소중한 응시료 84,000원 지켜내기 도전!!
 
 
 <br><br>
@@ -71,17 +90,19 @@ tags: [Language]
 
 서론이 길었습니다. 나름 이번엔 전략을 잘 짰다고 생각하는데요. Survey, 답변 구조, 곤란할 때 유용한 표현에 나누어서 설명드리겠습니다.
 
+<br>
+
 > ✅ **Survey** : 나는 무직 백수
 
 이건 유명해서 다들 아실 거라 생각합니다. Survey 문항을 통해서 오픽 질문이 출제되는데, 주제가 너무 많아지면 질문이 더욱 예측불가해집니다. 나에 대한 정보는 무직, 1인 가구로 제한하고 추가 질문이 그렇게 많지 않을 것 같은 취미로 기록해서 질문이 나올 수 있는 범위를 제한합니다. 물론 진짜로 좋아하고 잘 알아서 영어로 표현도 잘할 수 있다면 그러셔도 됩니다! 저 같은 경우는 걷기, 조깅, 음악 감상, 콘서트 가기, 영화 보기 등등을 선택했습니다.
 
 <br/>
 
-> 어떻게 공부할까
+> 💬 어떻게 공부할까
 
 앞서 말씀드렸듯이 저에게 주어진 하루, 어떻게 공부할까 하면서 집에 있는 <10일 만에 끝내는 해커스 OPIc - Advanced 공략> 교재를 처음부터 읽기 시작했습니다. 약 300 페이지에 달하는 분량이지만, 위에서 했던 Survey를 중심으로 나올 것 같은 주제 + 돌발 질문 파트만 공략해서 예시 스크립트를 완독했습니다.
 
-그랬더니 뭔가가 보이더라구요! 그래서 노션에 정리했고 이것만 염두에 두고 했더니 불과 바로 전에 본 시험은 제가 원치 않는 성적이었는데 그 다음에 바로 AL을 얻을 수 있었습니다.
+그랬더니 뭔가가 보이더라구요! 그래서 노션에 정리했고 이것만 염두에 두고 했더니 불과 바로 전에 쌩으로 봤던 시험은 IM이 떴지만 그 다음에 바로 AL을 얻을 수 있었습니다.
 
 <br>
 
