@@ -1,15 +1,19 @@
 ---
 layout: post
-title:  "NLP | 벡터 유사도 (Vector Similarity) 파헤치기"
-description: 🚀 벡터 유사도 마스터해야지!
-date:  2025-06-12 12:00:10 +0900
+title:  "구글코리아 x Project | LLM 기반 사내 데이터 분석 엔진, DBDeep"
+description: 📊 <strong> 최근 3개월 간 유의미한 변동내역이 있었던 사업 부문을 알려줘_ </strong> 하면 생성형 AI가 직접 필요한 사내 데이터를 조회, 분석하고 인사이트를 뽑아준다고요?
+date:  2025-08-31 12:00:10 +0900
 use_math: false
-color: info
-tags: [dev, NLP]
+style: border
+color: success
+categories: Projects
+tags: [Project, dev, LLM, RAG, BigQuery, Google]
 ---
-# NLP | 벡터 유사도 (Vector Similarity) 파헤치기
+# 구글코리아 연계 | LLM 기반 사내 데이터 분석 엔진, DBDeep
 
-> 컴퓨터는 자연어로 된 문장을 어떻게 이해할까?
+
+
+<!-- > 컴퓨터는 자연어로 된 문장을 어떻게 이해할까?
 
 자연어처리(NLP)에서 이 질문은 꽤 오래된 숙제였다. 단어와 문장은 결국 '의미'를 담고 있지만, 컴퓨터는 숫자만을 이해할 수 있기 때문이다.
 
@@ -191,10 +195,11 @@ tags: [dev, NLP]
 
 <font color="lightgray">*BoW: 단어의 등장 여부나 빈도에만 집중해 숫자 벡터로 변환하는 방법</font>
 
+
+ -->
+
 ## 참고
-- [Jaccard Similarity Made Simple: A Beginner’s Guide to Data Comparison](https://mayurdhvajsinhjadeja.medium.com/jaccard-similarity-34e2c15fb524)
-- [NLP 자연어처리 - 한국어 임베딩](https://ebbnflow.tistory.com/249)
-- [Deep-learning-free Text and Sentence Embedding, Part 1](https://www.offconvex.org/2018/06/17/textembeddings/)
+
 
 <br/><br/><br/>
 
