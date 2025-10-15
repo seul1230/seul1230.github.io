@@ -7,6 +7,21 @@ use_math: false
 color: info
 tags: [dev, NLP]
 ---
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7280083909521856"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-7280083909521856"
+     data-ad-slot="4964002703"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<br/>
+
 # NLP | 벡터 유사도 (Vector Similarity) 파헤치기
 
 > 컴퓨터는 자연어로 된 문장을 어떻게 이해할까?

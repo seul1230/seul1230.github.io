@@ -8,6 +8,21 @@ use_math: true
 color: info
 tags: [RL]
 ---
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7280083909521856"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-7280083909521856"
+     data-ad-slot="4964002703"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<br/>
+
 # ML | Random Forest란?
 
 복습 겸 다시 랜덤 포레스트의 개념을 정리해보고자 한다.

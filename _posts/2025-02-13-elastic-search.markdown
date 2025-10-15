@@ -8,6 +8,21 @@ use_math: true
 color: info
 tags: [dev]
 ---
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7280083909521856"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-7280083909521856"
+     data-ad-slot="4964002703"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<br/>
+
 # Elastic Search이 대체 뭐야? (개념, 장단점, 활용예시, 실습)
 
 최근 개발을 하면서 Elastic Search를 사용했다. 정확히 개념을 이해하고 또 다음에 필요할 때 꺼내쓰기 위해 이게 무엇인지 정리하고자 한다.

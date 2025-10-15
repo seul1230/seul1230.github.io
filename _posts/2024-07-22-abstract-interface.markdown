@@ -8,6 +8,21 @@ date:  2024-07-22 15:00:10 +0900
 color: info
 tags: [Java]
 ---
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7280083909521856"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-7280083909521856"
+     data-ad-slot="4964002703"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<br/>
+
 # [ 자바 ] 인터페이스(Interface) vs 추상클래스(abstract class) 비교 정리! 
 
 > 🌱 자바 공부를 시작한지도 일주일이 지났다!

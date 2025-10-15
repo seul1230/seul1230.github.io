@@ -7,6 +7,22 @@ use_math: true
 color: info
 tags: [dev]
 ---
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7280083909521856"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-7280083909521856"
+     data-ad-slot="4964002703"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<br/>
+
+
 # BigQuery 활용하기 (성능 최적화, 인덱스, SQL문 검증 및 실행까지!)
 
 이번에 구글코리아 기업연계 프로젝트로 LLM 기반 데이터 분석 엔진을 개발하면서 Google Cloud의 BigQuery를 사용했다. 이 과정에서 BigQuery를 어떻게 활용했는지, 특히 성능 최적화, 유사 인덱싱 전략, SQL 실행 및 검증 흐름 그 전체적인 과정에 대해 적어보고자 한다!

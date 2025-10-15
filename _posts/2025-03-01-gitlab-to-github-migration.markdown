@@ -8,6 +8,21 @@ use_math: true
 color: info
 tags: [dev]
 ---
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7280083909521856"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-7280083909521856"
+     data-ad-slot="4964002703"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<br/>
+
 # GitLab에서 Github으로 마이그레이션하기 (커밋 기록 포함 저장소 클론)
 
 부트캠프에 참여하면서 Gitlab에서 작업을 했는데, 기간이 끝나고 github 내 레포에서 관리할 방법을 찾다가 동료에게서 '마이그레이션'이라는 개념을 알게 되었다. 단순히 저장소 안에 있는 파일들만 가져오는 것이 아니라 gitlab에서 커밋했던 기록까지 미러링할 수 있어서 이 방식을 채택하였다. 실제로 그 방법은 생각보다 간단하다!
