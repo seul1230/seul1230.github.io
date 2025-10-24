@@ -9,8 +9,19 @@ $dark-900: #17191a;
     color: $text-white;
   }
 
-  h3, h4, h5 {
-    color: #000000;
+  // h3, h4, h5 {
+  //   color: #000000;
+  // }
+
+  .markdown-body {
+
+    h3 {
+        background-color: #454442;
+    }
+
+    h4 {
+      background-color: #2f2f2f;
+    }
   }
 
   h3.card-title {

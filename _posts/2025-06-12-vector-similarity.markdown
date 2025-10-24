@@ -56,7 +56,7 @@ tags: [dev, NLP]
 자연어 처리 성능은 '임베딩 성능'이라는 말이 있을 정도로, 자연어를 벡터로 바꾼 값이 단어의 특징이나 유사성 등 제대로 반영하지 못하면 무용지물이 있으니 잘 선택하도록 하자.
 
 <p align='center'>
-<img src='/assets/img/Data_AI/embedding.png' width='100%'>
+<img src='/assets/img/Data_AI/embedding.png' width='750px'>
 <figcaption>🔼 벡터 공간에 임베딩된 단어들<br><font color="lightgray">출처: <a href="https://velog.io/@jhoacc/%EC%9E%84%EB%B2%A0%EB%94%A9%EC%9D%B4-%EC%A0%90%EC%9D%B4-%EC%95%84%EB%8B%88%EB%9D%BC-%EB%B2%A1%ED%84%B0%EC%9D%B8-%EC%9D%B4%EC%9C%A0">임베딩이 점이 아니라 벡터인 이유</a></font></figcaption>
 </p>
 
@@ -85,7 +85,7 @@ tags: [dev, NLP]
 
 
 <p align='center'>
-<img src='/assets/img/Data_AI/cosine_sentence.jpg' width='80%'>
+<img src='/assets/img/Data_AI/cosine_sentence.jpg' width='500px'>
 <figcaption>🔼 문장 벡터 시각화 예시<br><font color="lightgray">출처: <a href="https://www.offconvex.org/2018/06/17/textembeddings/">Deep-learning-free Text and Sentence Embedding, Part 1
 </a></font></figcaption>
 </p>
@@ -119,7 +119,7 @@ tags: [dev, NLP]
 
 
 <p align='center'>
-<img src='/assets/img/Data_AI/jaccard_similarity.png' width='80%'>
+<img src='/assets/img/Data_AI/jaccard_similarity.png' width='700px'>
 <figcaption><font color="lightgray">출처: <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fmayurdhvajsinhjadeja.medium.com%2Fjaccard-similarity-34e2c15fb524&psig=AOvVaw3LScqutWsZQbCTb1jX0mkK&ust=1750163888612000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKiXn9369Y0DFQAAAAAdAAAAABAL">Jaccard Similarity Made Simple: A Beginner’s Guide to Data Comparison</a></font></figcaption>
 </p>
 
@@ -145,7 +145,7 @@ tags: [dev, NLP]
 <br>
 
 <p align='center'>
-<img src='/assets/img/Data_AI/euclidean.png' width='50%'>
+<img src='/assets/img/Data_AI/euclidean.png' width='400px'>
 <figcaption>🔼 유클리드 거리 <br><font color="lightgray">출처: <a href="https://wikidocs.net/24654">위키독스 | 딥러닝을 이용한 자연어 처리 입문</a></font></figcaption>
 </p>
 <br>
@@ -153,7 +153,7 @@ tags: [dev, NLP]
 코사인 유사도와 비교하면 이런 느낌이라고 할 수 있겠다.
 
 <p align='center'>
-<img src='/assets/img/Data_AI/euclid_cosine.jpg' width='70%'>
+<img src='/assets/img/Data_AI/euclid_cosine.jpg' width='500px'>
 <figcaption>🔼 유클리드 거리와 코사인 유사도 <br><font color="lightgray">출처: <a href="https://www.lgcns.com/blog/cns-tech/ai-data/15526/">고객 시선 강탈의 중요 요소 ‘빅데이터 추천 시스템’ ①</a></font></figcaption>
 </p>
 <br>
@@ -170,7 +170,7 @@ tags: [dev, NLP]
 <br>
 
 <p align='center'>
-<img src='/assets/img/Data_AI/distance_euclidean_manhattan.png' width='60%'>
+<img src='/assets/img/Data_AI/distance_euclidean_manhattan.png' width='600px'>
 <figcaption>🔼 유클리드 거리와 맨해튼 거리 <br><font color="lightgray">출처: <a href="https://modulabs.co.kr/blog/cluster-analysis-clustering-grouping">모두의 연구소</a></font></figcaption>
 </p>
 

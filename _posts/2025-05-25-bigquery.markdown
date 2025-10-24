@@ -40,7 +40,7 @@ tags: [dev]
 > BigQuery는 Google Cloud에서 제공하는 완전관리형 Serverless 데이터 웨어하우스입니다.
 
 <p align='center'>
-<img src='/assets/img/Data_AI/bigquery.png' width='60%'>
+<img src='/assets/img/Data_AI/bigquery.png' width='400px'>
 <figcaption>Google Big Query 로고</figcaption>
 </p>
 
@@ -53,7 +53,7 @@ SQL 기반의 인터페이스를 통해 페타바이트(PB) 단위의 대용량 
 GCP에는 BigQuery 외에도 Cloud SQL, Cloud Spanner 등 여러 RDB를 제공하고 있다. 그럼에도 이번에 BigQuery를 쓴 이유는 다음과 같다. 
 
 <p align='center'>
-<img src='/assets/img/Data_AI/dbdeep_datasets.png' width='60%'>
+<img src='/assets/img/Data_AI/dbdeep_datasets.png' width='500px'>
 <figcaption>🔼 활용한 사내 데이터셋 및 서비스 데이터셋 일부</figcaption>
 </p>
 

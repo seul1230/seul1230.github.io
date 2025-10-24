@@ -12,7 +12,7 @@ tags: [ssafy, Activities]
 
 코딩 실력을 키우기 위해 이번 싸피 12기에 지원했고, 준비 과정에 대해 기록하고자 글을 쓴다! 어설프게 아는 게 아니라 기초부터 탄탄히 채우는 멋진 사람이 되어야지 🍮
 
-<img src='/assets/img/ssafy/ssafy_img.png' width='50%'><br/>
+<img src='/assets/img/ssafy/ssafy_img.png' width='400px'><br/>
 
 
 
@@ -74,7 +74,7 @@ tags: [ssafy, Activities]
 자료조사 전체적인 틀은 <code> 개념-최근이슈-활용-한계-해결방안 </code> 로 준비했다. 그리고 PT 발표를 어떻게 할지 감이 안 잡힌다면 [강민혁 PT 준비 영상](https://youtu.be/DOvCIrwMPbQ?si=e3ir9LTvIBcf4eJB)을 보자. 발표 구조는 완전히 똑같이 하진 않고 내 입맛대로 변형해서 연습했다.
 
 <p align='center'>
-<img src='/assets/img/ssafy/pt_toc.jpeg' width='60%'>
+<img src='/assets/img/ssafy/pt_toc.jpeg' width='500px'>
 <figcaption>PT 예상 질문</figcaption>
 </p>
 
@@ -85,7 +85,7 @@ tags: [ssafy, Activities]
 인터뷰에 관해서는 구체적으로 언급할 순 없지만 이전 기수 블로그 준비과정을 참고하며 인터뷰 준비를 했던 노션 이미지를 첨부하였다. 아래 목차는 인터뷰 전 내가 준비했던 예상 질문 리스트이다.
 
 <p align='center'>
-<img src='/assets/img/ssafy/notion_toc.jpeg' width='70%'>
+<img src='/assets/img/ssafy/notion_toc.jpeg' width='500px'>
 <figcaption>인터뷰 예상 질문</figcaption>
 </p>
 

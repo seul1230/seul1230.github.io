@@ -20,7 +20,7 @@ Utterance는 Github의 Issue를 사용하여 depth가 1인 게시판이라 기�
 
 
 
-<p align='center'><img src='/assets/img/daily/giscus_test.png' width='90%'><figcaption>Giscus를 이용한 댓글창 예시</figcaption></p>
+<p align='center'><img src='/assets/img/daily/giscus_test.png' width='700px'><figcaption>Giscus를 이용한 댓글창 예시</figcaption></p>
 
 <font color='lightgray'>참고: https://imksh.com/121</font>
 
@@ -36,7 +36,7 @@ giscus를 이용하려면 먼저 Github 계정이 있어야하고, 해당 reposi
 - [ ] Discussion 활성화
 - [ ] giscus 설치
 
-<p align='center'><img src='/assets/img/daily/discussion.png' width='70%'><figcaption>Discussion 설정</figcaption></p>
+<p align='center'><img src='/assets/img/daily/discussion.png' width='700px'><figcaption>Discussion 설정</figcaption></p>
 
 repo를 공개로 설정하는 건 깃허브를 이용하는 개발자라면 알 것이라 생각해 생략하겠다. <font color='gray'>모르신다면 댓글로 부탁드려요!</font> Discussion 설정은 <code>Settings > Features > ✅ Discussion</code> 에서 해줄 수 있다. 여기까지 하면 아래 단계까지는 끝났다.
 
@@ -52,12 +52,12 @@ repo를 공개로 설정하는 건 깃허브를 이용하는 개발자라면 알
 
 위 링크를 통해 생성한 레포지토리에 giscus를 설치할 수 있다. 
 
-<p align='center'><img src='/assets/img/daily/giscus.png' width='90%'><img src='/assets/img/daily/giscus_configure.png' width='50%'><figcaption>Giscus 설치</figcaption></p>
+<p align='center'><img src='/assets/img/daily/giscus.png' width='750px'><img src='/assets/img/daily/giscus_configure.png' width='400px'><figcaption>Giscus 설치</figcaption></p>
 
 모든 repo에 설치할 것인지, 선택된 repo에만 설치할 것인지 권한을 물어보는 단계가 나오는데 난 그냥 <code>Only select repositories</code> 를 선택했다. 아! 그리고 아까 1번에서 만들어준 repo명을 입력해줘야 한다!
 
 
-<p align='center'><img src='/assets/img/daily/repo_access.png' width='90%'><figcaption>Giscus repo 권한 설정</figcaption></p>
+<p align='center'><img src='/assets/img/daily/repo_access.png' width='750px'><figcaption>Giscus repo 권한 설정</figcaption></p>
 
 <br/>
 
@@ -67,13 +67,13 @@ repo를 공개로 설정하는 건 깃허브를 이용하는 개발자라면 알
 
 여기까지 왔으면 이제 확인을 해보자. 스크롤을 내리면 아래 언어 / 저장소 설정이 있다.
 
-<p align='center'><img src='/assets/img/daily/repo_check.png' width='70%'><figcaption>Giscus 커스텀 페이지</figcaption></p>
+<p align='center'><img src='/assets/img/daily/repo_check.png' width='700px'><figcaption>Giscus 커스텀 페이지</figcaption></p>
 
 저장소에 아까 만들어준 repo 명을 입력했을 때 위 그림처럼 '<font color='green'>통과했습니다! 이 저장소는 모든 조건을 만족합니다.</font>' 메시지가 나온다면 위 과정에 문제가 없었다는 뜻이다. 만약 안 뜬다면, repo 명을 다시 확인하거나 위 과정에서 빠뜨린 게 없나 다시 만들어보는 것을 추천한다. 
 
 <br/>
 
-<p align='center'><img src='/assets/img/daily/giscus_url.png' width='70%'></p>
+<p align='center'><img src='/assets/img/daily/giscus_url.png' width='700px'></p>
 
 위 그림은 해당 블로그 페이지랑 repo 내 Discussion을 어떻게 연결할 것인지 설정해주는 부분이다.
 
@@ -99,7 +99,7 @@ repo를 공개로 설정하는 건 깃허브를 이용하는 개발자라면 알
 여기까지 했다면 블로그에 복붙할 코드를 제공해준다. <br/>
 아래 script 코드를 블로그 레이아웃 앞부분에 넣어주면.. 이제 하나만 더 하면 된다!
 
-<p align='center'><img src='/assets/img/daily/giscus_code.png' width='70%'></p>
+<p align='center'><img src='/assets/img/daily/giscus_code.png' width='700px'></p>
 
 <br/>
 
