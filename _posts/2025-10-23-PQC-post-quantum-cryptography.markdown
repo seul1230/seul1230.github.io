@@ -99,7 +99,7 @@ tags: [Cryptology, Security]
 
     <p align='center'>
     <img src='/assets/img/coding/PQC_hash_based.avif' width='400px'> 
-    <figcaption>코드 기반 암호화 및 복호화 과정</figcaption>
+    <figcaption>해시 함수 동작 예시</figcaption>
     </p>
 
 
