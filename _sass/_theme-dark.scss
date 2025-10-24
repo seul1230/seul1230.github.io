@@ -9,6 +9,33 @@ $dark-900: #17191a;
     color: $text-white;
   }
 
+  h3, h4, h5 {
+    color: #000000;
+  }
+
+  h3.card-title {
+    color: $text-white;
+  }
+
+  blockquote {
+    color: #e6e6e6;
+  }
+
+  pre.callout {
+    border: 1px solid rgb(72, 72, 72);
+    background-color: rgb(64, 64, 64);
+    border-radius: 5px;
+    padding: 10px 17px;
+    margin: 10px;
+  }
+
+  pre {
+    display: block;
+    position: relative;
+    font-size: 90%;
+    margin: 10px;
+  }
+
   // Code blocks & Syntax highlighting
 
   @import "native.scss";
@@ -43,7 +70,10 @@ $dark-900: #17191a;
   .card {
     background-color: $dark-600;
     width: 100%;
+  }
 
+  .card-footer font {
+    color: #b5b5b5;
   }
 
   .card.border {
@@ -109,9 +139,9 @@ $dark-900: #17191a;
     background-color: $dark-600;
   }
 
-  h3,h4,h5{
-    text-shadow: -1px 0 #909090, 0 1px #909090, 1px 0 #909090, 0 -1px #909090;
-  }
+  // h3,h4,h5{
+  //   text-shadow: -1px 0 #909090, 0 1px #909090, 1px 0 #909090, 0 -1px #909090;
+  // }
 
   // a:not(.btn):not([class^="carousel-"]):not([class^="list-"]):not(.no-underline) {
   //   display: inline-block;
