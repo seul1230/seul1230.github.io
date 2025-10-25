@@ -4,7 +4,7 @@ pre{
 
 *{
   /* 글씨체 문제 생기면 여기 주석 풀기  */
-  /* font-family: 'NanumGothic', 'D2 Coding', monospace; */
+  font-family: 'NanumBarunGothic', 'NanumGothic', 'D2 Coding', monospace;
   line-height: 180%;
   font-size: 98%
 }

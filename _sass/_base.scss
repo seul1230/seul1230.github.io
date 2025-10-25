@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: 'NanumSquare',"Poppins", sans-serif;
+  font-family: 'NanumBarunGothic', 'NanumSquare', "Poppins", sans-serif;
 
 }
 
@@ -31,6 +31,12 @@ body {
 @font-face {
   font-family: 'NanumSquare';
   src: url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+  unicode-range: U+AC00-D7A3;
+}
+
+@font-face {
+  font-family: 'NanumBarunGothic';
+  src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
   unicode-range: U+AC00-D7A3;
 }
 
