@@ -14,7 +14,7 @@ url: https://seul1230.github.io/
 ### Plugins ###
 plugins:
   - jemoji
-  - jekyll-sitemap
+  # - jekyll-sitemap
   - jekyll-feed
   - jekyll-last-modified-at
   - jekyll-include-cache
