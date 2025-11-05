@@ -121,6 +121,8 @@ exclude:
   - CONTRIBUTING.md
   - LICENSE
   - "*.log"
-  - sitemap.xml
+
+# include:
+#   - sitemap.xml
 
 github: [metadata]
