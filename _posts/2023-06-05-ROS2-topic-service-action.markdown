@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Summary | ROS2 II | <br/>Topic, Service, Action이란?"
+title:  "Summary | ROS2 II | Topic, Service, Action이란?"
 date:   2023-06-06 01:00:09 +0900
 description: <strong>[ 공부 & 정리 ]</strong><br/>ROS 기초 II (Topic, Service, Action)
 style: border
