@@ -52,7 +52,7 @@ tags: [Cryptology, Security]
 
 
 
-### 보안 위협의 현실화, HDNL
+### 보안 위협의 현실화, HNDL
 
 > Harvest Now, Decrypt Later 데이터는 지금 수집, 해독은 나중에!
 
