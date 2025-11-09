@@ -310,6 +310,7 @@ BentoML은 많이 알려진 머신러닝 모델 배포 관리 도구 중 하나�
 
 - [우아한기술블로그 > 제목은 안정적인 AI 서빙 시스템으로 하겠습니다. 근데 이제 자동화를 곁들인…](https://techblog.woowahan.com/19548/)
 - [Machine Learning Serving - BentoML 사용법](https://zzsza.github.io/mlops/2021/04/18/bentoml-basic/)
+- [BentoML Github](https://github.com/bentoml/BentoML?tab=readme-ov-file)
 
 
 
