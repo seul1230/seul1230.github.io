@@ -1,0 +1,22 @@
+<div class="link-preview-card">
+    <a href="{{ include.url }}" target="_blank" rel="noopener noreferrer" class="link-preview-wrapper">
+        {% if include.image %}
+        <div class="link-preview-image">
+            <img src="{{ include.image }}" alt="{{ include.title }}">
+        </div>
+        {% else %}
+        <div class="link-preview-image link-preview-placeholder">
+            <span>🔗</span>
+        </div>
+        {% endif %}
+
+        <div class="link-preview-content">
+            <h3 class="link-preview-title">{{ include.title }}</h3>
+            {% if include.description %}
+            <p class="link-preview-description">{{ include.description }}</p>
+            {% endif %}
+            <span class="link-preview-url">{{ include.url | remove: "http://" | remove: "https://" | truncate: 50
+                }}</span>
+        </div>
+    </a>
+</div>
