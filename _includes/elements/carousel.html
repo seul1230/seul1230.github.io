@@ -26,12 +26,12 @@
     {% for image in images %} {%- if forloop.first -%}
     <div class="carousel-item active">
       <img src="{{ image }}" class="{{include.class}}"
-        style="width: {{ img_width }}; height: {{ img_height }}; max-width: 100%; display: block; " />
+        style="width: {{ img_width }}; height: {{ img_height }}; max-width: 100%; object-fit: contain; display: block; " />
     </div>
     {%- else -%}
     <div class="carousel-item">
       <img src="{{ image }}" class="{{include.class}}"
-        style="width: {{ img_width }}; height: {{ img_height }}; max-width: 100%; display: block; " />
+        style="width: {{ img_width }}; height: {{ img_height }}; max-width: 100%; object-fit: contain; display: block; " />
     </div>
     {%- endif -%} {% endfor %}
   </div>
@@ -63,12 +63,12 @@
     {% for image in images %} {%- if forloop.first -%}
     <div class="carousel-item active">
       <img src="{{ image }}" class="d-block"
-        style="width: {{ img_width }}; height: {{ img_height }}; max-width: 100%; " />
+        style="width: {{ img_width }}; height: {{ img_height }}; max-width: 100%; object-fit: contain; display: block;" />
     </div>
     {%- else -%}
     <div class="carousel-item">
       <img src="{{ image }}" class="d-block"
-        style="width: {{ img_width }}; height: {{ img_height }}; max-width: 100%; " />
+        style="width: {{ img_width }}; height: {{ img_height }}; max-width: 100%; object-fit: contain; display: block;" />
     </div>
     {%- endif -%} {% endfor %}
   </div>
