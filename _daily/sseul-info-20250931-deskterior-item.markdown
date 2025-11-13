@@ -36,6 +36,18 @@ tags: [데스크테리어, 화이트, 키보드, 스위치, 마우스]
 최근 기술 블로그를 꾸준히 쓰다 보니, 문득 제 키보드를 바라보게 되더라고요. <font color="lightgray">소재를 찾았다 후후</font> <br>
 SSAFY를 시작하고 나서 하루 종일 키보드를 두드리다 보니, 자연스럽게 ‘내 책상’에 애정을 가지게 되었고, 그때부터 데스크테리어(Desk + Interior) 에 관심을 갖게 되었습니다.
 
+<p align='center'>
+
+{% capture carousel_images %}
+/assets/img/daily/info/thinkway_mydesk.jpeg
+/assets/img/daily/info/spm_mydesk.jpeg
+{% endcapture %}
+{% include elements/carousel.html carousel_id="11" img_height="300px"  %}
+
+<figcaption>나의 작은 데스크 공개<br><font color="lightgray">권또또 유튜브 보고 있었슨. 모니터나 거치대 정보는 다음에..</font></figcaption>
+</p>
+
+
 코드를 치는 시간만큼이나 책상 앞에서 보내는 시간이 길다 보니, 이 공간이 편안하고 예쁘면 이상하게 집중력도 더 잘 오르더라고요.
 그래서 오늘은, 저처럼 화이트톤을 사랑하는 덕후들을 위한 ✨화이트 데스크테리어✨ 를 위한 아이템들을 가져왔습니다. 물론 다 내돈내산으로 구한 아이들입니다!
 
