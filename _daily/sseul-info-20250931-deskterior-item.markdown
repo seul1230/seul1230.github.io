@@ -273,19 +273,9 @@ SSAFY를 시작하고 나서 하루 종일 키보드를 두드리다 보니, 자
 <iframe src="https://ads-partners.coupang.com/widgets.html?id=940078&template=banner&trackingCode=AF7463992&subId=&width=728&height=90" width="728" height="90" frameborder="0" scrolling="no" referrerpolicy="unsafe-url" browsingtopics></iframe>
 </p>
 
-
-
-<!-- 
-
-<p align='center'>
-<img src='/assets/img/Data_AI/embedding.png' width='100%'>
-<figcaption>🔼 벡터 공간에 임베딩된 단어들<br><font color="lightgray">출처: <a href="https://velog.io/@jhoacc/%EC%9E%84%EB%B2%A0%EB%94%A9%EC%9D%B4-%EC%A0%90%EC%9D%B4-%EC%95%84%EB%8B%88%EB%9D%BC-%EB%B2%A1%ED%84%B0%EC%9D%B8-%EC%9D%B4%EC%9C%A0">임베딩이 점이 아니라 벡터인 이유</a></font></figcaption>
-</p>
-
 <br/>
 
-
- -->
+더 궁금한 게 있다면 밑에 댓글이나 메일로 연락주세효-!
 
 ## 참고
 
