@@ -50,13 +50,14 @@ image {
 }
 .center {
   display: block;
-  margin: auto;
+  margin: 0 auto;
 }
 figcaption {
   color: #808080;
   font-size: 80%;
   text-align: center;
-  margin-top: 0;
+  margin-top: 10px;
+  margin-bottom: 30px;
   padding: -10px 2px 2px 2px;
 }
 

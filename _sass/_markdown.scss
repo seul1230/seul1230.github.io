@@ -305,7 +305,11 @@
     display: block;
     max-width: 100%;
     height: auto;
-    margin: 1rem auto;
+    margin: 1rem auto 0 auto;
+  }
+
+  p[align="center"] {
+    margin-bottom: 0;
   }
 
   .video {
