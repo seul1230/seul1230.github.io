@@ -1,3 +1,71 @@
+{%- if include.id -%}
+{%- comment -%} YouTube 동영상 {%- endcomment -%}
+{%- assign hd = include.hd | default: "1" -%}
+{%- assign cc = include.cc | default: "0" -%}
+{%- assign cc_lang = include.cc_lang | default: "ko" -%}
+{%- assign start = include.start | default: "" -%}
+
+{%- assign params = "?rel=0&modestbranding=1" -%}
+{%- if hd == "1" -%}
+{%- assign params = params | append: "&vq=hd1080" -%}
+{%- endif -%}
+{%- if cc == "1" -%}
+{%- assign params = params | append: "&cc_load_policy=1&cc_lang_pref=" | append: cc_lang -%}
+{%- endif -%}
+{%- if start != "" -%}
+{%- assign params = params | append: "&start=" | append: start -%}
+{%- endif -%}
+
 <div class="video">
-  <iframe src="https://www.youtube.com/embed/{{ include.id }}" frameborder="0" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/{{ include.id }}{{ params }}" frameborder="0" allowfullscreen
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
 </div>
+
+{%- elsif include.path -%}
+{%- comment -%} 로컬 동영상 파일 {%- endcomment -%}
+{%- assign video_width = include.width | default: "100%" -%}
+{%- assign video_class = include.class | default: "" -%}
+{%- assign autoplay = include.autoplay | default: false -%}
+{%- assign loop = include.loop | default: false -%}
+{%- assign muted = include.muted | default: false -%}
+
+<div class="video-container" style="max-width: {{ video_width }}; margin: 1rem auto;">
+  <video class="{{ video_class }}" style="width: 100%; height: auto; display: block;" controls preload="auto" {% if
+    autoplay %}autoplay{% endif %} {% if loop %}loop{% endif %} {% if muted %}muted{% endif %} playsinline>
+    <source src="{{ include.path }}" type="video/mp4">
+    브라우저가 video 태그를 지원하지 않습니다.
+  </video>
+</div>
+
+{%- endif -%}
+
+<style>
+  /* 기존 YouTube 스타일 유지 */
+  .video {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 비율 */
+    height: 0;
+    overflow: hidden;
+    margin: 1rem 0;
+  }
+
+  .video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* 로컬 동영상 스타일 */
+  .video-container {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .video-container video {
+    background-color: #000;
+  }
+</style>
