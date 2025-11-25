@@ -28,6 +28,18 @@ tags: [🇰🇷 한국, 💙 ]
 
 싸피 2학기엔 실무형 프로젝트를 3개 진행하게 되고, 세 번의 팀을 만나게 된다는 것을 의미한다. 그동안 좋은 사람들도 많이 만나고 다양한 일들이 있었지만 그 중에서도 프로젝트 내내 즐겁고 가장 애정하는 팀이 바로 디비딥이다. 점심 먹고 산책 가고 가끔은 복권도 사고 도파민이 필요할 땐 발로란트도 하러 가고 추억 돋네,,, 그때 참 좋았지
 
+
+{% capture carousel_images %}
+/assets/img/daily/Anbandegi/group_3.JPG
+/assets/img/daily/Anbandegi/group_2.jpeg
+/assets/img/daily/Anbandegi/group_1.jpeg
+
+{% endcapture %}
+{% include elements/carousel.html carousel_id="1" img_height="400px" %}
+
+
+<br>
+
 아무튼 싸피 이후에도 달에 한 번씩 회식하고 얼굴 보고 지냈는데, 또 만날 때도 됐고 날도 좀 선선해져서 별 보러 가고 싶어서 이 팀에게 제안을 하게 됩니다! 후후 사실 흐지부지될 수도 있었지만 내가 `안반데기 별 구경`을 테마로 자료 찾아서 먹이를 던지고, 이걸 승근 오빠가 가자가자! 렌트카 예약까지 미친 추진력으로 진행을 하면서 여행이 확정됐다.
 
 
