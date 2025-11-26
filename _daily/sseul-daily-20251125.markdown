@@ -67,12 +67,12 @@ tags: [🇰🇷 한국, 💙 ]
 승근 오빠가 최근에 상봉에서 자취를 시작했는데, 운전도 오빠가 하고 마침 근처에 코스트코랑 홈플러스가 있어서 상봉역에 모여서 장을 보기로 했다! 유진경완건호는 오전에 시험이 있어서 늦참 이슈로 우리끼리 장보고 코스트코에서 점심을 먹었다. 승우는 시험 이슈로 불참!
 
 <p align='center'>
-<img src='/assets/img/daily/Anbandegi/costco_pizza.jpeg' width='60%'>
+<img src='/assets/img/daily/Anbandegi/costco_pizza.jpeg' width='500px'>
 <figcaption>코스트코 사람 왤케 많죠 😇</figcaption>
 </p>
 
 <p align='center'>
-<img src='/assets/img/daily/Anbandegi/costco.jpeg' width='60%'>
+<img src='/assets/img/daily/Anbandegi/costco.jpeg' width='500px'>
 <figcaption>그리고 홈플러스 주차장에서 모두 모임<br><font color="lightgray">이날 꾸민 와니 첨 봤다</font></figcaption>
 </p>
 
