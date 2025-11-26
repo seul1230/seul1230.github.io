@@ -153,7 +153,7 @@ tags: [🇰🇷 한국, 💙 ]
 /assets/img/daily/Anbandegi/wan_dead_2.jpeg
 /assets/img/daily/Anbandegi/wan_dead.jpeg
 {% endcapture %}
-{% include elements/carousel.html carousel_id="1" img_height="400px" %}
+{% include elements/carousel.html carousel_id="2" img_height="400px" %}
 
 <figcaption>어제 최선을 다해 즐긴 자의 모습</figcaption>
 </p>
