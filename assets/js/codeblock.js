@@ -25,9 +25,20 @@ const copyBlockCode = async (target = null) => {
 }
 
 for (const codeBlock of codeBlocks) {
+
+  // 언어 클래스 추출: 바깥 highlighter-rouge div에서 language-xxx 찾기
+  const outerBlock = codeBlock.closest('div.highlighter-rouge');
+  const langClass = outerBlock
+    ? [...outerBlock.classList].find(c => c.startsWith('language-'))
+    : null;
+
+  const baseLanguage = langClass ? langClass.replace('language-', '') : 'text';
+  const language = baseLanguage.charAt(0).toUpperCase() + baseLanguage.slice(1);
+  console.log("lang:", language);
+
   const codes = codeBlock.innerHTML.match(/(.*)(\n|.*$)/g);
   const codesHead = codes[0].split('<code>')
-  // console.log(codes.slice(1,-1));
+
   const processedCodes = codesHead[0] + `<code>` + [codesHead[1]].concat(codes.slice(1,-2)).reduce((prevCodes, curCode) => prevCodes + 
 `<span class="line">${curCode}</span>`, '') + `</code>`;
 console.log(processedCodes);
@@ -45,11 +56,13 @@ onclick="copyBlockCode(this)">${COPY_BUTTON_TEXT_BEFORE}</button>`;
     <span class="red btn"></span>
     <span class="yellow btn"></span>
     <span class="green btn"></span>
+    <span class="code-lang">${language}</span>
     ${copyButton}
   </div>`;
-  // console.log(codeHeader+codeBody);
   
   codeBlock.innerHTML = codeHeader + codeBody;
 }
+
+
 
 
