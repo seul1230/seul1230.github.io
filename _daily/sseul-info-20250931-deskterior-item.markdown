@@ -2,7 +2,7 @@
 layout: post
 title:  "개발자 필수템 | ⌨️ 화이트 데스크테리어 추천 (내돈내산, 버티컬 마우스, 기계식 키보드, 스위치, 팜레스트, 데스크매트)"
 description: 똑같이 개발만 하기 지겹다면 책상을 바꿔보자!
-thumbnail: /assets/img/daily/info/thinkway_mydesk.jpeg
+thumbnail: assets/img/daily/info/thinkway_mydesk.jpeg
 date:  2025-09-31 12:00:10 +0900
 use_math: false
 style: border
