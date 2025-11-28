@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
 Sitemap: https://seul1230.github.io/sitemap.xml
+Sitemap: https://seul1230.github.io/sitemap_2.xml
