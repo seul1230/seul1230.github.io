@@ -71,6 +71,10 @@ AI 기술을 실제 비즈니스에 접목시키기 위해서는 생각보다 �
 
 AI 개발자는 PyTorch, TensorFlow, Scikit Learn 등 다양한 프레임워크와 라이브러리를 사용해 모델을 학습시킨다. 다양한 모델을 서빙하다 보면 다양한 프레임워크와 라이브러리를 가지는 모델 모두를 서빙할 수 있어야 하는데, 서로 모델을 불러오고 추론하는 방식이 달라 코드 일관성 유지와 유지 보수가 어려워지고 시스템 복잡성이 증가하는 문제가 생긴다.
 
+<br>
+
+> Model Serving에 특화된 라이브러리 BentoML
+
 이 문제를 해결해 주는 도구가 바로 BentoML이다. BentoML은 여러 프레임워크를 지원하며, 모델을 손쉽게 컨테이너화(Containerization) 할 수 있게 도와준다. 이후 Kubernetes 배포도 간편해지고, 전·후처리 로직을 쉽게 추가할 수 있어 개발 속도를 높일 수 있다.
 
 Bento는 일본어로 도시락이라는 뜻으로, 모델 Artifact 및 코드를 도시락처럼 포장(Packing)하고 배달(Deploy, 배포)까지 자동으로 해준다고 생각하면 될 것 같다.
@@ -82,7 +86,7 @@ Bento는 일본어로 도시락이라는 뜻으로, 모델 Artifact 및 코드�
 
 <br>
 
-## BentoML의 기본 구조
+## BentoML의 기본 구조와 코드
 
 ### BentoService 개념
 
@@ -197,16 +201,92 @@ print(svc.artifacts['model'].metadata)
 
 
 
-### CI/CD 자동화
+### BentoML의 Deploy 배포
 
-BentoML을 통해 간단하게 API를 띄울 수 있게 되었다. AI 개발자는 다른 과정을 신경 쓸 필요 없이 모델 개발에만 집중할 수 있게 된 것이다. 그렇다면 어떻게 나머지 작업을 자동화할 수 있을까?
+BentoML을 통해 간단하게 API를 띄울 수 있게 되었다. AI 개발자는 다른 개발 과정을 신경 쓸 필요 없이 모델링에만 집중할 수 있게 된 것이다. 이제 그 서비스를 사용자가 이용하게 하려면 배포라는 과정이 필요하다.
 
+
+BentoML은 AI 개발자가 만든 모델을 호출하는 API를 쉽게 하도록 할 뿐만 아니라, 실제 실행 환경에 배포하기 위한 단계까지 함께 제공한다. 간단하게 방법을 소개하자면 다음과 같다.
+
+<br>
+
+> Deploy
+
+프로젝트 루트 디렉토리에서 BentoCloud에 deploy하기 위해선 다음의 코드를 실행하면 된다. 배포 단위의 이름은 원하는 대로 지어주면 된다. 아래 코드를 예시로 들자면 `my-first-bento`로 지은 셈이다.
+
+```shell
+bentoml deploy --name my-first-bento
+```
+
+<br>
+
+성공적으로 deploy가 됐다면, 아래 그림처럼 BentoCloud 콘솔에서 Deployments로 들어갔을 떄 `my-first-bento`를 확인할 수 있다.
+
+<p align='center'>
+<img src='/assets/img/Data_AI/bentoml-deploy.webp' width='700px'> 
+<figcaption>출처: <a href="https://docs.bentoml.com/en/latest/get-started/cloud-deployment.html?_gl=1*1b5ppem*_gcl_au*MTUxODc5ODMyMy4xNzY1Nzg2NDg2">공식 문서</a></figcaption>
+</p>
+
+<br>
+
+> Call the Deployment endpoint
+
+여기까지 됐다면 이제 위에서 우리가 만들었던 API를 불러올 수가 있다! 배포가 되어있는 API 엔드포인트를 확인해보자. endpoint URL는 BentoCloud에서 확인할 수 있다. (바로 위 그림 참고)
+
+만약 수정하고 싶다면 아래 코드를 실행해 수정할 수 있다고 한다.
+
+```shell
+bentoml deployment get my-first-bento -o json | jq ."endpoint_urls"
+```
+
+<br>
+
+자, 실전이다. 드디어 API 호출해볼게요! 호출하기 위해서는 BentoML Client를 생성해주어야 하는데 아래의 코드를 통해 생성할 수 있다.
+
+```python
+import bentoml
+
+client = bentoml.SyncHTTPClient("https://my-first-bento-e3c1c7db.mt-guc1.bentoml.ai")
+result: str = client.summarize(
+      text="Breaking News: In an astonishing turn of events, the small town of Willow Creek has been taken by storm as local resident Jerry Thompson's cat, Whiskers, performed what witnesses are calling a 'miraculous and gravity-defying leap.' Eyewitnesses report that Whiskers, an otherwise unremarkable tabby cat, jumped a record-breaking 20 feet into the air to catch a fly. The event, which took place in Thompson's backyard, is now being investigated by scientists for potential breaches in the laws of physics. Local authorities are considering a town festival to celebrate what is being hailed as 'The Leap of the Century.",
+   )
+print(result)
+```
+
+<br>
+
+
+> 🎉 축하합니다 🎉
+
+여기까지 하면 배포도 성공! 엔드포엔트 호출도 성공! 🚀 이렇게 내가 만든 AI 모델을 쉽게 호출해 사용할 수 있게 되었다!
+
+<br>
+
+> Deployment update
+
+코드를 수정하면 배포를 다시 해야 서비스에 반영이 된다. 다시 배포하는 코드는 다음과 같다.
+
+```shell
+bentoml deployment update my-first-bento --bento ./project/directory
+```
+
+
+배포를 하다보면 트래픽에 따라 크기 scaling이 필요한 경우도 있다. 필요하다면 scaling이나 terminate에 관한 내용은 [공식 문서](https://docs.bentoml.com/en/latest/get-started/cloud-deployment.html?_gl=1*1b5ppem*_gcl_au*MTUxODc5ODMyMy4xNzY1Nzg2NDg2)를 참고하기 바란다. 
+
+
+<br>
+
+### 배포 자동화 - CI/CD
+
+그치만 코드를 조금씩 바꿀 때마다 배포를 다시 해주어야 하는 것은 조금 수고스럽다. 그래서 일반적으로 지속적인 개발 환경에서는 변경 사항을 안정적으로, 바로바로 반영하기 위해 CI/CD를 함께 운영한다.
+
+<br>
 
 > ✅ CI (Continuous Integration)
 
 CI 단계에서는 개발자가 코드를 커밋할 때마다 품질 검증과 패키징이 자동으로 수행된다.
 
-싸피에서 구글 연계 프로젝트를 진행할 때, 인프라 담당 팀원이 배포 자동화를 Jenkins 파이프라인으로 구성해 주었다. 내가 이해한 내용을 간략하게 설명하자면 다음과 같다.
+인프라는 잘 모르지만 전에 싸피에서 구글 연계 프로젝트를 진행할 때, 인프라 담당 팀원이 배포 자동화를 Jenkins 파이프라인으로 구성해 주었다. 내가 이해한 내용을 간략하게 설명하자면 다음과 같다.
 
 <p align='center'>
 <img src='/assets/img/Data_AI/DBDeep_architecture.png' width='600px'> 
