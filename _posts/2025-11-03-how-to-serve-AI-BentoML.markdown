@@ -71,18 +71,27 @@ AI 기술을 실제 비즈니스에 접목시키기 위해서는 생각보다 �
 
 AI 개발자는 PyTorch, TensorFlow, Scikit Learn 등 다양한 프레임워크와 라이브러리를 사용해 모델을 학습시킨다. 다양한 모델을 서빙하다 보면 다양한 프레임워크와 라이브러리를 가지는 모델 모두를 서빙할 수 있어야 하는데, 서로 모델을 불러오고 추론하는 방식이 달라 코드 일관성 유지와 유지 보수가 어려워지고 시스템 복잡성이 증가하는 문제가 생긴다.
 
+모델러의 입장에서 생각해보자. 모델러는 더 좋은 서비스를 제공하기 위해 자신이 만든 모델을 빠르게 배포하고 더 많은 피드백을 받아서 개선하고자 한다. 이전에는 모델 서빙 과정이 **서버 엔지니어링** 과정과 결합되어 있어서 배포가 까다로웠고 배경지식을 많이 필요로 했다. 
+
 <br>
 
 > Model Serving에 특화된 라이브러리 BentoML
 
-이 문제를 해결해 주는 도구가 바로 BentoML이다. BentoML은 여러 프레임워크를 지원하며, 모델을 손쉽게 컨테이너화(Containerization) 할 수 있게 도와준다. 이후 Kubernetes 배포도 간편해지고, 전·후처리 로직을 쉽게 추가할 수 있어 개발 속도를 높일 수 있다.
-
-Bento는 일본어로 도시락이라는 뜻으로, 모델 Artifact 및 코드를 도시락처럼 포장(Packing)하고 배달(Deploy, 배포)까지 자동으로 해준다고 생각하면 될 것 같다.
+이 문제를 해결해 주는 도구가 바로 BentoML이다. Bento는 일본어로 도시락이라는 뜻으로, 모델 Artifact 및 코드를 도시락처럼 포장(Packing)하고 배달(Deploy, 배포)까지 자동으로 해준다고 생각하면 될 것 같다.
 
 <p align='center'>
 <img src='/assets/img/Data_AI/bento.png' width='400px'> 
 <figcaption>Bento의 일반적인 이미지</figcaption>
 </p>
+
+<br>
+
+BentoML은 여러 프레임워크를 지원하며, 모델을 손쉽게 컨테이너화(Containerization) 할 수 있게 도와준다. 이후 Kubernetes 배포도 간편해지고, 전·후처리 로직을 쉽게 추가할 수 있어 개발 속도를 높일 수 있다.
+
+BentoML의 또다른 장점 중 하나는 여러 ML 프레임워크와 연동할 수 있다는 것이다. AI 모델링에 사용되는 Scikit-Learn, PyTorch, Tensorflow, Keras, FastAI, XGBoost, LightGBM, CoreML 등 주요 프레임워크와 연동해 모델을 서빙할 수 있다.
+
+특히, 기업에서는 이러한 장점과 더불어 사내 ML 플랫폼에서 쉽게 BentoML 환경을 구성할 수 있어 많이 채택하고 있다고 알고 있다. <font color="lightgray">ex) 우아한형제들, 라인</font>
+
 
 <br>
 
@@ -233,10 +242,30 @@ bentoml deploy --name my-first-bento
 
 여기까지 됐다면 이제 위에서 우리가 만들었던 API를 불러올 수가 있다! 배포가 되어있는 API 엔드포인트를 확인해보자. endpoint URL는 BentoCloud에서 확인할 수 있다. (바로 위 그림 참고)
 
-만약 수정하고 싶다면 아래 코드를 실행해 수정할 수 있다고 한다.
+만약 수정하고 싶다면 터미널에 아래 코드를 실행해 수정할 수 있으며, 코드 내에서 내부 파라미터를 사용해 엔드포인트 URL을 커스텀할 수도 있다.
 
 ```shell
 bentoml deployment get my-first-bento -o json | jq ."endpoint_urls"
+```
+
+```python
+# 내부 파라미터 route를 이용해 커스텀하는 예시 코드
+@env(infer_pip_packages=True)
+@artifacts([
+   ...
+])
+class ModelApiService(BentoService):
+    @api(input=ModelApiInputValidator(),
+         output=JsonOutput(),
+         route="v1/service_name/predict",
+         mb_max_latency=200,
+         mb_max_batch_size=500,
+         batch=False
+        )
+    def predict_v1(self, df: pd.DataFrame):
+     ...
+        return result
+
 ```
 
 <br>
@@ -381,7 +410,8 @@ BentoML은 많이 알려진 머신러닝 모델 배포 관리 도구 중 하나�
 
 내가 BentoML을 중심적으로 정리한 이유는,
 **“AI 모델을 어떻게 실제 서비스로 연결할 것인가?”**라는 질문에 가장 직관적인 해답을 주는 도구이기 때문이다.
-싸피(SSAFY)에서 직접 모델을 FastAPI 형태로 배포하면서, 복잡한 인프라 구성과 의존성 문제로 많은 시행착오를 겪었다. 그때 ‘모델을 컨테이너처럼 손쉽게 포장하고 바로 API로 띄울 수 있는 구조’가 있었다면 개발 효율이 훨씬 높았을 것이라는 생각이 들었다. BentoML은 바로 그 부분을 자동화하고, AI 개발자에게 필요한 최소한의 배포 자유도를 보장해 준다.
+싸피(SSAFY)에서 직접 모델을 FastAPI 형태로 배포하면서, 복잡한 인프라 구성과 의존성 문제로 많은 시행착오를 겪었다. 그때 모델을 쉽게 패키징하고 바로 API로 띄울 수 있었다면 개발 효율이 훨씬 높았을 것이라는 생각이 들었다. BentoML은 바로 그 부분을 자동화하고, AI 개발자에게 필요한 최소한의 배포 자유도를 보장해 준다.
+
 
 물론, BentoML만이 유일한 해답은 아니다. KServe, TorchServe, TensorFlow Serving 같은 다양한 서빙 프레임워크가 존재하며, 각각의 환경(클라우드, 온프레미스, 엣지)에 맞게 선택하는 것이 중요하다. 하지만 AI 플랫폼을 처음 설계하거나 빠르게 프로토타입을 만들어야 하는 상황이라면, BentoML은 가장 직관적이고 효율적인 선택이 될 수 있다.
 
@@ -391,6 +421,7 @@ BentoML은 많이 알려진 머신러닝 모델 배포 관리 도구 중 하나�
 - [우아한기술블로그 > 제목은 안정적인 AI 서빙 시스템으로 하겠습니다. 근데 이제 자동화를 곁들인…](https://techblog.woowahan.com/19548/)
 - [Machine Learning Serving - BentoML 사용법](https://zzsza.github.io/mlops/2021/04/18/bentoml-basic/)
 - [BentoML Github](https://github.com/bentoml/BentoML?tab=readme-ov-file)
+- [Line Engineering > MLOps를 위한 BentoML 기능 및 성능 테스트 결과 공유 - 1](https://engineering.linecorp.com/ko/blog/mlops-bentoml-1)
 
 
 
