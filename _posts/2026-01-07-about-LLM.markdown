@@ -3,7 +3,7 @@ layout: post
 title:  "AI | LLM(Large Language Model)은 어떻게 답변을 생성하는 걸까?"
 description: LLM의 사고 과정
 # categories: 
-date:  2025-12-23 14:00:10 +0900
+date:  2026-01-07 14:00:10 +0900
 # style: fill
 use_math: true
 color: 

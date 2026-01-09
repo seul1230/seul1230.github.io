@@ -3,7 +3,7 @@ layout: post
 title:  "블로그 | 사이트맵(Sitemap) 에러로 블로그 노출이 안 된다면? 해결법"
 description: Sitemap Error 때문에 검색 노출이 안 된다면 들어오세요!
 # categories: 
-date:  2025-01-09 14:00:10 +0900
+date:  2026-01-09 14:00:10 +0900
 # style: fill
 use_math: true
 color: warning
