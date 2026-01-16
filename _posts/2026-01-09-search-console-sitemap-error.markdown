@@ -17,7 +17,7 @@ tags: [Blog, Ads, Info]
 
 <br>
 
-아시다시피 저는 깃블로그(GitBlog)를 운영 중입니다. 다른 블로그와 차이점이 있다면, 네이버나 티스토리는 사이트맵이 자동으로 생성되어 별다른 노력 없이 자신의 블로그 글을 검색할 수 있습니다.
+아시다시피 저는 깃블로그(GitBlog)를 운영 중입니다. 다른 블로그와 차이점이 있다면, 네이버나 티스토리는 사이트맵이 자동으로 생성되어 별다른 노력 없이 자신의 블로그 글을 검색할 수 있습니다. <a href="https://notice.tistory.com/2537">출처</a>
 
 <p align='center'>
 <img src='/assets/img/info/blog_ex.png' width='500px'> 
