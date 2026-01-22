@@ -2,6 +2,7 @@
 layout: post
 title:  "블로그 | 사이트맵(Sitemap) 에러로 블로그 노출이 안 된다면? 해결법"
 description: Sitemap Error 때문에 검색 노출이 안 된다면 들어오세요!
+thumbnail: assets/img/info/search_console.png
 # categories: 
 date:  2026-01-09 14:00:10 +0900
 # style: fill
@@ -13,16 +14,22 @@ tags: [Blog, Ads, Info]
 
 안녕하세요. 이번에는 제가 겪은 애드센스 사이트맵 에러에 작성해볼까 합니다.
 
-사이트맵은 웹사이트에 어떤 페이지들이 있고, 이들이 어떻게 구성되어 있는지 검색엔진에게 알려주는 역할을 합니다. 즉, 키워드로 검색했을 때 해당 페이지들이 검색 엔진에 노출이 된다는 의미죠.
-
-<br>
-
 아시다시피 저는 깃블로그(GitBlog)를 운영 중입니다. 다른 블로그와 차이점이 있다면, 네이버나 티스토리는 사이트맵이 자동으로 생성되어 별다른 노력 없이 자신의 블로그 글을 검색할 수 있습니다. <a href="https://notice.tistory.com/2537">출처</a>
 
 <p align='center'>
 <img src='/assets/img/info/blog_ex.png' width='500px'> 
 <figcaption>블로그에 광고 게시 중<font color="lightgray"></font> <a href=""></a></figcaption>
 </p>
+
+<br>
+
+> 사이트맵(Sitemap)이란?
+
+사이트맵은 웹사이트에 어떤 페이지들이 있고, 이들이 어떻게 구성되어 있는지 검색엔진에게 알려주는 역할을 합니다. 즉, 키워드로 검색했을 때 해당 페이지들이 검색 엔진에 노출이 된다는 의미죠.
+
+<br>
+
+
 
 사실 자기 만족으로 블로그를 작성 중이라면 큰 문제가 되지 않을 수 있지만, 저는 <a href='https://adsense.google.com/intl/ko_kr/start/'>구글 애드센스</a>를 활용하여 블로그에 광고도 게재하고 있습니다. 사이트맵 에러로 인해 트래픽 노출이 막히면 수익에 집계되지 않게 되기 때문에 이 문제를 해결하려고 몇 달을 애를 먹었더랬죠 🥲
 
