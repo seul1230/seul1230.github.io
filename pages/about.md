@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: /about/
-weight: 7
+weight: 10
 ---
 
 <h2 margin-bottom="0px">About Me</h2>
