@@ -108,11 +108,16 @@ RunCat앱에서는 현 PC의 상황을 한 눈에 살펴볼 수 있었습니다.
 
 저는 직접 커스텀하기 위해 gif 파일을 Frame별로 이미지를 나누고, 배경을 제거하고, 표준 사이즈에 맞추고,, 해서 귀여운 커비💫 러너를 획득했습니다 하하!
 
-근데 여러분은 저처럼 고생하지 말라고 이미지 프레임을 공유해드릴게요 - ! zip 파일이 다운로드하기 간편하니 첫 번째 방법을 추천드리겠습니다 😇
+<p align='center'>
+<img src='/assets/img/info/walking-knight-kirby.gif' width='150px'> 
+<figcaption>당당하게 칼 들고 걸어가는 이 귀여운 커비를 보십시오<font color="lightgray"></font> <a href=""></a></figcaption>
+</p>
+
+근데 여러분은 저처럼 고생하지 마시라고 이미지 프레임을 공유해드릴게요 - ! zip 파일이 다운로드하기 간편하니 첫 번째 방법을 추천드리겠습니다 😇
 
 
-> **🫯 이미지 저장하는 방법**
-> 1. [zip 파일 다운로드 링크](https://raw.githubusercontent.com/seul1230/RunnerCustomGallery/refs/heads/main/walking-knight-kirby/walking-knight-kirby-frames.zip)에서 다운로드하거나
+> <font color='blue'><strong>🫯 이미지 저장하는 방법</strong></font>
+> 1. [zip 파일 다운로드 링크](https://raw.githubusercontent.com/seul1230/RunnerCustomGallery/refs/heads/main/walking-knight-kirby/walking-knight-kirby-frames.zip)에서 한 번에 다운로드하거나
 > 2. 아래의 이미지(7개)를 모두 `다른 이름으로 저장하기` (프레임 번호 기록)
 
 
