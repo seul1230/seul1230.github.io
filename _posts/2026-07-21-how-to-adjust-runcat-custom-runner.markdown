@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "달리는 커비로 귀엽게 맥 상태바 꾸미기! | RunCat Neo, 무료 커스텀, 러너 프레임 공유"
+title:  "런캣 달리는 커비로 귀엽게 맥 상태바 꾸미기! | RunCat Neo, 무료 커스텀, 러너 프레임 공유"
 description: 맥북을 더 행복하게 쓰는 법 + - + 별의 커비로 러너 만들기! 💫
 thumbnail: assets/img/info/runcatneo_background.png
 # categories: 
@@ -10,7 +10,7 @@ color: danger
 use_math: true
 tags: [Blog, Info, RunCat, Deco]
 ---
-# 달리는 커비로 귀엽게 맥 상태바 꾸미기! | RunCat Neo, 무료 커스텀, 러너 프레임 공유
+# 런캣 달리는 커비로 귀엽게 맥 상태바 꾸미기! | RunCat Neo, 무료 커스텀, 러너 프레임 공유
 
 안녕하세요. 오랜만입니다 &nbsp; ฅ（•˕•マ.ᐟ  
 
@@ -71,7 +71,7 @@ RunCat앱에서는 현 PC의 상황을 한 눈에 살펴볼 수 있었습니다.
 
 <br>
 
-## 💫 커스텀 러너 추가하는 법
+## 💫 런캣에 커스텀 러너 추가하는 법
 
 커스텀 러너를 직접 추가하는 방법은 UI가 잘 되어 있어 무척 직관적이고 간단합니다.
 
