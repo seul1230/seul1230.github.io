@@ -117,7 +117,7 @@ RunCat앱에서는 현 PC의 상황을 한 눈에 살펴볼 수 있었습니다.
 
 
 > <font color='blue'><strong>🫯 이미지 저장하는 방법</strong></font>
-> 1. [zip 파일 다운로드 링크](https://raw.githubusercontent.com/seul1230/RunnerCustomGallery/refs/heads/main/walking-knight-kirby/walking-knight-kirby-frames.zip)에서 한 번에 다운로드하거나
+> 1. <a href="https://raw.githubusercontent.com/seul1230/RunnerCustomGallery/refs/heads/main/walking-knight-kirby/walking-knight-kirby-frames.zip" target="_blank">zip 파일 다운로드 링크</a>에서 한 번에 다운로드하거나
 > 2. 아래의 이미지(7개)를 모두 `다른 이름으로 저장하기` (프레임 번호 기록)
 
 
@@ -166,7 +166,7 @@ RunCat앱에서는 현 PC의 상황을 한 눈에 살펴볼 수 있었습니다.
 
 <br>
 
-앞으로도 시간이 날 때마다 자기만족용으로 귀여운 프레임들을 [seul1230/RunnerCustomGallery](https://github.com/seul1230/RunnerCustomGallery) 에 업로드할 예정입니다.
+앞으로도 시간이 날 때마다 자기만족용으로 귀여운 프레임들을 <a href='https://github.com/seul1230/RunnerCustomGallery' target="_blank">seul1230/RunnerCustomGallery</a> 에 업로드할 예정입니다.
 
 혹시 더 궁금한 점이나 특별히 원하는 러너가 있다면, 아래 댓글이나 메일로 편하게 알려주세요! <br>
 금방 가져오겠습니다 _〆(･ω･。)

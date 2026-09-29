@@ -18,7 +18,7 @@ ChatGPT, Gemini, Claude와 같은 LLM(Large Language Model)은 사람의 질문�
 
 <p align='center'>
 <img src='/assets/img/Data_AI/LLM_history.png' width='800px'> 
-<figcaption>LLM 타임라인<br><font color="lightgray">A Survey of Large Language Models (~2025.03)</font> <a href="https://arxiv.org/abs/2303.18223?utm_source=pytorchkr&ref=pytorchkr"> < 이미지 출처</a></figcaption>
+<figcaption>LLM 타임라인<br><font color="lightgray">A Survey of Large Language Models (~2025.03)</font> <a href="https://arxiv.org/abs/2303.18223?utm_source=pytorchkr&ref=pytorchkr" target="_blank"> < 이미지 출처</a></figcaption>
 </p>
 
 
@@ -80,7 +80,7 @@ LLM의 목표는 다음과 같다.
 
 ### 2️⃣ 토큰 → 임베딩(Embedding)
 
-입력 시퀀스를 토큰 단위로 나누었으면, 각 토큰을 이해할 수 있도록 숫자로 변환하는 과정을 <code>임베딩</code>이라고 한다. 각 토큰은 고정된 차원의 벡터, 즉 임베딩으로 변환된다. 이때 임베딩 벡터는 단어의 의미, 사용되는 맥락, 다른 단어와의 관계를 반영하도록 학습되었다. 실제로 <a href="https://huggingface.co/models">Hugging Face</a> 에는 한국어 특화 임베딩 모델도 다수 공개되어 있다.
+입력 시퀀스를 토큰 단위로 나누었으면, 각 토큰을 이해할 수 있도록 숫자로 변환하는 과정을 <code>임베딩</code>이라고 한다. 각 토큰은 고정된 차원의 벡터, 즉 임베딩으로 변환된다. 이때 임베딩 벡터는 단어의 의미, 사용되는 맥락, 다른 단어와의 관계를 반영하도록 학습되었다. 실제로 <a href="https://huggingface.co/models" target="_blank">Hugging Face</a> 에는 한국어 특화 임베딩 모델도 다수 공개되어 있다.
 
 임베딩 단계 이후부터는 텍스트가 아니라 벡터 공간에서 연산을 수행한다.
 
@@ -250,7 +250,7 @@ print(result)
 
 <p align='center'>
 <img src='/assets/img/Data_AI/langchain.jpg' width='450px'> 
-<figcaption>LangChain <a href="https://tech.pxd.co.kr/post/LangChain-%EB%9E%AD%EC%B2%B4%EC%9D%B8-295"> < 이미지 출처</a></figcaption>
+<figcaption>LangChain <a href="https://tech.pxd.co.kr/post/LangChain-%EB%9E%AD%EC%B2%B4%EC%9D%B8-295" target="_blank"> < 이미지 출처</a></figcaption>
 </p>
 
 > LangGraph
@@ -259,7 +259,7 @@ LangGraph는 상태(state)와 분기/루프가 있는 stateful 워크플로우·
 
 <p align='center'>
 <img src='/assets/img/Data_AI/langgraph.png' width='500px'> 
-<figcaption>LangGraph <a href="https://www.langchain.com/langgraph">< 출처 LangGraph</a></figcaption>
+<figcaption>LangGraph <a href="https://www.langchain.com/langgraph" target="_blank">< 출처 LangGraph</a></figcaption>
 </p>
 
 

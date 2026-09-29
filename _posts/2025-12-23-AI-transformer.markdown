@@ -15,7 +15,7 @@ tags: [AI/ML/DL]
 
 <p align='center'>
 <img src='/assets/img/Data_AI/transformer_detail.png' width='600px'> 
-<figcaption>Transformer 전체 구조와 간단한 설명 <a href="https://medium.com/%40amirhossein.abaskohi/navigating-transformers-a-comprehensive-exploration-of-encoder-only-and-decoder-only-models-right-a0b46bdf6abe">< 이미지 출처</a></figcaption>
+<figcaption>Transformer 전체 구조와 간단한 설명 <a href="https://medium.com/%40amirhossein.abaskohi/navigating-transformers-a-comprehensive-exploration-of-encoder-only-and-decoder-only-models-right-a0b46bdf6abe" target="_blank">< 이미지 출처</a></figcaption>
 </p>
 
 대표적으로 GPT, Gemini와 같은 대규모 언어 모델(LLM)은 Transformer 구조의 Decoder를 기반(Decoder-only)으로 문장을 생성하고 추론한다. 또한 Vision Transformer(ViT)처럼 이미지를 작은 패치 단위의 시퀀스로 변환해 처리하는 방식도 등장하면서, 트랜스포머는 텍스트를 넘어 이미지, 음성 등 다양한 멀티모달 영역에서 활용되고 있다.
@@ -63,7 +63,7 @@ tags: [AI/ML/DL]
 
 <p align='center'>
 <img src='/assets/img/Data_AI/transformer.webp' width='400px'> 
-<figcaption>Transformer 구조 <a href="https://arxiv.org/abs/1706.03762">< 이미지 출처</a></figcaption>
+<figcaption>Transformer 구조 <a href="https://arxiv.org/abs/1706.03762" target="_blank">< 이미지 출처</a></figcaption>
 </p>
 
 <br>
@@ -155,7 +155,7 @@ Transformer는 어텐션(Attention) 메커니즘만을 사용해 기존 Seq2Seq 
 
 <p align='center'>
 <img src='/assets/img/Data_AI/self_attention.webp' width='600px'> 
-<figcaption>Self-Attention <a href="https://medium.com/@hugmanskj/transformer%EC%9D%98-%ED%81%B0-%EA%B7%B8%EB%A6%BC-%EC%9D%B4%ED%95%B4-%EA%B8%B0%EC%88%A0%EC%A0%81-%EB%B3%B5%EC%9E%A1%ED%95%A8-%EC%97%86%EC%9D%B4-%ED%95%B5%EC%8B%AC-%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4-%ED%8C%8C%EC%95%85%ED%95%98%EA%B8%B0-5e182a40459d">< 이미지 출처</a></figcaption>
+<figcaption>Self-Attention <a href="https://medium.com/@hugmanskj/transformer%EC%9D%98-%ED%81%B0-%EA%B7%B8%EB%A6%BC-%EC%9D%B4%ED%95%B4-%EA%B8%B0%EC%88%A0%EC%A0%81-%EB%B3%B5%EC%9E%A1%ED%95%A8-%EC%97%86%EC%9D%B4-%ED%95%B5%EC%8B%AC-%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4-%ED%8C%8C%EC%95%85%ED%95%98%EA%B8%B0-5e182a40459d" target="_blank">< 이미지 출처</a></figcaption>
 </p>
 
 각 `query`는 모든 `key`와의 유사도를 계산해 어텐션 스코어를 얻고, 이 스코어를 softmax를 통해 확률 분포 형태의 어텐션 가중치로 변환한다. 이 가중치는 각 `value`에 적용되어 가중합되며, 그 결과 현재 입력 요소에 대해 문맥이 반영된 출력 표현(Attention output)이 생성된다.
@@ -189,7 +189,7 @@ Transformer는 어텐션(Attention) 메커니즘만을 사용해 기존 Seq2Seq 
 
 <p align='center'>
 <img src='/assets/img/Data_AI/multiple_viewpoints_elephants.gif' width='450px'> 
-<figcaption>'여섯 마리 눈먼 쥐와 코끼리'와 유사한 그림 <a href="https://cviteacher.wordpress.com/wp-content/uploads/2014/04/blind-men-and-the-elephant.gif"></a></figcaption>
+<figcaption>'여섯 마리 눈먼 쥐와 코끼리'와 유사한 그림 <a href="https://cviteacher.wordpress.com/wp-content/uploads/2014/04/blind-men-and-the-elephant.gif" target="_blank"></a></figcaption>
 </p>
 
 멀티헤드 어텐션에서는 각 어텐션 헤드(head)가 입력을 서로 다른 하위 표현 공간(subspace) 으로 투영한 뒤,
@@ -205,7 +205,7 @@ Transformer는 어텐션(Attention) 메커니즘만을 사용해 기존 Seq2Seq 
 
 <p align='center'>
 <img src='/assets/img/Data_AI/cross_attention.webp' width='500px'> 
-<figcaption>Cross Attention이 일어나는 곳 <a href="https://medium.com/@hugmanskj/transformer%EC%9D%98-%ED%81%B0-%EA%B7%B8%EB%A6%BC-%EC%9D%B4%ED%95%B4-%EA%B8%B0%EC%88%A0%EC%A0%81-%EB%B3%B5%EC%9E%A1%ED%95%A8-%EC%97%86%EC%9D%B4-%ED%95%B5%EC%8B%AC-%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4-%ED%8C%8C%EC%95%85%ED%95%98%EA%B8%B0-5e182a40459d">< 이미지 출처</a></figcaption>
+<figcaption>Cross Attention이 일어나는 곳 <a href="https://medium.com/@hugmanskj/transformer%EC%9D%98-%ED%81%B0-%EA%B7%B8%EB%A6%BC-%EC%9D%B4%ED%95%B4-%EA%B8%B0%EC%88%A0%EC%A0%81-%EB%B3%B5%EC%9E%A1%ED%95%A8-%EC%97%86%EC%9D%B4-%ED%95%B5%EC%8B%AC-%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4-%ED%8C%8C%EC%95%85%ED%95%98%EA%B8%B0-5e182a40459d" target="_blank">< 이미지 출처</a></figcaption>
 </p>
 
 
@@ -229,7 +229,7 @@ Self-Attention은 입력 시퀀스를 하나의 집합처럼 처리하기 때문
 
 <p align='center'>
 <img src='/assets/img/Data_AI/transformer_w_embedding.png' width='500px'> 
-<figcaption>Transformer 구조 벡터 <a href="https://medium.com/machine-intelligence-and-deep-learning-lab/transformer-the-self-attention-mechanism-d7d853c2c621">< 이미지 출처</a></figcaption>
+<figcaption>Transformer 구조 벡터 <a href="https://medium.com/machine-intelligence-and-deep-learning-lab/transformer-the-self-attention-mechanism-d7d853c2c621" target="_blank">< 이미지 출처</a></figcaption>
 </p>
 
 

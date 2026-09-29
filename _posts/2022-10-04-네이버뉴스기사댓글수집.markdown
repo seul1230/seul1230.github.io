@@ -20,7 +20,7 @@ tags: [HowTo, Web Scraping & Crawling]
 
 <br/>
 
-다음 [링크](https://hoonzi-text.tistory.com/4)를 참고하였다.
+다음 <a href="https://hoonzi-text.tistory.com/4" target="_blank">참고</a>를 참고하였다.
 <br/>
 
 <!-- ---
@@ -204,4 +204,6 @@ while True:
 
 
 ### 5. 마무리하면서
-이렇게 뉴스기사 1개에 대한 댓글을 수집하는 코드를 짜봤다. 다음엔 [참고 사이트](https://hoonzi-text.tistory.com/4)를 참고해서 더 많은 기사에 대한 댓글을 웹스크래핑해보도록 하자.
+이렇게 뉴스기사 1개에 대한 댓글을 수집하는 코드를 짜봤다. 다음엔 더 많은 기사에 대한 댓글을 웹스크래핑해보도록 하자.
+
+<!-- [참고 사이트](https://hoonzi-text.tistory.com/4)를 참고해서  -->

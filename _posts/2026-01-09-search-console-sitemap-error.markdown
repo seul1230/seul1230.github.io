@@ -14,7 +14,7 @@ tags: [Blog, Ads, Info]
 
 안녕하세요. 이번에는 제가 겪은 애드센스 사이트맵 에러에 작성해볼까 합니다.
 
-아시다시피 저는 깃블로그(GitBlog)를 운영 중입니다. 다른 블로그와 차이점이 있다면, 네이버나 티스토리는 사이트맵이 자동으로 생성되어 별다른 노력 없이 자신의 블로그 글을 검색할 수 있습니다. <a href="https://notice.tistory.com/2537">출처</a>
+아시다시피 저는 깃블로그(GitBlog)를 운영 중입니다. 다른 블로그와 차이점이 있다면, 네이버나 티스토리는 사이트맵이 자동으로 생성되어 별다른 노력 없이 자신의 블로그 글을 검색할 수 있습니다. <a href="https://notice.tistory.com/2537" target="_blank">출처</a>
 
 <p align='center'>
 <img src='/assets/img/info/blog_ex.png' width='500px'> 
@@ -31,7 +31,7 @@ tags: [Blog, Ads, Info]
 
 
 
-사실 자기 만족으로 블로그를 작성 중이라면 큰 문제가 되지 않을 수 있지만, 저는 <a href='https://adsense.google.com/intl/ko_kr/start/'>구글 애드센스</a>를 활용하여 블로그에 광고도 게재하고 있습니다. 사이트맵 에러로 인해 트래픽 노출이 막히면 수익에 집계되지 않게 되기 때문에 이 문제를 해결하려고 몇 달을 애를 먹었더랬죠 🥲
+사실 자기 만족으로 블로그를 작성 중이라면 큰 문제가 되지 않을 수 있지만, 저는 <a href='https://adsense.google.com/intl/ko_kr/start/' target="_blank">구글 애드센스</a>를 활용하여 블로그에 광고도 게재하고 있습니다. 사이트맵 에러로 인해 트래픽 노출이 막히면 수익에 집계되지 않게 되기 때문에 이 문제를 해결하려고 몇 달을 애를 먹었더랬죠 🥲
 
 <br>
 

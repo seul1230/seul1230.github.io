@@ -52,7 +52,7 @@ tags: [Blog, Info, Travel, Insurance]
 
 > 96시간 동안 분실 수하물을 추적하고, 그래도 찾지 못한다면 $1000달러의 보상을 보장합니다
 
-해당 보험 서비스를 제공하는 <a href='https://www.blueribbonbags.com/ko-KR'>Blue Ribbon Bags</a>에서 따로 구매가 가능하다는 정보를 입수했습니다. 당연함!! 그때 당시엔 머리가 안 돌아갔어요 ㅎ.ㅎ
+해당 보험 서비스를 제공하는 <a href='https://www.blueribbonbags.com/ko-KR' target="_blank">Blue Ribbon Bags</a>에서 따로 구매가 가능하다는 정보를 입수했습니다. 당연함!! 그때 당시엔 머리가 안 돌아갔어요 ㅎ.ㅎ
 
 인터파크에서도 9천 원(1일 기준)부터 판매하고 있는데, <strong>블루리본<strong>이 더 저렴하더라구요!
 
@@ -72,7 +72,7 @@ tags: [Blog, Info, Travel, Insurance]
 ### ✔️ 구매 방법
 
 간단합니다.<br>
-<a href='https://www.blueribbonbags.com/ko-KR/ServicePurchasePassenger'>Blue Ribbon Bags > 수하물 서비스 구매</a> 에 들어가서 원하는 옵션 (Gold/Platinum/Diamond)을 고르고, 승객 정보를 입력하면 끝!
+<a href='https://www.blueribbonbags.com/ko-KR/ServicePurchasePassenger' target="_blank">Blue Ribbon Bags > 수하물 서비스 구매</a> 에 들어가서 원하는 옵션 (Gold/Platinum/Diamond)을 고르고, 승객 정보를 입력하면 끝!
 
 - <code>항공사 확인 번호</code> = 'Confirmation Number', 'PNR (Passenger Name Record)'
   - 항공사 확인 번호와 항공편명을 혼동하시면 안 됩니다. 대개 영문·숫자 조합 6자리라고 하니 참고하세요!
