@@ -78,7 +78,7 @@ tags: [Language]
 
 <p align='center'>
 <img src='/assets/img/daily/opic_25.png' width='700px'>
-<figcaption>오픽 시험 관리 규정 <a href="https://www.opic.or.kr/opics/servlet/controller.opic.site.applyinfor.ActflTestRuleServlet?p_process=move-actfl_test_rule">> 더 자세히 </a></figcaption>
+<figcaption>오픽 시험 관리 규정 <a href="https://www.opic.or.kr/opics/servlet/controller.opic.site.applyinfor.ActflTestRuleServlet?p_process=move-actfl_test_rule" target="_blank">> 더 자세히 </a></figcaption>
 </p>
 
 <br>
@@ -89,7 +89,7 @@ tags: [Language]
 
 <p align='center'>
 <img src='/assets/img/daily/waiver.png' width='700px'>
-<figcaption>Waiver 관련 규정 <a href="https://www.opic.or.kr/opics/servlet/controller.opic.site.applyinfor.ActflTestRuleServlet?p_process=move-actfl_test_rule">> 더 자세히 </a></figcaption>
+<figcaption>Waiver 관련 규정 <a href="https://www.opic.or.kr/opics/servlet/controller.opic.site.applyinfor.ActflTestRuleServlet?p_process=move-actfl_test_rule" target="_blank">> 더 자세히 </a></figcaption>
 </p>
 
 <br>
@@ -140,13 +140,13 @@ tags: [Language]
 
 > ✅ **답변 구조**
 
-저는 말주변이 있는 편은 아닙니다. 그래서 영어 실력을 보여주고 싶어도 질문을 받고 말할 거리가 없어서 고민이었는데, 이러면 채점자도 들은 게 없으니 채점할 게 없겠죠? 그래서 큰 틀을 다음과 같이 잡았습니다.
+저는 말주변이 있는 편은 아닙니다. 그래서 영어 실력을 보여주고 싶어도 질문을 받고 보면 말할 게 없더라구요. 이러면 채점자도 들은 게 없으니 채점할 게 없겠죠? 그래서 큰 틀을 다음과 같이 잡았습니다.
 
 1. **서론** - 빌드업
 2. **본론** - 질문에 대한 답변
 3. **결론** (필요 시) - 주제에 대한 나의 생각/다짐
 
-이러면 답변 문장도 표현이 풍부해지고 자연스러워지더라구요!
+이러면 답변 문장도 표현이 풍부해지고 자연스러워지더라구요! <strong>발화량</strong> 중요 ⭐️
 
 <br/>
 
@@ -155,11 +155,12 @@ tags: [Language]
 > ✅ **유용한 표현** - 중복표현 줄이기
 
 - The most memorable experience I’ve ever had while ~~ happend last month
-- To give you a more detailed account,
-- When it comes to 주제, I think ~~
+- To give you a more detailed account, : 더 자세히 설명하자면
+- When it comes to 주제, I think ~~ : 이 주제에 관해서는 ~ 라고 생각한다.
 - It’s no picnic to ~~ : 쉬운 일이 아니다
-- What was even worse was that ~
-- To address the issue, I think ~ should ~.
+- What was even worse was that ~ : 더 별로였던 건 ~ 였어.
+- To address the issue, I think ~ should ~ 
+- Will it be possible to ~ ? : Can I ~ 보다 예의 있는 표현
 
 
 <br/>
