@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "여행 | 🏝️ 대부도 | 싸피 1학기 마무리 기념 MT"
+title:  "🏝️ 대부도 1박 2일 | 싸피 1학기 마무리 기념 MT"
 description: <strong>🗓️ 2024.12.05 - 2024.12.06</strong><font color='gray'><br/>- 대부도 1박 2일</font>
 date:   2024-12-07 16:30:09 +0900
 categories: daily/korea
@@ -22,7 +22,7 @@ tags: [🇰🇷 한국, 💙 ]
 
 <br/> -->
 
-# 🏝️ 대부도 | 싸피 1학기 마무리 기념 MT
+<!-- # 🏝️ 대부도 | 싸피 1학기 마무리 기념 MT -->
 
 > 1학기 끝-!
 

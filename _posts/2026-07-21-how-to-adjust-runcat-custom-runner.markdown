@@ -10,7 +10,7 @@ color: danger
 use_math: true
 tags: [Blog, Info, RunCat, Deco]
 ---
-# 런캣 달리는 커비로 귀엽게 맥 상태바 꾸미기! | RunCat Neo, 무료 커스텀, 러너 프레임 공유
+<!-- # 런캣 달리는 커비로 귀엽게 맥 상태바 꾸미기! | RunCat Neo, 무료 커스텀, 러너 프레임 공유 -->
 
 안녕하세요. 오랜만입니다 &nbsp; ฅ（•˕•マ.ᐟ  
 

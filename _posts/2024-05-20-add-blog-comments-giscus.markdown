@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Giscus | 깃블로그에 댓글 기능 추가하기"
+title:  "깃블로그, 티스토리에 댓글 기능 추가하는 법 | Giscus vs Utterance"
 date:   2024-05-20 11:30:09 +0900
 color: "danger"
 # style: fill
@@ -8,9 +8,9 @@ description: <strong>[ 공부 & 정리 ]</strong><br/>Giscus로 깃블로그에 
 categories: tips
 tags: [HowTo, gitblog]
 ---
-# [ Tip ] 깃블로그, 티스토리에 댓글 기능 추가하는 법 | Giscus, Utterance
+<!-- # [ Tip ] 깃블로그, 티스토리에 댓글 기능 추가하는 법 | Giscus, Utterance -->
 
-난 기존에 utterance를 이용해서 댓글을 받았었다. 이번에 giscus로 옮겨가면서 그 과정을 여기에 공유하고자 한다. 
+난 기존에 Github 블로그에 utterance를 이용해서 댓글을 받았었다. 이번에 giscus로 옮겨가면서 그 과정을 여기에 공유하고자 한다. 
 
 ## Utterance의 한계점
 

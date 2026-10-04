@@ -9,7 +9,7 @@ use_math: true
 color: 
 tags: [AI/ML/DL]
 ---
-# AI | 트랜스포머(Transformer) 쉽게 이해하기
+<!-- # AI | 트랜스포머(Transformer) 쉽게 이해하기 -->
 
 최근에 등장하고 있는 딥러닝 모델의 기반은 대부분 트랜스포머(Transformer)라고 해도 과언이 아니다. Transformer는 자연어 처리(NLP) 분야에서 처음 제안되어 문장을 이해하고 생성하는 능력에서 뛰어난 성능을 보이며, 이후 다양한 영역으로 빠르게 확장되었다.
 

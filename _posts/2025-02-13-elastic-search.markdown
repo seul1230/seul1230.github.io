@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "개발 | 엘라스틱서치(Elastic Search)란?"
+title:  "Elastic Search이 대체 뭐길래 (개념, 장단점, 활용예시, 실습)"
 description: 엘라스틱 서치 제대로 알고 쓰자!<br/><font color="lightgray">📌 ElasticSearch, 왜 성능이 좋을까?</font>
 date:  2025-02-13 19:00:10 +0900
 # style: fill
@@ -23,7 +23,7 @@ tags: [dev]
 
 <br/>
 
-# Elastic Search이 대체 뭐야? (개념, 장단점, 활용예시, 실습)
+<!-- # Elastic Search이 대체 뭐야? (개념, 장단점, 활용예시, 실습) -->
 
 최근 개발을 하면서 Elastic Search를 사용했다. 정확히 개념을 이해하고 또 다음에 필요할 때 꺼내쓰기 위해 이게 무엇인지 정리하고자 한다.
 

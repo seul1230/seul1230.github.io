@@ -9,7 +9,7 @@ use_math: true
 color: 
 tags: [AI/ML/DL]
 ---
-# AI | LLM(Large Language Model)은 어떻게 답변을 생성하는 걸까?
+<!-- # AI | LLM(Large Language Model)은 어떻게 답변을 생성하는 걸까? -->
 
 
 ChatGPT, Gemini, Claude와 같은 LLM(Large Language Model)은 사람의 질문을 이해하고 꽤 자연스러운 답변을 생성한다. 

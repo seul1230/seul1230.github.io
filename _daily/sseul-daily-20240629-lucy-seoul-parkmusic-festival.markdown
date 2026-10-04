@@ -1,14 +1,12 @@
 ---
 layout: post
-title:  "콘서트 | 2024 서울파크뮤직페스티벌 | 루시, 너드커넥션, 잔나비"
+title:  "2024 서울파크뮤직페스티벌 후기 | 루시, 너드커넥션, 잔나비"
 description: <strong>🗓️ 2024.06.29</strong><font color='gray'><br/>- 2024 서울파크뮤직페스티벌 (루시, 너드커넥션, 잔나비)<br/>- 예매, 입장, 날씨, 감상에 대한 모든 것</font>
 date:   2024-07-01 16:30:09 +0900
 categories: daily/concert
 published: true
 tags: [🎈 콘서트]
 ---
-
-
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7280083909521856"
      crossorigin="anonymous"></script>
@@ -24,7 +22,7 @@ tags: [🎈 콘서트]
 
 <br/>
 
-# 🎵 2024 서울파크뮤직페스티벌 (루시, 너드커넥션, 잔나비)
+<!-- # 🎵 2024 서울파크뮤직페스티벌 (루시, 너드커넥션, 잔나비) -->
 
 
 최근 코딩하느라 바쁘게 지낸 탓에 이제야 올린다!

@@ -8,7 +8,7 @@ date:  2025-10-23 15:00:10 +0900
 color: info
 tags: [Cryptology, Security]
 ---
-# [ 암호학 ] 양자내성암호 (PQC, Post-Quantum Cryptography)
+<!-- # [ 암호학 ] 양자내성암호 (PQC, Post-Quantum Cryptography) -->
 
 최근에 자료를 찾아보다가 양자내성암호(이하 PQC)라는 개념을 알게 되었다. 양자컴퓨팅 기술이 빠르게 발전하면서, 언젠가 양자컴퓨터가 완성되면 기존의 RSA나 ECC 같은 암호체계가 무력화될 수 있다는 우려가 커지고 있다. 특히 ‘HNDL’ 공격처럼 지금 데이터를 수집해 두었다가 나중에 해독하는 방식이 등장하면서, 전 세계 보안 기업과 기관들이 양자 이후(Post-Quantum) 시대를 대비하기 위한 PQC 연구와 표준화 작업에 속도를 내고 있다.
 

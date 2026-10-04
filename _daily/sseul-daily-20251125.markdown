@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "여행 | 🌌 강릉 안반데기 | 나랑 별 보러 가지 않을래?"
+title:  "🌌 강릉 안반데기 1박 2일 | 나랑 별 보러 가지 않을래?"
 description: <strong>🗓️ 2025.09.20 - 2025.09.21</strong><font color='gray'><br/>- 디비딥 팀원들이랑 안반데기로 1박 2일!</font>
 date:   2025-11-25 16:30:09 +0900
 categories: daily/korea
@@ -22,7 +22,7 @@ tags: [🇰🇷 한국, 💙 ]
 
 <br/> -->
 
-# 🌌 강릉 안반데기 | 나랑 별 보러 가지 않을래?
+<!-- # 🌌 강릉 안반데기 | 나랑 별 보러 가지 않을래? -->
 
 > My Fav, DB Deep
 

@@ -22,7 +22,7 @@ tags: [dev, NLP]
 
 <br/>
 
-# NLP | 벡터 유사도 (Vector Similarity) 파헤치기
+<!-- # NLP | 벡터 유사도 (Vector Similarity) 파헤치기 -->
 
 > 컴퓨터는 자연어로 된 문장을 어떻게 이해할까?
 

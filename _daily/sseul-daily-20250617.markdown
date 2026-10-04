@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "여행 | 🏞️ 양평 | 싸피 2학기 마무리 기념 MT"
+title:  "🏞️ 양평 1박 2일 | 싸피 2학기 마무리 기념 MT"
 description: <strong>🗓️ 2025.06.14 - 2025.06.15</strong><font color='gray'><br/>- 양평으로 1박 2일!</font>
 date:   2025-06-17 16:30:09 +0900
 categories: daily/korea
@@ -22,7 +22,7 @@ tags: [🇰🇷 한국, 💙 ]
 
 <br/> -->
 
-# 🏞️ 양평 | 싸피 2학기 마무리 기념 MT
+<!-- # 🏞️ 양평 | 싸피 2학기 마무리 기념 MT -->
 
 > 2학기 끝-!
 

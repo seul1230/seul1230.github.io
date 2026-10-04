@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "RL | 강화학습이란?"
+title:  "강화학습이 뭐길래! (개념, 원리, 코드 예제)"
 description: <font color="lightgray">내가 쉽게 기억하려고 쓰는 강화학습 정리</font><br/>📌 강화학습의 개념은 정확히 무엇일까?
 categories: 
 date:  2024-10-18 09:00:10 +0900
@@ -25,7 +25,7 @@ tags: [RL]
 
 <br/>
 
-# RL | 강화학습이란?
+<!-- # RL | 강화학습이란? -->
 
 > 강화학습 = 알파고?
 
