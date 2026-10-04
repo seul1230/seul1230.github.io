@@ -36,41 +36,39 @@ layout: page
 
 
 
-<article class="post-title">
-<h1><b>{{ page.title }}</b></h1>
-<!-- </article> -->
+<article class="post">
+  <header class="post-title">
+    <h1><b>{{ page.title }}</b></h1>
 
-<p class="post-metadata text-muted">
-  <span class="post-metadata text-muted" id="last-modified"></span>
-  <br />
-  created_at : {{ page.date | date_to_long_string }} -
-  <b>
-    {%- assign words = content | number_of_words -%} {%- if words < 360 -%} less than 1 min read
-    time {%- else -%} {{ words | divided_by: 180 }} mins read time {%- endif -%}
-  </b>
-  <br />
-  {%- if page.tags != empty -%} Tags: {% for tag in page.tags %}
-  <a
-    class="text-decoration-none no-underline"
-    href="{{ tag | slugify | prepend:'/blog/tags#' | relative_url }}"
-  >
-    <span class="tag badge badge-pill text-primary border border-primary">{{ tag }}</span>
-  </a>
-  {% endfor %} {%- endif -%}
+  <p class="post-metadata text-muted">
+    <span class="post-metadata text-muted" id="last-modified"></span>
+    <br />
+    created_at : {{ page.date | date_to_long_string }} -
+    <b>
+      {%- assign words = content | number_of_words -%} {%- if words < 360 -%} less than 1 min read
+      time {%- else -%} {{ words | divided_by: 180 }} mins read time {%- endif -%}
+    </b>
+    <br />
+    {%- if page.tags != empty -%} Tags: {% for tag in page.tags %}
+    <a
+      class="text-decoration-none no-underline"
+      href="{{ tag | slugify | prepend:'/blog/tags#' | relative_url }}"
+    >
+      <span class="tag badge badge-pill text-primary border border-primary">{{ tag }}</span>
+    </a>
+    {% endfor %} {%- endif -%}
 
-</p>
-
-
-
+  </p>
+  </header>
 
 
-<div class="list-group my-3 toc" list-style="none">
-  <a class="list-group-item active disabled text-white toc" list-style="none">Table of Contents</a>
-  {% include toc.html html=content %}
-</div>
-<!-- <div class="float-toc" list-style="none">
-  {% include float_toc.html html=content %}
-</div> -->
+  <div class="list-group my-3 toc" list-style="none">
+    <a class="list-group-item active disabled text-white toc" list-style="none">Table of Contents</a>
+    {% include toc.html html=content %}
+  </div>
+  <!-- <div class="float-toc" list-style="none">
+    {% include float_toc.html html=content %}
+  </div> -->
 
 
 
@@ -82,7 +80,9 @@ layout: page
 
 
 <!-- <article class="post-article"> -->
-{{ content }}
+  <div class="post-article">
+    {{ content }}
+  </div>
 </article>
 
 
@@ -127,9 +127,6 @@ layout: page
 <!-- 디스플레이 -->
 <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7280083909521856" data-ad-slot="7985783686"
     data-ad-format="auto" data-full-width-responsive="true"></ins>
-<!-- 멀티플렉스 -->
-<!-- <ins class="adsbygoogle" style="display:block" data-ad-format="autorelaxed" data-ad-client="ca-pub-7280083909521856"
-  data-ad-slot="4920206415"></ins> -->
 <script>
     (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
