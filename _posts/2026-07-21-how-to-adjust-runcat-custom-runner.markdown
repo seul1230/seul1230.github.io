@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "런캣 달리는 커비로 귀엽게 맥 상태바 꾸미기! | RunCat Neo, 무료 커스텀, 러너 프레임 공유"
+title:  "런캣 달리는 커비로 귀엽게 맥 상태바 꾸미기 : RunCat Neo, 무료 커스텀, 러너 프레임 공유"
 description: 맥북을 더 행복하게 쓰는 법 + - + 별의 커비로 러너 만들기! 💫
 thumbnail: assets/img/info/runcatneo_background.png
 # categories: 
