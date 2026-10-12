@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "런캣 달리는 커비로 귀엽게 맥 상태바 꾸미기! RunCat Neo, 무료 커스텀, 러너 프레임 공유"
+title:  "런캣 달리는 커비로 맥 상태바 꾸미기! RunCat Neo, 무료 커스텀, 러너 프레임 공유"
 description: 맥북을 더 행복하게 쓰는 법 + - + 별의 커비로 러너 만들기! 💫
 thumbnail: assets/img/info/runcatneo_background.png
 # categories: 
@@ -117,7 +117,7 @@ RunCat앱에서는 현 PC의 상황을 한 눈에 살펴볼 수 있었습니다.
 
 
 > <font color='blue'><strong>🫯 이미지 저장하는 방법</strong></font>
-> 1. <a href="https://raw.githubusercontent.com/seul1230/RunnerCustomGallery/refs/heads/main/walking-knight-kirby/walking-knight-kirby-frames.zip" target="_blank">zip 파일 다운로드 링크</a>에서 한 번에 다운로드하거나
+> 1. <a href="https://raw.githubusercontent.com/seul1230/RunnerCustomGallery/refs/heads/main/runners/walking-knight-kirby/walking-knight-kirby-frames.zip" target="_blank">zip 파일 다운로드 링크</a>에서 한 번에 다운로드하거나
 > 2. 아래의 이미지(7개)를 모두 `다른 이름으로 저장하기` (프레임 번호 기록)
 
 
