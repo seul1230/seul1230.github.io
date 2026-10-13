@@ -123,42 +123,42 @@ RunCat앱에서는 현 PC의 상황을 한 눈에 살펴볼 수 있었습니다.
 
 
 <p align='center'>
-<img src='https://raw.githubusercontent.com/seul1230/RunnerCustomGallery/refs/heads/main/walking-knight-kirby/walking-knight-kirby-frame-0.png' height='36px'> 
+<img src='https://raw.githubusercontent.com/seul1230/RunnerCustomGallery/refs/heads/main/runners/walking-knight-kirby/walking-knight-kirby-frame-0.png' height='36px'> 
 <figcaption>Frame #0<font color="lightgray"></font> <a href=""></a></figcaption>
 </p>
 
 <p align='center'>
-<img src='https://raw.githubusercontent.com/seul1230/RunnerCustomGallery/refs/heads/main/walking-knight-kirby/walking-knight-kirby-frame-1.png' height='36px'> 
+<img src='https://raw.githubusercontent.com/seul1230/RunnerCustomGallery/refs/heads/main/runners/walking-knight-kirby/walking-knight-kirby-frame-1.png' height='36px'> 
 <figcaption>Frame #1<font color="lightgray"></font> <a href=""></a></figcaption>
 </p>
 
 <p align='center'>
-<img src='https://raw.githubusercontent.com/seul1230/RunnerCustomGallery/refs/heads/main/walking-knight-kirby/walking-knight-kirby-frame-2.png' height='36px'> 
+<img src='https://raw.githubusercontent.com/seul1230/RunnerCustomGallery/refs/heads/main/runners/walking-knight-kirby/walking-knight-kirby-frame-2.png' height='36px'> 
 <figcaption>Frame #2<font color="lightgray"></font> <a href=""></a></figcaption>
 </p>
 
 <p align='center'>
-<img src='https://raw.githubusercontent.com/seul1230/RunnerCustomGallery/refs/heads/main/walking-knight-kirby/walking-knight-kirby-frame-3.png' height='36px'> 
+<img src='https://raw.githubusercontent.com/seul1230/RunnerCustomGallery/refs/heads/main/runners/walking-knight-kirby/walking-knight-kirby-frame-3.png' height='36px'> 
 <figcaption>Frame #3<font color="lightgray"></font> <a href=""></a></figcaption>
 </p>
 
 <p align='center'>
-<img src='https://raw.githubusercontent.com/seul1230/RunnerCustomGallery/refs/heads/main/walking-knight-kirby/walking-knight-kirby-frame-4.png' height='36px'> 
+<img src='https://raw.githubusercontent.com/seul1230/RunnerCustomGallery/refs/heads/main/runners/walking-knight-kirby/walking-knight-kirby-frame-4.png' height='36px'> 
 <figcaption>Frame #4<font color="lightgray"></font> <a href=""></a></figcaption>
 </p>
 
 <p align='center'>
-<img src='https://raw.githubusercontent.com/seul1230/RunnerCustomGallery/refs/heads/main/walking-knight-kirby/walking-knight-kirby-frame-5.png' height='36px'> 
+<img src='https://raw.githubusercontent.com/seul1230/RunnerCustomGallery/refs/heads/main/runners/walking-knight-kirby/walking-knight-kirby-frame-5.png' height='36px'> 
 <figcaption>Frame #5<font color="lightgray"></font> <a href=""></a></figcaption>
 </p>
 
 <p align='center'>
-<img src='https://raw.githubusercontent.com/seul1230/RunnerCustomGallery/refs/heads/main/walking-knight-kirby/walking-knight-kirby-frame-6.png' height='36px'> 
+<img src='https://raw.githubusercontent.com/seul1230/RunnerCustomGallery/refs/heads/main/runners/walking-knight-kirby/walking-knight-kirby-frame-6.png' height='36px'> 
 <figcaption>Frame #6<font color="lightgray"></font> <a href=""></a></figcaption>
 </p>
 
 <p align='center'>
-<img src='https://raw.githubusercontent.com/seul1230/RunnerCustomGallery/refs/heads/main/walking-knight-kirby/walking-knight-kirby-frame-7.png' height='36px'> 
+<img src='https://raw.githubusercontent.com/seul1230/RunnerCustomGallery/refs/heads/main/runners/walking-knight-kirby/walking-knight-kirby-frame-7.png' height='36px'> 
 <figcaption>Frame #7<font color="lightgray"></font> <a href=""></a></figcaption>
 </p>
 
