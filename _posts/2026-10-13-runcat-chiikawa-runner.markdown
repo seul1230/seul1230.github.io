@@ -46,12 +46,12 @@ tags: [Blog, Info, RunCat, Deco]
 
 저는 특별한 손재주와 여유 시간은 없는 관계로 제 노트북을 소소하게 꾸며봤어요.
 
-{% include elements/video.html id="dBM9WBAPAXQ" hd="1" %}
+<!-- {% include elements/video.html id="dBM9WBAPAXQ" hd="1" %}
 <p align='center'>
 <font color='lightgray'>화질 최고로 바꾸면 더 잘 보입니다</font>
 </p>
 
-<br>
+<br> -->
 
 
 <p align='center'>
