@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "치이카와 런캣 러너 프레임 공유 (무료 커스텀 가능)"
-description: 맥북을 더 행복하게 쓰는 법 + - + 별의 커비로 러너 만들기! 💫
+description: 이야하 푸르푸르 야하 🪕 치이카와로 러너 만들기! 💫
 thumbnail: assets/img/info/runcatneo_background.png
 # categories: 
 date:  2026-10-13 14:00:10 +0900
